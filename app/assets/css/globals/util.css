@@ -1,0 +1,29 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+.hide {
+  display: none;
+}
+
+.invis {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* Most often applied to body to prevent scrolling. */
+.no-scroll {
+  overflow: hidden;
+}

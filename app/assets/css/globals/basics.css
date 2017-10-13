@@ -1,0 +1,31 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+body {
+  font-family: var(--font-family-sans);
+  line-height: 1.35;
+
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  color: var(--color-dim-black);
+  background-color: #fff;
+
+  padding: 20px 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+abbr[title] {
+  text-decoration: none;
+}

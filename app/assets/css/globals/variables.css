@@ -1,0 +1,32 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/*
+   You'll need a browser with CSS variables support to make this
+   work during development only.
+
+   http://caniuse.com/#feat=css-variables
+
+   Usually such a browser is needed only during development and
+   a build/deploy process will convert the variable syntax for
+   browser that don't understand it for all other environments.
+
+   Please note that due to compatiblity CSS variable definition
+   are limited to `:root` only.
+*/
+
+:root {
+  /* Colors */
+  --color-black:     #1b1b1b;
+  --color-blue:      #0e26fc;
+  --color-yellow:    #ffd200;
+  --color-green:     #8ad835;
+  --color-red:       red;
+
+  /* Typography */
+  --font-family-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

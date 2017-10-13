@@ -1,0 +1,45 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+input,
+textarea {
+  /* All inputs need to have font-family set on them again,
+     they sometimes not inherit from body correctly. */
+  font-family: var(--font-family-sans);
+
+  /* Fix iOS styling. */
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+  border-radius: 0;
+
+  color: var(--color-dim-black);
+  background: transparent;
+  border: 1px solid var(--color-dim-black);
+  padding: .5em;
+}
+textarea:focus,
+input:focus {
+  background: white;
+  color: #000;
+  outline: none; /* Disable auto glow for webkit. */
+}
+form label {
+  display: block;
+  margin-bottom: .25em;
+}
+form input,
+form textarea {
+  margin-bottom: 1em;
+}
+input,
+textarea {
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #030303;
+}

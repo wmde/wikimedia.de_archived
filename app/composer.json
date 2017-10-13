@@ -1,0 +1,29 @@
+{
+    "name": "bseries/distro",
+    "type": "project",
+    "description": "Distribution for B–Series base web projects.",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {"name": "David Persson"},
+        {"name": "Atelier Disko"},
+        {"name": "The Community"}
+    ],
+    "minimum-stability": "dev",
+	"prefer-stable": true,
+    "require": {
+        "atelierdisko/base_core": "1.5.*@dev",
+        "atelierdisko/base_media": "1.5.*@dev",
+        "atelierdisko/cms_core": "1.5.*@dev",
+        "atelierdisko/li3_access": "2.*@stable || 2.1.0@dev",
+        "davidpersson/indexed": "1.*",
+        "php": "^5.5",
+        "unionofrad/lithium": "1.2.x-dev as 1.2.0"
+    },
+    "require-dev": {
+        "digitalnature/php-ref": "1.2.*",
+        "filp/whoops": "2.*"
+    },
+    "config": {
+        "vendor-dir": "libraries"
+    }
+}

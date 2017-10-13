@@ -1,0 +1,33 @@
+# Copyright 2013 David Persson. All rights reserved.
+# Copyright 2017 Atelier Disko. All rights reserved.
+#
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
+
+# Entries with a leading slash are anchored at the base directory.
+
+# Libraries, are managed by composer.
+/app/libraries
+
+# Data
+/data/dumps/*
+!/data/dumps/empty
+
+# Files
+/media_versions
+/app/webroot/media
+/media
+!media/robots.txt
+
+# Temporary Files
+/tmp/*
+app/resources/tmp/*
+
+# Logs
+/log/*
+
+# Other
+*.mo
+
+# Placeholder
+!empty

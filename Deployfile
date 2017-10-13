@@ -1,0 +1,33 @@
+# Copyright 2016 Atelier Disko. All rights reserved.
+#
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
+
+# One or multiple target hosts to deploy to. 
+TARGET_HOSTS="__TARGET_HOST__"
+
+# The UNIX user for SSH based deploys.
+# The same user will be used for each host.
+TARGET_USER="__TARGET_USER__"
+
+# The target path on target host.
+TARGET_PATH="/var/www/__NAME__"
+
+# The transfer method to use during deployment. Can be either the follwing. Most
+# methods use TARGET_HOST, TARGET_USER and TARGET_PASSWORD (when set) to connect.
+# - "ssh+rsync" to transfer files using rsync over ssh
+# - "manual" to build the package locally but not transfer it
+TRANSFER_METHOD="ssh+rsync"
+
+# Will exclude directories and files in transfer tasks. Separate with spaces.
+# Possible used with rsync and lftp. fnmatch(5) patterns are allowed. To exclude
+# whole directory (not just its contents) DO append slash. Patterns prefixed
+# with a slash are anchored at the base path (when used with rsync).
+TRANSFER_IGNORE="/media/ /media_versions/ /log/ /files/"
+
+# Command/s to execute after transferring. Commands will be executed by
+# TARGET_USER on a target host using TARGET_PATH as the working directory.
+POST_TRANSFER_COMMANDS="chmod -R a+rwX tmp log && sudo hoictl load"
+
+# To enable notifications via Slack, provide a valid webhook URL here.
+SLACK_WEBHOOK_URL=""

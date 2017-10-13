@@ -1,0 +1,165 @@
+# Copyright 2013 David Persson. All rights reserved.
+# Copyright 2016 Atelier Disko. All rights reserved.
+#
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
+
+# "The twelve-factor app stores config in environment variables [...]. 
+# Env vars are easy to change between deploys without changing any code [...]"
+
+# -----------------------------------------------------------
+# Environment
+# -----------------------------------------------------------
+# The context of this environment.
+CONTEXT="dev"
+
+# The projects name.
+NAME="__NAME__"
+
+# The domain under which the project is served.
+DOMAIN="__DOMAIN__"
+
+# -----------------------------------------------------------
+# Debugging / Analysis
+# -----------------------------------------------------------
+# Enables/disables maintenance mode. When enabled sends 503 HTTP status code and
+# renders "under maintenance" page for all visitors. Useful when doing lengthy
+# database or app upgrades.
+MAINTENANCE="n"
+
+# Enables/disables debug mode.
+DEBUG="y"
+
+# Does not output any debug information, but enable logging of debug information
+# to log target. LOGGING must be enabled in order for this to have any effects.
+# DEBUG does not affect this setting.
+DEBUG_LOGGING="y"
+
+# Controls if logging should be enabled at all.
+LOGGING="y"
+
+# Sends logs to syslog, otherwise logs to files (i.e. log/app.log).
+HAS_SYSLOG="y"
+
+# Enables/disables actual mail delivery. When this option is enabled mails are
+# not send out but logged to log/mail.log, where they can be inspected for
+# debugging purposes. Please note that DEBUG must be switched *off*, for
+# this option to take effect. 
+MAIL_TEST="y"
+
+# -----------------------------------------------------------
+# Security
+# -----------------------------------------------------------
+# A very long (at least 40 chars) base64 encoded stream of random chars.
+SECRET_BASE="__SECRET_BASE__"
+
+# -----------------------------------------------------------
+# Database
+# -----------------------------------------------------------
+DB_HOST="localhost"
+DB_DATABASE="__NAME__"
+DB_USER="__NAME__"
+DB_PASSWORD=""
+
+# -----------------------------------------------------------
+# Globalization
+# -----------------------------------------------------------
+# The default effective locale, country, currency and timezone. Will also be
+# used for normalization. TZ is default user TZ, not to be confused with the
+# internal TZ, that is always UTC.
+LOCALE="en"
+COUNTRY="DE"
+CURRENCY="EUR"
+TIMEZONE="Europe/Berlin"
+
+# Available locales, countries, currencies and timezones. 
+# Separate multiple entries by space. 
+LOCALES="en"
+COUNTRIES="US DE"
+CURRENCIES="EUR"
+TIMEZONES="Europe/Berlin UTC"
+
+# -----------------------------------------------------------
+# Caching
+# -----------------------------------------------------------
+# Enables/disables support for memcached (https://memcached.org). When disabled
+# will cache using files in tmp/cache.
+HAS_MEMCACHED="y"
+
+# Controls whether Full Page Caching should be enabled or not. FPC works
+# only for fully static pages. This caching method is highly performant and
+# optionally in conjunction with NGINX cache checking helps to deal with a great
+# amount of traffic. With FPC enabled the entire response for an URL is stored
+# in cache.
+FPC="n"
+
+# -----------------------------------------------------------
+# Tracking
+# -----------------------------------------------------------
+# Allows to toggle Google Analytics globally. GA should only ever be enabled
+# in production environments. We only want to track real visitors.
+GA="n"
+
+# Whether to honor if visitor has DNT enabled. If "y" will not include i.e. GA
+# tracking code even if that is enabled. Defaults to "n" as DNT was introduced
+# later in time and we don't want existing projects to have their visitor
+# numbers decreased. However: it is strongly suggested to enable this setting
+# for new projects.
+HONOR_DNT="n"
+
+# -----------------------------------------------------------
+# Assets & Media
+# -----------------------------------------------------------
+# Whether media versions, transfers and assets are nested under
+# the webroot instead of the project root.
+WEBROOT_NESTING="n"
+
+ASSETS_HTTP_BASE="__DOMAIN__/assets"
+ASSETS_HTTPS_BASE="__DOMAIN__/assets"
+
+HAS_IMAGICK="y"
+HAS_GHOSTSCRIPT="y"
+HAS_FFMPEG="y"
+HAS_SOX="y"
+
+MEDIA_VERSIONS_HTTP_BASE="__DOMAIN__/media"
+MEDIA_VERSIONS_HTTPS_BASE="__DOMAIN__/media"
+
+# -----------------------------------------------------------
+# Jobs
+# -----------------------------------------------------------
+# Whether asynchrounous processing of media uploads should be enabled. Will
+# need a running beanstalkd message queue and workers (see Hoifile) to do
+# it's job. This option comes with some additional operational overhead but
+# enables processing of large video and audio files without relying on external
+# services.
+ASYNC_PROCESSING="n"
+
+# Controls scheduled (repeated) jobs. Can be either "n", "cron" or "http".  When set to
+# "cron", cronjobs must alsow be enabled in the Hoifile.  The "http" setting should only
+# be used if we cannot run programs on the command line. It gives us one endpoint per
+# frequency ("high", "medium" and "low") that can be invoked by an external tool. To
+# access these endpoints you must also configure a technical user with a unique auth
+# token: "/admin/api/base-core/jobs/run/<FREQ>?auth_token=<TOKEN>"
+SCHEDULED_JOBS="n"
+
+# -----------------------------------------------------------
+# Mail
+# -----------------------------------------------------------
+# Whether to enable mail out via an external service. Currently only Mailgun
+# (https://www.mailgun.com) is supported.
+MAIL="n"
+
+# Credentials 
+MAIL_KEY="__MAIL_KEY__"
+
+# The domain configured for the mailing service. When using mailgun
+# and a "mg" subdomain, this must include the subdomain as well.
+MAIL_DOMAIN="mg.__DOMAIN__"
+
+# The default from address. With a mailgun subdomain this may
+# not include the subdomain.
+MAIL_FROM="noreply@__DOMAIN__"
+
+# Separate multiple types by space (i.e. "text html").
+MAIL_TYPES="text"

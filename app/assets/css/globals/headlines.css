@@ -1,0 +1,15 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+.h--alpha,
+.h--beta,
+.h--gamma {
+  font-family: var(--font-family-sans);
+}
+.h--alpha {}
+.h--beta {}
+.h--gamma {}

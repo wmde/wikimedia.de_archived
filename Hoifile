@@ -1,0 +1,55 @@
+# Copyright 2013 David Persson. All rights reserved.
+# Copyright 2016 Atelier Disko. All rights reserved.
+#
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
+
+name = "__NAME__"
+context = "dev"
+
+domain "__DOMAIN__" {
+	www = "drop"
+	# Either paths or special string "!self-signed"
+	# SSL = {
+	# 	certificate = "config/ssl/__DOMAIN__.crt"
+	# 	certificateKey = "config/ssl/__DOMAIN__.key"
+	# }
+	# auth {
+	# 	password = "changeme!"
+	# }
+}
+
+database "__NAME__" {
+	password = ""
+}
+
+volume "media" {}
+volume "media_versions" {}
+volume "tmp" {
+	isTemporary = true
+}
+volume "log" {
+	isTemporary = true
+}
+
+# These crons Must be enabled when using SCHEDULED_JOBS.
+# cron "high-freq" {
+# 	schedule = "*:0/10"
+# 	command =  "bin/li3.php jobs runFrequency high"
+# }
+# cron "medium-freq" {
+# 	schedule = "hourly"
+# 	command =  "bin/li3.php jobs runFrequency medium"
+# }
+# cron "low-freq" {
+# 	schedule = "daily"
+# 	command =  "bin/li3.php jobs runFrequency low"
+# }
+
+# These workers must enabled when using ASYNC_PROCESSING.
+# worker "media-fix" {
+# 	command = "app/libraries/bin/cute-worker --queue=fix --scope={{.P.Name}}_{{.P.Context}} -r app/libraries/base_core/config/bootstrap.php"
+# }
+# worker "media-fixflux" {
+# 	command = "app/libraries/bin/cute-worker --queue=fix,flux --scope={{.P.Name}}_{{.P.Context}} -r app/libraries/base_core/config/bootstrap.php"
+# }

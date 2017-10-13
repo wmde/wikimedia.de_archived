@@ -1,0 +1,25 @@
+/*!
+ * Copyright 2013 David Persson. All rights reserved.
+ * Copyright 2016 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+@import "normalize.css";
+@import "globals/variables.css";
+@import "globals/basics.css";
+@import "globals/text.css";
+@import "globals/util.css";
+@import "globals/headlines.css";
+@import "globals/layout.css";
+@import "globals/header.css";
+@import "globals/footer.css";
+@import "globals/forms.css";
+@import "globals/buttons.css";
+
+/*
+  All "views" CSS files, except those in "elements", are loaded
+  automatically when needed. However its good practive to scope
+  them to their page.
+*/
