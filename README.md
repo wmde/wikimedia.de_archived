@@ -65,15 +65,14 @@ database, cronjobs and workers yourself.
 ## Side-Autoloading of JavaScript Assets
 
 For autoloading of JavaScript it is important, that
-files are named using lowercase and dashes to separate multiple
-words:
+files are named using camelCase:
 
 BAD:
-  - `assets/js/fooBar.js`
+  - `assets/js/foo-bar.js`
   - `assets/js/foo.bar.js`
 
 GOOD:
-  - `assets/js/foo-bar.js`
+  - `assets/js/fooBar.js`
 
 The following JavaScript scripts will always be loaded and bootstrap the application's JavaScript, thus must always be present:
 
