@@ -1,47 +1,44 @@
 # B–Series Web Application Distribution
 
-## Abstract
-
 The B-Series distribution is an application system that includes the overarching directory layout, an example starting application, and very useful tools to manage the lifecycle of a software project.
 
 The distribution is the basis for your own project and the starting point for anyone interested in the B-Series.
 
-## Initializing
 
-All future commands are executed from the root of the project. Let's begin with switching to it first.
+## Setup
+
+First, let's get a copy of the distro, on which we will base off on our new project. For the sake of simplicity we'll call our new project _project_.
 ```
-$ git clone git@github.com:BSeries/distro.git project
+$ git clone git@github.com:bseries/distro.git project
+```
+
+All commands below are executed from the root of the project. So let's switch right into it.
+```
 $ cd project
 ```
 
-The following command will initialize the project by filling certain placeholder in the configuration files, so you don't have to.
+The root of the project contains three important configuration files: `Envfile` holds per configuration settings, `Deployfile` configures the deploy target, `Hoifile` used by [Hoi](https://github.com/atelierdisko/hoi) for setting up the webserver and database. Especially the `Envfile` is very well documented.
+
+Currently the configuration files contain placeholders, i.e. `__NAME__`. These can be filled in for you automatically as they can be derived easily from the project directory itself. They can also be replaced manually as well.
 ```
-$ make init
+$ make prefill
 ```
 
-The `Envfile` is a per environment configuration file, holding the main configuration (i.e. database settings). Modify it:
-```
-$ vim Envfile
-```
-
-... as well as the host configuration file, if you plan to use [Hoi](https://github.com/atelierdisko/hoi):
-```
-$ vim Hoifile
-```
-
-If you already know which application libraries you'd like to use (or not to), edit the `composer.json` file and make changes.
-```
-$ vim composer.json
-```
-
-Then initially install the dependencies using the following command. App dependencies are managed by Composer.
+As a PHP project the B-Series uses composer for managing PHP libraries. Let's install the initial round of dependencies. Let's also install some more B-Series modules.
 ```
 $ composer install
+$ composer require bseries/cms_post
+$ composer require bseries/cms_social
 ```
 
-Some B-modules contain an `assets` directory, which needs to be symlinked into the project's assets directory, so files in there can be accessed by the webserver.
+Some B-modules contain an `assets` directory, which needs to be symlinked into the project's `assets` directory, so files in there can be accessed by the web server.
 ```
 $ bin/link-assets.sh
+```
+
+The B-Series is ready for globalization by default. Internally it uses data from the Unicode Consortium: the CLDR. The globalization data is too extensive to include it with the distro. The following command will download and install it locally.
+```
+$ make app/resources/g11n/cldr
 ```
 
 Continue to initialize the database using the following command, and create the initial users.
@@ -50,9 +47,9 @@ $ bin/init-db.sh
 $ bin/li3.php users initial
 ```
 
-## Serving the Project
+## Hosting the Project
 
-Atelier Disko projects are usually served by Hoi, which
+Atelier Disko projects are usually served by [Hoi](https://github.com/atelierdisko/hoi), which
 takes care of any needs the project has.
 ```
 $ hoictl load
@@ -151,15 +148,6 @@ $ bin/li3.php jobs
 
 [1] http://li3.me/docs/manual/common-tasks/console-applications.md
 
-## Deploying
-
-```
-$ vim Deployfile
-```
-
-```
-$ bin/deploy.sh
-```
 
 ## SSL Certificates
 

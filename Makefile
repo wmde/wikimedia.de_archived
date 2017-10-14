@@ -24,11 +24,14 @@ EXTRACT_SOURCES = $(shell find app/{views,config,documents,models,controllers,ex
 
 # -- Integrator/Creator --
 
-.PHONY: init
-init: app/resources/g11n/cldr
+.PHONY: prefill
+prefill: 
 	sed -i -e "s|__NAME__|$(NAME)|g" Hoifile Envfile Deployfile
 	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Hoifile Envfile
 	sed -i -e "s|__SECRET_BASE__|$(SECRET_BASE)|g" Envfile
+
+.PHONY: init
+init: app/resources/g11n/cldr
 
 app/resources/g11n/cldr:
 	curl http://unicode.org/Public/cldr/1.8.0/core.zip -o /tmp/cldr.zip 
@@ -36,10 +39,6 @@ app/resources/g11n/cldr:
 	unzip /tmp/cldr.zip -d /tmp/cldr
 	mv /tmp/cldr/common $@
 
-.PHONY: install-deps
-install-deps:
-	composer install
-	
 # -- Utilities --
 
 .PHONY: fix-perms
