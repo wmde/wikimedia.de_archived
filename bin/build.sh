@@ -65,11 +65,11 @@ done
 # Ensure we don't install dev tooling in production, for security (potential
 # information disclosure) and performance (larger file search trees) reasons.
 if [[ $CONTEXT != "prod" ]]; then
-	composer install -d app --prefer-dist
+	composer install --prefer-dist
 else
-	composer install -d app --prefer-dist --no-dev
+	composer install --prefer-dist --no-dev
 fi
-composer dump-autoload  -d app --optimize
+composer dump-autoload --optimize
 
 # Execute sub-builds in well-known libraries.
 for d in $(ls -d app/libraries/{base,cms,billing,ecommerce}_*); do

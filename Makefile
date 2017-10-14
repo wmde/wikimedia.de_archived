@@ -38,7 +38,7 @@ app/resources/g11n/cldr:
 
 .PHONY: install-deps
 install-deps:
-	composer -d app install
+	composer install
 	
 # -- Utilities --
 

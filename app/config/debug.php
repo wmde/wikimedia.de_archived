@@ -16,7 +16,7 @@ use Whoops\Util\Misc;
 
 // This file is included when debugging (via PROJECT_DEBUG) has been enabled. The tools
 // used in here are usually development depedencies (listed under require-dev in
-// app/composer.json).
+// composer.json).
 
 $whoops = new Run();
 

@@ -29,14 +29,14 @@ $ vim Envfile
 $ vim Hoifile
 ```
 
-If you already know which application libraries you'd like to use (or not to), edit the `app/composer.json` file and make changes.
+If you already know which application libraries you'd like to use (or not to), edit the `composer.json` file and make changes.
 ```
-$ vim app/composer.json
+$ vim composer.json
 ```
 
 Then initially install the dependencies using the following command. App dependencies are managed by Composer.
 ```
-$ make install-deps
+$ composer install
 ```
 
 Some B-modules contain an `assets` directory, which needs to be symlinked into the project's assets directory, so files in there can be accessed by the webserver.
@@ -126,7 +126,7 @@ This distribution comes bundled at a minimum with two modules already: `base_cor
 Additional modules can be added by making them additional dependencies:
 
 ```
-$ composer -d app require bseries/cms_social
+$ composer require bseries/cms_social
 ```
 
 ## Running Tasks
