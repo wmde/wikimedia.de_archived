@@ -17,7 +17,7 @@ All commands below are executed from the root of the project. So let's switch ri
 $ cd project
 ```
 
-The root of the project contains three important configuration files: `Envfile` holds per configuration settings, `Deployfile` configures the deploy target, `Hoifile` used by [Hoi](https://github.com/atelierdisko/hoi) for setting up the webserver and database. Especially the `Envfile` is very well documented.
+The root of the project contains three important configuration files: `Envfile` holds per environment configuration settings, `Deployfile` configures the deploy target, `Hoifile` used by [Hoi](https://github.com/atelierdisko/hoi) for setting up the webserver and database. Especially the `Envfile` is very well documented.
 
 Currently the configuration files contain placeholders, i.e. `__NAME__`. These can be filled in for you automatically as they can be derived easily from the project directory itself. They can also be replaced manually as well.
 ```
