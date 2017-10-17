@@ -6,9 +6,9 @@
     "minimum-stability": "dev",
 	"prefer-stable": true,
     "require": {
-        "atelierdisko/base_core": "1.5.*@dev",
-        "atelierdisko/base_media": "1.5.*@dev",
-        "atelierdisko/cms_core": "1.5.*@dev",
+        "bseries/base_core": "1.5.*@dev",
+        "bseries/base_media": "1.5.*@dev",
+        "bseries/cms_core": "1.5.*@dev",
         "atelierdisko/li3_access": "2.*@stable || 2.1.0@dev",
         "davidpersson/indexed": "1.*",
         "php": "^5.5",
