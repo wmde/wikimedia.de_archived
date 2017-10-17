@@ -29,6 +29,8 @@ prefill:
 	sed -i -e "s|__NAME__|$(NAME)|g" Hoifile Envfile Deployfile
 	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Hoifile Envfile
 	sed -i -e "s|__SECRET_BASE__|$(SECRET_BASE)|g" Envfile
+	# Some sed leave stray files.
+	rm -f Hoifile-e Envfile-e Deployfile-e
 
 .PHONY: init
 init: app/resources/g11n/cldr
