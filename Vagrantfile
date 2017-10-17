@@ -37,7 +37,7 @@ php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece38
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 php -r "unlink('composer-setup.php');"
 
-curl -Ls https://github.com/atelierdisko/hoi/releases/download/v0.5.0/hoi_0.5.0-1-amd64.deb -o hoi.deb
+curl -Ls https://github.com/atelierdisko/hoi/releases/download/v0.5.0/hoi_0.5.0-2-amd64.deb -o hoi.deb
 dpkg --install hoi.deb
 sed -i -e "s|useLegacy = false|useLegacy = true|g" /etc/hoi/hoid.conf
 sed -i -e "s|user = \"hoi\"|user = \"root\"|g" /etc/hoi/hoid.conf
