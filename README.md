@@ -4,6 +4,7 @@ The B-Series distribution is an application system that includes the overarching
 
 The distribution is the basis for your own project and the starting point for anyone interested in the B-Series.
 
+![Screenshot](https://atelierdisko.de/assets/v:1+d696856/app/img/b/slide/adb_1.jpg)
 
 ## Setup
 
