@@ -3,11 +3,6 @@
     "description": "Distribution for B–Series base web projects.",
     "type": "project",
     "license": "BSD-3-Clause",
-    "authors": [
-        {"name": "David Persson"},
-        {"name": "Atelier Disko"},
-        {"name": "The Community"}
-    ],
     "minimum-stability": "dev",
 	"prefer-stable": true,
     "require": {
