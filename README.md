@@ -41,7 +41,16 @@ The B-Series is ready for globalization by default. Internally it uses data from
 $ make app/resources/g11n/cldr
 ```
 
-Continue to initialize the database using the following command, and create the initial users.
+To get you started quickly the distro contains a Vagrantfile. Using [vagrant](https://www.vagrantup.com/)  you can boot up a virtual machine (VM) easily. The VM already contains all necessary tools, a web server and a MariaDB database. 
+
+Now boot the VM and log into it to finalize our setup. The project will be mounted at `/var/www/project` inside the VM.
+```
+$ vagrant up
+$ vagrant ssh
+$ cd /var/www/project
+```
+
+From inside the VM continue to initialize the database using the following command, and create the initial users.
 ```
 $ bin/init-db.sh
 $ bin/li3.php users initial
