@@ -18,6 +18,9 @@ BUILD_PATH ?= /tmp/build
 # Base path for assets, here to make it easy to change..
 ASSETS_PATH = app/assets
 
+# Asset directories that need to be linked from modules.
+MODULE_ASSETS_LINKS = $(patsubst %/,%,$(subst app/libraries/,assets/,$(dir $(shell find app/libraries -type d -name 'assets'))))
+
 # These files will be checked for translatable strings. When they
 # are modified strings will be re-extracted.
 EXTRACT_SOURCES = $(shell bash -c "find app/{views,config,documents,models,controllers,extensions,mails} -name '*.php'")
@@ -40,6 +43,15 @@ app/resources/g11n/cldr:
 	[[ ! -d /tmp/d ]] && mkdir -p /tmp/cldr
 	unzip /tmp/cldr.zip -d /tmp/cldr
 	mv /tmp/cldr/common $@
+
+.PHONY: link-assets
+link-assets: assets/app $(MODULE_ASSETS_LINKS)
+
+assets/app:
+	ln -s ../app/assets $@
+
+assets/%:
+	ln -s ../app/libraries/$(subst -,_,$*)/assets $@
 
 # -- Utilities --
 

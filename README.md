@@ -33,7 +33,7 @@ $ composer require bseries/cms_social
 
 Some B-modules contain an `assets` directory, which needs to be symlinked into the project's `assets` directory, so files in there can be accessed by the web server.
 ```
-$ bin/link-assets.sh
+$ make link-assets
 ```
 
 The B-Series is ready for globalization by default. Internally it uses data from the Unicode Consortium: the CLDR. The globalization data is too extensive to include it with the distro. The following command will download and install it locally.
