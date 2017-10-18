@@ -28,6 +28,7 @@ app/resources/tmp/*
 
 # Other
 *.mo
+.vagrant
 
 # Placeholder
 !empty
