@@ -10,10 +10,10 @@ context = "dev"
 domain "__DOMAIN__" {
 	www = "drop"
 	# Either paths or special string "!self-signed"
-	# SSL = {
-	# 	certificate = "config/ssl/__DOMAIN__.crt"
-	# 	certificateKey = "config/ssl/__DOMAIN__.key"
-	# }
+	SSL = {
+		certificate = "!self-signed"
+		certificateKey = "!self-signed"
+	}
 	# auth {
 	# 	password = "changeme!"
 	# }
