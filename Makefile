@@ -20,7 +20,7 @@ ASSETS_PATH = app/assets
 
 # These files will be checked for translatable strings. When they
 # are modified strings will be re-extracted.
-EXTRACT_SOURCES = $(shell find app/{views,config,documents,models,controllers,extensions,mails} -name '*.php')
+EXTRACT_SOURCES = $(shell bash -c "find app/{views,config,documents,models,controllers,extensions,mails} -name '*.php'")
 
 # -- Integrator/Creator --
 
