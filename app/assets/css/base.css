@@ -9,6 +9,7 @@
 @import "normalize.css";
 @import "globals/variables.css";
 @import "globals/basics.css";
+@import "globals/hyperlinks.css";
 @import "globals/text.css";
 @import "globals/util.css";
 @import "globals/headlines.css";
