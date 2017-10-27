@@ -19,7 +19,7 @@ BUILD_PATH ?= /tmp/build
 ASSETS_PATH = app/assets
 
 # Asset directories that need to be linked from modules.
-MODULE_ASSETS_LINKS = $(patsubst %/,%,$(subst app/libraries/,assets/,$(dir $(shell find app/libraries -type d -name 'assets'))))
+MODULE_ASSETS_LINKS = $(subst _,-,$(patsubst %/,%,$(subst app/libraries/,assets/,$(dir $(shell find app/libraries -type d -name 'assets')))))
 
 # These files will be checked for translatable strings. When they
 # are modified strings will be re-extracted.
