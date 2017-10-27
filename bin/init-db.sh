@@ -18,7 +18,7 @@ source Envfile
 # dependencies inside the modules i.e. some schemas are augmented.
 set +errexit # there might be no matches at all for a given prefix
 for prefix in base cms billing ecommerce; do
-	for f in $(ls app/libraries/${prefix}_*/data/schema.sql); do
+	for f in $(find app/libraries -path "*/${prefix}_*/data/schema.sql"); do
 		echo "Importing ${f} into database ${DB_DATABASE}"
 		if [[ $DB_PASSWORD == "" ]]; then
 			PASSWORD_ARG=""
