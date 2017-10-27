@@ -38,11 +38,12 @@ prefill:
 .PHONY: init
 init: app/resources/g11n/cldr
 
-app/resources/g11n/cldr:
-	curl http://unicode.org/Public/cldr/1.8.0/core.zip -o /tmp/cldr.zip 
-	[[ ! -d /tmp/d ]] && mkdir -p /tmp/cldr
-	unzip /tmp/cldr.zip -d /tmp/cldr
-	mv /tmp/cldr/common $@
+app/resources/g11n/cldr: /tmp/cldr_180_core.zip
+	unzip -u $< -d /tmp
+	cp -r /tmp/common $@
+
+/tmp/cldr_180_core.zip:
+	curl http://unicode.org/Public/cldr/1.8.0/core.zip -o /tmp/cldr_180_core.zip 
 
 .PHONY: link-assets
 link-assets: assets/app $(MODULE_ASSETS_LINKS)

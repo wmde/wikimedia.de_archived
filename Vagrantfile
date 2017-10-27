@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision :shell, inline: <<SCRIPT
 apt-get update
 
-apt-get -y install curl git
+apt-get -y install curl git unzip
 
 # Install extras as config files use more_headers module.
 apt-get install -y nginx nginx-extras
