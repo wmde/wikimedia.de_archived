@@ -19,6 +19,6 @@
         "filp/whoops": "2.*"
     },
     "config": {
-        "vendor-dir": "app/libraries"
+        "vendor-dir": "libraries"
     }
 }
