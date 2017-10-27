@@ -7,6 +7,14 @@ use lithium\util\Text;
 $contact = Settings::read('contact');
 $site = Sites::current($this->_request);
 
+$this->nav->add('footer', 'Imprint', 'Pages::imprint');
+$this->nav->add('footer', 'Admin–Panel', [
+	'library' => 'base_core',
+	'controller' => 'Users',
+	'action' => 'session',
+	'admin' => true
+], ['scope' => 'admin']);
+
 ?>
 <footer>
 	<div class="limit--normal cp">
@@ -17,7 +25,7 @@ $site = Sites::current($this->_request);
 			)
 		]) ?>
 
-		<?php echo Text::insert('Website by {:name}.', [
+		<?php echo Text::insert('Website by {:name}', [
 			'name' => $this->html->link(
 				$contact['exec']['organization'],
 				$contact['exec']['website'],
@@ -25,6 +33,6 @@ $site = Sites::current($this->_request);
 			)
 		]) ?>
 
-		<?= $this->html->link('Imprint', 'Pages::imprint') ?>.
+		<?= $this->nav->generate('footer') ?>
 	</div>
 </footer>
