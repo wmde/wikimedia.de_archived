@@ -9,16 +9,17 @@ DOMAIN ?= $(subst _,-,$(NAME)).test
 
 SECRET_BASE ?= $(shell openssl rand -base64 60 | tr -d '\n')
 
-# Used when building the project, allowd to be overwritten, so external scripts
-# may pick a unique or simply differnent location where they want to process
-# the build for themselves without the possibility it being touch from other
+# Used when building the project, allowed to be overwritten, so external scripts
+# may pick a unique or simply different location where they want to process
+# the build for themselves without the possibility it being touched by other
 # processes.
 BUILD_PATH ?= /tmp/build
 
-# Base path for assets, here to make it easy to change..
+# Base path for assets, here to make it easy to change.
 ASSETS_PATH = app/assets
 
-# Asset directories that need to be linked from modules.
+# Asset directories that need to be linked from modules. Derives scored target versions
+# from underscored module name sources.
 MODULE_ASSETS_LINKS = $(subst _,-,$(patsubst %/,%,$(subst app/libraries/,assets/,$(dir $(shell find app/libraries -type d -name 'assets')))))
 
 # These files will be checked for translatable strings. When they
