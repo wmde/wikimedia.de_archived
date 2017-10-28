@@ -109,16 +109,6 @@ config/ssl/%.csr: config/ssl/%.key
 config/ssl/%.key:
 	openssl genrsa -out $@ 2048
 
-# Mozilla CA Bundle: To update use -B flag.
-config/ssl/mozilla_ca_bundle.crt:
-	perl bin/mk-ca-bundle.pl -u -v $@
-
-# Thawte SSL123 CA Bundle: To update use -B flag.
-config/ssl/thawte_ssl123_ca_bundle.pem: config/ssl/mozilla_ca_bundle.crt
-	curl --cacert $< \
-		https://search.thawte.com/library/VERISIGN/ALL_OTHER/thawte%20ca/SSL123_CA_Bundle.pem \
-		-o config/ssl/thawte_ssl123_ca_bundle.pem
-
 # -- Dist --
 
 # Prepares a copy of the project for distribution under /tmp/dist. When updating
