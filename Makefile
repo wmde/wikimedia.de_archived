@@ -28,8 +28,8 @@ EXTRACT_SOURCES = $(shell bash -c "find app/{views,config,documents,models,contr
 
 # -- Integrator/Creator --
 
-.PHONY: init
-init: prefill app/resources/g11n/cldr app/composer.lock link-assets fix-perms
+.PHONY: install
+install: prefill app/resources/g11n/cldr app/composer.lock link-assets fix-perms
 
 .PHONY: prefill
 prefill: 
