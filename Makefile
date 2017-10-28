@@ -27,6 +27,9 @@ EXTRACT_SOURCES = $(shell bash -c "find app/{views,config,documents,models,contr
 
 # -- Integrator/Creator --
 
+.PHONY: init
+init: prefill app/resources/g11n/cldr app/composer.lock link-assets fix-perms
+
 .PHONY: prefill
 prefill: 
 	sed -i -e "s|__NAME__|$(NAME)|g" Hoifile Envfile Deployfile
@@ -35,9 +38,6 @@ prefill:
 	# Some sed leave stray files.
 	rm -f Hoifile-e Envfile-e Deployfile-e
 
-.PHONY: init
-init: app/resources/g11n/cldr
-
 app/resources/g11n/cldr: /tmp/cldr_180_core.zip
 	unzip -u $< -d /tmp
 	cp -r /tmp/common $@
@@ -45,16 +45,17 @@ app/resources/g11n/cldr: /tmp/cldr_180_core.zip
 /tmp/cldr_180_core.zip:
 	curl http://unicode.org/Public/cldr/1.8.0/core.zip -o /tmp/cldr_180_core.zip 
 
+app/composer.lock:
+	composer install -d app
+
 .PHONY: link-assets
 link-assets: assets/app $(MODULE_ASSETS_LINKS)
 
 assets/app:
 	ln -s ../app/assets $@
 
-assets/%:
+assets/%: | app/composer.lock
 	ln -s ../app/libraries/$(subst -,_,$*)/assets $@
-
-# -- Utilities --
 
 .PHONY: fix-perms
 fix-perms:
