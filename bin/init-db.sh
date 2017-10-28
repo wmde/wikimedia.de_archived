@@ -16,7 +16,6 @@ source Envfile
 
 # We need to keep this at least ordered by prefix, as there are
 # dependencies inside the modules i.e. some schemas are augmented.
-set +errexit # there might be no matches at all for a given prefix
 for prefix in base cms billing ecommerce; do
 	for f in $(find app/libraries -path "*/${prefix}_*/data/schema.sql"); do
 		echo "Importing ${f} into database ${DB_DATABASE}"
