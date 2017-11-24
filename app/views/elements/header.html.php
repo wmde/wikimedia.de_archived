@@ -15,10 +15,24 @@ $site = Sites::current($this->_request);
 // echo $this->nav->generate('main')
 
 ?>
-<header>
-	<div class="limit--normal cp">
-		<h1>
-			<?= $this->html->link($site->title(), '/') ?>
-		</h1>
+<header class="mh">
+	<div class="limit--20 cp--h1 center-column">
+		<div class="mh__upper">
+			<div class="mh__new-notice">
+				Dies ist die neue Seite von Wikimedia.<br>
+				<?= $this->html->link('Hier geht’s zur alten Seite', '/wiki') ?>
+			</div>
+			<a href="#support">
+				<div>Unterstützte</div>
+				<div>Freies Wissen</div>
+			</a>
+		</div>
+		<div class="mh__lower">
+			<h1 class="mh__logo-wrap">
+				<?= $this->html->link($site->title(), '/', [
+					'class' => 'mh__logo logo'
+				]) ?>
+			</h1>
+		</div>
 	</div>
 </header>
