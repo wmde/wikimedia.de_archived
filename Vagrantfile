@@ -20,6 +20,8 @@ apt-get -y install curl git unzip
 # Install extras as config files use more_headers module.
 apt-get install -y nginx nginx-extras
 
+apt-get install -y memcached
+
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password vagrant'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password vagrant'
 apt-get install -y mariadb-server mariadb-client
