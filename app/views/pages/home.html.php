@@ -17,24 +17,18 @@ $site = Sites::current($this->_request);
 $this->title($site->title());
 
 ?>
-<main class="home cp limit--normal">
-	<h1 class="h--alpha">Home</h1>
-	<p>
-		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-		tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-		vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-		gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-		dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-		invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-		eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-		sea takimata sanctus est Lorem ipsum dolor sit amet.
-	</p>
-	<p>
-		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-		tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-		dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-		invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-		eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-		sea takimata sanctus est Lorem ipsum dolor sit amet.
-	</p>
+<main class="home">
+	<section class="hero limit--14 cp--h1 center-column">
+		<div class="hero__text">
+			Lorem: Unsere Vision ist eine Welt, in der jeder Mensch am Wissen der Menschheit
+			teilhaben, es nutzen und mehren kann.
+		</div>
+	</section>
+	<section class="mission cp--v2 center-column">
+		<h1 class="mission__headline">Mission</h1>
+		<div class="mission__text">
+			Lorem Wir setzen uns für Freies Wissen ein, um die Chancengleichheit beim Zugang zu Wissen
+			und Bildung zu fördern ipsum!
+		</div>
+	</section>
 </main>
