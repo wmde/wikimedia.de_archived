@@ -20,15 +20,11 @@ v3.0 if not otherwise stated. For the full license text see the LICENSE file.
 This project contains 3rd party libraries/source code. These are licensed
 and located as follows.
 
-Path                                     Copyright Holder                License
-..................................................................................................
-assets/js/jquery.js                      JS Foundation and other         MIT
-                                         contributors
-assets/js/require.js                     JS Foundation and other         MIT
-                                         contributors
-assets/js/require/domReady.js            The Dojo Foundation             MIT or new BSD
-assets/js/underscore.js                  Jeremy Ashkenas, DocumentCloud  MIT
-                                         and Investigative
-                                         Reporters & Editors
-assets/js/compat/modernizr.js            - see file header -             MIT
-assets/js/router.js                      David Persson, Atelier Disko    BSD-3-clause
+Path | Copyright Holder | License
+-----|------------------|--------
+assets/js/jquery.js | JS Foundation and other contributors | MIT
+assets/js/require.js | JS Foundation and other contributors | MIT
+assets/js/require/xxxx.js | - see file header - | MIT or new BSD
+assets/js/underscore.js | Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors | MIT
+assets/js/compat/modernizr.js | - see file header - | MIT
+assets/js/router.js | David Persson, Atelier Disko | BSD-3-clause
