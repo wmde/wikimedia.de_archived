@@ -17,7 +17,7 @@ use base_media\models\MediaVersions;
 // Sites
 //
 Sites::register(PROJECT_DOMAIN, [
-	'title' => 'Application',
+	'title' => 'Wikimedia Deutschland e.V.',
 	'fqdn' => PROJECT_DOMAIN
 ]);
 
@@ -43,14 +43,20 @@ Sites::register(PROJECT_DOMAIN, [
 // - `'fax'`
 // - `'website'`
 Settings::register('contact.default', [
-	'organization' => 'Example Inc.',
+	'organization' => 'Wikimedia Deutschland e.V.',
 	'email' => 'mail@example.com'
 ]);
 Settings::register('contact.exec', [
-	'organization' => 'Example Agency',
-	'website' => 'https://example.com',
-	'email' => 'mail@example.com'
+	'organization' => 'Atelier Disko UG (haftungsbeschränkt) & Co. KG',
+	'address_line_1' => 'Weidenallee 10b',
+	'locality' => 'Hamburg',
+	'postal_code' => '20357',
+	'country' => 'DE',
+	'website' => 'https://atelierdisko.de',
+	'email' => 'info@atelierdisko.de',
 ]);
+
+Settings::write('contactSupportUrl', 'https://atelierdisko.de/clients/tickets/add');
 
 //
 // Services
