@@ -67,15 +67,15 @@ DB_PASSWORD=""
 # The default effective locale, country, currency and timezone. Will also be
 # used for normalization. TZ is default user TZ, not to be confused with the
 # internal TZ, that is always UTC.
-LOCALE="en"
+LOCALE="de"
 COUNTRY="DE"
 CURRENCY="EUR"
 TIMEZONE="Europe/Berlin"
 
 # Available locales, countries, currencies and timezones. 
 # Separate multiple entries by space. 
-LOCALES="en"
-COUNTRIES="US DE"
+LOCALES="de"
+COUNTRIES="DE"
 CURRENCIES="EUR"
 TIMEZONES="Europe/Berlin UTC"
 
