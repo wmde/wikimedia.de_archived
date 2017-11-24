@@ -11,7 +11,7 @@
         "bseries/cms_core": "1.5.x-dev",
         "atelierdisko/li3_access": "2.*@stable || 2.1.0@dev",
         "davidpersson/indexed": "1.*",
-        "php": "^5.5",
+        "php": "^5.5 || ^7.0",
         "unionofrad/lithium": "1.2.x-dev as 1.2.0"
     },
     "require-dev": {
