@@ -105,7 +105,7 @@ GA="n"
 # later in time and we don't want existing projects to have their visitor
 # numbers decreased. However: it is strongly suggested to enable this setting
 # for new projects.
-HONOR_DNT="n"
+HONOR_DNT="y"
 
 # -----------------------------------------------------------
 # Assets & Media
