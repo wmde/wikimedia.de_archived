@@ -1,9 +1,34 @@
-# B–Series Web Application Distribution
+# Website of Wikimedia Deutschland e.V.
 
-The B-Series is a system for rapidly building solid custom web applications. It is powered by the [li₃ PHP framework](http://li3.me/) and licensed under the permissive free BSD 3-clause software license.
+This repository holds the source code and build/deployment tools for the
+Wikimedia Deutschland e.V. website relaunch. 
 
-This distribution includes its overarching directory layout, an example starting application, and very useful tools to manage the lifecycle of a software project. It is the basis for your own projects and the starting point for anyone interested in the B-Series.
+## Development
 
-![Screenshot of the Admin Dashboard](https://atelierdisko.de/assets/v:1+d696856/app/img/b/slide/adb_1.jpg)
+This project is built using the [B-Series](http://b-series.org) content management system
+and is powered by the [li₃ PHP framework](http://li3.me/). Please visit the respective
+websites for more information on usage and API documentation.
 
-Let's now head over to [our setup guide](https://github.com/bseries/manual/blob/master/00_setup.md) to start your very first B-Series project.
+For development the hostname `wmde-site.test` is used.
+
+## License
+
+This project is Copyright (c) 2017 Wikimedia Deutschland e.V. and Atelier Disko,
+the code is distributed under the terms of the GNU Affero General Public License
+v3.0 if not otherwise stated. For the full license text see the LICENSE file.
+
+This project contains 3rd party libraries/source code. These are licensed
+and located as follows.
+
+Path                                     Copyright Holder                License
+..................................................................................................
+assets/js/jquery.js                      JS Foundation and other         MIT
+                                         contributors
+assets/js/require.js                     JS Foundation and other         MIT
+                                         contributors
+assets/js/require/domReady.js            The Dojo Foundation             MIT or new BSD
+assets/js/underscore.js                  Jeremy Ashkenas, DocumentCloud  MIT
+                                         and Investigative
+                                         Reporters & Editors
+assets/js/compat/modernizr.js            - see file header -             MIT
+assets/js/router.js                      David Persson, Atelier Disko    BSD-3-clause
