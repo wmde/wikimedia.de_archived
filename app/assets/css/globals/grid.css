@@ -1,0 +1,27 @@
+/*!
+ * Copyright 2013 David Persson. All rights reserved.
+ * Copyright 2016 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* 20 cols for 1440px = 72px per col */
+.cells {
+  display: flex;
+}
+.cell--1 {
+  width: 72px;
+}
+.cell--2 {
+  width: 144px;
+}
+.cell--10 {
+  width: 720px;
+}
+.cell--14 {
+  width: 1008px;
+}
+.cell--20 {
+  width: 1440px;
+}

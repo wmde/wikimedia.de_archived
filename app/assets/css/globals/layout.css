@@ -7,15 +7,21 @@
 
 /* Limiters
 ---------------------------------------------------------------- */
-.limit--normal {
-  max-width: 1200px;
+.limit--20 {
+  max-width: 1440px; /* = 20 * 1 cell */
+}
+.limit--14 {
+  max-width: 1008px; /* = 14 * 1 cell */
 }
 
 /* Content Padding
 ---------------------------------------------------------------- */
-.cp {
-  padding: 40px;
+.cp--h1 {
+  padding: 72px;
 }
-.cp--quatro {
-  padding: 160px;
+.cp--t1-25 {
+  padding-top: 90px;
+}
+.cp--b2 {
+  padding-bottom: 144px;
 }
