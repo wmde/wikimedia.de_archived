@@ -14,10 +14,10 @@
 CONTEXT="dev"
 
 # The projects name.
-NAME="__NAME__"
+NAME="wmde_site"
 
 # The domain under which the project is served.
-DOMAIN="__DOMAIN__"
+DOMAIN="wmde-site.test"
 
 # -----------------------------------------------------------
 # Debugging / Analysis
@@ -51,14 +51,14 @@ MAIL_TEST="y"
 # Security
 # -----------------------------------------------------------
 # A very long (at least 40 chars) base64 encoded stream of random chars.
-SECRET_BASE="__SECRET_BASE__"
+SECRET_BASE="vInzkAlfwcB0+rfLGOAPZ/Ex2ORy5Lzyi4wvcScYzkt9OKLLAIjVhEYvnWRiNGWmzBJprwSjIysPOpsM"
 
 # -----------------------------------------------------------
 # Database
 # -----------------------------------------------------------
 DB_HOST="localhost"
-DB_DATABASE="__NAME__"
-DB_USER="__NAME__"
+DB_DATABASE="wmde_site"
+DB_USER="wmde_site"
 DB_PASSWORD=""
 
 # -----------------------------------------------------------
@@ -114,16 +114,16 @@ HONOR_DNT="n"
 # the webroot instead of the project root.
 WEBROOT_NESTING="n"
 
-ASSETS_HTTP_BASE="__DOMAIN__/assets"
-ASSETS_HTTPS_BASE="__DOMAIN__/assets"
+ASSETS_HTTP_BASE="wmde-site.test/assets"
+ASSETS_HTTPS_BASE="wmde-site.test/assets"
 
 HAS_IMAGICK="y"
 HAS_GHOSTSCRIPT="y"
 HAS_FFMPEG="y"
 HAS_SOX="y"
 
-MEDIA_VERSIONS_HTTP_BASE="__DOMAIN__/media"
-MEDIA_VERSIONS_HTTPS_BASE="__DOMAIN__/media"
+MEDIA_VERSIONS_HTTP_BASE="wmde-site.test/media"
+MEDIA_VERSIONS_HTTPS_BASE="wmde-site.test/media"
 
 # -----------------------------------------------------------
 # Jobs
@@ -155,11 +155,11 @@ MAIL_KEY="__MAIL_KEY__"
 
 # The domain configured for the mailing service. When using mailgun
 # and a "mg" subdomain, this must include the subdomain as well.
-MAIL_DOMAIN="mg.__DOMAIN__"
+MAIL_DOMAIN="mg.wmde-site.test"
 
 # The default from address. With a mailgun subdomain this may
 # not include the subdomain.
-MAIL_FROM="noreply@__DOMAIN__"
+MAIL_FROM="noreply@wmde-site.test"
 
 # Separate multiple types by space (i.e. "text html").
 MAIL_TYPES="text"

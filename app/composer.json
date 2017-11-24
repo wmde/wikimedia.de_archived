@@ -12,7 +12,8 @@
         "atelierdisko/li3_access": "2.*@stable || 2.1.0@dev",
         "davidpersson/indexed": "1.*",
         "php": "^5.5",
-        "unionofrad/lithium": "1.2.x-dev as 1.2.0"
+        "unionofrad/lithium": "1.2.x-dev as 1.2.0",
+        "bseries/cms_team": "1.5.x-dev"
     },
     "require-dev": {
         "digitalnature/php-ref": "1.2.*",

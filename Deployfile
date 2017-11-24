@@ -11,7 +11,7 @@ TARGET_HOSTS="__TARGET_HOST__"
 TARGET_USER="__TARGET_USER__"
 
 # The target path on target host.
-TARGET_PATH="/var/www/__NAME__"
+TARGET_PATH="/var/www/wmde_site"
 
 # The transfer method to use during deployment. Can be either the follwing. Most
 # methods use TARGET_HOST, TARGET_USER and TARGET_PASSWORD (when set) to connect.

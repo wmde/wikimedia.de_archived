@@ -4,10 +4,10 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-name = "__NAME__"
+name = "wmde_site"
 context = "dev"
 
-domain "__DOMAIN__" {
+domain "wmde-site.test" {
 	www = "drop"
 	# Either paths or special string "!self-signed"
 	SSL = {
@@ -19,7 +19,7 @@ domain "__DOMAIN__" {
 	# }
 }
 
-database "__NAME__" {
+database "wmde_site" {
 	password = ""
 }
 
