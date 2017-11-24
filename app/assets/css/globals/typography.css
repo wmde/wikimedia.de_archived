@@ -4,3 +4,56 @@
  * Use of this source code is governed by the AGPL v3
  * license that can be found in the LICENSE file.
  */
+
+/* Large type group for headlines etc.
+---------------------------------------------------------------- */
+/* use for very large running text */
+.tl--alpha {
+  font: 35px/1.4 var(--font-family-serif);
+  letter-spacing: .01em;
+}
+/* use inline with tl--alpha, or as standalone headline */
+.tl--beta {
+  font: 34px/1.4 var(--font-family-sans);
+  letter-spacing: .01em;
+}
+/* use for large running text */
+.tl--gamma {
+  font: 28px/1.4 var(--font-family-serif);
+  letter-spacing: .01em;
+}
+
+/* Medium type group for running text
+---------------------------------------------------------------- */
+/* use for running text */
+.tm--alpha {
+  font: 18px/1.3 var(--font-family-sans);
+}
+/* use for running text */
+.tm--beta {
+  font: 20px/1.3 var(--font-family-serif);
+}
+/* use in combination with tm--delta for i.e. buttons, or as mini headlines */
+.tm--gamma {
+  font: 16px/1.3 var(--font-family-sans);
+}
+.tm--delta {
+  font: 18px/1.3 var(--font-family-serif);
+  letter-spacing: .01em;
+}
+
+/* Small type group for captions etc.
+---------------------------------------------------------------- */
+/* use for buttons */
+.ts--alpha {
+  font: 14px/1.7 var(--font-family-sans);
+}
+.ts--beta {
+  font: 14px/1.7 var(--font-family-serif);
+}
+
+/* Other Type Modifiers that can be combined with clases above
+---------------------------------------------------------------- */
+.t--dimmed {
+  color: var(--color-darkgray);
+}
