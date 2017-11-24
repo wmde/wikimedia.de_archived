@@ -51,7 +51,7 @@ MAIL_TEST="y"
 # Security
 # -----------------------------------------------------------
 # A very long (at least 40 chars) base64 encoded stream of random chars.
-SECRET_BASE="vInzkAlfwcB0+rfLGOAPZ/Ex2ORy5Lzyi4wvcScYzkt9OKLLAIjVhEYvnWRiNGWmzBJprwSjIysPOpsM"
+SECRET_BASE="!!dev-only:vInzkAlfwcB0+rfLGOAPZ/Ex2ORy5Lzyi4wvcScYzkt9OKLLAIjVhEYvnWRiNGWmzBJprwSjIysPOpsM"
 
 # -----------------------------------------------------------
 # Database
