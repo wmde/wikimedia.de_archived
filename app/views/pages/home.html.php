@@ -34,4 +34,21 @@ $this->title($site->title());
 			und Bildung zu fördern ipsum!
 		</div>
 	</section>
+	<section class="fields">
+		Handlungsfelder
+	</section>
+	<section class="cta-bar">
+		<a href="#" class="cta-button">
+			Lorem
+		</a>
+		<a href="#" class="cta-button">
+			Ipsum
+		</a>
+	</section>
+	<section class="news">
+		Aktuelles
+	</section>
+	<section class="team">
+		Unser Präsidium
+	</section>
 </main>
