@@ -1,0 +1,21 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+/* Section Coloring
+---------------------------------------------------------------- */
+.sc--white {
+  background-color: white;
+}
+.sc--green {
+  background-color: var(--color-green);
+}
+.sc--lightblue {
+  background-color: var(--color-lightblue);
+}
+.sc--lightgray {
+  background-color: var(--color-lightgray);
+}

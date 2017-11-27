@@ -18,7 +18,7 @@ $this->title($site->title());
 
 ?>
 <main id="main" class="home">
-	<section class="illu-hero">
+	<section class="illu-hero sc--green">
 		<div class="illu-hero__inner limit--14 cp--h1 center-column">
 			<div class="illu-hero__text tl--alpha limit--7">
 				Lorem: Unsere <span class="tl--beta t--strong">Vision</span> ist eine Welt, in der
@@ -27,17 +27,17 @@ $this->title($site->title());
 			</div>
 		</div>
 	</section>
-	<section class="mission cp--v2 center-column">
+	<section class="mission cp--v2 center-column sc--white">
 		<h1 class="mission__headline">Mission</h1>
 		<div class="mission__text">
 			Lorem Wir setzen uns für Freies Wissen ein, um die Chancengleichheit beim Zugang zu Wissen
 			und Bildung zu fördern ipsum!
 		</div>
 	</section>
-	<section class="fields">
+	<section class="fields sc--lightblue">
 		Handlungsfelder
 	</section>
-	<section class="cta-bar">
+	<section class="cta-bar sc--orange">
 		<a href="#" class="cta-button">
 			Lorem
 		</a>
@@ -45,10 +45,10 @@ $this->title($site->title());
 			Ipsum
 		</a>
 	</section>
-	<section class="news">
+	<section class="news sc--lightgray">
 		Aktuelles
 	</section>
-	<section class="team">
+	<section class="team sc--white">
 		Unser Präsidium
 	</section>
 </main>

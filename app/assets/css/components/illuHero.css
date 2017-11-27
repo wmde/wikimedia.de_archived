@@ -6,7 +6,6 @@
  */
 
 .illu-hero {
-  background-color: var(--color-green);
   height: 80vh;
 }
 .illu-hero__inner {
