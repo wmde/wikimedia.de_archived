@@ -42,16 +42,6 @@
 }
 
 .mh__logo-wrap {
-  margin: 0;
   position: relative;
   top: 26px;
-}
-.mh__logo {
-  display: block;
-  line-height: 0;
-  color: transparent;
-  overflow: hidden;
-  height: 60px;
-  width: 260px;
-  background: url(../../img/wmde_logo_black.svg) no-repeat left center/contain;
 }

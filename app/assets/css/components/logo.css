@@ -1,0 +1,31 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.logo {
+  display: block; /* may be applied to <a> */
+  height: 60px;
+  width: 260px;
+  background: transparent no-repeat left center/contain;
+}
+.logo--white {
+  background-image: url(../../img/wmde_logo_white.svg);
+}
+.logo--black {
+  background-image: url(../../img/wmde_logo_black.svg);
+}
+
+/* Apply when using image replacement technique, i.e. in h1s. */
+.logo--ir-wrap {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 60px;
+  width: 260px;
+  line-height: 0;
+  color: transparent;
+  overflow: hidden;
+}
