@@ -1,0 +1,24 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.illu-hero {
+  background-color: var(--color-green);
+  height: 80vh;
+}
+.illu-hero__inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+
+.illu-hero__text {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  color: white;
+}

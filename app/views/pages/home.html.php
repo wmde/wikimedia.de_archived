@@ -18,10 +18,13 @@ $this->title($site->title());
 
 ?>
 <main class="home">
-	<section class="hero limit--14 cp--h1 center-column">
-		<div class="hero__text">
-			Lorem: Unsere Vision ist eine Welt, in der jeder Mensch am Wissen der Menschheit
-			teilhaben, es nutzen und mehren kann.
+	<section class="illu-hero">
+		<div class="illu-hero__inner limit--14 cp--h1 center-column">
+			<div class="illu-hero__text tl--alpha limit--7">
+				Lorem: Unsere <span class="tl--beta t--strong">Vision</span> ist eine Welt, in der
+				jeder Mensch am Wissen der Menschheit teilhaben, es nutzen und mehren
+				kann.
+			</div>
 		</div>
 	</section>
 	<section class="mission cp--v2 center-column">

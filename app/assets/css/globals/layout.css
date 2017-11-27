@@ -13,6 +13,9 @@
 .limit--14 {
   max-width: 1008px; /* = 14 * 1 cell */
 }
+.limit--7 {
+  max-width: 504px;
+}
 .limit--5 {
   max-width: 360px;
 }
