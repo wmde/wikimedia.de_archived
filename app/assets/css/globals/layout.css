@@ -23,8 +23,15 @@
 
 /* Content Padding
 ---------------------------------------------------------------- */
-.cp--h1 {
+.cp--0-5 {
+  padding: 36px;
+}
+.cp--1 {
   padding: 72px;
+}
+.cp--h1 {
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 .cp--t1-25 {
   padding-top: 90px;
