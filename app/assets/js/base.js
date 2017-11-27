@@ -21,6 +21,7 @@ requirejs.config({
 
     // App
     'router': 'app/js/router',
+    'components/newsSlider': 'app/js/components/newsSlider',
     // Add your app specific JavaScript paths here.
 
     // Compat
