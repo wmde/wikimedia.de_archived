@@ -83,6 +83,7 @@ use lithium\util\Inflector;
 		}
 	?>
 	<body class="<?= implode(' ', $classes) ?>">
+		<?= $this->html->link('Navigation überspringen', '#main', ['class' => 'skip-nav']) ?>
 		<?= $this->_render('element', 'header', compact('authedUser', 'nav')) ?>
 		<?php echo $this->content() ?>
 		<?= $this->_render('element', 'footer', compact('authedUser', 'nav')) ?>

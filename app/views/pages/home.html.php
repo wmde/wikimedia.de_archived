@@ -17,7 +17,7 @@ $site = Sites::current($this->_request);
 $this->title($site->title());
 
 ?>
-<main class="home">
+<main id="main" class="home">
 	<section class="illu-hero">
 		<div class="illu-hero__inner limit--14 cp--h1 center-column">
 			<div class="illu-hero__text tl--alpha limit--7">
