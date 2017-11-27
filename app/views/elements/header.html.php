@@ -21,7 +21,7 @@ $site = Sites::current($this->_request);
 			<div class="mh__new-notice ts--beta t--dimmed">
 				<div class="wh__new-notic-inner">
 					Dies ist die neue Seite von Wikimedia.<br>
-					<?= $this->html->link('Hier geht’s zur alten Seite', '/wiki') ?>
+					<?= $this->html->link('Hier geht’s zur alten Seite', '/wiki', ['class' => 'link--dimmed']) ?>
 				</div>
 			</div>
 			<a href="#support" class="mh__support limit--5">

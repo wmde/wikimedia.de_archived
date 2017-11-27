@@ -5,10 +5,12 @@
  * license that can be found in the LICENSE file.
  */
 
+/* Resets */
 a {
   color: var(--color-dim-black);
   text-decoration: none;
 }
-a:focus {
-  outline: none;
+
+.link--dimmed {
+  border-bottom: 1px solid var(--color-darkgray);
 }
