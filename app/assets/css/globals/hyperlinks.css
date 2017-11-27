@@ -7,14 +7,8 @@
 
 a {
   color: var(--color-dim-black);
-  text-decoration-skip: ink;
+  text-decoration: none;
 }
 a:focus {
   outline: none;
-}
-p a {
-  color: var(--color-blue);
-}
-p a:hover {
-  text-decoration: underline;
 }

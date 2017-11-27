@@ -5,5 +5,35 @@
  * license that can be found in the LICENSE file.
  */
 
-
 /* mh = main header */
+
+.mh {
+}
+
+.mh__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.mh__upper > * {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.mh__new-notice {
+}
+.mh__support {
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-orange);
+  color: white;
+}
+.mh__support-inner {
+  text-align: center;
+}
+
+.mh__lower {
+  height: 90px;
+}

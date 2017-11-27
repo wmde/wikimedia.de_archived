@@ -18,13 +18,17 @@ $site = Sites::current($this->_request);
 <header class="mh">
 	<div class="limit--20 cp--h1 center-column">
 		<div class="mh__upper">
-			<div class="mh__new-notice">
-				Dies ist die neue Seite von Wikimedia.<br>
-				<?= $this->html->link('Hier geht’s zur alten Seite', '/wiki') ?>
+			<div class="mh__new-notice ts--beta t--dimmed">
+				<div class="wh__new-notic-inner">
+					Dies ist die neue Seite von Wikimedia.<br>
+					<?= $this->html->link('Hier geht’s zur alten Seite', '/wiki') ?>
+				</div>
 			</div>
-			<a href="#support">
-				<div>Unterstützte</div>
-				<div>Freies Wissen</div>
+			<a href="#support" class="mh__support limit--5">
+				<div class="wh__support-inner">
+					<div class="tm--gamma t--caps t--strong">Unterstützte</div>
+					<div class="tm--delta">Freies Wissen</div>
+				</div>
 			</a>
 		</div>
 		<div class="mh__lower">

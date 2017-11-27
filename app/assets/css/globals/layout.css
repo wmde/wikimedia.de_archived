@@ -13,6 +13,9 @@
 .limit--14 {
   max-width: 1008px; /* = 14 * 1 cell */
 }
+.limit--5 {
+  max-width: 360px;
+}
 
 /* Main Content
 ---------------------------------------------------------------- */
@@ -30,8 +33,8 @@
   padding: 72px;
 }
 .cp--h1 {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 .cp--t1-25 {
   padding-top: 90px;
