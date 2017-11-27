@@ -5,9 +5,14 @@
  * license that can be found in the LICENSE file.
  */
 
-footer nav a {
-  display: inline-block;
+.mf {
+  background-color: var(--color-black);
 }
-footer nav a + a {
-  margin-left: 10px;
+
+.mf__nav a {
+  display: inline-block;
+  color: white;
+}
+.mf__nav a + a {
+  margin-left: 72px;
 }

@@ -1,38 +1,25 @@
 <?php
 
 use base_core\base\Sites;
-use base_core\extensions\cms\Settings;
-use lithium\util\Text;
 
-$contact = Settings::read('contact');
 $site = Sites::current($this->_request);
 
-$this->nav->add('footer', 'Imprint', 'Pages::imprint');
-$this->nav->add('footer', 'Admin–Panel', [
-	'library' => 'base_core',
-	'controller' => 'Users',
-	'action' => 'session',
-	'admin' => true
-], ['scope' => 'admin']);
+
+$this->nav->add('footer', 'Impressum und Kontakt', 'Pages::imprint');
+$this->nav->add('footer', 'Lizenzhinweise dieser Seite',  '#');
+$this->nav->add('footer', 'Transparenz',  '#');
+$this->nav->add('footer', 'Satzung',  '#');
 
 ?>
-<footer>
-	<div class="limit--normal cp">
-		<?= $this->_render('element', 'copyright', [
-			'holder' => $this->html->link(
-				$site->title(),
-				['controller' => 'pages', 'action' => 'home']
-			)
+<footer class="mf">
+	<div class="limit--20 center-column cp--h1 cp--b0-5">
+		<div class="mf__upper cp--v1-25">
+			<?= $this->html->link($site->title(), '/', [
+				'class' => 'mf__logo logo logo--white logo--ir'
+			]) ?>
+		</div>
+		<?= $this->nav->generate('footer', [
+			'class' => 'mf__nav tm--alpha t--strong'
 		]) ?>
-
-		<?php echo Text::insert('Website by {:name}', [
-			'name' => $this->html->link(
-				$contact['exec']['organization'],
-				$contact['exec']['website'],
-				['target' => 'new']
-			)
-		]) ?>
-
-		<?= $this->nav->generate('footer') ?>
 	</div>
 </footer>

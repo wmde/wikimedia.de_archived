@@ -19,7 +19,7 @@
 }
 
 /* Apply when using image replacement technique, i.e. in h1s. */
-.logo--ir-wrap {
+.logo--ir {
   display: block;
   margin-top: 0;
   margin-bottom: 0;

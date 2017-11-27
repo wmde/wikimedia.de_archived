@@ -32,7 +32,7 @@ $site = Sites::current($this->_request);
 			</a>
 		</div>
 		<div class="mh__lower">
-			<h1 class="mh__logo-wrap logo--ir-wrap">
+			<h1 class="mh__logo-wrap logo--ir">
 				<?= $this->html->link($site->title(), '/', [
 					'class' => 'mh__logo logo logo--black'
 				]) ?>

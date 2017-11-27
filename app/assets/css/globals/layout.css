@@ -32,6 +32,10 @@
 .cp--0-5 {
   padding: 36px;
 }
+.cp--b0-5 {
+  padding-bottom: 36px;
+}
+
 .cp--1 {
   padding: 72px;
 }
@@ -39,9 +43,15 @@
   padding-left: 72px;
   padding-right: 72px;
 }
+
+.cp--v1-25 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 .cp--t1-25 {
   padding-top: 90px;
 }
+
 .cp--v2 {
   padding-top: 144px;
   padding-bottom: 144px;
