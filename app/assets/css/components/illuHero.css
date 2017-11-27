@@ -13,12 +13,10 @@
   position: relative;
   height: 100%;
   width: 100%;
-
 }
-
 .illu-hero__text {
   position: absolute;
-  right: 0;
+  left: 504px;
   bottom: 72px;
   color: white;
 }
