@@ -7,9 +7,6 @@
 
 /* mh = main header */
 
-.mh {
-}
-
 .mh__upper {
   display: flex;
   justify-content: space-between;
@@ -21,8 +18,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-}
-.mh__new-notice {
 }
 .mh__support {
   justify-content: center;
@@ -36,4 +31,19 @@
 
 .mh__lower {
   height: 90px;
+}
+
+.mh__logo-wrap {
+  margin: 0;
+  position: relative;
+  top: 26px;
+}
+.mh__logo {
+  display: block;
+  line-height: 0;
+  color: transparent;
+  overflow: hidden;
+  height: 60px;
+  width: 260px;
+  background: url(../../img/wmde_logo_black.svg) no-repeat left center/contain;
 }
