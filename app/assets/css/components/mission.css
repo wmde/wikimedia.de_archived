@@ -1,0 +1,37 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.mission {
+  position: relative;
+}
+
+.mission__text {
+  position: absolute;
+  top: calc(2 * 72px);
+  right: calc(2 * 72px);
+  color: var(--color-green);
+  background-color: white;
+
+  border: 2px solid;
+  padding: calc(0.3 * 72px) calc(0.4 * 72px);
+}
+
+.mission__image img {
+  width: 100%;
+}
+
+.mission__image {
+  margin-top: 72px;
+  margin-left: calc(2 * 72px);
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.mission__caption {
+  margin-left: calc(0.25 * 72px);
+}

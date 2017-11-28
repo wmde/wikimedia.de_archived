@@ -21,8 +21,12 @@
 @import "globals/forms.css";
 @import "globals/buttons.css";
 @import "globals/sections.css";
+@import "globals/grid.css";
+@import "globals/reset.css";
+
 @import "components/illuHero.css";
 @import "components/logo.css";
+@import "components/mission.css";
 
 /*
   All "views" CSS files, except those in "elements", are loaded

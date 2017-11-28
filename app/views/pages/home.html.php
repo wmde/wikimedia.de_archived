@@ -27,12 +27,18 @@ $this->title($site->title());
 			</div>
 		</div>
 	</section>
-	<section class="mission cp--v2 center-column sc--white">
-		<h1 class="mission__headline">Mission</h1>
-		<div class="mission__text">
-			Lorem Wir setzen uns für Freies Wissen ein, um die Chancengleichheit beim Zugang zu Wissen
-			und Bildung zu fördern ipsum!
+	<section class="mission limit--14 cp--v2 center-column sc--white">
+		<h1 class="mission__headline tl--beta t--strong h--alpha">Mission</h1>
+		<div class="mission__text tl--gamma limit--6">
+			Wir setzen uns für Freies Wissen ein, um die Chancengleichheit beim Zugang zu Wissen
+			und Bildung zu fördern.
 		</div>
+		<figure class="mission__image limit--5">
+			<img src="<?= $this->assets->url('/app/img/testbild_mission.jpg') ?>">
+			<figcaption class="mission__caption">
+				<span class="t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
+			<figcaption>
+		</figure>
 	</section>
 	<section class="fields sc--lightblue">
 		Handlungsfelder

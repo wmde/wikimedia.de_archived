@@ -10,6 +10,9 @@
 .h--gamma {
   font-family: var(--font-family-sans);
 }
-.h--alpha {}
+.h--alpha {
+  display: inline-block;
+  border-bottom: 2px solid var(--color-black);
+}
 .h--beta {}
 .h--gamma {}
