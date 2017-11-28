@@ -14,3 +14,6 @@ a {
 .link--dimmed {
   border-bottom: 1px solid var(--color-darkgray);
 }
+.link--black {
+  border-bottom: 1px solid var(--color-black);
+}
