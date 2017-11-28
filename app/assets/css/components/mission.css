@@ -11,27 +11,27 @@
 
 .mission__text {
   position: absolute;
-  top: calc(2 * 72px);
-  right: calc(2 * 72px);
+  top: 144px;
+  right: 144px;
   color: var(--color-green);
   background-color: white;
 
   border: 2px solid;
-  padding: calc(0.3 * 72px) calc(0.4 * 72px);
+  padding: 18px 36px;
+}
+
+.mission__image {
+  margin-top: 36px;
+  margin-left: 144px;
+
+  display: flex;
+  align-items: flex-end;
 }
 
 .mission__image img {
   width: 100%;
 }
 
-.mission__image {
-  margin-top: 72px;
-  margin-left: calc(2 * 72px);
-
-  display: flex;
-  align-items: flex-end;
-}
-
 .mission__caption {
-  margin-left: calc(0.25 * 72px);
+  margin-left: 18px;
 }
