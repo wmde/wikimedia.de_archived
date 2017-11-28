@@ -5,13 +5,22 @@
  * license that can be found in the LICENSE file.
  */
 
-require(['components/newsSlider', 'domready!'], function(NewsSlider) {
+require([
+    'components/newsSlider',
+    'components/team',
+    'domready!'
+  ], function(
+    NewsSlider,
+    Team
+  ) {
   'use strict';
 
   let $ = document.querySelectorAll.bind(document);
   let $1 = document.querySelector.bind(document);
 
   let newsSlider = new NewsSlider();
+  let team = new Team();
 
   newsSlider.mount($1('.news-slider'));
+  team.mount($1('.team'));
 });

@@ -27,6 +27,7 @@
 @import "components/logo.css";
 @import "components/mission.css";
 @import "components/newsSlider.css";
+@import "components/team.css";
 
 /*
   All "views" CSS files, except those in "elements", are loaded

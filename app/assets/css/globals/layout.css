@@ -65,8 +65,11 @@
 .cp--b2 {
   padding-bottom: 144px;
 }
+.cp--b4 {
+  padding-bottom: 288px;
+}
 
-/* Minmialistic Grid Layout
+/* Minimalistic Grid Layout
 ---------------------------------------------------------------- */
 /* 20 cols for 1440px = 72px per col */
 .cells {
