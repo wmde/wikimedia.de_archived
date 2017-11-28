@@ -13,5 +13,5 @@ require(['components/newsSlider', 'domready!'], function(NewsSlider) {
 
   let newsSlider = new NewsSlider();
 
-  newsSlider.mount($1('.news'));
+  newsSlider.mount($1('.news-slider'));
 });
