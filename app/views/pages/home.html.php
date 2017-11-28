@@ -36,7 +36,7 @@ $this->title($site->title());
 		<figure class="mission__image limit--5">
 			<img src="<?= $this->assets->url('/app/img/testbild_mission.jpg') ?>">
 			<figcaption class="mission__caption">
-				<span class="t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
+				<span class="tm--gamma t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
 			<figcaption>
 		</figure>
 	</section>
@@ -54,7 +54,36 @@ $this->title($site->title());
 	<section class="news sc--lightgray">
 		Aktuelles
 	</section>
-	<section class="team sc--white">
-		Unser Präsidium
+	<section class="team limit--14 cp--t1-25 cp--b4 center-column sc--white">
+		<h1 class="tl--beta t--strong h--alpha">Unser Präsidium</h1>
+		<div class="team__inner">
+			<ul class="team__list limit--5 tm--gamma t--caps">
+				<li><span class="team__member active">Tim Moritz Hector</span></li>
+				<li><span class="team__member">Sabria David</span></li>
+				<li><span class="team__member">Kurt Jansson</span></li>
+				<li><span class="team__member">Sebastian Moleski</span></li>
+				<li><span class="team__member">Harald Krichel</span></li>
+				<li><span class="team__member">Lukas Mezger</span></li>
+				<li><span class="team__member">Johanna Niesyto</span></li>
+				<li><span class="team__member">Name Nachname</span></li>
+				<li><span class="team__member">Name Nachname</span></li>
+			</ul>
+			<figure class="team__image limit--5">
+				<img src="<?= $this->assets->url('/app/img/testbild_mission.jpg') ?>">
+			</figure>
+			<div class="team__text limit--5">
+				<h2 class="tm--alpha t--strong">Stellvertretende Vorsitzende</h2>
+				<p class="tm--beta">
+					&raquo;Ich forsche und berate zu den Auswirkungen und Potentialen des digitalen
+					Wandels. Wikipedia fasziniert mich vor allem als offenes System und diskursives
+					Werk, als Modell einer Schriftkultur der Zukunft. Ich bin Mitgründerin des Slow
+					Media Instituts	und Mitautorin vom Slow Media Manifest und der Declaration of
+					Liquid Culture.&laquo;
+				</p>
+				<a class="team__mail ts--alpha" href="mailto:sabria.david@wikimedia.de">
+					<span class="ts--beta">E-Mail:&nbsp;</span>sabria.david@wikimedia.de
+				</a>
+			</div>
+		</div>
 	</section>
 </main>

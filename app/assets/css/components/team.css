@@ -1,0 +1,73 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.team {
+  position: relative;
+}
+.team ul {
+  list-style: none;
+  padding-left: 0;
+}
+.team figure {
+  margin: 0;
+}
+
+.team__inner {
+  display: flex;
+}
+
+.team__list {
+  width: 360px;
+  line-height: 27px;
+}
+
+.team__member {
+  position: relative;
+}
+.team__member:hover {
+  color: var(--color-green);
+  cursor: pointer;
+}
+.team__member::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+  background-color: var(--color-green);
+}
+
+.team__member.active {
+  color: var(--color-green);
+}
+.team__member.active::after {
+  width: 100%;
+}
+
+.team__image img {
+  width: 100%;
+}
+
+.team__text {
+  position: absolute;
+  top: 288px;
+  right: 0;
+  color: var(--color-green);
+  background-color: white;
+
+  border: 2px solid;
+  padding: 36px;
+}
+.team__text h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.team__mail {
+  border-bottom: 1px solid;
+}
