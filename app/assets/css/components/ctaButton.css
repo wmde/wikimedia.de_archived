@@ -1,0 +1,28 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.cta-bar {
+}
+.cta-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.cta-button {
+  flex-shrink: 1;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid var(--color-orange);
+  width: 432px;
+  background:
+    url(../../ico/corner_upright.svg) no-repeat calc(100% - 10px) 10px,
+    url(../../ico/corner_downleft.svg) no-repeat 10px calc(100% - 10px);
+
+  background-color: white;
+}
+.cta-button:hover {
+  color: var(--color-orange);
+}

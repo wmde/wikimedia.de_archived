@@ -43,13 +43,17 @@ $this->title($site->title());
 	<section class="fields sc--lightblue">
 		Handlungsfelder
 	</section>
-	<section class="cta-bar sc--orange">
-		<a href="#" class="cta-button">
-			Lorem
-		</a>
-		<a href="#" class="cta-button">
-			Ipsum
-		</a>
+	<section class="cta-bar sc--lightorange">
+		<div class="limit--20 center-column cp--v1-25 cta-buttons">
+			<a href="#" class="cta-button cp--0-5 cm--1">
+				<div class="tm--gamma t--caps t--strong">Werde Mitglied bei</div>
+				<div class="tm--delta">Wikimedia Deutschland</div>
+			</a>
+			<a href="#" class="cta-button cp--0-5 cm--1">
+				<div class="tm--gamma t--caps t--strong">Spende für</div>
+				<div class="tm--delta">Freies Wissen</div>
+			</a>
+		</div>
 	</section>
 
 	<section class="news news-slider-wrapper sc--lightgray">

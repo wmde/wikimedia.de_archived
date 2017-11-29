@@ -33,6 +33,12 @@
   margin-right: auto;
 }
 
+/* Content Margin
+---------------------------------------------------------------- */
+.cm--1 {
+  margin: 72px;
+}
+
 /* Content Padding
 ---------------------------------------------------------------- */
 .cp--0-5 {
@@ -58,6 +64,10 @@
   padding-top: 90px;
 }
 
+.cp--h2 {
+  padding-left: 144px;
+  padding-right: 144px;
+}
 .cp--v2 {
   padding-top: 144px;
   padding-bottom: 144px;
