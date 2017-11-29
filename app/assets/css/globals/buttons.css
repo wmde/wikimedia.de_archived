@@ -4,19 +4,3 @@
  * Use of this source code is governed by the AGPL v3
  * license that can be found in the LICENSE file.
  */
-
-.button {
-  /* Reset, as button can be applied to <a> and <button> elements as well. */
-  background: transparent;
-  text-decoration: none;
-  display: inline-block;
-
-  text-align: center;
-  padding: 7px 5px 4px 5px;
-  color: var(--color-dim-black);
-  border: 1px solid var(--color-dim-black);
-}
-.button:hover {
-  color: var(--color-dim-black);
-  background: white;
-}

@@ -16,7 +16,7 @@ body {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 
-  color: var(--color-dim-black);
+  color: var(--color-black);
   background-color: #fff;
 }
 
