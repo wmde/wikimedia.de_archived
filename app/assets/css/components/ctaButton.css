@@ -23,6 +23,11 @@
   color: var(--color-orange);
 }
 
+.cta-button > * {
+  position: relative;
+  z-index: 2;
+}
+
 /* Animated corner lines, using 2 pseudo elements and modifying their sizes. */
 .cta-button:before,
 .cta-button:after {
