@@ -19,3 +19,7 @@ a {
   color: var(--color-black);
   border-bottom: 1px solid var(--color-black);
 }
+.link--green {
+  color: var(--color-green);
+  border-bottom: 1px solid var(--color-green);
+}

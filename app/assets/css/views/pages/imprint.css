@@ -1,0 +1,9 @@
+.imprint h2,
+.imprint p,
+.imprint ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.imprint ul {
+  padding-left: 0;
+}
