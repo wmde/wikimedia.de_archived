@@ -78,6 +78,12 @@
 .cp--b4 {
   padding-bottom: 288px;
 }
+.cp--r1 {
+  padding-right: 72px;
+}
+.cp--l2 {
+  padding-left: 144px;
+}
 
 /* Minimalistic Grid Layout
 ---------------------------------------------------------------- */

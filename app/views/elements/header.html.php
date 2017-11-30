@@ -16,17 +16,21 @@ $site = Sites::current($this->_request);
 
 ?>
 <header class="mh">
-	<div class="limit--20 cp--h1 center-column">
+	<div class="limit--20 cp--r1 cp--l2 center-column">
 		<div class="mh__upper">
 			<div class="mh__new-notice ts--beta t--dimmed">
 				<div class="wh__new-notic-inner">
-					Dies ist die neue Seite von Wikimedia.<br>
-					<?= $this->html->link('Hier geht’s zur alten Seite', '/wiki', ['class' => 'link--dimmed']) ?>
+					<?= $this->html->link(
+						'Hier geht es zur alten Website',
+						'/wiki',
+						['class' => 'link--dimmed']
+					) ?><br>
+					von Wikimedia Deutschland
 				</div>
 			</div>
 			<a href="#support" class="mh__support limit--5">
 				<div class="wh__support-inner">
-					<div class="tm--gamma t--caps t--strong">Unterstützte</div>
+					<div class="tm--gamma t--caps t--strong">Unterstütze</div>
 					<div class="tm--delta">Freies Wissen</div>
 				</div>
 			</a>
