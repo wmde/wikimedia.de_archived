@@ -8,10 +8,12 @@
 require([
     'components/newsSlider',
     'components/team',
+    'components/fields',
     'domready!'
   ], function(
     NewsSlider,
-    Team
+    Team,
+    Fields
   ) {
   'use strict';
 
@@ -20,7 +22,9 @@ require([
 
   let newsSlider = new NewsSlider();
   let team = new Team();
+  let fields = new Fields();
 
   newsSlider.mount($1('.news-slider'));
   team.mount($1('.team'));
+  fields.mount($1('.fields'));
 });

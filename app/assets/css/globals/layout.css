@@ -38,6 +38,9 @@
 .cm--1 {
   margin: 72px;
 }
+.cm--0-5 {
+  margin: 36px;
+}
 
 /* Content Padding
 ---------------------------------------------------------------- */
@@ -54,6 +57,12 @@
 .cp--h1 {
   padding-left: 72px;
   padding-right: 72px;
+}
+.cp--t1 {
+  padding-top: 72px;
+}
+.cp--b1 {
+  padding-bottom: 72px;
 }
 
 .cp--v1-25 {

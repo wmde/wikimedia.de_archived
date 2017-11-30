@@ -29,6 +29,7 @@
 @import "components/newsSlider.css";
 @import "components/team.css";
 @import "components/ctaButton.css";
+@import "components/fields.css";
 
 /*
   All "views" CSS files, except those in "elements", are loaded

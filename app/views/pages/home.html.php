@@ -42,8 +42,45 @@ $this->title($site->title());
 			</figure>
 		</div>
 	</section>
-	<section class="fields sc--lightblue">
-		Handlungsfelder
+	<section class="sc--lightblue">
+		<div class="limit--20 center-column cp--h1 cp--t1-25">
+			<h1 class="t--beta h--alpha">Handlungsfelder</h1>
+		</div>
+		<div class="fields">
+			<div class="field-buttons limit--20 center-column cp--0-5">
+				<a href="#support" class="field-button corners corners--green cm--0-5 cp--0-5">
+					<div class="field-button__inner tl--gamma t--strong">
+						Freiwillige unterstützen, gewinnen und halten
+					</div>
+				</a>
+				<a href="#dev" class="field-button corners corners--green cm--0-5 cp--0-5">
+					<div class="field-button__inner tl--gamma t--strong">
+						Software entwickeln
+					</div>
+				</a>
+				<a href="#know" class="field-button corners corners--green cm--0-5 cp--0-5">
+					<div class="field-button__inner tl--gamma t--strong">
+						Rahmen&shy;be&shy;dingungen für Freies&nbsp;Wissen stärken
+					</div>
+				</a>
+			</div>
+			<div class="fields__blurb-wrapper limit--20 center-column cp--b1 cp--h1">
+				<div class="fields__blurb limit--5">
+					<div class="fields__blurb-top"></div>
+					<div class="fields__blurb-lower cp--0-5 tm--beta">
+						<article id="support" class="fields__text">
+							<!--lorem-->Et velit. Morbi sapien nulla, volutpat a, tristique eu, molestie ac, felis. Suspendisse sit amet tellus non odio porta pellentesque. Nulla.<!--/lorem-->
+						</article>
+						<article id="dev" class="fields__text hide">
+							<!--lorem-->Gravida, risus urna venenatis lectus, ac ultrices quam nulla eu leo. Duis arcu. Class aptent taciti sociosqu ad litora torquent per.<!--/lorem-->
+						</article>
+						<article id="know" class="fields__text hide">
+							<!--lorem-->Etiam vitae quam. Fusce feugiat pede vel quam. In et augue. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus mollis dictum nulla. Integer vitae neque vitae eros fringilla rutrum. Vestibulum in pede adipiscing mi dapibus condimentum. Etiam felis risus, condimentum.<!--/lorem-->
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="cta-bar sc--lightorange">
 		<div class="limit--20 center-column cp--v1-25 cta-buttons">

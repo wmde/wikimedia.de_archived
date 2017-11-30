@@ -1,0 +1,66 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.field-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-button {
+  position: relative;
+  width: 288px;
+  height: 360px;
+  background-color: white;
+  transition: color .5s;
+  border: 2px solid var(--color-green);
+}
+.field-button:hover {
+  color: var(--color-green);
+}
+.field-button__inner {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
+.fields__blurb-wrapper {
+}
+.fields__blurb {
+  position: relative;
+  transition: left .1s;
+}
+.is-active-support .fields__blurb {
+  left: 0;
+}
+.is-active-dev .fields__blurb {
+  left: calc(50% - 144px);
+}
+.is-active-know .fields__blurb {
+  left: calc(100% - 360px);
+}
+
+.fields__blurb-top {
+  background-color: blue;
+  width: 100%;
+  height: 36px;
+  /* 100% left, 50% center, 0% right */
+  background: url(../../img/fields_top.svg) no-repeat 100% bottom/cover;
+  transition: background .25s;
+}
+.is-active-support .fields__blurb-top {
+  background-position-x: 100%;
+}
+.is-active-dev .fields__blurb-top {
+  background-position-x: 50%;
+}
+.is-active-know .fields__blurb-top {
+  background-position-x: 0%;
+}
+.fields__blurb-lower {
+  background-color: var(--color-green);
+  color: white;
+}
