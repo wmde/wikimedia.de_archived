@@ -92,7 +92,7 @@
   z-index: 10;
   width: 50px;
   height: 50px;
-  top: 50%;
+  top: 144px;
   right: -200px;
   border: 2px solid var(--color-green);
   background: white url(../../ico/arrow_r.svg) no-repeat center/80% auto;
