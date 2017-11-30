@@ -5,12 +5,12 @@
  * license that can be found in the LICENSE file.
  */
 
-.team {
-  position: relative;
-}
 .team ul {
   list-style: none;
   padding-left: 0;
+}
+.team__inner {
+  position: relative;
 }
 
 .team__list {

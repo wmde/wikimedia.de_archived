@@ -17,7 +17,7 @@ body {
   text-size-adjust: none;
 
   color: var(--color-black);
-  background-color: #fff;
+  background-color: var(--color-lightgray);
 }
 
 * {
