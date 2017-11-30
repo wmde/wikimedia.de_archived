@@ -47,11 +47,11 @@ $this->title($site->title());
 	</section>
 	<section class="cta-bar sc--lightorange">
 		<div class="limit--20 center-column cp--v1-25 cta-buttons">
-			<a href="#" class="cta-button cp--0-5 cm--1">
+			<a href="#" class="cta-button cp--0-5 cm--1 corners corners--orange">
 				<div class="tm--gamma t--caps t--strong">Werde Mitglied bei</div>
 				<div class="tm--delta">Wikimedia Deutschland</div>
 			</a>
-			<a href="#" class="cta-button cp--0-5 cm--1">
+			<a href="#" class="cta-button cp--0-5 cm--1 corners corners--orange">
 				<div class="tm--gamma t--caps t--strong">Spende für</div>
 				<div class="tm--delta">Freies Wissen</div>
 			</a>

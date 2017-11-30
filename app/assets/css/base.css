@@ -21,6 +21,7 @@
 @import "globals/forms.css";
 @import "globals/buttons.css";
 @import "globals/sections.css";
+@import "globals/corners.css";
 
 @import "components/illuHero.css";
 @import "components/logo.css";

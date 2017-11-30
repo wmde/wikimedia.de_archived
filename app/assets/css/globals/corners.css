@@ -1,0 +1,65 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.corners {
+  position: relative;
+}
+
+/* Do not overlay content with borders of our pseudo elements. */
+.corners > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animated corner lines, using 2 pseudo elements and modifying their sizes. */
+.corners:before,
+.corners:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 54px;
+  height: 54px;
+  transition: all .5s ease-out;
+  /* Ensure unset borders create cut effect. Assumes element has white bg. */
+  border: 2px solid white;
+}
+.corners:before {
+  bottom: 10px;
+  left: 10px;
+  border-left: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+}
+.corners:after {
+  top: 10px;
+  right: 10px;
+  border-top: 2px solid var(--color-black);
+  border-right: 2px solid var(--color-black);
+}
+.corners:hover:before,
+.corners:hover:after {
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+}
+
+/* Color variations: */
+.corners--orange:before {
+  border-left-color: var(--color-orange);
+  border-bottom-color: var(--color-orange);
+}
+.corners--orange:after {
+  border-top-color: var(--color-orange);
+  border-right-color: var(--color-orange);
+}
+.corners--green:before {
+  border-left-color: var(--color-green);
+  border-bottom-color: var(--color-green);
+}
+.corners--green:after {
+  border-top-color: var(--color-green);
+  border-right-color: var(--color-green);
+}
+
