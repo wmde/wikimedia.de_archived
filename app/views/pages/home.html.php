@@ -46,7 +46,7 @@ $this->title($site->title());
 		<div class="limit--20 center-column cp--h1 cp--t1-25">
 			<h1 class="t--beta h--alpha">Handlungsfelder</h1>
 		</div>
-		<div class="fields">
+		<div class="fields is-active-support">
 			<div class="field-buttons limit--20 center-column cp--0-5">
 				<a href="#support" class="field-button field-button--alpha corners corners--green cm--0-5 cp--0-5">
 					<div class="field-button__inner tl--gamma t--strong">
