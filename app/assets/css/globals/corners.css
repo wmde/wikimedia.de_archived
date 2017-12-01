@@ -25,7 +25,7 @@
   height: 54px;
   transition: all .5s ease-out;
   /* Ensure unset borders create cut effect. Assumes element has white bg. */
-  border: 2px solid white;
+  border: 2px solid transparent;
 }
 .corners:before {
   bottom: 10px;

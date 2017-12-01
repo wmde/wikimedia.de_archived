@@ -48,17 +48,17 @@ $this->title($site->title());
 		</div>
 		<div class="fields">
 			<div class="field-buttons limit--20 center-column cp--0-5">
-				<a href="#support" class="field-button corners corners--green cm--0-5 cp--0-5">
+				<a href="#support" class="field-button field-button--alpha corners corners--green cm--0-5 cp--0-5">
 					<div class="field-button__inner tl--gamma t--strong">
 						Freiwillige unterstützen, gewinnen und halten
 					</div>
 				</a>
-				<a href="#dev" class="field-button corners corners--green cm--0-5 cp--0-5">
+				<a href="#dev" class="field-button field-button--beta corners corners--green cm--0-5 cp--0-5">
 					<div class="field-button__inner tl--gamma t--strong">
 						Software entwickeln
 					</div>
 				</a>
-				<a href="#know" class="field-button corners corners--green cm--0-5 cp--0-5">
+				<a href="#know" class="field-button field-button--gamma corners corners--green cm--0-5 cp--0-5">
 					<div class="field-button__inner tl--gamma t--strong">
 						Rahmen&shy;be&shy;dingungen für Freies&nbsp;Wissen stärken
 					</div>

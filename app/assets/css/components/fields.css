@@ -26,6 +26,23 @@
   bottom: 32px;
   left: 32px;
 }
+.field-button--alpha {
+  background-image: url(../../ico/hf_icon_1.svg);
+  background-position: right 36px top 36px;
+  background-repeat: no-repeat;
+}
+
+.field-button--beta {
+  background-image: url(../../ico/hf_icon_2.svg);
+  background-position: right 36px top 36px;
+  background-repeat: no-repeat;
+}
+
+.field-button--gamma {
+  background-image: url(../../ico/hf_icon_3.svg);
+  background-position: right 36px top 36px;
+  background-repeat: no-repeat;
+}
 
 .fields__blurb-wrapper {
 }
