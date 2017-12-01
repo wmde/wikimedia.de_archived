@@ -25,20 +25,19 @@ define('components/fields', [], function() {
     bindButtonEvents() {
       let buttons = this.element.querySelectorAll('.field-button');
 
-      let component = this.element;
-      let handler = function(ev) {
+      let handler = (ev) => {
         ev.preventDefault();
 
-        component.classList.remove(
+        this.element.classList.remove(
           'is-active-dev',
           'is-active-support',
           'is-active-know'
         );
-        let name = this.getAttribute('href').substring(1);
-        component.classList.add('is-active-' + name);
+        let name = ev.currentTarget.getAttribute('href').substring(1);
+        this.element.classList.add('is-active-' + name);
 
         // Toggle visibility of texts inside blurb.
-        for (let el of component.querySelectorAll('.fields__text')) {
+        for (let el of this.element.querySelectorAll('.fields__text')) {
           if (el.id === name) {
             el.classList.remove('hide');
           } else {
