@@ -7,6 +7,11 @@
 name = "__NAME__"
 context = "dev"
 
+app {
+	kind = "php"
+	version = "7.0.0"
+}
+
 domain "__DOMAIN__" {
 	www = "drop"
 	# Either paths or special string "!self-signed"
