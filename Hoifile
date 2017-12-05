@@ -7,6 +7,10 @@
 name = "wmde_site"
 context = "dev"
 
+app {
+	version = "7.1.0"
+}
+
 domain "wmde-site.test" {
 	www = "drop"
 	# Either paths or special string "!self-signed"
