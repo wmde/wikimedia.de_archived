@@ -16,6 +16,11 @@ $site = Sites::current($this->_request);
 //
 $this->title($site->title());
 
+$text  = 'Wikipedia ist eine der zehn beliebtesten Websites der Welt. ';
+$text .= 'Ihre Inhalte und die aller anderen Wikimedia-Projekte werden von Freiwilligen ';
+$text .= 'erstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt ihre Arbeit ';
+$text .= 'vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den kleineren Projekten.';
+$this->seo->set('description', $text);
 ?>
 <main id="main" class="home">
 	<section class="illu-hero sc--green">
