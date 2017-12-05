@@ -8,6 +8,7 @@ name = "wmde_site"
 context = "dev"
 
 app {
+	kind = "php"
 	version = "7.1.0"
 }
 
