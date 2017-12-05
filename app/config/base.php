@@ -80,14 +80,23 @@ $fix = [
 	'colorDepth' => 8,
 	'rotate' => true // enables auto-rotation by exif data
 ];
-$fix00 = [
-	'convert' => 'image/png',
-	'compress' => 5.5,
+$fix00 = [ // for banners
 	'strip' => ['8bim', 'app1', 'app12'],
-	'fit' => [1200, 1200] // width, height
+	'fit' => [1800, 1800],
+	'compress' => 0.5,
+	'interlace' => true
+];
+// fix10 is reserved for later usage
+$fix20 = [ // i.e. for news and team slider images
+	'strip' => ['8bim', 'app1', 'app12'],
+	'fit' => [500, 400],
+	'compress' => 0.5,
+	'interlace' => true
 ];
 
 MediaVersions::registerAssembly('image', 'fix00', $fix00 + $fix);
+// MediaVersions::registerAssembly('image', 'fix10', $fix10 + $fix);
+MediaVersions::registerAssembly('image', 'fix20', $fix20 + $fix);
 // ... more versions can be added here.
 
 ?>

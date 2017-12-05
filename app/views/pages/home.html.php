@@ -153,7 +153,7 @@ $this->seo->set('description', $text);
 					<div
 						class="news__image<?php if ($isFirst): ?> news__image--active<?php endif ?>"
 						<?php if ($cover = $item->cover()): ?>
-							style="background-image: url(<?= $this->media->url($cover->version('fix00')) ?>);"
+							style="background-image: url(<?= $this->media->url($cover->version('fix20')) ?>);"
 						<?php endif ?>
 					></div>
 					<div
