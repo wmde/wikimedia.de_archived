@@ -98,134 +98,84 @@ $this->title($site->title());
 	<section class="news sc--lightgray">
 		<div class="news__inner limit--16 center-column cp--h1 cp--t2">
 			<h1 class="tl--beta t--strong h--alpha">Aktuelles</h1>
-			<article class="news__post cp--b2" id="counterHook">
-				<div class="news__box news__box--projects limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white" id="newsBox">
-					<h2 class="news__title tm--alpha t--caps t--strong" id="newsTitle">Projekte</h2>
+
+			<?php $i = 0; foreach ($posts as $item): ?>
+			<?php
+				// AllowS to set initial state of the slider, so we don't have to wait for
+				// JavaScript to be loaded, to display the initial state.
+				$isFirst = $i === 0;
+
+				$classes = array_map(function($v) {
+					return "tagged--{$v}";
+				}, $item->tags(['serialized' => false]));
+
+				$i++;
+			?>
+			<article
+				<?php if ($isFirst): ?>
+					class="news__post cp--b2"
+					id="counterHook"
+				<?php else: ?>
+					class="news__post cp--b2 hide"
+				<?php endif ?>
+			>
+				<div
+					class="news__box <?php echo implode(' ', $classes) ?> limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white"
+					<?php if ($isFirst): ?>
+						id="newsBox"
+					<?php endif ?>
+				>
+					<h1
+						class="news__title tm--alpha t--caps t--strong"
+						<?php if ($isFirst): ?>
+							id="newsTitle"
+						<?php endif ?>
+					>
+					<?php
+						if ($item->hasTags(['wm'])) {
+							echo 'Wikimedia';
+						} elseif ($item->hasTags(['initiative']))  {
+							echo 'Initiative';
+						} elseif ($item->hasTags(['member']))  {
+							echo 'Mitglieder';
+						} elseif ($item->hasTags(['project']))  {
+							echo 'Projekt';
+						} else {
+							echo $item->title;
+						}
+					?>
+					</h1>
 					<div
-						class="news__image news__image--active"
-						style="background-image: url(<?= $this->assets->url('/app/img/news_test/1.jpg') ?>);"
+						class="news__image<?php if ($isFirst): ?> news__image--active<?php endif ?>"
+						<?php if ($cover = $item->cover()): ?>
+							style="background-image: url(<?= $this->media->url($cover->version('fix00')) ?>);"
+						<?php endif ?>
 					></div>
-					<h3 class="news__teaser tm--alpha t--strong" id="newsTeaser">
-						Ultrices posuere cubilia Curae; Vestibulum hendrerit malesuada odio.
-						Fusce ut elit ut augue sollicitudin blandit. Phasellus volutpat lorem.
-						Duis non pede.
-					</h3>
-					<p class="news__text tm--beta cm--b1" id="newsText">
-						Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in
-						diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat.
-						Suspendisse.
-					</p>
-					<?= $this->html->link(
-						'Zu diesem Projekt',
-						'https://de.wikipedia.org/wiki/Pocahontas', [
+					<div
+						class="news__teaser tm--alpha t--strong"
+						<?php if ($isFirst): ?>
+							id="newsTeaser"
+						<?php endif ?>
+					>
+						<?php echo $item->teaser ?>
+					</div>
+					<div
+						class="news__text tm--beta cm--b1"
+						<?php if ($isFirst): ?>
+							id="newsText">
+						<?php endif ?>
+						<?php echo $item->body ?>
+					</div>
+					<?php if ($item->source): ?>
+						<?= $this->html->link('Zu diesem Projekt', $item->source, [
 							'class' => 'news__link link--black ts--alpha t--strong',
-							'id' => 'newsLink',
+							'id' => $isFirst ? 'newsLink' : null,
 							'target' => 'new'
-						]
-					) ?>
+						]) ?>
+					<?php endif ?>
 				</div>
 			</article>
-			<article class="news__post cp--b2 hide">
-				<div class="news__box news__box--wmde limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
-					<h2 class="news__title tm--alpha t--caps t--strong">Wikimedia</h2>
-					<div
-						class="news__image"
-						style="background-image: url(<?= $this->assets->url('/app/img/news_test/2.jpg') ?>);"
-					></div>
-					<h3 class="news__teaser tm--alpha t--strong">
-						Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-						In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-						Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-					</h3>
-					<p class="news__text tm--beta cm--b1">
-						Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-						Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-						Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-						Phasellus viverra nulla ut metus varius laoreet.
-					</p>
-					<?= $this->html->link(
-						'Zu diesem Projekt',
-						'https://en.wikipedia.org/wiki/The_Ant_and_the_Grasshopper', [
-							'class' => 'news__link link--black ts--alpha t--strong',
-							'target' => 'new'
-						]
-					) ?>
-				</div>
-			</article>
-			<article class="news__post cp--b2 hide">
-				<div class="news__box news__box--members limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
-					<h2 class="news__title tm--alpha t--caps t--strong">Mitglieder</h2>
-					<div
-						class="news__image"
-						style="background-image: url(<?= $this->assets->url('/app/img/news_test/3.jpg') ?>);"
-					></div>
-					<h3 class="news__teaser tm--alpha t--strong">
-						Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-						Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-					</h3>
-					<p class="news__text tm--beta cm--b1">
-						Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
-						libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
-						blandit vel, luctus pulvinar, hendrerit id, lorem.
-					</p>
-					<?= $this->html->link(
-						'Zu diesem Projekt',
-						'https://de.wikipedia.org/wiki/Mitglied', [
-							'class' => 'news__link link--black ts--alpha t--strong',
-							'target' => 'new'
-						]
-					) ?>
-				</div>
-			</article>
-			<article class="news__post cp--b2 hide">
-				<div class="news__box news__box--init limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
-					<h2 class="news__title tm--alpha t--caps t--strong">Initiative</h2>
-					<div
-						class="news__image"
-						style="background-image: url(<?= $this->assets->url('/app/img/news_test/4.jpg') ?>);"
-					></div>
-					<h3 class="news__teaser tm--alpha t--strong">
-						Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien
-						ut libero venenatis faucibus. Nullam quis ante.
-					</h3>
-					<p class="news__text tm--beta cm--b1">
-						Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-						fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-					</p>
-					<?= $this->html->link(
-						'Zu diesem Projekt',
-						'https://de.wikipedia.org/wiki/Eigeninitiative', [
-							'class' => 'news__link link--black ts--alpha t--strong',
-							'target' => 'new'
-						]
-					) ?>
-				</div>
-			</article>
-			<article class="news__post cp--b2 hide">
-				<div class="news__box news__box--wmde limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
-					<h2 class="news__title tm--alpha t--caps t--strong">Wikimedia</h2>
-					<div
-						class="news__image"
-						style="background-image: url(<?= $this->assets->url('/app/img/news_test/5.jpg') ?>);"
-					></div>
-					<h3 class="news__teaser tm--alpha t--strong">
-						Donec mollis hendrerit risus. Phasellus nec sem in justo
-						pellentesque facilisis. Etiam imperdiet imperdiet orci.
-					</h3>
-					<p class="news__text tm--beta cm--b1">
-						Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam
-						nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat,
-						pede. Sed lectus.
-					</p>
-					<?= $this->html->link(
-						'Zu diesem Projekt',
-						'https://de.wikipedia.org/wiki/Johann_Bessler', [
-							'class' => 'news__link link--black ts--alpha t--strong',
-							'target' => 'new'
-						]
-					) ?>
-				</div>
-			</article>
+			<?php endforeach ?>
 		</div>
 	</section>
 

@@ -10,10 +10,25 @@
 namespace app\controllers;
 
 use indexed\Robots;
+use cms_post\models\Posts;
 
 class PagesController extends \lithium\action\Controller {
 
-	public function home() {}
+	public function home() {
+		$posts = Posts::find('all', [
+			'conditions' => [
+				'is_published' => true,
+				'is_promoted' => true
+			],
+			// Show newest first, fall back to sorting by created date, when
+			// published is not available (it will be - usually).
+			'order' => [
+				'published' => 'DESC',
+				'created' => 'DESC'
+			]
+		]);
+		return compact('posts');
+	}
 
 	public function imprint() {}
 
