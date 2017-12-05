@@ -10,6 +10,9 @@
 .limit--20 {
   max-width: 1440px; /* = 20 * 1 cell */
 }
+.limit--16 {
+  max-width: 1152px; /* = 16 * 1 cell */
+}
 .limit--14 {
   max-width: 1008px; /* = 14 * 1 cell */
 }
@@ -45,6 +48,13 @@
   margin: 36px;
 }
 
+.cm--l5 {
+  margin-left: 360px;
+}
+.cm--b1 {
+  margin-bottom: 72px;
+}
+
 /* Content Padding
 ---------------------------------------------------------------- */
 .cp--1 {
@@ -77,6 +87,10 @@
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.cp--v0-5 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
 
 .cp--t0-5 {
   padding-top: 36px;
@@ -87,12 +101,18 @@
 .cp--t3-5 {
   padding-top: 252px;
 }
+.cp--t2 {
+  padding-top: 144px;
+}
 .cp--t1-25 {
   padding-top: 90px;
 }
 
 .cp--r1 {
   padding-right: 72px;
+}
+.cp--r0-5 {
+  padding-right: 36px;
 }
 
 .cp--b4 {
@@ -111,6 +131,9 @@
   padding-bottom: 36px;
 }
 
+.cp--l2-5 {
+  padding-left: 180px;
+}
 .cp--l2 {
   padding-left: 144px;
 }

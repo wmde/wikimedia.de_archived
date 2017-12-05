@@ -21,7 +21,7 @@ requirejs.config({
 
     // App
     'router': 'app/js/router',
-    'components/newsSlider': 'app/js/components/newsSlider',
+    'components/news': 'app/js/components/news',
     'components/team': 'app/js/components/team',
     'components/fields': 'app/js/components/fields',
     // Add your app specific JavaScript paths here.

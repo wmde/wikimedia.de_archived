@@ -6,12 +6,12 @@
  */
 
 require([
-    'components/newsSlider',
+    'components/news',
     'components/team',
     'components/fields',
     'domready!'
   ], function(
-    NewsSlider,
+    News,
     Team,
     Fields
   ) {
@@ -20,11 +20,11 @@ require([
   let $ = document.querySelectorAll.bind(document);
   let $1 = document.querySelector.bind(document);
 
-  let newsSlider = new NewsSlider();
+  let news = new News();
   let team = new Team();
   let fields = new Fields();
 
-  newsSlider.mount($1('.news-slider'));
+  news.mount($1('.news'));
   team.mount($1('.team'));
   fields.mount($1('.fields'));
 });

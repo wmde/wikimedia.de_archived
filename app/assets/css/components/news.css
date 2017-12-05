@@ -1,0 +1,102 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.news h2,
+.news h3 {
+  margin-top: 0;
+}
+
+.news {
+  position: relative;
+  overflow: hidden;
+}
+
+.news__inner {
+  position: relative;
+}
+
+.news__post {
+  position: relative;
+  height: 648px; /* 9 cells */
+}
+
+.news__counter {
+  position: absolute;
+  top: 36px;
+}
+
+.news__box {
+  position: relative;
+  border: 2px solid;
+  transition: border .5s;
+}
+.news__box--wmde {
+  border-color: var(--color-blue);
+}
+.news__box--members {
+  border-color: var(--color-violet);
+}
+.news__box--init {
+  border-color: var(--color-orange);
+}
+.news__box--projects {
+  border-color: white;
+}
+
+.news__title {
+  position: absolute;
+  left: 36px;
+}
+.news__image {
+  width: 504px; /* 7 cells */
+  height: 396px; /* 5.5 cells */
+
+  position: absolute;
+  top: 108px; /* 1.5 cells */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  transition: right .5s, transform .5s, opacity .5s, background .5s;
+}
+.news__image--old {
+  right: calc(50vw + 50%);
+  transform: translateX(-216px); /* 3 cells */
+}
+.news__image--active {
+  right: 432px; /* 6 cells */
+  opacity: 1;
+}
+.news__image--next {
+  right: calc(-50vw - 50%);
+  transform: translateX(-284px); /* 4 cells - 2 * 2px border */
+  opacity: .2;
+  background-position: top left;
+}
+.news__image--after-next {
+  right: calc(-100vw - 50%);
+  opacity: .2;
+  background-position: top left;
+}
+
+.news__next {
+  width: 72px;
+  height: 72px;
+
+  position: absolute;
+  top: 50%;
+  right: 36px;
+  transform: translateY(-50%);
+
+  border: 2px solid var(--color-green);
+  background-color: white;
+  background-image:  url(../../ico/arrow_r.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}

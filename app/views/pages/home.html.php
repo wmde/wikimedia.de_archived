@@ -95,87 +95,137 @@ $this->title($site->title());
 		</div>
 	</section>
 
-	<section class="news news-slider-wrapper sc--lightgray">
-		<div class="limit--14 center-column cp--h1 cp--v2">
+	<section class="news sc--lightgray">
+		<div class="news__inner limit--16 center-column cp--h1 cp--t2">
 			<h1 class="tl--beta t--strong h--alpha">Aktuelles</h1>
-
-			<div class="news-slider">
-				<div class="news-slider__counter tm--gamma t--strong">
-					?/?
+			<article class="news__post cp--b2" id="counterHook">
+				<div class="news__box news__box--projects limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white" id="newsBox">
+					<h2 class="news__title tm--alpha t--caps t--strong" id="newsTitle">Projekte</h2>
+					<div
+						class="news__image news__image--active"
+						style="background-image: url(<?= $this->assets->url('/app/img/news_test/1.jpg') ?>);"
+					></div>
+					<h3 class="news__teaser tm--alpha t--strong" id="newsTeaser">
+						Ultrices posuere cubilia Curae; Vestibulum hendrerit malesuada odio.
+						Fusce ut elit ut augue sollicitudin blandit. Phasellus volutpat lorem.
+						Duis non pede.
+					</h3>
+					<p class="news__text tm--beta cm--b1" id="newsText">
+						Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in
+						diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat.
+						Suspendisse.
+					</p>
+					<?= $this->html->link(
+						'Zu diesem Projekt',
+						'https://de.wikipedia.org/wiki/Pocahontas', [
+							'class' => 'news__link link--black ts--alpha t--strong',
+							'id' => 'newsLink',
+							'target' => 'new'
+						]
+					) ?>
 				</div>
-
-				<a href="#next-slide" class="news-slider__next"></a>
-
-				<div class="news-slider__stage">
-					<article class="news-slider__slide active is-wm-type">
-						<div class="news-slider__cover limit--5">
-							<?= $this->assets->image('/app/img/dummy.jpg') ?>
-						</div>
-						<div class="news-slider__content limit--8 cp--0-5">
-							<h1 class="news-slider__type tm--alpha t--caps t--strong">Projekte</h1>
-
-							<p class="tm--alpha t--strong">
-								<!--lorem-->Ultrices posuere cubilia Curae; Vestibulum hendrerit malesuada odio. Fusce ut elit ut augue sollicitudin blandit. Phasellus volutpat lorem. Duis non pede.<!--/lorem-->
-								<!--lorem-->Ultrices posuere cubilia Curae; Vestibulum hendrerit malesuada odio. Fusce ut elit ut augue sollicitudin blandit. Phasellus volutpat lorem. Duis non pede.<!--/lorem-->
-								<!--lorem-->Ultrices posuere cubilia Curae; Vestibulum hendrerit malesuada odio. Fusce ut elit ut augue sollicitudin blandit. Phasellus volutpat lorem. Duis non pede.<!--/lorem-->
-							</p>
-							<p class="tm--beta">
-								<!--lorem-->Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat. Suspendisse.<!--/lorem-->
-								<!--lorem-->Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat. Suspendisse.<!--/lorem-->
-								<!--lorem-->Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat. Suspendisse.<!--/lorem-->
-								<!--lorem-->Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat. Suspendisse.<!--/lorem-->
-							</p>
-							<div>
-								<?= $this->html->link('Zu diesem Projekt', '#', [
-									'class' => 'link--black ts--alpha t--strong'
-								]) ?>
-							</div>
-						</div>
-					</article>
-
-					<article class="news-slider__slide next is-wm-type">
-						<div class="news-slider__cover limit--5">
-							<?= $this->assets->image('/app/img/dummy.jpg') ?>
-						</div>
-						<div class="news-slider__content limit--8 cp--0-5">
-							<h1 class="news-slider__type tm--alpha t--caps t--strong">Projekte</h1>
-
-							<p class="tm--alpha t--strong">
-								<!--lorem-->Ultrices posuere cubilia Curae; Vestibulum hendrerit malesuada odio. Fusce ut elit ut augue sollicitudin blandit. Phasellus volutpat lorem. Duis non pede.<!--/lorem-->
-							</p>
-							<p class="tm--beta">
-								<!--lorem-->Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat. Suspendisse.<!--/lorem-->
-							</p>
-							<div>
-								<?= $this->html->link('Zu diesem Projekt', '#', [
-									'class' => 'link--black ts--alpha t--strong'
-								]) ?>
-							</div>
-						</div>
-					</article>
-
-					<article class="news-slider__slide is-wm-type">
-						<div class="news-slider__cover limit--5">
-							<?= $this->assets->image('/app/img/dummy.jpg') ?>
-						</div>
-						<div class="news-slider__content limit--8 cp--0-5">
-							<h1 class="news-slider__type tm--alpha t--caps t--strong">Projekte</h1>
-
-							<p class="tm--alpha t--strong">
-								<!--lorem-->Ultrices posuere cubilia Curae; Vestibulum hendrerit malesuada odio. Fusce ut elit ut augue sollicitudin blandit. Phasellus volutpat lorem. Duis non pede.<!--/lorem-->
-							</p>
-							<p class="tm--beta">
-								<!--lorem-->Eu, dui. Quisque dignissim consequat nisl. Pellentesque porta augue in diam. Duis mattis. Aliquam et mi quis turpis pellentesque consequat. Suspendisse.<!--/lorem-->
-							</p>
-							<div>
-								<?= $this->html->link('Zu diesem Projekt', '#', [
-									'class' => 'link--black ts--alpha t--strong'
-								]) ?>
-							</div>
-						</div>
-					</article>
+			</article>
+			<article class="news__post cp--b2 hide">
+				<div class="news__box news__box--wmde limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
+					<h2 class="news__title tm--alpha t--caps t--strong">Wikimedia</h2>
+					<div
+						class="news__image"
+						style="background-image: url(<?= $this->assets->url('/app/img/news_test/2.jpg') ?>);"
+					></div>
+					<h3 class="news__teaser tm--alpha t--strong">
+						Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+						In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+						Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+					</h3>
+					<p class="news__text tm--beta cm--b1">
+						Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+						Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+						Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+						Phasellus viverra nulla ut metus varius laoreet.
+					</p>
+					<?= $this->html->link(
+						'Zu diesem Projekt',
+						'https://en.wikipedia.org/wiki/The_Ant_and_the_Grasshopper', [
+							'class' => 'news__link link--black ts--alpha t--strong',
+							'target' => 'new'
+						]
+					) ?>
 				</div>
-			</div>
+			</article>
+			<article class="news__post cp--b2 hide">
+				<div class="news__box news__box--members limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
+					<h2 class="news__title tm--alpha t--caps t--strong">Mitglieder</h2>
+					<div
+						class="news__image"
+						style="background-image: url(<?= $this->assets->url('/app/img/news_test/3.jpg') ?>);"
+					></div>
+					<h3 class="news__teaser tm--alpha t--strong">
+						Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+						Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+					</h3>
+					<p class="news__text tm--beta cm--b1">
+						Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+						libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+						blandit vel, luctus pulvinar, hendrerit id, lorem.
+					</p>
+					<?= $this->html->link(
+						'Zu diesem Projekt',
+						'https://de.wikipedia.org/wiki/Mitglied', [
+							'class' => 'news__link link--black ts--alpha t--strong',
+							'target' => 'new'
+						]
+					) ?>
+				</div>
+			</article>
+			<article class="news__post cp--b2 hide">
+				<div class="news__box news__box--init limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
+					<h2 class="news__title tm--alpha t--caps t--strong">Initiative</h2>
+					<div
+						class="news__image"
+						style="background-image: url(<?= $this->assets->url('/app/img/news_test/4.jpg') ?>);"
+					></div>
+					<h3 class="news__teaser tm--alpha t--strong">
+						Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien
+						ut libero venenatis faucibus. Nullam quis ante.
+					</h3>
+					<p class="news__text tm--beta cm--b1">
+						Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+						fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+					</p>
+					<?= $this->html->link(
+						'Zu diesem Projekt',
+						'https://de.wikipedia.org/wiki/Eigeninitiative', [
+							'class' => 'news__link link--black ts--alpha t--strong',
+							'target' => 'new'
+						]
+					) ?>
+				</div>
+			</article>
+			<article class="news__post cp--b2 hide">
+				<div class="news__box news__box--wmde limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
+					<h2 class="news__title tm--alpha t--caps t--strong">Wikimedia</h2>
+					<div
+						class="news__image"
+						style="background-image: url(<?= $this->assets->url('/app/img/news_test/5.jpg') ?>);"
+					></div>
+					<h3 class="news__teaser tm--alpha t--strong">
+						Donec mollis hendrerit risus. Phasellus nec sem in justo
+						pellentesque facilisis. Etiam imperdiet imperdiet orci.
+					</h3>
+					<p class="news__text tm--beta cm--b1">
+						Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam
+						nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat,
+						pede. Sed lectus.
+					</p>
+					<?= $this->html->link(
+						'Zu diesem Projekt',
+						'https://de.wikipedia.org/wiki/Johann_Bessler', [
+							'class' => 'news__link link--black ts--alpha t--strong',
+							'target' => 'new'
+						]
+					) ?>
+				</div>
+			</article>
 		</div>
 	</section>
 
