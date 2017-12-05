@@ -23,6 +23,25 @@
   letter-spacing: .01em;
 }
 
+@media (max-width: 1000px) {
+  .tl--alpha,
+  .tl--beta {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tl--alpha {
+    font-size: 20px;
+  }
+  .tl--beta {
+    font-size: 18px;
+  }
+  .tl--gamma {
+    font-size: 20px;
+  }
+}
+
 /* Medium type group for running text
 ---------------------------------------------------------------- */
 /* use for running text */
@@ -42,6 +61,32 @@
   letter-spacing: .01em;
 }
 
+@media (max-width: 1000px) {
+  .tm--gamma {
+    font-size: 14px;
+  }
+  .tm--detla {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tm--alpha {
+    font-size: 14px;
+  }
+  .tm--beta {
+    font-size: 16px;
+  }
+  .tm--gamma {
+    font-size: 12px;
+  }
+  .tm--delta {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+
 /* Small type group for captions etc.
 ---------------------------------------------------------------- */
 /* use for buttons */
@@ -50,6 +95,14 @@
 }
 .ts--beta {
   font: 14px/1.7 var(--font-family-serif);
+}
+
+/* no intermediate sizes for <1000px */
+
+@media (max-width: 500px) {
+  .ts--alpha {
+    font-size: 12px;
+  }
 }
 
 /* Other Type Modifiers that can be combined with clases above
