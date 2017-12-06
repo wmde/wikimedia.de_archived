@@ -34,7 +34,7 @@ $this->seo->set('description', $text);
 	</section>
 	<section class="mission sc--white">
 		<div class="mission__inner limit--14 cp--v2 center-column">
-			<h1 class="mission__headline tl--beta t--strong h--alpha">Mission</h1>
+			<h1 class="mission__headline tl--beta t--strong t--underlinede">Mission</h1>
 			<div class="mission__text tl--gamma limit--6">
 				Wir setzen uns für Freies Wissen ein, um die Chancengleichheit beim Zugang zu Wissen
 				und Bildung zu fördern.
@@ -49,7 +49,7 @@ $this->seo->set('description', $text);
 	</section>
 	<section class="sc--lightblue">
 		<div class="limit--20 center-column cp--h1 cp--t1-25">
-			<h1 class="t--beta h--alpha">Handlungsfelder</h1>
+			<h1 class="t--beta t--underlined">Handlungsfelder</h1>
 		</div>
 		<div class="fields is-active-support">
 			<div class="field-buttons limit--20 center-column cp--0-5">
@@ -102,7 +102,7 @@ $this->seo->set('description', $text);
 
 	<section class="news sc--lightgray">
 		<div class="news__inner limit--16 center-column cp--h1 cp--t2">
-			<h1 class="tl--beta t--strong h--alpha">Aktuelles</h1>
+			<h1 class="tl--beta t--strong t--underlined">Aktuelles</h1>
 
 			<?php $i = 0; foreach ($posts as $item): ?>
 			<?php
@@ -186,7 +186,7 @@ $this->seo->set('description', $text);
 
 	<section class="team sc--white">
 		<div class="team__inner limit--14 cp--t1-25 center-column">
-			<h1 class="tl--beta t--strong h--alpha">Unser Präsidium</h1>
+			<h1 class="tl--beta t--strong t--underlined">Unser Präsidium</h1>
 			<article class="member cp--b4" id="teamStage">
 				<h2 class="member__name hide" id="memberName">Tim Moritz Hector</h2>
 				<div

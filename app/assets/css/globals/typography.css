@@ -116,3 +116,6 @@
 .t--strong {
   font-weight: bold;
 }
+.tl--underlined {
+  border-bottom: 2px solid var(--color-black);
+}

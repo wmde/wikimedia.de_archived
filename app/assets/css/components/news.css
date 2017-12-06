@@ -5,10 +5,6 @@
  * license that can be found in the LICENSE file.
  */
 
-.news h1 {
-  margin-top: 0;
-}
-
 .news {
   position: relative;
   overflow: hidden;

@@ -5,11 +5,9 @@
  * license that can be found in the LICENSE file.
  */
 
-.imprint p,
-.imprint ul {
+h1,
+h2,
+h3 {
   margin-top: 0;
   margin-bottom: 0;
-}
-.imprint ul {
-  padding-left: 0;
 }
