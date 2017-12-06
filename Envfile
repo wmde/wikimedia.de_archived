@@ -17,7 +17,7 @@ CONTEXT="dev"
 NAME="wmde_site"
 
 # The domain under which the project is served.
-DOMAIN="wmde-site.test"
+DOMAIN="www.wmde-site.test"
 
 # -----------------------------------------------------------
 # Debugging / Analysis
@@ -114,16 +114,16 @@ HONOR_DNT="y"
 # the webroot instead of the project root.
 WEBROOT_NESTING="n"
 
-ASSETS_HTTP_BASE="wmde-site.test/assets"
-ASSETS_HTTPS_BASE="wmde-site.test/assets"
+ASSETS_HTTP_BASE="www.wmde-site.test/assets"
+ASSETS_HTTPS_BASE="www.wmde-site.test/assets"
 
 HAS_IMAGICK="y"
 HAS_GHOSTSCRIPT="y"
 HAS_FFMPEG="y"
 HAS_SOX="y"
 
-MEDIA_VERSIONS_HTTP_BASE="wmde-site.test/media"
-MEDIA_VERSIONS_HTTPS_BASE="wmde-site.test/media"
+MEDIA_VERSIONS_HTTP_BASE="www.wmde-site.test/media"
+MEDIA_VERSIONS_HTTPS_BASE="www.wmde-site.test/media"
 
 # -----------------------------------------------------------
 # Jobs
