@@ -10,6 +10,9 @@ TARGET_HOSTS="__TARGET_HOST__"
 # The same user will be used for each host.
 TARGET_USER="__TARGET_USER__"
 
+# Allows to switch to a non-standard port when using SSH.
+TARGET_PORT="22"
+
 # The target path on target host.
 TARGET_PATH="/var/www/__NAME__"
 

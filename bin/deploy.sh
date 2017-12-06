@@ -56,8 +56,10 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 	for H in $TARGET_HOSTS; do
 		if [[ $ASSUME_YES != "y" ]]; then
 			out=$(
-				rsync --stats -h -z -r --delete \
-					--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
+				rsync --stats -h -z -r \
+					--rsh "ssh -p ${TARGET_PORT}" \
+					--delete \
+					--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
 					--links \
 					--times \
 					--verbose \
@@ -81,8 +83,10 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 				exit 1
 			fi
 		fi
-		rsync --stats -h -z -r --delete \
-				--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
+		rsync --stats -h -z -r \
+				--rsh "ssh -p ${TARGET_PORT}" \
+				--delete \
+				--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
 				--links \
 				--times \
 				--verbose \
@@ -93,7 +97,7 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
 		for H in $TARGET_HOSTS; do
 			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> command execution ${TARGET_USER}@${H}:${TARGET_PATH}"
-			ssh -T ${TARGET_USER}@${H} "cd $TARGET_PATH && $POST_TRANSFER_COMMANDS"
+			ssh -p ${TARGET_PORT} -T ${TARGET_USER}@${H} "cd ${TARGET_PATH} && ${POST_TRANSFER_COMMANDS}"
 			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< command execution ${TARGET_USER}@${H}:${TARGET_PATH} "
 		done
 	fi
