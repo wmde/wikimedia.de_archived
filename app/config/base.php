@@ -17,7 +17,7 @@ use base_media\models\MediaVersions;
 // Sites
 //
 Sites::register(PROJECT_DOMAIN, [
-	'title' => 'Wikimedia Deutschland e.V.',
+	'title' => 'Wikimedia Deutschland e. V.',
 	'fqdn' => PROJECT_DOMAIN
 ]);
 
