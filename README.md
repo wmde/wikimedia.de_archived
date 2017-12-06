@@ -18,9 +18,9 @@ configuration templates can be found inside hte `config` directory. They use the
 following placeholders:
 
 - `__NAKED_DOMAIN__`, i.e. `wikimedia.de`
-- `__PATH__`, i.e. '/var/www/wikimedia.de'
+- `__PATH__`, i.e. `/var/www/wikimedia.de`
 - `__NGINX_INCLUDES_PATH__`, i.e. `/path/to/config/web/includes`
-- `__PHP_FPM_SOCKET__`, i.e. ``/var/run/php/php7.0-fpm.sock`
+- `__PHP_FPM_SOCKET__`, i.e. `/var/run/php/php7.0-fpm.sock`
 
 The PHP configuration file should be placed where they are autoloaded by PHP
 FPM, i.e. in `/etc/php/7.0/fpm/conf.d`.
