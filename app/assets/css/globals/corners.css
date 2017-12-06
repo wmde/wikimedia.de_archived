@@ -23,7 +23,7 @@
   content: "";
   width: 54px;
   height: 54px;
-  transition: all .5s ease-out;
+  transition: all .25s ease-out;
   /* Ensure unset borders create cut effect. Assumes element has white bg. */
   border: 2px solid transparent;
 }
@@ -41,8 +41,8 @@
 }
 .corners:hover:before,
 .corners:hover:after {
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
+  width: 87px;
+  height: 87px;
 }
 
 /* Color variations: */
@@ -62,4 +62,3 @@
   border-top-color: var(--color-green);
   border-right-color: var(--color-green);
 }
-
