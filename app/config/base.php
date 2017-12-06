@@ -81,6 +81,7 @@ $fix = [
 	'rotate' => true // enables auto-rotation by exif data
 ];
 $fix00 = [ // for banners
+	'convert' => 'image/jpeg',
 	'strip' => ['8bim', 'app1', 'app12'],
 	'fit' => [1800, 1800],
 	'compress' => 0.5,
@@ -88,6 +89,7 @@ $fix00 = [ // for banners
 ];
 // fix10 is reserved for later usage
 $fix20 = [ // i.e. for news and team slider images
+	'convert' => 'image/jpeg',
 	'strip' => ['8bim', 'app1', 'app12'],
 	'fit' => [500, 400],
 	'compress' => 0.5,
