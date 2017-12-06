@@ -188,7 +188,7 @@ $this->seo->set('description', $text);
 		<div class="team__inner limit--14 cp--t1-25 center-column">
 			<h1 class="tl--beta t--strong t--underlined">Unser Präsidium</h1>
 			<article class="member cp--b4" id="teamStage">
-				<h2 class="member__name hide" id="memberName">Tim Moritz Hector</h2>
+				<h1 class="member__name hide" id="memberName">Tim Moritz Hector</h1>
 				<div
 					class="member__image limit--5"
 					id="memberImg"
@@ -196,7 +196,7 @@ $this->seo->set('description', $text);
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong" id="memberRole">Vorsitzender</h3>
+					<h2 class="member__role tm--alpha t--strong" id="memberRole">Vorsitzender</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text" id="memberText">Lorem ipsum dolor sit amet,
 						consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -210,14 +210,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Sabria David</h2>
+				<h1 class="member__name">Sabria David</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/2.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Stellvertretende Vorsitzende</h3>
+					<h2 class="member__role tm--alpha t--strong">Stellvertretende Vorsitzende</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Ich forsche und berate zu den Auswirkungen und
 						Potentialen des digitalen Wandels. Wikipedia fasziniert mich vor allem als
@@ -231,14 +231,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Kurt Jansson</h2>
+				<h1 class="member__name">Kurt Jansson</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/3.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Stellvertretender Vorsitzender</h3>
+					<h2 class="member__role tm--alpha t--strong">Stellvertretender Vorsitzender</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Nulla consequat massa quis enim. In enim justo,
 						rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
@@ -252,14 +252,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Sebastian Moleski</h2>
+				<h1 class="member__name">Sebastian Moleski</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/4.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Schatzmeister</h3>
+					<h2 class="member__role tm--alpha t--strong">Schatzmeister</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Aliquam lorem ante, dapibus in, viverra quis,
 						feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
@@ -274,14 +274,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Harald Krichel</h2>
+				<h1 class="member__name">Harald Krichel</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/5.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Beisitzer</h3>
+					<h2 class="member__role tm--alpha t--strong">Beisitzer</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Nam quam nunc, blandit vel, luctus pulvinar,
 						hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
@@ -295,14 +295,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Lukas Mezger</h2>
+				<h1 class="member__name">Lukas Mezger</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/6.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Beisitzer</h3>
+					<h2 class="member__role tm--alpha t--strong">Beisitzer</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Sed consequat, leo eget bibendum sodales,
 						augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate
@@ -316,14 +316,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Johanna Niesyto</h2>
+				<h1 class="member__name">Johanna Niesyto</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/7.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Beisitzerin</h3>
+					<h2 class="member__role tm--alpha t--strong">Beisitzerin</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Vestibulum ante ipsum primis in faucibus orci
 						luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer
@@ -337,14 +337,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Peter Dewald</h2>
+				<h1 class="member__name">Peter Dewald</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/8.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Beisitzer</h3>
+					<h2 class="member__role tm--alpha t--strong">Beisitzer</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Praesent adipiscing. Phasellus ullamcorper ipsum
 						rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id
@@ -358,14 +358,14 @@ $this->seo->set('description', $text);
 				</div>
 			</article>
 			<article class="member cp--b4">
-				<h2 class="member__name">Gabriele Theren</h2>
+				<h1 class="member__name">Gabriele Theren</h1>
 				<div
 					class="member__image limit--5"
 					style="background-image: url(<?= $this->assets->url('/app/img/team_test/9.jpg') ?>);"
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h3 class="member__role tm--alpha t--strong">Beisitzerin</h3>
+					<h2 class="member__role tm--alpha t--strong">Beisitzerin</h2>
 					<p class="tm--beta">
 						&raquo;<span class="member__text">Phasellus nec sem in justo pellentesque facilisis.
 						Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non,
