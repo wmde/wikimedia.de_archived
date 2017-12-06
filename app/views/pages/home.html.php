@@ -75,13 +75,65 @@ $this->seo->set('description', $text);
 					<div class="fields__blurb-top"></div>
 					<div class="fields__blurb-lower cp--0-5 tm--beta">
 						<article id="support" class="fields__text">
-							<!--lorem-->Et velit. Morbi sapien nulla, volutpat a, tristique eu, molestie ac, felis. Suspendisse sit amet tellus non odio porta pellentesque. Nulla.<!--/lorem-->
+							<p>
+								Die freie Enzyklopädie Wikipedia wird von ehrenamtlichen
+								Autorinnen und Autoren geschrieben. Da es keine hauptamtliche Redaktion gibt, lebt
+								die Wikipedia von der Mitarbeit möglichst vieler Menschen. Aber die Zahl der aktiven
+								Autorinnen und Autoren geht zurück. Wenn sich auch in Zukunft immer weniger Menschen
+								engagieren, könnten Artikel nicht mehr aktuell gehalten werden – oder keine neuen
+								entstehen.
+							</p>
+							<p>
+								Wir setzen uns deshalb dafür ein, dass die Wikipedia auch in
+								Zukunft verlässlich, umfassend und aktuell ist. <strong>Wir machen Menschen darauf aufmerksam,
+								dass man sich an der Wikipedia beteiligen kann</strong> und bieten Interessierten Hilfe und
+								Einstiegsmöglichkeiten.
+							</p>
+							<p>
+								<strong>Die bereits bestehenden Autorinnen und Autoren
+								bestärken wir in ihrem Engagement</strong> und stehen ihnen zur Seite, wenn es darum
+								geht, ihre Pläne in die Tat umzusetzen. Wir vergeben zum Beispiel Stipendien,
+								helfen bei der Durchführung von Workshops und Wettbewerben oder bieten technische
+								Unterstützung.
+							</p>
 						</article>
 						<article id="dev" class="fields__text hide">
-							<!--lorem-->Gravida, risus urna venenatis lectus, ac ultrices quam nulla eu leo. Duis arcu. Class aptent taciti sociosqu ad litora torquent per.<!--/lorem-->
+							<p>
+								Wenn wir heute etwas wissen wollen, schauen wir einfach im Internet nach. Anders als bei
+								einem gedruckten Lexikon brauchen wir für das Internet Software, damit dieses Wissen
+								überhaupt vernünftig angezeigt werden kann. Aber die digitale Umgebung entwickelt sich
+								rasant weiter.
+							</p>
+							<p>
+								Damit die Wikipedia auch in Zukunft benutzerfreundlich und für alle digital zugänglich
+								bleibt, bauen wir <strong>MediaWiki</strong>, die Software hinter der Wikipedia, immer weiter aus.
+							</p>
+							<p>
+								Außerdem entwickeln wir unsere <strong>freie Datenbank Wikidata</strong>, die Menschen auf der ganzen
+								Welt zum Beispiel an die fast 300 verschiedenen Sprachversionen von Wikipedia anbinden
+								können. Die Software hinter Wikidata ist so konzipiert, dass sie jederzeit und von allen
+								Interessierten auch außerhalb der Wikimedia-Welt Zugang zu unserer Datenbank bietet.
+							</p>
 						</article>
 						<article id="know" class="fields__text hide">
-							<!--lorem-->Etiam vitae quam. Fusce feugiat pede vel quam. In et augue. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus mollis dictum nulla. Integer vitae neque vitae eros fringilla rutrum. Vestibulum in pede adipiscing mi dapibus condimentum. Etiam felis risus, condimentum.<!--/lorem-->
+							<p>
+								Die Welt ist reich an Kulturgütern wie Büchern, Gemälden oder wissenschaftlichen
+								Arbeiten. Sie können von der Öffentlichkeit aber meist nur angeschaut und nicht genutzt
+								werden. Selbst wenn sie in z. B. einem Museum ausgestellt sind, darf man sie oft nicht
+								fotografieren und verwenden.
+							</p>
+							<p>
+								<strong>Öffentliche Güter gehören aus unserer Sicht in die Öffentlichkeit.</strong> Wir arbeiten daher mit
+								Bildungs-, Wissenschafts- und Kulturinstitutionen zusammen und befähigen sie, ihre Inhalte
+								unter eine freie Lizenz zu stellen. Damit alle diese Schätze frei weiterverwendet werden
+								können – etwa für Unterrichtsmaterialien oder einen Blog.
+							</p>
+							<p>
+								<strong>Dafür braucht es einen geeigneten rechtlichen Rahmen.</strong> Wir wollen erreichen, dass Menschen
+								so leicht wie möglich ihr Wissen teilen können und es gemeinschaftlich genutzt werden
+								kann. Wir setzen uns aus diesem Grund für ein zeitgemäßes Urheberrecht ein, dass die
+								Möglichkeiten des Internets nutzt, um Wissen zu verbreiten und zu vermehren.
+							</p>
 						</article>
 					</div>
 				</div>
