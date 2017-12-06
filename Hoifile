@@ -13,7 +13,7 @@ app {
 }
 
 domain "wmde-site.test" {
-	www = "drop"
+	www = "add"
 	# Either paths or special string "!self-signed"
 	SSL = {
 		certificate = "!self-signed"

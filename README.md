@@ -9,7 +9,7 @@ This project is built using the [B-Series](http://b-series.org) content manageme
 and is powered by the [li₃ PHP framework](http://li3.me/). Please visit the respective
 websites for more information on usage and API documentation.
 
-For development the hostname `wmde-site.test` is used.
+For development the hostnames `wmde-site.test` and `www.wmde-site.test` are used.
 
 ## License
 
