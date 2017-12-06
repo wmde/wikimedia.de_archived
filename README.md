@@ -52,6 +52,7 @@ and located as follows.
 
 Path | Copyright Holder | License
 -----|------------------|--------
+app/resources/g11n/cldr | Unicode, Inc. | http://unicode.org/copyright.html
 assets/js/jquery.js | JS Foundation and other contributors | MIT
 assets/js/require.js | JS Foundation and other contributors | MIT
 assets/js/require/xxxx.js | - see file header - | MIT or new BSD
