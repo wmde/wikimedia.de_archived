@@ -21,6 +21,7 @@ $text .= 'Ihre Inhalte und die aller anderen Wikimedia-Projekte werden von Freiw
 $text .= 'erstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt ihre Arbeit ';
 $text .= 'vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den kleineren Projekten.';
 $this->seo->set('description', $text);
+
 ?>
 <main id="main" class="home">
 	<section class="illu-hero sc--green">
@@ -106,7 +107,7 @@ $this->seo->set('description', $text);
 
 			<?php $i = 0; foreach ($posts as $item): ?>
 			<?php
-				// AllowS to set initial state of the slider, so we don't have to wait for
+				// Allows to set initial state of the slider, so we don't have to wait for
 				// JavaScript to be loaded, to display the initial state.
 				$isFirst = $i === 0;
 
@@ -187,197 +188,75 @@ $this->seo->set('description', $text);
 	<section class="team sc--white">
 		<div class="team__inner limit--14 cp--t1-25 center-column">
 			<h1 class="tl--beta t--strong t--underlined">Unser Präsidium</h1>
-			<article class="member cp--b4" id="teamStage">
-				<h1 class="member__name hide" id="memberName">Tim Moritz Hector</h1>
+
+			<?php $i = 0; foreach ($teamMembers as $item): ?>
+			<?php
+				// Allows to set initial state of the slider, so we don't have to wait for
+				// JavaScript to be loaded, to display the initial state.
+				$isFirst = $i === 0;
+				$i++;
+			?>
+			<article
+				class="member cp--b4"
+				<?php if ($isFirst): ?>
+					id="teamStage"
+				<?php endif ?>
+			>
+				<h1
+					class="member__name hide"
+					<?php if ($isFirst): ?>
+						id="memberName"
+					<?php endif ?>
+				>
+					<?= $item->name ?>
+				</h1>
 				<div
 					class="member__image limit--5"
-					id="memberImg"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/1.jpg') ?>);"
+					<?php if ($isFirst): ?>
+						id="memberImg"
+					<?php endif ?>
+					<?php if ($cover = $item->portrait()): ?>
+						style="background-image: url(<?= $this->media->url($cover->version('fix20')) ?>);"
+					<?php endif ?>
 				>
 				</div>
 				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong" id="memberRole">Vorsitzender</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text" id="memberText">Lorem ipsum dolor sit amet,
-						consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-						mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec
-						pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" id="memberLink" href="mailto:tim.moritz.hector@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr" id="memberMail">tim.moritz.hector@wikimedia.de</span>
+					<h2
+						class="member__role tm--alpha t--strong"
+						<?php if ($isFirst): ?>
+							id="memberRole"
+						<?php endif ?>
+					>
+						<?= $item->position ?>
+					</h2>
+					<div
+						class="member__text tm--beta"
+						<?php if ($isFirst): ?>
+							id="memberText"
+						<?php endif ?>
+					>
+						<?php echo $item->vita ?>
+					</div>
+					<a
+						class="member__mail ts--alpha"
+						<?php if ($isFirst): ?>
+							id="memberLink"
+						<?php endif ?>
+						href="mailto:<?php echo $item->email ?>"
+					>
+						<span class="ts--beta">E-Mail:&nbsp;</span>
+						<span
+							class="member__addr"
+							<?php if ($isFirst): ?>
+								id="memberMail"
+							<?php endif ?>
+						>
+							<?= $item->email ?>
+						</span>
 					</a>
 				</div>
 			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Sabria David</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/2.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Stellvertretende Vorsitzende</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Ich forsche und berate zu den Auswirkungen und
-						Potentialen des digitalen Wandels. Wikipedia fasziniert mich vor allem als
-						offenes System und diskursives Werk, als Modell einer Schriftkultur der Zukunft.
-						Ich bin Mitgründerin des Slow Media Instituts und Mitautorin vom Slow Media
-						Manifest und der Declaration of Liquid Culture.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:sabria.david@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">sabria.david@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Kurt Jansson</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/3.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Stellvertretender Vorsitzender</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Nulla consequat massa quis enim. In enim justo,
-						rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-						mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-						Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-						vitae, eleifend ac, enim.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:kurt.jansson@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">kurt.jansson@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Sebastian Moleski</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/4.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Schatzmeister</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Aliquam lorem ante, dapibus in, viverra quis,
-						feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
-						rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-						ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-						condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed
-						ipsum.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:sebastian.moleski@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">sebastian.moleski@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Harald Krichel</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/5.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Beisitzer</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Nam quam nunc, blandit vel, luctus pulvinar,
-						hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-						sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
-						eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-						sodales sagittis magna.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:harald.krichel@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">harald.krichel@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Lukas Mezger</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/6.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Beisitzer</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Sed consequat, leo eget bibendum sodales,
-						augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate
-						eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy
-						id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit
-						fringilla.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:lukas.mezger@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">lukas.mezger@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Johanna Niesyto</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/7.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Beisitzerin</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Vestibulum ante ipsum primis in faucibus orci
-						luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer
-						lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet
-						nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu,
-						accumsan a, consectetuer eget, posuere ut, mauris.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:johanna.niesyto@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">johanna.niesyto@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Peter Dewald</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/8.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Beisitzer</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Praesent adipiscing. Phasellus ullamcorper ipsum
-						rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id
-						dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies
-						sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit
-						risus.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:peter.dewald@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">peter.dewald@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
-			<article class="member cp--b4">
-				<h1 class="member__name">Gabriele Theren</h1>
-				<div
-					class="member__image limit--5"
-					style="background-image: url(<?= $this->assets->url('/app/img/team_test/9.jpg') ?>);"
-				>
-				</div>
-				<div class="member__info limit--5">
-					<h2 class="member__role tm--alpha t--strong">Beisitzerin</h2>
-					<p class="tm--beta">
-						&raquo;<span class="member__text">Phasellus nec sem in justo pellentesque facilisis.
-						Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non,
-						auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod
-						vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa.
-						Sed cursus turpis vitae tortor.</span>&laquo;
-					</p>
-					<a class="member__mail ts--alpha" href="mailto:gabriele.theren@wikimedia.de">
-						<span class="ts--beta">E-Mail:&nbsp;</span><span class="member__addr">gabriele.theren@wikimedia.de</span>
-					</a>
-				</div>
-			</article>
+			<?php endforeach ?>
 		</div>
 	</section>
 </main>

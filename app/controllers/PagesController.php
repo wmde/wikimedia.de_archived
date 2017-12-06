@@ -11,6 +11,7 @@ namespace app\controllers;
 
 use indexed\Robots;
 use cms_post\models\Posts;
+use cms_team\models\TeamMembers;
 
 class PagesController extends \lithium\action\Controller {
 
@@ -27,7 +28,17 @@ class PagesController extends \lithium\action\Controller {
 				'created' => 'DESC'
 			]
 		]);
-		return compact('posts');
+
+		// Team members are manually sorted.
+		$teamMembers = TeamMembers::find('all', [
+			'conditions' => [
+				'is_published' => true
+			],
+			'order' => [
+				'order' => 'DESC'
+			]
+		]);
+		return compact('posts', 'teamMembers');
 	}
 
 	public function imprint() {}
