@@ -13,25 +13,29 @@ For development the hostnames `wmde-site.test` and `www.wmde-site.test` are used
 
 ## Setup
 
-Configuration files for NGINX and must must be installed to run the website. The
-configuration templates can be found inside hte `config` directory. They use the
-following placeholders:
+There are two ways to setup the website one manual approach which uses 
+configuration templates from `config` and one semi-automatic way as described in the
+B-Series [Setup Guide](http://b-series.org/docs/book/manual/1.x/setup).
+
+The configuration templates for the manual approach are found inside the
+`config` directory and use following placeholders:
 
 Name | Example Value
 -----|--------------
 `__NAKED_DOMAIN__` | `wikimedia.de`
 `__PATH__` | `/var/www/wikimedia.de`
-`__NGINX_INCLUDES_PATH__` |`/path/to/config/web/includes`
+`__NGINX_INCLUDES_PATH__` |`/path/to/config/nginx/includes`
 `__PHP_FPM_SOCKET__` | `/var/run/php/php7.0-fpm.sock`
 
-The PHP configuration file should be placed where they are autoloaded by PHP
-FPM, i.e. in `/etc/php/7.0/fpm/conf.d`.
+After filling in th placeholders, the files can be moved into system 
+configuration directories.
 
-The NGINX configuration can be moved to a different place and the main
-server configuration file be included in `/etc/nginx.conf`:
+For the PHP configuration this is i.e. in `/etc/php/7.0/fpm/conf.d` whereas
+the app's main NGINX configuration file can be included in the system configuration 
+or symlinked into i.e. `/etc/nginx/sites-enabled`.
 ```
 # ...
-include /path/to/config/web/servers/app.conf`
+include /path/to/config/nginx/servers/app.conf`
 # ...
 ```
 
