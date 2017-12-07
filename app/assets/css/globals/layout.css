@@ -159,3 +159,27 @@
 .cell--20 {
   width: 1440px;
 }
+
+@media (max-width: 1152px) { /* 16 cells */
+  .limit--5 {
+    max-width: 50vw;
+  }
+  .cp--h1 {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media (max-width: 648px) { /* 9 cells */
+  .cp--h1 {
+    padding-left: calc(100vw / 12);
+    padding-right: calc(100vw / 12);
+  }
+  .cp--v2 {
+    padding-top: 36px;
+    padding-bottom: 72px;
+  }
+  .cp--t1-25 {
+    padding-top: 36px;
+  }
+}
