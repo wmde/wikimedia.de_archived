@@ -50,7 +50,8 @@ define('components/team', [], function() {
     }
 
     createSelect(stageEl) {
-      let html = '<select class="team__select">\n';
+      let html = `<div class="team__select-wrapper">
+        <select class="team__select ts--alpha t--strong t--caps">\n`;
       for (let i = 0; i < this.props.names.length; i++) {
         let s = '';
         if (i === 0) {
@@ -58,7 +59,7 @@ define('components/team', [], function() {
         }
         html += `<option${s}>${this.props.names[i]}</option>\n`;
       }
-      html += '</select>';
+      html += '</select></div>';
       stageEl.insertAdjacentHTML('afterbegin', html);
     }
 

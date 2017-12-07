@@ -22,6 +22,8 @@
 :root {
   /* Colors */
   --color-green: #339966;
+  --color-lightgreen: #ADD6C2;
+  --color-darkgreen: #277A50;
   --color-orange: #f29400;
   --color-lightorange: #F8BD79;
   --color-violet: #622181;
