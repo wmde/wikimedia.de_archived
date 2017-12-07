@@ -9,12 +9,12 @@
 ---------------------------------------------------------------- */
 /* use for very large running text */
 .tl--alpha {
-  font: 35px/1.4 var(--font-family-serif);
+  font: 500 35px/1.4 var(--font-family-serif);
   letter-spacing: .01em;
 }
 /* use inline with tl--alpha, or as standalone headline */
 .tl--beta {
-  font: 34px/1.4 var(--font-family-sans);
+  font: 500 34px/1.4 var(--font-family-sans);
   letter-spacing: .01em;
 }
 /* use for large running text */
@@ -46,7 +46,7 @@
 ---------------------------------------------------------------- */
 /* use for running text */
 .tm--alpha {
-  font: 18px/1.3 var(--font-family-sans);
+  font: 500 18px/1.3 var(--font-family-sans);
 }
 /* use for running text */
 .tm--beta {
@@ -54,7 +54,7 @@
 }
 /* use in combination with tm--delta for i.e. buttons, or as mini headlines */
 .tm--gamma {
-  font: 16px/1.3 var(--font-family-sans);
+  font: 500 16px/1.3 var(--font-family-sans);
 }
 .tm--delta {
   font: 18px/1.3 var(--font-family-serif);
@@ -91,7 +91,7 @@
 ---------------------------------------------------------------- */
 /* use for buttons */
 .ts--alpha {
-  font: 14px/1.7 var(--font-family-sans);
+  font: 500 14px/1.7 var(--font-family-sans);
 }
 .ts--beta {
   font: 14px/1.7 var(--font-family-serif);

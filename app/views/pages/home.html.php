@@ -55,17 +55,17 @@ $this->seo->set('description', $text);
 		<div class="fields is-active-support">
 			<div class="field-buttons limit--20 center-column cp--0-5">
 				<a href="#support" class="field-button field-button--alpha corners corners--green cm--0-5 cp--0-5">
-					<div class="field-button__inner tl--gamma t--strong">
+					<div class="field-button__inner tl--gamma">
 						Freiwillige unterstützen, gewinnen und halten
 					</div>
 				</a>
 				<a href="#dev" class="field-button field-button--beta corners corners--green cm--0-5 cp--0-5">
-					<div class="field-button__inner tl--gamma t--strong">
+					<div class="field-button__inner tl--gamma">
 						Software entwickeln
 					</div>
 				</a>
 				<a href="#know" class="field-button field-button--gamma corners corners--green cm--0-5 cp--0-5">
-					<div class="field-button__inner tl--gamma t--strong">
+					<div class="field-button__inner tl--gamma">
 						Rahmen&shy;be&shy;dingungen für Freies&nbsp;Wissen stärken
 					</div>
 				</a>
@@ -184,7 +184,7 @@ $this->seo->set('description', $text);
 					<?php endif ?>
 				>
 					<h1
-						class="news__title tm--alpha t--caps t--strong"
+						class="news__title tm--alpha t--caps"
 						<?php if ($isFirst): ?>
 							id="newsTitle"
 						<?php endif ?>
@@ -210,7 +210,7 @@ $this->seo->set('description', $text);
 						<?php endif ?>
 					></div>
 					<div
-						class="news__teaser tm--alpha t--strong"
+						class="news__teaser tm--alpha"
 						<?php if ($isFirst): ?>
 							id="newsTeaser"
 						<?php endif ?>

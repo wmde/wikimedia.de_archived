@@ -6,8 +6,7 @@
  */
 
 body {
-  font-family: var(--font-family-sans);
-  line-height: 1.35;
+  font: 500 16px/1.35 var(--font-family-sans);
 
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1, "liga" 1;

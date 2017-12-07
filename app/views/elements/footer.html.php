@@ -19,7 +19,7 @@ $this->nav->add('footer', 'Satzung',  'https://www.wikimedia.de/wiki/Satzung');
 			]) ?>
 		</div>
 		<?= $this->nav->generate('footer', [
-			'class' => 'mf__nav tm--alpha t--strong'
+			'class' => 'mf__nav tm--alpha'
 		]) ?>
 	</div>
 </footer>
