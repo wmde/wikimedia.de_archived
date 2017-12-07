@@ -35,7 +35,7 @@ $this->seo->set('description', $text);
 	</section>
 	<section class="mission sc--white">
 		<div class="mission__inner limit--16 cp--h1 cp--v2 center-column">
-			<h1 class="mission__headline tl--beta t--strong t--underlined">Mission</h1>
+			<h1 class="mission__headline tl--beta t--strong">Mission</h1>
 			<div class="mission__text tl--gamma">
 				Wir setzen uns für Freies Wissen ein, um die Chancen&shy;gleichheit beim Zu&shy;gang zu Wissen
 				und Bildung zu fördern.
@@ -50,7 +50,7 @@ $this->seo->set('description', $text);
 	</section>
 	<section class="sc--lightblue">
 		<div class="limit--20 center-column cp--h1 cp--t1-25">
-			<h1 class="t--beta t--underlined">Handlungsfelder</h1>
+			<h1 class="t--beta">Handlungsfelder</h1>
 		</div>
 		<div class="fields is-active-support">
 			<div class="field-buttons limit--20 center-column cp--0-5">
@@ -155,7 +155,7 @@ $this->seo->set('description', $text);
 
 	<section class="news sc--lightgray">
 		<div class="news__inner limit--16 center-column cp--h1 cp--t2">
-			<h1 class="tl--beta t--strong t--underlined">Aktuelles</h1>
+			<h1 class="tl--beta t--strong">Aktuelles</h1>
 
 			<?php $i = 0; foreach ($posts as $item): ?>
 			<?php
@@ -239,7 +239,7 @@ $this->seo->set('description', $text);
 
 	<section class="team sc--white">
 		<div class="team__inner limit--16 cp--h1 cp--t1-25 center-column">
-			<h1 class="tl--beta t--strong t--underlined">Unser Präsidium</h1>
+			<h1 class="tl--beta t--strong">Unser Präsidium</h1>
 
 			<?php $i = 0; foreach ($teamMembers as $item): ?>
 			<?php

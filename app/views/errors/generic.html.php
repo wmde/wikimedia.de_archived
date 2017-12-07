@@ -1,5 +1,5 @@
 <main class="error-page error-page--generic limit--normal cp">
-	<h1 class="t--underlined">
+	<h1>
 		<span class="error-page__code"><?= $this->_response->status['code'] ?></span>
 		<span class="error-page__message"><?= $this->title($this->_response->status['message']) ?></span>
 	</h1>
