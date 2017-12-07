@@ -5,6 +5,11 @@
  * license that can be found in the LICENSE file.
  */
 
+.mission h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .mission__inner {
   position: relative;
 }
@@ -12,7 +17,8 @@
 .mission__text {
   position: absolute;
   top: 144px;
-  right: 144px;
+  right: 216px;
+  max-width: 432px;
   color: var(--color-green);
   background-color: white;
 
@@ -23,6 +29,7 @@
 .mission__image {
   margin-top: 36px;
   margin-left: 144px;
+  max-width: 360px;
 
   display: flex;
   align-items: flex-end;
@@ -34,4 +41,46 @@
 
 .mission__caption {
   margin-left: 18px;
+}
+
+@media (max-width: 1152px) { /* 16 cells */
+  .mission__text {
+    right: 10vw;
+    max-width: 40vw;
+    padding: 24px;
+  }
+  .mission__image {
+    margin-left: 10vw;
+    max-width: 40vw;
+  }
+}
+
+@media (max-width: 864px) { /* 12 cells */
+  .mission__text {
+    max-width: 50vw;
+  }
+  .mission__image {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 648px) { /* 9 cells */
+  .mission__text {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 36px;
+    margin-left: calc(100vw / 12);
+    max-width: calc(100vw * 9/12);
+    padding: 16px;
+  }
+  .mission__image {
+    display: inline-block;
+    margin-top: -36px;
+    margin-bottom: 0;
+    max-width: 50vw;
+  }
+  .mission__caption {
+    margin-left: 0;
+  }
 }
