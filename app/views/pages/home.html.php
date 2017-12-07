@@ -140,18 +140,18 @@ $this->seo->set('description', $text);
 			</div>
 		</div>
 	</section>
-	<section class="cta-bar sc--lightorange">
-		<div class="limit--16 center-column cp--v1-5 cp--h1 cta-buttons">
+	<section id="cta" class="cta-bar sc--lightorange">
+		<div class="limit--16 center-column cp--v1-5 cp--h0-5 cta-buttons">
 			<a
 				href="https://www.wikimedia.de/wiki/Mitgliedschaft"
-				class="cta-button cp--0-5 corners corners--orange"
+				class="cta-button cp--0-5 cm--0-5 corners corners--orange"
 			>
 				<div class="tm--gamma t--caps t--strong">Werde Mitglied bei</div>
 				<div class="tm--delta">Wikimedia Deutschland</div>
 			</a>
 			<a
 				href="https://spenden.wikimedia.de/"
-				class="cta-button cp--0-5 corners corners--orange"
+				class="cta-button cp--0-5 cm--0-5 corners corners--orange"
 			>
 				<div class="tm--gamma t--caps t--strong">Spende für</div>
 				<div class="tm--delta">Freies Wissen</div>
