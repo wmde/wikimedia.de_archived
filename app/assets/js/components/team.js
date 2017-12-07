@@ -44,8 +44,12 @@ define('components/team', [], function() {
           img: el.querySelector('.member__image').style.backgroundImage,
           role: el.querySelector('.member__role').innerHTML,
           text: el.querySelector('.member__text').innerHTML,
-          mail: el.querySelector('.member__addr').innerHTML
         };
+
+        // team mail is optional
+        if (el.querySelector('.member__addr')) {
+          this.props[name].mail = el.querySelector('.member__addr').innerHTML;
+        }
       });
     }
 
@@ -99,8 +103,14 @@ define('components/team', [], function() {
       let updateText = (name) => {
         this.$el1('#memberRole').innerHTML = this.props[name].role;
         this.$el1('#memberText').innerHTML = this.props[name].text;
-        this.$el1('#memberMail').innerHTML = this.props[name].mail;
-        this.$el1('#memberLink').setAttribute('href', `mailto:${this.props[name].mail}`);
+
+        if (this.props[name].mail && this.props[name].mail !== '#') {
+          this.$el1('#memberLink').classList.remove('hide');
+          this.$el1('#memberLink').setAttribute('href', `mailto:${this.props[name].mail}`);
+          this.$el1('#memberMail').innerHTML = this.props[name].mail;
+        } else {
+          this.$el1('#memberLink').classList.add('hide');
+        }
       };
 
       let updateImg = (name) => {

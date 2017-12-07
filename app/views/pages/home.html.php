@@ -295,6 +295,22 @@ $this->seo->set('description', $text);
 					>
 						<?php echo $item->vita ?>
 					</div>
+
+					<?php if ($item->source): ?>
+						<?= $this->html->link('Zu diesem Projekt', $item->source, [
+							'class' => 'news__link link--black ts--alpha t--strong',
+							'id' => $isFirst ? 'newsLink' : null,
+							'target' => 'new'
+						]) ?>
+					<?php elseif ($isFirst): ?>
+						<?= $this->html->link('Zu diesem Projekt', '#', [
+							'class' => 'news__link link--black ts--alpha t--strong hide',
+							'id' => 'newsLink',
+							'target' => 'new'
+						]) ?>
+					<?php endif ?>
+
+					<?php if ($item->email): ?>
 					<a
 						class="member__mail ts--alpha"
 						<?php if ($isFirst): ?>
@@ -312,6 +328,19 @@ $this->seo->set('description', $text);
 							<?= $item->email ?>
 						</span>
 					</a>
+					<?php elseif ($isFirst): ?>
+					<a
+						class="member__mail ts--alpha hide"
+						id="memberLink"
+						href="#"
+					>
+						<span class="ts--beta">E-Mail:</span>
+						<span
+							class="member__addr"
+							id="memberMail"
+						>#</span>
+					</a>
+					<?php endif ?>
 				</div>
 			</article>
 			<?php endforeach ?>
