@@ -6,15 +6,15 @@
  */
 
 require([
-    'components/news',
-    'components/team',
-    'components/fields',
-    'domready!'
-  ], function(
-    News,
-    Team,
-    Fields
-  ) {
+  'components/news',
+  'components/team',
+  'components/fields',
+  'domready!'
+], function(
+  News,
+  Team,
+  Fields
+) {
   'use strict';
 
   let $ = document.querySelectorAll.bind(document);
