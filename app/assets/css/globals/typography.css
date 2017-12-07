@@ -23,14 +23,14 @@
   letter-spacing: .01em;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1152px) {
   .tl--alpha,
   .tl--beta {
     font-size: 28px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 648px) {
   .tl--alpha {
     font-size: 20px;
   }
@@ -61,7 +61,7 @@
   letter-spacing: .01em;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1152px) {
   .tm--gamma {
     font-size: 14px;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 648px) {
   .tm--alpha {
     font-size: 14px;
   }
@@ -97,9 +97,9 @@
   font: 14px/1.7 var(--font-family-serif);
 }
 
-/* no intermediate sizes for <1000px */
+/* no intermediate sizes for < 1152px */
 
-@media (max-width: 500px) {
+@media (max-width: 648px) {
   .ts--alpha {
     font-size: 12px;
   }
