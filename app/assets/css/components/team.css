@@ -92,19 +92,18 @@
     margin-right: 15vw;
   }
   .team__select-wrapper::after {
-    content: '\2193';
+    content: ' ';
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     width: 50px;
-    height: 36px;
-    padding-top: 4px;
-    background-color: var(--color-darkgreen);
-    color: white;
-    text-align: center;
+    height: 40px;
     pointer-events: none;
-    font-size: 24px;
+    background-color: var(--color-darkgreen);
+    background-image: url(../../ico/arrow_select_l.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .team__select {
     display: block;
@@ -121,9 +120,6 @@
   }
   .team__select::-ms-expand {
     display: none;
-  }
-  .team__select option {
-    text-transform: none;
   }
 
   .team__list {
@@ -170,6 +166,9 @@
     max-width: 360px;
     margin-right: 0;
     margin-bottom: 36px;
+  }
+  .team__select-wrapper::after {
+    background-image: url(../../ico/arrow_select_s.svg);
   }
   .member__image {
     width: calc(100vw * 10/12);
