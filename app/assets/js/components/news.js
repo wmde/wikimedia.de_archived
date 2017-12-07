@@ -79,7 +79,7 @@ define('components/news', [], function() {
     }
 
     createCounter(targetEl) {
-      let html = `<div class="news__counter tm--alpha t--caps t--strong">
+      let html = `<div class="news__counter tm--gamma t--caps t--strong">
           <span id="postCount">${this.state.current + 1}</span>/${this.props.data.length}
         </div>`;
       targetEl.insertAdjacentHTML('afterbegin', html);

@@ -184,7 +184,7 @@ $this->seo->set('description', $text);
 					<?php endif ?>
 				>
 					<h1
-						class="news__title tm--alpha t--caps"
+						class="news__title tm--gamma t--caps"
 						<?php if ($isFirst): ?>
 							id="newsTitle"
 						<?php endif ?>

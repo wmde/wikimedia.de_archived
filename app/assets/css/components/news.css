@@ -52,6 +52,18 @@
   margin-top: 0;
 }
 
+/* Teaser, counter and title have differing font-sizes and line-heights.
+   Keep them aligned nonetheless. We also need to cater for switched
+   font sizes for mobile.  */
+.news__teaser {
+  margin-top: -2px;
+}
+@media (max-width: 1152px) {
+  .news__teaser {
+    margin-top: -3px;
+  }
+}
+
 .news__image {
   width: 504px; /* 7 cells */
   height: 396px; /* 5.5 cells */
