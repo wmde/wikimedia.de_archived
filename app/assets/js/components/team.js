@@ -27,6 +27,7 @@ define('components/team', [], function() {
       });
 
       this.dataReady.then(() => {
+        this.createSelect(this.$el1('#teamStage'));
         this.createList(this.$el1('#teamStage'));
         this.attachEventHandlers();
       });
@@ -48,8 +49,21 @@ define('components/team', [], function() {
       });
     }
 
+    createSelect(stageEl) {
+      let html = '<select class="team__select">\n';
+      for (let i = 0; i < this.props.names.length; i++) {
+        let s = '';
+        if (i === 0) {
+          s = ' selected';
+        }
+        html += `<option${s}>${this.props.names[i]}</option>\n`;
+      }
+      html += '</select>';
+      stageEl.insertAdjacentHTML('afterbegin', html);
+    }
+
     createList(stageEl) {
-      let html = '<ul class="team__list limit--5 tm--gamma t--caps">\n';
+      let html = '<ul class="team__list tm--gamma t--caps">\n';
       for (let i = 0; i < this.props.names.length; i++) {
         let a = '';
         if (i === 0) {
@@ -63,12 +77,22 @@ define('components/team', [], function() {
 
     attachEventHandlers() {
       let items = this.$el('.team__list-item');
+      let select = this.$el1('.team__select');
 
       let updateActive = (list, target) => {
         list.forEach((el) => {
           el.classList.remove('active');
         });
         target.classList.add('active');
+      };
+
+      let updateSelected = (selectEl, name) => {
+        for (let i = 0; i < selectEl.options.length; i++) {
+          if (selectEl.options[i].value === name) {
+            selectEl.options[i].selected = true;
+            break;
+          }
+        }
       };
 
       let updateText = (name) => {
@@ -87,6 +111,25 @@ define('components/team', [], function() {
           updateActive(items, ev.target);
           updateText(ev.target.innerHTML);
           updateImg(ev.target.innerHTML);
+          updateSelected(select, ev.target.innerHTML);
+        });
+      });
+
+      select.addEventListener('change', (ev) => {
+        let selected;
+        for (let i = 0; i < ev.srcElement.length; i++) {
+          if (ev.srcElement[i].selected) {
+            selected = ev.srcElement[i];
+            break;
+          }
+        }
+        updateText(selected.innerHTML);
+        updateImg(selected.innerHTML);
+
+        items.forEach((el) => {
+          if (el.innerHTML === selected.innerHTML) {
+            updateActive(items, el);
+          }
         });
       });
     }

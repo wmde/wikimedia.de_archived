@@ -186,7 +186,7 @@ $this->seo->set('description', $text);
 	</section>
 
 	<section class="team sc--white">
-		<div class="team__inner limit--14 cp--t1-25 center-column">
+		<div class="team__inner limit--16 cp--h1 cp--t1-25 center-column">
 			<h1 class="tl--beta t--strong t--underlined">Unser Präsidium</h1>
 
 			<?php $i = 0; foreach ($teamMembers as $item): ?>
@@ -197,7 +197,7 @@ $this->seo->set('description', $text);
 				$i++;
 			?>
 			<article
-				class="member cp--b4"
+				class="member cp--b4 clearfix"
 				<?php if ($isFirst): ?>
 					id="teamStage"
 				<?php endif ?>
@@ -211,7 +211,7 @@ $this->seo->set('description', $text);
 					<?= $item->name ?>
 				</h1>
 				<div
-					class="member__image limit--5"
+					class="member__image"
 					<?php if ($isFirst): ?>
 						id="memberImg"
 					<?php endif ?>
@@ -244,7 +244,7 @@ $this->seo->set('description', $text);
 						<?php endif ?>
 						href="mailto:<?php echo $item->email ?>"
 					>
-						<span class="ts--beta">E-Mail:&nbsp;</span>
+						<span class="ts--beta">E-Mail:</span>
 						<span
 							class="member__addr"
 							<?php if ($isFirst): ?>
