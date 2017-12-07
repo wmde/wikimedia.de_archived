@@ -6,7 +6,7 @@ $this->title('Impressum');
 $contact = Settings::read('contact');
 
 ?>
-<main class="imprint limit--20 cp--t3-5 cp--r1 cp--b2-5 cp--l2 center-column">
+<main class="imprint limit--20 center-column cp--h1 cp--t3-5 cp--b2">
 	<div class="limit--12 cp--h1 cp--t0-5 cp--b1 sc--white">
 		<?= $this->html->link('Zur Startseite', '/', [
 			'class' => 'link--green ts--alpha t--strong'
