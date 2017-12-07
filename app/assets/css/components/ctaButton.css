@@ -5,6 +5,12 @@
  * license that can be found in the LICENSE file.
  */
 
+.cta-bar {
+  background-image: url(../../img/bg_cta_bar.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .cta-buttons {
   display: flex;
   justify-content: space-between;
