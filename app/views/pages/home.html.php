@@ -141,12 +141,12 @@ $this->seo->set('description', $text);
 		</div>
 	</section>
 	<section class="cta-bar sc--lightorange">
-		<div class="limit--20 center-column cp--v1-25 cta-buttons">
-			<a href="#" class="cta-button cp--0-5 cm--1 corners corners--orange">
+		<div class="limit--16 center-column cp--h1 cta-buttons">
+			<a href="#" class="cta-button corners corners--orange">
 				<div class="tm--gamma t--caps t--strong">Werde Mitglied bei</div>
 				<div class="tm--delta">Wikimedia Deutschland</div>
 			</a>
-			<a href="#" class="cta-button cp--0-5 cm--1 corners corners--orange">
+			<a href="#" class="cta-button corners corners--orange">
 				<div class="tm--gamma t--caps t--strong">Spende für</div>
 				<div class="tm--delta">Freies Wissen</div>
 			</a>
