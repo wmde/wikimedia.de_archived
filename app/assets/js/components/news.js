@@ -65,10 +65,14 @@ define('components/news', [], function() {
           title: el.querySelector('.news__title').innerHTML,
           teaser: el.querySelector('.news__teaser').innerHTML,
           text: el.querySelector('.news__text').innerHTML,
-          link: el.querySelector('.news__link').getAttribute('href'),
           // need copy, not pointer; hence using 'value' prop
           classes: el.querySelector('.news__box').classList.value
         };
+
+        // news link is optional
+        if (el.querySelector('.news__link')) {
+          dataUnit.link = el.querySelector('.news__link').getAttribute('href');
+        }
 
         this.props.data.push(dataUnit);
       });
@@ -116,8 +120,14 @@ define('components/news', [], function() {
         this.$el1('#newsTitle').innerHTML = this.props.data[i].title;
         this.$el1('#newsTeaser').innerHTML = this.props.data[i].teaser;
         this.$el1('#newsText').innerHTML = this.props.data[i].text;
-        this.$el1('#newsLink').setAttribute('href', this.props.data[i].link);
         this.$el1('#newsBox').classList = this.props.data[i].classes;
+
+        if (this.props.data[i].link && this.props.data[i].link !== '#') {
+          this.$el1('#newsLink').classList.remove('hide');
+          this.$el1('#newsLink').setAttribute('href', this.props.data[i].link);
+        } else {
+          this.$el1('#newsLink').classList.add('hide');
+        }
       };
 
       let updateImg = () => {

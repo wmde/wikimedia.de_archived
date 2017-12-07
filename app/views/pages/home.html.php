@@ -230,6 +230,12 @@ $this->seo->set('description', $text);
 							'id' => $isFirst ? 'newsLink' : null,
 							'target' => 'new'
 						]) ?>
+					<?php elseif ($isFirst): ?>
+						<?= $this->html->link('Zu diesem Projekt', '#', [
+							'class' => 'news__link link--black ts--alpha t--strong hide',
+							'id' => 'newsLink',
+							'target' => 'new'
+						]) ?>
 					<?php endif ?>
 				</div>
 			</article>
