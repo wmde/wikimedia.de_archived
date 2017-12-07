@@ -13,6 +13,9 @@
 .sc--green {
   background-color: var(--color-green);
 }
+.sc--lightgreen {
+  background-color: var(--color-lightgreen);
+}
 .sc--lightblue {
   background-color: var(--color-lightblue);
 }
