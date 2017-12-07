@@ -16,31 +16,26 @@ $site = Sites::current($this->_request);
 
 ?>
 <header class="mh">
-	<div class="limit--20 cp--r1 cp--l2 center-column">
-		<div class="mh__upper">
-			<div class="mh__new-notice ts--beta t--dimmed">
-				<div class="wh__new-notic-inner">
-					<?= $this->html->link(
-						'Hier geht es zur alten Website',
-						'/wiki',
-						['class' => 'link--dimmed']
-					) ?><br>
-					von Wikimedia Deutschland
-				</div>
-			</div>
-			<a href="#support" class="mh__support limit--5">
-				<div class="wh__support-inner">
-					<div class="tm--gamma t--caps t--strong">Unterstütze</div>
-					<div class="tm--delta">Freies Wissen</div>
-				</div>
-			</a>
-		</div>
-		<div class="mh__lower">
-			<h1 class="mh__logo-wrap logo--ir">
-				<?= $this->html->link($site->title(), '/', [
-					'class' => 'mh__logo logo logo--black'
+	<div class="mh__inner clearfix limit--20 cp--h1 center-column">
+		<h1 class="mh__logo-wrap logo--ir cm--r1">
+			<?= $this->html->link($site->title(), '/', [
+				'class' => 'mh__logo logo logo--black'
+			]) ?>
+		</h1>
+		<div class="mh__new-notice ts--beta">
+			<div class="wh__new-notic-inner">
+				<?= $this->html->link('Hier geht es zur alten Website', '/wiki', [
+					'class' => 'link link--green'
 				]) ?>
-			</h1>
+				<br>
+				von Wikimedia Deutschland
+			</div>
 		</div>
+		<a href="#support" class="mh__support cp--0-5 ">
+			<div class="wh__support-inner">
+				<div class="tm--gamma t--caps t--strong">Unterstütze</div>
+				<div class="tm--delta">Freies Wissen</div>
+			</div>
+		</a>
 	</div>
 </header>

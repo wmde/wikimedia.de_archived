@@ -32,3 +32,10 @@
 .logo--ir a {
   color: transparent;
 }
+
+@media (max-width: 864px) {
+  .logo {
+    height: 50px;
+    width: 200px;
+  }
+}

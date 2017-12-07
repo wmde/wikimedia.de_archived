@@ -9,38 +9,61 @@
 
 .mh {
   position: absolute;
-  top: 0;
+  z-index: 10;
+  top: 8px;
   left: 0;
   width: 100%;
-  height: 180px;
-}
-.mh__upper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 90px;
 }
-.mh__upper > * {
-  flex: 1;
-  height: 100%;
+.mh__inner {
+  height: 90px;
+  width: 100%;
+}
+
+.mh__logo-wrap {
+  float: left;
+  /* The logo image can not be easily centered vertically, as other
+     elements can. The measured center is not the visual center. */
+  position: relative;
+  top: 10px;
+}
+
+.mh__new-notice,
+.mh__support {
   display: flex;
   align-items: center;
-}
-.mh__support {
   justify-content: center;
+  height: 100%;
+}
+
+.mh__new-notice {
+  float: left;
+  color: var(--color-green);
+}
+
+.mh__support {
+  width: 288px; /* = 4 cols */
+  float: right;
   text-align: center;
   background-color: var(--color-orange);
   color: white;
 }
-.mh__support-inner {
-  text-align: center;
+
+@media (max-width: 864px) {
+  .mh,
+  .mh__inner {
+    height: 70px;
+  }
+  .mh__new-notice {
+    display: none;
+  }
+  .mh__support {
+    width: 216px; /* = 3 cols */
+  }
 }
 
-.mh__lower {
-  height: 90px;
-}
-
-.mh__logo-wrap {
-  position: relative;
-  top: 26px;
+@media (max-width: 720px) {
+  .mh__support {
+    display: none;
+  }
 }
