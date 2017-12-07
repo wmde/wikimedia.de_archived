@@ -16,23 +16,27 @@
   justify-content: space-between;
 }
 .cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 1;
-  text-align: center;
-  display: inline-block;
-  border: 2px solid var(--color-orange);
   width: 432px; /* 6 cols */
+  min-height: 126px;
   max-width: 100%;
+  text-align: center;
   background-color: white;
+  border: 2px solid var(--color-orange);
   transition: color .5s;
 }
 .cta-button:hover {
   color: var(--color-orange);
 }
-
-@media (max-width: 864px) { /* 12 cells */
+@media (max-width: 864px) {
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
+  .cta-button {
+    min-height: 90px;
+  }
 }
-
