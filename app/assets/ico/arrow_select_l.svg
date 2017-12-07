@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15">
-  <g fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" transform="rotate(90 5.598 5.31)">
-    <path d="M0.602395831,4.93663912 L13.5757576,4.93663912"/>
-    <polyline points="8.639 0 13.576 4.937 8.639 9.762"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
+  <g fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" transform="rotate(90 5 5)" stroke-linecap="round">
+    <path d="M.985306817 4.5L9.5 4.5M10.5 4.5L7.5.5M10.5 4.5L7.2 8.76923077"/>
   </g>
 </svg>
