@@ -8,8 +8,6 @@
 .cta-buttons {
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .cta-button {
   flex-shrink: 1;
@@ -17,7 +15,6 @@
   display: inline-block;
   border: 2px solid var(--color-orange);
   width: 432px;
-  padding: 36px;
   background-color: white;
   transition: color .5s;
 }
@@ -26,10 +23,6 @@
 }
 
 @media (max-width: 1152px) { /* 16 cells */
-  .cta-buttons {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
   .cta-button {
     width: 35vw;
   }
@@ -50,12 +43,7 @@
 }
 
 @media (max-width: 648px) { /* 9 cells */
-  .cta-buttons {
-    padding-top: 36px;
-    padding-bottom: 36px;
-  }
   .cta-button {
-    padding: 32px;
     max-width: 288px;
   }
   .cta-button + .cta-button {

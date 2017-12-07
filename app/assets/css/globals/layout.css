@@ -83,6 +83,10 @@
   padding-top: 144px;
   padding-bottom: 144px;
 }
+.cp--v1-5 {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
 .cp--v1-25 {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -168,6 +172,10 @@
     padding-left: 10vw;
     padding-right: 10vw;
   }
+  .cp--v1-5 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
 
 @media (max-width: 648px) { /* 9 cells */
@@ -178,6 +186,10 @@
   .cp--v2 {
     padding-top: 36px;
     padding-bottom: 72px;
+  }
+  .cp--v1-5 {
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
   .cp--t1-25 {
     padding-top: 36px;
