@@ -87,9 +87,9 @@
 @media (max-width: 1152px) { /* 16 cells */
  .team__select-wrapper {
     position: relative;
-    width: 30vw;
+    width: 100%;
     max-width: 288px;
-    margin-right: 15vw;
+    margin-right: 144px;
   }
   .team__select-wrapper::after {
     content: ' ';
@@ -128,30 +128,34 @@
 
   .member {
     padding-top: 72px;
+    padding-bottom: 288px;
   }
   .member__image {
-    max-width: 35vw;
-    height: 42vw;
+    max-width: 324px;
+    height: 360px;
   }
   .member__info {
     left: 0;
     top: 180px;
+    max-width: 468px;
   }
 }
 
 @media (max-width: 864px) { /* 12 cells */
   .team__select-wrapper {
-    width: 40vw;
-    margin-right: 5vw;
+    margin-right: 36px;
   }
   .member {
+    padding-top: 36px;
     padding-bottom: 360px;
   }
-}
-
-@media (max-width: 720px) { /* 10 cells */
-  .member {
-    padding-bottom: 504px;
+  .member__image {
+    max-width: 252px;
+    height: 288px;
+  }
+  .member__info {
+    top: 126px;
+    max-width: 360px;
   }
 }
 
@@ -162,8 +166,6 @@
     display: block;
   }
   .team__select-wrapper {
-    width: 100%;
-    max-width: 360px;
     margin-right: 0;
     margin-bottom: 36px;
   }
@@ -171,18 +173,15 @@
     background-image: url(../../ico/arrow_select_s.svg);
   }
   .member__image {
-    width: calc(100vw * 10/12);
-    max-width: 360px;
-    height: 100vw;
-    max-height: 432px;
     float: right;
-    margin-right: calc(-100vw / 12);
+    max-width: 288px;
+    height: 324px;
+    margin-right: -18px;
   }
   .member__info {
     position: relative;
     top: auto;
     float: left;
-    width: calc(100vw * 10/12);
     max-width: 360px;
     margin-top: -72px;
     padding: 16px;
