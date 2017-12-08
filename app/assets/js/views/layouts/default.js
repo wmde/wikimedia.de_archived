@@ -8,19 +8,20 @@
 require(['domready!'], function() {
   'use strict';
 
-  // Smoothly scroll the CTA into view when 1. clicking on the header support
-  // button and...
-  //
-  // TODO 2. when the current page contains the CTA area and we are
-  // invoked with the #cta hash.
+  // Smoothly scroll the CTA into view when we clicked on the header support button.
   if ('scrollBehavior' in document.documentElement.style) {
-    let scrollHandler = function(ev) {
+    let button = document.querySelector('.mh__support');
+    let target = document.querySelector(button.hash);
+
+    button.addEventListener('click', function(ev) {
+      // The target is not on the current page, allow to load the
+      // page having it, then we will be autoplaced on the target.
+      if (!target) {
+        return;
+      }
       ev.preventDefault();
-      document.querySelector(this.hash)
-        .scrollIntoView({behavior: 'smooth'});
-    };
-    document.querySelector('.mh__support')
-      .addEventListener('click', scrollHandler);
+      target.scrollIntoView({behavior: 'smooth'});
+    });
   }
 });
 
