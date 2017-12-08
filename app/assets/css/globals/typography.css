@@ -9,7 +9,7 @@
 ---------------------------------------------------------------- */
 /* use for very large running text */
 .tl--alpha {
-  font: 500 35px/1.4 var(--font-family-serif);
+  font: 500 35px/1.25 var(--font-family-serif);
   letter-spacing: .01em;
 }
 /* use inline with tl--alpha, or as standalone headline */
@@ -19,7 +19,7 @@
 }
 /* use for large running text */
 .tl--gamma {
-  font: 28px/1.4 var(--font-family-serif);
+  font: 28px/1.25 var(--font-family-serif);
   letter-spacing: .01em;
 }
 
