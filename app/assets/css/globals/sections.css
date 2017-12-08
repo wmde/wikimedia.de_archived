@@ -25,3 +25,8 @@
 .sc--lightorange {
   background-color: var(--color-lightorange);
 }
+.sc--grid {
+  background-image: url(../../img/fields_grid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

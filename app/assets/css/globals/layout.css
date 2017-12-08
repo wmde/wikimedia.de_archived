@@ -209,6 +209,9 @@
 .cp--b2 {
   padding-bottom: 144px;
 }
+.cp--b1-75 {
+  padding-bottom: 126px;
+}
 .cp--b1 {
   padding-bottom: 72px;
 }
@@ -297,6 +300,9 @@
   }
   .cp--b2 {
     padding-bottom: 72px;
+  }
+  .cp--b1-75 {
+    padding-bottom: 63px;
   }
   .cp--b1 {
     padding-bottom: 36px;
@@ -387,6 +393,9 @@
   }
   .cp--b2 {
     padding-bottom: 36px;
+  }
+  .cp--b1-75 {
+    padding-bottom: 32px;
   }
   .cp--b1 {
     padding-bottom: 18px;

@@ -50,12 +50,12 @@ $this->seo->set('description', $text);
 			</figure>
 		</div>
 	</section>
-	<section class="sc--lightblue">
-		<div class="limit--20 center-column cp--h1 cp--t1-25">
-			<h1 class="t--beta">Handlungsfelder</h1>
-		</div>
-		<div class="fields is-active-support">
-			<div class="field-buttons limit--20 center-column cp--0-5">
+	<section class="fields is-active-support">
+		<div class="sc--lightblue sc--grid">
+			<div class="limit--16 center-column cp--h1 cp--t1-25">
+				<h1 class="t--beta">Handlungsfelder</h1>
+			</div>
+			<div class="field-buttons limit--16 center-column cp--h0-5 cp--t0-5 cp--b1-75">
 				<a href="#support" class="field-button field-button--alpha corners corners--green cm--0-5 cp--0-5">
 					<div class="field-button__inner tl--gamma">
 						Freiwillige unterstützen, gewinnen und halten
@@ -72,8 +72,10 @@ $this->seo->set('description', $text);
 					</div>
 				</a>
 			</div>
-			<div class="fields__blurb-wrapper limit--20 center-column cp--b1 cp--h1">
-				<div class="fields__blurb limit--5">
+		</div>
+		<div class="sc--white">
+			<div class="fields__blurb-wrapper limit--16 center-column cp--b1 cp--h1">
+				<div class="fields__blurb limit--8">
 					<div class="fields__blurb-top"></div>
 					<div class="fields__blurb-lower cp--0-5 tm--beta">
 						<article id="support" class="fields__text">
