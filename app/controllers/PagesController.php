@@ -35,7 +35,7 @@ class PagesController extends \lithium\action\Controller {
 				'is_published' => true
 			],
 			'order' => [
-				'order' => 'DESC'
+				'order' => 'ASC'
 			]
 		]);
 		return compact('posts', 'teamMembers');
