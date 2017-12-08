@@ -41,7 +41,9 @@ $this->seo->set('description', $text);
 				und Bildung zu fördern.
 			</div>
 			<figure class="mission__image cm--l2 cm--t0-5">
-				<img src="<?= $this->assets->url('/app/img/testbild_mission.jpg') ?>">
+				<?= $this->assets->image('/app/img/testbild_mission.jpg', [
+					'alt' => 'Portrait von Abraham Taherivand'
+				]) ?>
 				<figcaption class="mission__caption cm--l0-5">
 					<span class="tm--gamma t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
 				<figcaption>
