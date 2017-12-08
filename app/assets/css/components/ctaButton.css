@@ -39,4 +39,14 @@
   .cta-button {
     min-height: 90px;
   }
+  .cta-button.corners::before,
+  .cta-button.corners::after {
+    width: 36px;
+    height: 36px;
+  }
+  .cta-button.corners:hover::before,
+  .cta-button.corners:hover::after {
+    width: 54px;
+    height: 54px;
+  }
 }

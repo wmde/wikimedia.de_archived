@@ -164,6 +164,10 @@
   padding-top: 108px;
   padding-bottom: 108px;
 }
+.cp--v1 {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
 .cp--v1-25 {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -253,6 +257,10 @@
     padding-top: 45px;
     padding-bottom: 45px;
   }
+  .cp--v1 {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
   .cp--v0-5 {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -334,6 +342,10 @@
   .cp--v1-5 {
     padding-top: 27px;
     padding-bottom: 27px;
+  }
+  .cp--v1 {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .cp--v1-25 {
     padding-top: 22px;

@@ -141,7 +141,7 @@ $this->seo->set('description', $text);
 		</div>
 	</section>
 	<section id="cta" class="cta-bar sc--lightorange">
-		<div class="limit--16 center-column cp--v1-5 cp--h0-5 cta-buttons">
+		<div class="limit--16 center-column cp--v1 cp--h0-5 cta-buttons">
 			<a
 				href="https://www.wikimedia.de/wiki/Mitgliedschaft"
 				class="cta-button cp--0-5 cm--0-5 corners corners--orange"
