@@ -44,6 +44,12 @@
   background-repeat: no-repeat;
 }
 
+.is-active-support .field-button--alpha,
+.is-active-dev .field-button--beta,
+.is-active-know .field-button--gamma {
+  color: var(--color-green);
+}
+
 .fields__blurb-wrapper {
 }
 .fields__blurb {
