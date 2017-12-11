@@ -85,6 +85,9 @@
 .member__mail {
   border-bottom: 1px solid;
 }
+.member__addr {
+  white-space: nowrap;
+}
 
 @media (max-width: 1152px) { /* 16 cells */
  .team__select-wrapper {
