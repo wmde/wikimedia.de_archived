@@ -39,6 +39,13 @@ define('components/news', [], function() {
       this.$el = element.querySelectorAll.bind(element);
       this.$el1 = element.querySelector.bind(element);
 
+      this.title = this.$el1('.news__title');
+      this.teaser = this.$el1('.news__teaser');
+      this.text = this.$el1('.news__text');
+      this.box = this.$el1('.news__box');
+      this.link = this.$el1('.news__link');
+      this.counterHook = this.$el1('.news__post');
+
       this.dataReady = new Promise((resolve, reject) => {
         this.extractData(this.$el('.news__post'));
         if (typeof this.props === 'object' && this.props !== {}) {
@@ -47,9 +54,9 @@ define('components/news', [], function() {
       });
 
       this.dataReady.then(() => {
-        this.createCounter(this.$el1('#counterHook'));
-        this.createNextImg(this.$el1('#newsBox'), false);
-        this.createNextImg(this.$el1('#newsBox'), true);
+        this.createCounter(this.counterHook);
+        this.createNextImg(this.box, false);
+        this.createNextImg(this.box, true);
         this.createNextBtn(this.element);
 
         this.attachEventHandlers();
@@ -80,7 +87,7 @@ define('components/news', [], function() {
 
     createCounter(targetEl) {
       let html = `<div class="news__counter tm--gamma t--caps t--strong">
-          <span id="postCount">${this.state.current + 1}</span>/${this.props.data.length}
+          <span class="post__count">${this.state.current + 1}</span>/${this.props.data.length}
         </div>`;
       targetEl.insertAdjacentHTML('afterbegin', html);
     }
@@ -116,17 +123,17 @@ define('components/news', [], function() {
         target.innerHTML = this.state.current + 1;
       };
 
-      let updateText = (i) => {
-        this.$el1('#newsTitle').innerHTML = this.props.data[i].title;
-        this.$el1('#newsTeaser').innerHTML = this.props.data[i].teaser;
-        this.$el1('#newsText').innerHTML = this.props.data[i].text;
-        this.$el1('#newsBox').classList = this.props.data[i].classes;
+     let updateText = (i) => {
+        this.title.innerHTML = this.props.data[i].title;
+        this.teaser.innerHTML = this.props.data[i].teaser;
+        this.text.innerHTML = this.props.data[i].text;
+        this.box.classList = this.props.data[i].classes;
 
         if (this.props.data[i].link && this.props.data[i].link !== '#') {
-          this.$el1('#newsLink').classList.remove('hide');
-          this.$el1('#newsLink').setAttribute('href', this.props.data[i].link);
+          this.link.classList.remove('hide');
+          this.link.setAttribute('href', this.props.data[i].link);
         } else {
-          this.$el1('#newsLink').classList.add('hide');
+          this.link.classList.add('hide');
         }
       };
 
@@ -140,7 +147,7 @@ define('components/news', [], function() {
         this.$el1('.news__image--after-next').classList.add('news__image--next');
         this.$el1('.news__image--after-next').classList.remove('news__image--after-next');
 
-        this.createNextImg(this.$el1('#newsBox'), true);
+        this.createNextImg(this.box, true);
       };
 
       let removeOldImg = () => {
@@ -155,7 +162,7 @@ define('components/news', [], function() {
           this.state.current = 0;
         }
 
-        updateCounter(this.$el1('#postCount'));
+        updateCounter(this.$el1('.post__count'));
         updateText(this.state.current);
         updateImg();
         removeOldImg();

@@ -189,23 +189,12 @@ $this->seo->set('description', $text);
 			<article
 				<?php if ($isFirst): ?>
 					class="news__post cp--b2"
-					id="counterHook"
 				<?php else: ?>
 					class="news__post cp--b2 hide"
 				<?php endif ?>
 			>
-				<div
-					class="news__box <?php echo implode(' ', $classes) ?> limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white"
-					<?php if ($isFirst): ?>
-						id="newsBox"
-					<?php endif ?>
-				>
-					<h1
-						class="news__title tm--gamma t--caps"
-						<?php if ($isFirst): ?>
-							id="newsTitle"
-						<?php endif ?>
-					>
+				<div class="news__box <?php echo implode(' ', $classes) ?> limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
+					<h1 class="news__title tm--gamma t--caps">
 					<?php
 						if ($item->hasTags(['wm'])) {
 							echo 'Wikimedia';
@@ -226,31 +215,18 @@ $this->seo->set('description', $text);
 							style="background-image: url(<?= $this->media->url($cover->version('fix20')) ?>);"
 						<?php endif ?>
 					></div>
-					<div
-						class="news__teaser tm--alpha"
-						<?php if ($isFirst): ?>
-							id="newsTeaser"
-						<?php endif ?>
-					>
-						<?php echo $item->teaser ?>
-					</div>
-					<div
-						class="news__text tm--beta cm--b1"
-						<?php if ($isFirst): ?>
-							id="newsText">
-						<?php endif ?>
-						<?php echo $item->body ?>
-					</div>
+
+					<div class="news__teaser tm--alpha"><?php echo $item->teaser ?></div>
+					<div class="news__text tm--beta cm--b1"><?php echo $item->body ?></div>
+
 					<?php if ($item->source): ?>
 						<?= $this->html->link('Zu diesem Projekt', $item->source, [
 							'class' => 'news__link link--black ts--alpha t--strong',
-							'id' => $isFirst ? 'newsLink' : null,
 							'target' => 'new'
 						]) ?>
 					<?php elseif ($isFirst): ?>
 						<?= $this->html->link('Zu diesem Projekt', '#', [
 							'class' => 'news__link link--black ts--alpha t--strong hide',
-							'id' => 'newsLink',
 							'target' => 'new'
 						]) ?>
 					<?php endif ?>
