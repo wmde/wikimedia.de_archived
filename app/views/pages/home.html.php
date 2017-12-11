@@ -290,10 +290,12 @@ $this->seo->set('description', $text);
 					<?php if ($isFirst): ?>
 						id="memberImg"
 					<?php endif ?>
-					<?php if ($cover = $item->portrait()): ?>
-						style="background-image: url(<?= $this->media->url($cover->version('fix20')) ?>);"
-					<?php endif ?>
 				>
+					<?php if ($cover = $item->portrait()): ?>
+						<?= $this->media->image($cover->version('fix20'), [
+							'alt' => $cover->title . $i
+						]) ?>
+					<?php endif ?>
 				</div>
 				<div class="member__info limit--5">
 					<h2

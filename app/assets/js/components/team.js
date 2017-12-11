@@ -41,7 +41,7 @@ define('components/team', [], function() {
         this.props.names.push(name);
 
         this.props[name] = {
-          img: el.querySelector('.member__image').style.backgroundImage,
+          img: el.querySelector('.member__image').innerHTML,
           role: el.querySelector('.member__role').innerHTML,
           text: el.querySelector('.member__text').innerHTML,
         };
@@ -114,7 +114,7 @@ define('components/team', [], function() {
       };
 
       let updateImg = (name) => {
-        this.$el1('#memberImg').style.backgroundImage = `${this.props[name].img}`;
+        this.$el1('#memberImg').innerHTML = this.props[name].img;
       };
 
       items.forEach((el) => {
