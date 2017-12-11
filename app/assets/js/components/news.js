@@ -87,7 +87,7 @@ define('components/news', [], function() {
 
     createCounter(targetEl) {
       let html = `<div class="news__counter tm--gamma t--caps t--strong">
-          <span class="post__count">${this.state.current + 1}</span>/${this.props.data.length}
+          <span class="post__count">${this.state.current + 1}</span> / ${this.props.data.length}
         </div>`;
       targetEl.insertAdjacentHTML('afterbegin', html);
     }
