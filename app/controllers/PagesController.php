@@ -12,6 +12,7 @@ namespace app\controllers;
 use indexed\Robots;
 use cms_post\models\Posts;
 use cms_team\models\TeamMembers;
+use app\models\References;
 
 class PagesController extends \lithium\action\Controller {
 
@@ -38,7 +39,24 @@ class PagesController extends \lithium\action\Controller {
 				'order' => 'ASC'
 			]
 		]);
-		return compact('posts', 'teamMembers');
+
+		// List static references of the page.
+		$references = [
+			'hero' => References::create([
+				'name' => 'hero',
+				'author' => 'Inga Israel',
+				'url' => 'https://commons.wikimedia.org/wiki/Main_Page#/media/File:Munich_Subway_Station_Gro%C3%9Fhadern_02.jpg',
+				'license' => 'CC-BY-SA-3.0'
+			]),
+			'mission' => References::create([
+				'name' => 'mission',
+				'author' => 'Foo bar',
+				'url' => 'https://commons.wikimedia.org/wiki/Main_Page#/media/File:Munich_Subway_Station_Gro%C3%9Fhadern_02.jpg',
+				'license' => 'CC-BY-SA-3.0'
+			])
+		];
+
+		return compact('posts', 'teamMembers', 'references');
 	}
 
 	public function imprint() {}

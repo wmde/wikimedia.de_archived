@@ -32,7 +32,9 @@ $this->seo->set('description', $text);
 				kann.
 			</div>
 		</div>
+		<?= $this->references->cite($references['hero'], ['style' => 'long']) ?>
 	</section>
+
 	<section class="mission sc--white">
 		<div class="mission__inner limit--16 cp--h1 cp--v2 center-column">
 			<h1 class="mission__headline tl--beta t--strong">Mission</h1>
@@ -44,6 +46,7 @@ $this->seo->set('description', $text);
 				<?= $this->assets->image('/app/img/testbild_mission.jpg', [
 					'alt' => 'Portrait von Abraham Taherivand'
 				]) ?>
+				<?= $this->references->cite($references['mission'], ['style' => 'short']) ?>
 				<figcaption class="mission__caption cm--l0-5">
 					<span class="tm--gamma t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
 				<figcaption>

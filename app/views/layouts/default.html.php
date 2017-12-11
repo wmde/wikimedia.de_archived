@@ -86,6 +86,9 @@ use lithium\util\Inflector;
 		<?= $this->html->link('Navigation überspringen', '#main', ['class' => 'skip-nav']) ?>
 		<?= $this->_render('element', 'header', compact('authedUser', 'nav')) ?>
 		<?php echo $this->content() ?>
-		<?= $this->_render('element', 'footer', compact('authedUser', 'nav')) ?>
+		<?= $this->_render('element', 'footer', compact('authedUser', 'nav') + [
+			'hasReferences' => (boolean) $references
+		]) ?>
+		<?= $this->_render('element', 'references', ['data' => $references]) ?>
 	</body>
 </html>

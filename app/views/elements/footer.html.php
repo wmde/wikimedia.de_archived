@@ -6,7 +6,12 @@ $site = Sites::current($this->_request);
 
 
 $this->nav->add('footer', 'Impressum und Kontakt', 'Pages::imprint');
-$this->nav->add('footer', 'Lizenzhinweise dieser Seite',  '#');
+
+if ($hasReferences) {
+	$this->nav->add('footer', 'Lizenzhinweise dieser Seite',  '#refs-foldout', [
+		'class' => 'toggle-refs-foldout'
+	]);
+}
 $this->nav->add('footer', 'Transparenz',  'https://www.wikimedia.de/wiki/Transparenz');
 $this->nav->add('footer', 'Satzung',  'https://www.wikimedia.de/wiki/Satzung');
 
