@@ -411,12 +411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/base_media.git",
-                "reference": "110ce5ebb2df0da913b8c3c327ef64b4ab36028d"
+                "reference": "ef32ae216aeca8fd716b4510dba899ab62008c88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/base_media/zipball/110ce5ebb2df0da913b8c3c327ef64b4ab36028d",
-                "reference": "110ce5ebb2df0da913b8c3c327ef64b4ab36028d",
+                "url": "https://api.github.com/repos/bseries/base_media/zipball/ef32ae216aeca8fd716b4510dba899ab62008c88",
+                "reference": "ef32ae216aeca8fd716b4510dba899ab62008c88",
                 "shasum": ""
             },
             "require": {
@@ -438,7 +438,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Media functionality for Bento.",
-            "time": "2017-12-11T16:18:40+00:00"
+            "time": "2017-12-11T16:45:10+00:00"
         },
         {
             "name": "bseries/base_reference",
@@ -446,12 +446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/base_reference.git",
-                "reference": "544574c4bd33f466054a9d41da658a083bd46c18"
+                "reference": "a3674d6e6401a91f0f05cede447961b1828ce631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/base_reference/zipball/544574c4bd33f466054a9d41da658a083bd46c18",
-                "reference": "544574c4bd33f466054a9d41da658a083bd46c18",
+                "url": "https://api.github.com/repos/bseries/base_reference/zipball/a3674d6e6401a91f0f05cede447961b1828ce631",
+                "reference": "a3674d6e6401a91f0f05cede447961b1828ce631",
                 "shasum": ""
             },
             "require": {
@@ -467,7 +467,7 @@
                 "BSD-3-Clause"
             ],
             "description": "References functionality for Bento.",
-            "time": "2017-12-11T15:33:08+00:00"
+            "time": "2017-12-11T16:34:03+00:00"
         },
         {
             "name": "bseries/base_tag",
