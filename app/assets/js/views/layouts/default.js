@@ -76,7 +76,9 @@ require(['domready!'], function() {
       }
     }
 
-    // Handle highlighting, folding and scrolling in index area.
+    // Handle highlighting, folding and scrolling in index area. The citations anchors may
+    // be rebuild by JavaScript using the document as a data source. So we must to this
+    // into a live handler.
     let handleScrollToRef = function(ev) {
       let target = $1(this.hash);
 
@@ -94,9 +96,12 @@ require(['domready!'], function() {
       clearHighlighted();
       target.classList.add('hi');
     };
-    for (let link of $('.ref__number')) {
-      link.addEventListener('click', handleScrollToRef);
-    }
+
+    document.addEventListener('click', function(ev) {
+      if (ev.target.classList.contains('ref__number')) {
+        return handleScrollToRef.call(ev.target, ev);
+      }
+    });
 
     // Helper function to clear all highlights in the area.
     let clearHighlighted = function() {

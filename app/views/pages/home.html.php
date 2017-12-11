@@ -292,9 +292,14 @@ $this->seo->set('description', $text);
 					<?php endif ?>
 				>
 					<?php if ($cover = $item->portrait()): ?>
-						<?= $this->media->image($cover->version('fix20'), [
-							'alt' => $cover->title . $i
-						]) ?>
+						<figure>
+							<?= $this->media->image($cover->version('fix20'), [
+								'alt' => $cover->title . $i
+							]) ?>
+							<?php if ($ref = $cover->reference()): ?>
+								<?= $this->references->cite($ref) ?>
+							<?php endif ?>
+						</figure>
 					<?php endif ?>
 				</div>
 				<div class="member__info limit--5">
