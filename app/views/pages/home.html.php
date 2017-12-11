@@ -54,9 +54,9 @@ $this->seo->set('description', $text);
 		</div>
 	</section>
 	<section class="fields is-active-support">
-		<div class="sc--lightblue sc--grid">
+		<div class="sc--lightblue fields--grid">
 			<div class="limit--16 center-column cp--h1 cp--t1-25">
-				<h1 class="t--beta">Handlungsfelder</h1>
+				<h1 class="tl--beta t--strong">Handlungsfelder</h1>
 			</div>
 			<div class="field-buttons limit--16 center-column cp--h0-5 cp--t0-5 cp--b1-75">
 				<a href="#support" class="field-button field-button--alpha corners corners--green cm--0-5 cp--0-5">
@@ -71,7 +71,7 @@ $this->seo->set('description', $text);
 				</a>
 				<a href="#know" class="field-button field-button--gamma corners corners--green cm--0-5 cp--0-5">
 					<div class="field-button__inner tl--gamma">
-						Rahmen&shy;be&shy;dingungen für Freies&nbsp;Wissen stärken
+						Rahmen&shy;bedingungen für Freies Wissen stärken
 					</div>
 				</a>
 			</div>
