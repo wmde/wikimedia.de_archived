@@ -9,7 +9,7 @@
 @import "normalize.css";
 @import "reset.css";
 @import "globals/variables.css";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Source+Serif+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Source+Serif+Pro:400');
 @import "globals/typography.css";
 @import "globals/basics.css";
 @import "globals/hyperlinks.css";
