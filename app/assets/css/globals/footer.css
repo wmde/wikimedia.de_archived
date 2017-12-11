@@ -16,3 +16,12 @@
 .mf__nav a + a {
   margin-left: 72px;
 }
+@media (max-width: 1152px) {
+  .mf__nav a {
+    display: block;
+    margin-bottom: 9px;
+  }
+  .mf__nav a + a {
+    margin-left: 0;
+  }
+}
