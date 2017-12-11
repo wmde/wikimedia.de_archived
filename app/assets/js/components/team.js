@@ -65,7 +65,7 @@ define('components/team', [], function() {
 
     createSelect(stageEl) {
       let html = `<div class="team__select-wrapper">
-        <select class="team__select ts--alpha t--strong t--caps">\n`;
+        <select aria-controls="member-stage" class="team__select ts--alpha t--strong t--caps">\n`;
       for (let i = 0; i < this.props.names.length; i++) {
         let s = '';
         if (i === 0) {
@@ -78,16 +78,25 @@ define('components/team', [], function() {
     }
 
     createList(stageEl) {
-      let html = '<ul class="team__list tm--gamma t--caps">\n';
+      let ul = document.createElement('ul');
+      ul.classList.add('team__list', 'tm--gamma', 't--caps');
+
       for (let i = 0; i < this.props.names.length; i++) {
-        let a = '';
+        let li = document.createElement('li');
+
+        let a = document.createElement('a');
+        a.classList.add('team__list-item');
+        a.setAttribute('href', '#member-stage');
+        a.setAttribute('aria-controls', '#member-stage');
+        a.innerHTML = this.props.names[i];
+
         if (i === 0) {
-          a = ' active';
+          a.classList.add('active');
         }
-        html += `<li><span class="team__list-item${a}">${this.props.names[i]}</span></li>\n`;
+        li.appendChild(a);
+        ul.appendChild(li);
       }
-			html += '</ul>';
-      stageEl.insertAdjacentHTML('afterbegin', html);
+      stageEl.insertAdjacentElement('afterbegin', ul);
     }
 
     attachEventHandlers() {
@@ -129,6 +138,8 @@ define('components/team', [], function() {
 
       items.forEach((el) => {
         el.addEventListener('click', (ev) => {
+          ev.preventDefault();
+
           updateActive(items, ev.target);
           updateText(ev.target.innerHTML);
           updateImg(ev.target.innerHTML);

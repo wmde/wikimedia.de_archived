@@ -253,7 +253,14 @@ $this->seo->set('description', $text);
 				$isFirst = $i === 0;
 				$i++;
 			?>
-			<article class="member cp--b4 clearfix">
+			<article
+				<?php if ($isFirst): ?>
+					id="member-stage"
+					role="region"
+					aria-live="polite"
+				<?php endif ?>
+				class="member cp--b4 clearfix"
+			>
 				<h1 class="member__name hide"><?= $item->name ?> </h1>
 				<div class="member__image">
 					<?php if ($cover = $item->portrait()): ?>
