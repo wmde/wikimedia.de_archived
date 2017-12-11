@@ -209,12 +209,18 @@ $this->seo->set('description', $text);
 						}
 					?>
 					</h1>
-					<div
-						class="news__image<?php if ($isFirst): ?> news__image--active<?php endif ?>"
+					<div class="news__image<?php if ($isFirst): ?> news__image--active<?php endif ?>" >
 						<?php if ($cover = $item->cover()): ?>
-							style="background-image: url(<?= $this->media->url($cover->version('fix20')) ?>);"
-						<?php endif ?>
-					></div>
+						<figure>
+							<?= $this->media->image($cover->version('fix20'), [
+								'alt' => $cover->title
+							]) ?>
+							<?php if ($ref = $cover->reference()): ?>
+								<?= $this->references->cite($ref) ?>
+							<?php endif ?>
+						</figure>
+					<?php endif ?>
+					</div>
 
 					<div class="news__teaser tm--alpha"><?php echo $item->teaser ?></div>
 					<div class="news__text tm--beta cm--b1"><?php echo $item->body ?></div>
@@ -253,7 +259,7 @@ $this->seo->set('description', $text);
 					<?php if ($cover = $item->portrait()): ?>
 						<figure>
 							<?= $this->media->image($cover->version('fix20'), [
-								'alt' => $cover->title . $i
+								'alt' => $cover->title
 							]) ?>
 							<?php if ($ref = $cover->reference()): ?>
 								<?= $this->references->cite($ref) ?>

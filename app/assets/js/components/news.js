@@ -68,7 +68,7 @@ define('components/news', [], function() {
 
       postEls.forEach((el) => {
         let dataUnit = {
-          img: el.querySelector('.news__image').style.backgroundImage,
+          img: el.querySelector('.news__image').innerHTML,
           title: el.querySelector('.news__title').innerHTML,
           teaser: el.querySelector('.news__teaser').innerHTML,
           text: el.querySelector('.news__text').innerHTML,
@@ -102,12 +102,9 @@ define('components/news', [], function() {
       if (index >= this.props.data.length) {
         index %= this.props.data.length;
       }
-      // browser wraps img url with double quotes; destroys slashes in url
-      let url = this.props.data[index].img.replace(/"/g, "'");
-      let html = `<div
-				  class="news__image ${cl}"
-				  style="background-image: ${url};"
-				></div>`;
+
+      let image = this.props.data[index].img;
+      let html = `<div class="news__image ${cl}">${image}</div>`;
       targetEl.insertAdjacentHTML('beforeend', html);
     }
 
