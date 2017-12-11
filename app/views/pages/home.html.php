@@ -27,7 +27,7 @@ $this->seo->set('description', $text);
 	<section class="illu-hero sc--lightgreen">
 		<div class="illu-hero__inner limit--14 cp--h1 center-column">
 			<div class="illu-hero__text tl--alpha limit--7">
-				Lorem: Unsere <span class="tl--beta t--strong">Vision</span> ist eine Welt, in der
+				Unsere <span class="tl--beta t--strong">Vision</span> ist eine Welt, in der
 				jeder Mensch am Wissen der Menschheit teilhaben, es nutzen und mehren
 				kann.
 			</div>
