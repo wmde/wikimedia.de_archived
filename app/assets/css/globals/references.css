@@ -10,21 +10,15 @@
 ---------------------------------------------------------------- */
 .ref,
 .ref__number,
-.ref__url,
-.ref__license {
+a.ref__title,
+a.ref__license {
   color: var(--color-darkgray);
 }
 
-/* URL and license can both also be simple strings.*/
-a.ref__url,
+/* source and license can both also be simple strings.*/
+a.ref__title,
 a.ref__license {
   border-bottom: 1px solid var(--color-darkgray);
-}
-a.ref__url:before,
-a.ref__url:after {
-  /* Overlay parent line so parentheses don't appear
-     to be underlined. */
-  border: 1px solid white;
 }
 
 .ref__number:before {
@@ -32,13 +26,6 @@ a.ref__url:after {
 }
 .ref__number:after {
   content: "]";
-}
-
-.ref__url:before {
-  content: "(";
-}
-.ref__url:after {
-  content: ")";
 }
 
 /* highlighted reference */

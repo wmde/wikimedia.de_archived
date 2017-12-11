@@ -9,13 +9,13 @@
         "atelierdisko/li3_access": "2.*@stable || 2.1.0@dev",
         "bseries/base_core": "1.5.x-dev",
         "bseries/base_media": "1.5.x-dev",
+        "bseries/base_reference": "1.5.x-dev",
         "bseries/cms_core": "1.5.x-dev",
         "bseries/cms_post": "1.5.x-dev",
         "bseries/cms_team": "1.5.x-dev",
         "davidpersson/indexed": "1.*",
         "php": "^5.5 || ^7.0",
-        "unionofrad/lithium": "1.2.x-dev as 1.2.0",
-        "composer/spdx-licenses": "^1.1"
+        "unionofrad/lithium": "1.2.x-dev as 1.2.0"
     },
     "require-dev": {
         "digitalnature/php-ref": "1.2.*",

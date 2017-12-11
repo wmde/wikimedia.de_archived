@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddc82b7bf6bd3700dfbb5e825f486867",
+    "content-hash": "a7fd734485a1e5c0c8e2bf6604fd8148",
     "packages": [
         {
             "name": "atelierdisko/cute",
@@ -411,12 +411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/base_media.git",
-                "reference": "66c1326faaebada702f3c4f157903d959889f096"
+                "reference": "110ce5ebb2df0da913b8c3c327ef64b4ab36028d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/base_media/zipball/66c1326faaebada702f3c4f157903d959889f096",
-                "reference": "66c1326faaebada702f3c4f157903d959889f096",
+                "url": "https://api.github.com/repos/bseries/base_media/zipball/110ce5ebb2df0da913b8c3c327ef64b4ab36028d",
+                "reference": "110ce5ebb2df0da913b8c3c327ef64b4ab36028d",
                 "shasum": ""
             },
             "require": {
@@ -438,7 +438,36 @@
                 "BSD-3-Clause"
             ],
             "description": "Media functionality for Bento.",
-            "time": "2017-11-08T11:30:41+00:00"
+            "time": "2017-12-11T16:18:40+00:00"
+        },
+        {
+            "name": "bseries/base_reference",
+            "version": "1.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bseries/base_reference.git",
+                "reference": "544574c4bd33f466054a9d41da658a083bd46c18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bseries/base_reference/zipball/544574c4bd33f466054a9d41da658a083bd46c18",
+                "reference": "544574c4bd33f466054a9d41da658a083bd46c18",
+                "shasum": ""
+            },
+            "require": {
+                "bseries/base_core": "1.5.*@dev",
+                "composer/installers": "1.*@stable",
+                "composer/spdx-licenses": "^1.1",
+                "php": "^5.5 || ^7.0",
+                "unionofrad/lithium": "^1.1"
+            },
+            "type": "lithium-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "References functionality for Bento.",
+            "time": "2017-12-11T15:33:08+00:00"
         },
         {
             "name": "bseries/base_tag",
@@ -1701,6 +1730,7 @@
         "atelierdisko/li3_access": 20,
         "bseries/base_core": 20,
         "bseries/base_media": 20,
+        "bseries/base_reference": 20,
         "bseries/cms_core": 20,
         "bseries/cms_post": 20,
         "bseries/cms_team": 20,
