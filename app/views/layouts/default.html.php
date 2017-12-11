@@ -87,8 +87,10 @@ use lithium\util\Inflector;
 		<?= $this->_render('element', 'header', compact('authedUser', 'nav')) ?>
 		<?php echo $this->content() ?>
 		<?= $this->_render('element', 'footer', compact('authedUser', 'nav') + [
-			'hasReferences' => (boolean) $references
+			'hasReferences' => !empty($references)
 		]) ?>
-		<?= $this->_render('element', 'references', ['data' => $references]) ?>
+		<?php if (!empty($references)): ?>
+			<?= $this->_render('element', 'references', ['data' => $references]) ?>
+		<?php endif ?>
 	</body>
 </html>
