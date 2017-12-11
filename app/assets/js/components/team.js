@@ -16,6 +16,7 @@ define('components/team', [], function() {
 
     mount(element) {
       this.element = element;
+
       this.$el = element.querySelectorAll.bind(element);
       this.$el1 = element.querySelector.bind(element);
 
@@ -26,9 +27,18 @@ define('components/team', [], function() {
         }
       });
 
+      // Use the first element seen as stage and extract data from others.
+      this.stage = this.$el1('.member');
+
+      this.role = this.$el1('.member__role');
+      this.text = this.$el1('.member__text');
+      this.link = this.$el1('.member__mail');
+      this.mail = this.$el1('.member__addr');
+      this.image = this.$el1('.member__image');
+
       this.dataReady.then(() => {
-        this.createSelect(this.$el1('#teamStage'));
-        this.createList(this.$el1('#teamStage'));
+        this.createSelect(this.stage);
+        this.createList(this.stage);
         this.attachEventHandlers();
       });
     }
@@ -100,21 +110,21 @@ define('components/team', [], function() {
         }
       };
 
-      let updateText = (name) => {
-        this.$el1('#memberRole').innerHTML = this.props[name].role;
-        this.$el1('#memberText').innerHTML = this.props[name].text;
+     let updateText = (name) => {
+        this.role.innerHTML = this.props[name].role;
+        this.text.innerHTML = this.props[name].text;
 
         if (this.props[name].mail && this.props[name].mail !== '#') {
-          this.$el1('#memberLink').classList.remove('hide');
-          this.$el1('#memberLink').setAttribute('href', `mailto:${this.props[name].mail}`);
-          this.$el1('#memberMail').innerHTML = this.props[name].mail;
+          this.link.classList.remove('hide');
+          this.link.setAttribute('href', `mailto:${this.props[name].mail}`);
+          this.mail.innerHTML = this.props[name].mail;
         } else {
-          this.$el1('#memberLink').classList.add('hide');
+          this.link.classList.add('hide');
         }
       };
 
       let updateImg = (name) => {
-        this.$el1('#memberImg').innerHTML = this.props[name].img;
+        this.image.innerHTML = this.props[name].img;
       };
 
       items.forEach((el) => {

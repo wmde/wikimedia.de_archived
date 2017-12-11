@@ -271,26 +271,9 @@ $this->seo->set('description', $text);
 				$isFirst = $i === 0;
 				$i++;
 			?>
-			<article
-				class="member cp--b4 clearfix"
-				<?php if ($isFirst): ?>
-					id="teamStage"
-				<?php endif ?>
-			>
-				<h1
-					class="member__name hide"
-					<?php if ($isFirst): ?>
-						id="memberName"
-					<?php endif ?>
-				>
-					<?= $item->name ?>
-				</h1>
-				<div
-					class="member__image"
-					<?php if ($isFirst): ?>
-						id="memberImg"
-					<?php endif ?>
-				>
+			<article class="member cp--b4 clearfix">
+				<h1 class="member__name hide"><?= $item->name ?> </h1>
+				<div class="member__image">
 					<?php if ($cover = $item->portrait()): ?>
 						<figure>
 							<?= $this->media->image($cover->version('fix20'), [
@@ -303,33 +286,17 @@ $this->seo->set('description', $text);
 					<?php endif ?>
 				</div>
 				<div class="member__info limit--5">
-					<h2
-						class="member__role tm--alpha t--strong"
-						<?php if ($isFirst): ?>
-							id="memberRole"
-						<?php endif ?>
-					>
-						<?= $item->position ?>
-					</h2>
-					<div
-						class="member__text tm--beta"
-						<?php if ($isFirst): ?>
-							id="memberText"
-						<?php endif ?>
-					>
-						<?php echo $item->vita ?>
-					</div>
+					<h2 class="member__role tm--alpha t--strong"><?= $item->position ?></h2>
+					<div class="member__text tm--beta" ><?php echo $item->vita ?></div>
 
 					<?php if ($item->source): ?>
 						<?= $this->html->link('Zu diesem Projekt', $item->source, [
 							'class' => 'news__link link--black ts--alpha t--strong',
-							'id' => $isFirst ? 'newsLink' : null,
 							'target' => 'new'
 						]) ?>
 					<?php elseif ($isFirst): ?>
 						<?= $this->html->link('Zu diesem Projekt', '#', [
 							'class' => 'news__link link--black ts--alpha t--strong hide',
-							'id' => 'newsLink',
 							'target' => 'new'
 						]) ?>
 					<?php endif ?>
@@ -337,32 +304,15 @@ $this->seo->set('description', $text);
 					<?php if ($item->email): ?>
 					<a
 						class="member__mail ts--alpha"
-						<?php if ($isFirst): ?>
-							id="memberLink"
-						<?php endif ?>
 						href="mailto:<?php echo $item->email ?>"
 					>
 						<span class="ts--beta">E-Mail:</span>
-						<span
-							class="member__addr"
-							<?php if ($isFirst): ?>
-								id="memberMail"
-							<?php endif ?>
-						>
-							<?= $item->email ?>
-						</span>
+						<span class="member__addr"><?= $item->email ?></span>
 					</a>
 					<?php elseif ($isFirst): ?>
-					<a
-						class="member__mail ts--alpha hide"
-						id="memberLink"
-						href="#"
-					>
+					<a class="member__mail ts--alpha hide" href="#">
 						<span class="ts--beta">E-Mail:</span>
-						<span
-							class="member__addr"
-							id="memberMail"
-						>#</span>
+						<span class="member__addr" >#</span>
 					</a>
 					<?php endif ?>
 				</div>
