@@ -7,7 +7,7 @@ extract([
 
 ?>
 <div class="refs-foldout ts--beta">
-	<div class="limit--20 center-column cp--h1 cp--v2">
+	<div class="limit--20 center-column cp--h1 cp--v1">
 		<a class="refs-foldout__close" href="#close">Referenzliste schließen</a>
 
 		<div class="refs-foldout__content">
