@@ -115,18 +115,23 @@ define('components/news', [], function() {
 
     createNextImg(targetEl, isAfterNext) {
       let index = this.state.current + 1;
-      let cl = 'news__image--next';
+
+      let image = document.createElement('div');
+      image.classList.add('news__image');
+      image.setAttribute('aria-hidden', true);
+
       if (isAfterNext) {
         index += 1;
-        cl = 'news__image--after-next';
+        image.classList.add('news__image--after-next');
+      } else {
+        image.classList.add('news__image--next');
       }
       if (index >= this.props.data.length) {
         index %= this.props.data.length;
       }
+      image.innerHTML = this.props.data[index].img;
 
-      let image = this.props.data[index].img;
-      let html = `<div class="news__image ${cl}">${image}</div>`;
-      targetEl.insertAdjacentHTML('beforeend', html);
+      targetEl.insertAdjacentElement('beforeend', image);
     }
 
     createNextBtn(targetEl) {
@@ -162,14 +167,17 @@ define('components/news', [], function() {
       };
 
       let updateImg = () => {
-        this.$el1('.news__image--active').classList.add('news__image--old');
-        this.$el1('.news__image--active').classList.remove('news__image--active');
+        let active = this.$el1('.news__image--active');
+        let next = this.$el1('.news__image--next');
+        let afterNext = this.$el1('.news__image--after-next');
 
-        this.$el1('.news__image--next').classList.add('news__image--active');
-        this.$el1('.news__image--next').classList.remove('news__image--next');
+        active.classList.replace('news__image--active', 'news__image--old');
+        active.setAttribute('aria-hidden', true);
 
-        this.$el1('.news__image--after-next').classList.add('news__image--next');
-        this.$el1('.news__image--after-next').classList.remove('news__image--after-next');
+        next.classList.replace('news__image--next', 'news__image--active');
+        next.removeAttribute('aria-hidden');
+
+        afterNext.classList.replace('news__image--after-next', 'news__image--next');
 
         this.createNextImg(this.box, true);
       };
