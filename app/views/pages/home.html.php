@@ -24,11 +24,20 @@ $this->seo->set('description', $text);
 
 ?>
 <main id="main" class="home">
-	<section class="illu-hero sc--lightgreen">
-		<div class="illu-hero__inner limit--14 cp--h1 center-column">
-			<div class="illu-hero__text tl--alpha limit--7">
+	<section class="illu-hero sc--lightgreen-gradient">
+		<div class="illu-hero__green"></div>
+		<div class="illu-hero__wrapper">
+			<div class="illu-hero__inner limit--20 cp--h1 center-column">
+				<div class="illu-hero__cube"></div>
+			</div>
+		</div>
+		<div class="illu-hero__wrapper--no-overflow">
+			<div class="illu-hero__blue"></div>
+		</div>
+		<div class="illu-hero__inner limit--20 cp--h1 center-column">
+			<div class="illu-hero__text tl--alpha">
 				Unsere <span class="tl--beta t--strong">Vision</span> ist eine Welt, in der
-				jeder Mensch am Wissen der Menschheit teilhaben, es nutzen und mehren
+				jeder Mensch am Wissen der Mensch&shy;heit teilhaben, es nutzen und mehren
 				kann.
 			</div>
 		</div>

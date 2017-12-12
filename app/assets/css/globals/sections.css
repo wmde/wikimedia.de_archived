@@ -16,6 +16,9 @@
 .sc--lightgreen {
   background-color: var(--color-lightgreen);
 }
+.sc--lightgreen-gradient {
+  background: linear-gradient(167deg, #CCE7DB, #ADD6C2);
+}
 .sc--lightblue {
   background-color: var(--color-lightblue);
 }
@@ -24,9 +27,4 @@
 }
 .sc--lightorange {
   background-color: var(--color-lightorange);
-}
-.sc--grid {
-  background-image: url(../../img/fields_grid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
