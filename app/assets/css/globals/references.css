@@ -29,9 +29,12 @@ a.ref__license {
 }
 
 /* highlighted reference */
-.ref.hi {
+.ref.hi,
+.ref.hi .ref__number,
+.ref.hi a:not(.ref__back) {
   font-weight: bold;
   color: var(--color-black);
+  border-color: var(--color-black);
 }
 .ref__back {
   position: relative;
