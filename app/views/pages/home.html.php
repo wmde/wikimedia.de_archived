@@ -230,7 +230,7 @@ $this->seo->set('description', $text);
 						}
 					?>
 					</h1>
-					<div class="news__image<?php if ($isFirst): ?> news__image--active<?php endif ?>" >
+					<div class="news__image<?php if ($isFirst): ?> active<?php endif ?>" >
 						<?php if ($cover = $item->cover()): ?>
 						<figure class="fig">
 							<?= $this->media->image($cover->version('fix20'), [

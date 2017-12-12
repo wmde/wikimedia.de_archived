@@ -122,9 +122,9 @@ define('components/news', [], function() {
 
       if (isAfterNext) {
         index += 1;
-        image.classList.add('news__image--after-next');
+        image.classList.add('after-next');
       } else {
-        image.classList.add('news__image--next');
+        image.classList.add('next');
       }
       if (index >= this.props.data.length) {
         index %= this.props.data.length;
@@ -167,24 +167,24 @@ define('components/news', [], function() {
       };
 
       let updateImg = () => {
-        let active = this.$el1('.news__image--active');
-        let next = this.$el1('.news__image--next');
-        let afterNext = this.$el1('.news__image--after-next');
+        let active = this.$el1('.news__image.active');
+        let next = this.$el1('.news__image.next');
+        let afterNext = this.$el1('.news__image.after-next');
 
-        active.classList.replace('news__image--active', 'news__image--old');
+        active.classList.replace('active', 'old');
         active.setAttribute('aria-hidden', true);
 
-        next.classList.replace('news__image--next', 'news__image--active');
+        next.classList.replace('next', 'active');
         next.removeAttribute('aria-hidden');
 
-        afterNext.classList.replace('news__image--after-next', 'news__image--next');
+        afterNext.classList.replace('after-next', 'next');
 
         this.createNextImg(this.box, true);
       };
 
       let removeOldImg = () => {
-        if (this.$el('.news__image--old').length > 3) {
-          this.$el1('.news__image--old').remove();
+        if (this.$el('.news__image.old').length > 3) {
+          this.$el1('.news__image.old').remove();
         }
       };
 
