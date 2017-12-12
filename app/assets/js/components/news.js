@@ -133,10 +133,10 @@ define('components/news', [], function() {
         this.box.classList = this.props.data[i].classes;
 
         if (this.props.data[i].link && this.props.data[i].link !== '#') {
-          this.link.classList.remove('hide');
+          this.link.hidden = false;
           this.link.setAttribute('href', this.props.data[i].link);
         } else {
-          this.link.classList.add('hide');
+          this.link.hidden = true;
         }
       };
 

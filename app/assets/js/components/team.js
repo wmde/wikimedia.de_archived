@@ -124,11 +124,11 @@ define('components/team', [], function() {
         this.text.innerHTML = this.props[name].text;
 
         if (this.props[name].mail && this.props[name].mail !== '#') {
-          this.link.classList.remove('hide');
+          this.link.hidden = false;
           this.link.setAttribute('href', `mailto:${this.props[name].mail}`);
           this.mail.innerHTML = this.props[name].mail;
         } else {
-          this.link.classList.add('hide');
+          this.link.hidden = true;
         }
       };
 

@@ -58,9 +58,9 @@ define('components/fields', [], function() {
         // Toggle visibility of texts inside blurb.
         for (let el of this.$el('.fields__text')) {
           if (el.id === name) {
-            el.classList.remove('hide');
+            el.hidden = false;
           } else {
-            el.classList.add('hide');
+            el.hidden = true;
           }
         }
         updateCounter(name);
@@ -100,12 +100,9 @@ define('components/fields', [], function() {
       let switchText = (classList, textEls) => {
         let splitStr = classList.value.split('-');
         let name = splitStr[splitStr.length - 1];
+
         for (let el of textEls) {
-          if (el.id === name) {
-            el.classList.remove('hide');
-          } else {
-            el.classList.add('hide');
-          }
+          el.hidden = el.id !== name;
         }
       };
 

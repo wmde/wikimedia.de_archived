@@ -108,7 +108,7 @@ $this->seo->set('description', $text);
 								Unterstützung.
 							</p>
 						</article>
-						<article id="dev" class="fields__text hide">
+						<article id="dev" class="fields__text" hidden>
 							<p>
 								Wenn wir heute etwas wissen wollen, schauen wir einfach im Internet nach. Anders als bei
 								einem gedruckten Lexikon brauchen wir für das Internet Software, damit dieses Wissen
@@ -126,7 +126,7 @@ $this->seo->set('description', $text);
 								Interessierten auch außerhalb der Wikimedia-Welt Zugang zu unserer Datenbank bietet.
 							</p>
 						</article>
-						<article id="know" class="fields__text hide">
+						<article id="know" class="fields__text" hidden>
 							<p>
 								Die Welt ist reich an Kulturgütern wie Büchern, Gemälden oder wissenschaftlichen
 								Arbeiten. Sie können von der Öffentlichkeit aber meist nur angeschaut und nicht genutzt
@@ -196,7 +196,7 @@ $this->seo->set('description', $text);
 					class="news__post cp--b2"
 					aria-live="polite"
 				<?php else: ?>
-					class="news__post cp--b2 hide"
+					class="news__post cp--b2" hidden
 				<?php endif ?>
 			>
 				<div class="news__box <?php echo implode(' ', $classes) ?> limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
@@ -242,7 +242,8 @@ $this->seo->set('description', $text);
 						]) ?>
 					<?php elseif ($isFirst): ?>
 						<?= $this->html->link('Zu diesem Projekt', '#', [
-							'class' => 'news__link link--black ts--alpha t--strong hide',
+							'hidden' => true,
+							'class' => 'news__link link--black ts--alpha t--strong',
 							'target' => 'new'
 						]) ?>
 					<?php endif ?>
@@ -271,7 +272,7 @@ $this->seo->set('description', $text);
 				<?php endif ?>
 				class="member cp--b4 clearfix"
 			>
-				<h1 class="member__name hide"><?= $item->name ?> </h1>
+				<h1 class="member__name" hidden><?= $item->name ?> </h1>
 				<div class="member__image">
 					<?php if ($cover = $item->portrait()): ?>
 						<figure class="fig">
@@ -299,7 +300,8 @@ $this->seo->set('description', $text);
 						]) ?>
 					<?php elseif ($isFirst): ?>
 						<?= $this->html->link('Zu diesem Projekt', '#', [
-							'class' => 'news__link link--black ts--alpha t--strong hide',
+							'hidden' => true,
+							'class' => 'news__link link--black ts--alpha t--strong',
 							'target' => 'new'
 						]) ?>
 					<?php endif ?>
@@ -313,9 +315,9 @@ $this->seo->set('description', $text);
 						<span class="member__addr"><?= $item->email ?></span>
 					</a>
 					<?php elseif ($isFirst): ?>
-					<a class="member__mail ts--alpha hide" href="#">
+					<a class="member__mail ts--alpha" href="#" hidden>
 						<span class="ts--beta">E-Mail:</span>
-						<span class="member__addr" >#</span>
+						<span class="member__addr">#</span>
 					</a>
 					<?php endif ?>
 				</div>
