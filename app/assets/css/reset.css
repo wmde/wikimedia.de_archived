@@ -11,3 +11,8 @@ h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+figure {
+  /* Reset UA styles, these always interfere with our styling. */
+  margin: 0;
+}
