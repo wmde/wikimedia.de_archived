@@ -208,6 +208,26 @@ $this->seo->set('description', $text);
 	</section>
 
 	<section class="news sc--lightgray">
+		<?php
+			$linkTitle = function($item) {
+				$sourceMatch = [
+					'#(^job\.wikimedia|/wiki/job)#' => 'Zur Jobseite',
+					'#vimeo.com#' => 'Zum Vimeo Channel'
+				];
+				foreach ($sourceMatch as $regex => $title) {
+					if (preg_match($regex, $item->source)) {
+						return $title;
+					}
+				}
+				if ($item->hasTags(['initiative'])) {
+					return 'Zu dieser Initiative';
+				}
+				if ($item->hasTags(['project'])) {
+					return 'Zu diesem Projekt';
+				}
+				return 'Zur Webseite';
+			};
+		?>
 		<div class="news__inner limit--16 center-column cp--h1 cp--t2">
 			<h1 class="tl--beta t--strong">Aktuelles</h1>
 
@@ -268,7 +288,7 @@ $this->seo->set('description', $text);
 					<div class="news__teaser tm--alpha"><?php echo $item->teaser ?></div>
 					<div class="news__text tm--beta cm--b1"><?php echo $item->body ?></div>
 
-					<?= $this->html->link('Zu diesem Projekt', $item->source ?: '#', [
+					<?= $this->html->link($linkTitle($item), $item->source ?: '#', [
 						'hidden' => !$item->source && $isFirst,
 						'class' => 'news__link link--black ts--alpha t--strong',
 						'target' => 'new'

@@ -78,7 +78,7 @@ define('components/news', [], function() {
 
         // news link is optional
         if (el.querySelector('.news__link')) {
-          dataUnit.link = el.querySelector('.news__link').getAttribute('href');
+          dataUnit.link = el.querySelector('.news__link');
         }
 
         this.props.data.push(dataUnit);
@@ -152,18 +152,18 @@ define('components/news', [], function() {
         target.innerHTML = this.state.current + 1;
       };
 
-     let updateText = (i) => {
+      let updateText = (i) => {
         this.title.innerHTML = this.props.data[i].title;
         this.teaser.innerHTML = this.props.data[i].teaser;
         this.text.innerHTML = this.props.data[i].text;
         this.box.classList = this.props.data[i].classes;
 
-        if (this.props.data[i].link && this.props.data[i].link !== '#') {
-          this.link.hidden = false;
-          this.link.setAttribute('href', this.props.data[i].link);
-        } else {
-          this.link.hidden = true;
+        let link = this.props.data[i].link;
+        if (link) {
+          this.link.href= link.href;
+          this.link.innerText = link.innerText;
         }
+        this.link.hidden = !link || this.link.getAttribute('href') === '#';
       };
 
       let updateImg = () => {
