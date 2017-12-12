@@ -293,7 +293,7 @@ $this->seo->set('description', $text);
 						<figure class="fig">
 							<?= $this->media->image($cover->version('fix20'), [
 								'class' => 'fig__media',
-								'alt' => $cover->title
+								'alt' => "Portrait von {$item->name}"
 							]) ?>
 							<?php if ($ref = $cover->reference()): ?>
 								<?= $this->references->cite($ref, [
