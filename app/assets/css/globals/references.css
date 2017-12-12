@@ -38,7 +38,7 @@ a.ref__license {
   top: 1px;
   display: inline-block;
   overflow: hidden;
-  width: 20px;
+  width: 9px;
   height: 11px;
   color: transparent;
   background: url(../../ico/arrow_ref_back.svg) no-repeat left center/contain;
@@ -52,9 +52,12 @@ a.ref__license {
   list-style: none;
   padding-left: 0;
 }
+.refs-index .ref {
+  /* Leave space to the right for the close "column". */
+  max-width: calc(100% - 24px - 9px);
+}
 .refs-index .ref__number {
   display: inline-block;
-  min-width: 30px;
 }
 .refs-index .ref + .ref {
   margin-top: 32px;
