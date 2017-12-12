@@ -36,7 +36,7 @@ $this->seo->set('description', $text);
 			<div class="limit--16 cp--h1 center-column">
 				<?= $this->references->cite($references['hero'], [
 					'style' => 'long',
-					'class' => 'illu-hero__ref'
+					'class' => 'illu-hero__ref ts--beta'
 				]) ?>
 			</div>
 		</div>
@@ -55,7 +55,7 @@ $this->seo->set('description', $text);
 					'alt' => 'Portrait von Abraham Taherivand'
 				]) ?>
 				<?= $this->references->cite($references['mission'], [
-					'class' => 'fig__ref',
+					'class' => 'fig__ref ts--beta',
 					'style' => 'short'
 				]) ?>
 				<figcaption class="fig__caption mission__caption cm--l0-5">
@@ -246,7 +246,7 @@ $this->seo->set('description', $text);
 							]) ?>
 							<?php if ($ref = $cover->reference()): ?>
 								<?= $this->references->cite($ref, [
-									'class' => 'fig__ref',
+									'class' => 'fig__ref ts--beta',
 									'style' => 'short'
 								]) ?>
 							<?php endif ?>
@@ -304,7 +304,7 @@ $this->seo->set('description', $text);
 							]) ?>
 							<?php if ($ref = $cover->reference()): ?>
 								<?= $this->references->cite($ref, [
-									'class' => 'fig__ref',
+									'class' => 'fig__ref ts--beta',
 									'style' => 'short'
 								]) ?>
 							<?php endif ?>
