@@ -29,15 +29,40 @@
   border: 2px solid;
   transition: border .5s;
 }
-.news__box.tagged--wm  {
+
+.news__box.tagged--wm {
   border-color: var(--color-blue);
 }
+.news__box.tagged--wm .news__title {
+  color: var(--color-blue);
+}
+.news__box.tagged--wm .news__link {
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
 .news__box.tagged--member {
   border-color: var(--color-violet);
 }
+.news__box.tagged--member .news__title {
+  color: var(--color-violet);
+}
+.news__box.tagged--member .news__link {
+  color: var(--color-violet);
+  border-color: var(--color-violet);
+}
+
 .news__box.tagged--initiative {
   border-color: var(--color-orange);
 }
+.news__box.tagged--initiative .news__title {
+  color: var(--color-orange);
+}
+.news__box.tagged--initiative .news__link {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
 .news__box.tagged--project {
   border-color: white;
 }
@@ -45,6 +70,10 @@
 .news__title {
   position: absolute;
   left: 36px;
+  transition: color .5s;
+}
+.news__link {
+  transition: color .5s, border .5s;
 }
 
 .news__teaser p:first-of-type,
