@@ -19,7 +19,7 @@
 @media (max-width: 1152px) {
   .mf__nav a {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
   }
   .mf__nav a + a {
     margin-left: 0;
