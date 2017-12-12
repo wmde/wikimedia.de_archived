@@ -192,7 +192,9 @@ $this->seo->set('description', $text);
 			?>
 			<article
 				<?php if ($isFirst): ?>
+					id="news-stage"
 					class="news__post cp--b2"
+					aria-live="polite"
 				<?php else: ?>
 					class="news__post cp--b2 hide"
 				<?php endif ?>

@@ -109,8 +109,14 @@ define('components/news', [], function() {
     }
 
     createNextBtn(targetEl) {
-      let html = `<div class="news__next" id="nextBtn"></div>`;
-      targetEl.insertAdjacentHTML('beforeend', html);
+      let button = document.createElement('div');
+
+      button.id = 'nextBtn';
+      button.classList.add('news__next');
+      button.setAttribute('aria-controls', 'news-stage');
+      button.setAttribute('role', 'button');
+
+      targetEl.insertAdjacentElement('beforeend', button);
     }
 
     attachEventHandlers() {
