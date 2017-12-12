@@ -181,9 +181,9 @@
     max-width: none;
   }
   .fields__blurb {
-    left: 100% !important;
-    transform: translateX(-100%) !important;
-    right: 0;
+    left: 0 !important;
+    transform: translateX(0) !important;
+    right: auto;
   }
   .fields__blurb-top {
     background-position-x: -360px !important;
