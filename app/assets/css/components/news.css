@@ -71,12 +71,15 @@
   position: absolute;
   top: 108px; /* 1.5 cells */
 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top right;
-
-  transition: right .5s, transform .5s, opacity .5s, background .5s;
+  transition: right .5s, transform .5s, opacity .5s;
 }
+
+.news__image .fig {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .news__image--old {
   right: calc(50vw + 50%);
   transform: translateX(-216px); /* 3 cells */
