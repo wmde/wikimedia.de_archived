@@ -63,17 +63,32 @@ $this->seo->set('description', $text);
 				<h1 class="tl--beta t--strong">Handlungsfelder</h1>
 			</div>
 			<div class="field-buttons limit--16 center-column cp--h0-5 cp--t0-5 cp--b1-75">
-				<a href="#support" class="field-button field-button--alpha corners corners--green cm--0-5 cp--0-5">
+				<a
+					href="#fields-support"
+					class="field-button field-button--alpha corners corners--green cm--0-5 cp--0-5"
+					aria-controls="fields-blurb"
+					role="button"
+				>
 					<div class="field-button__inner tl--gamma">
 						Freiwillige unterstützen, gewinnen und halten
 					</div>
 				</a>
-				<a href="#dev" class="field-button field-button--beta corners corners--green cm--0-5 cp--0-5">
+				<a
+					href="#fields-dev"
+					class="field-button field-button--beta corners corners--green cm--0-5 cp--0-5"
+					aria-controls="fields-blurb"
+					role="button"
+				>
 					<div class="field-button__inner tl--gamma">
 						Software entwickeln
 					</div>
 				</a>
-				<a href="#know" class="field-button field-button--gamma corners corners--green cm--0-5 cp--0-5">
+				<a
+					href="#fields-know"
+					class="field-button field-button--gamma corners corners--green cm--0-5 cp--0-5"
+					aria-controls="fields-blurb"
+					role="button"
+				>
 					<div class="field-button__inner tl--gamma">
 						Rahmen&shy;bedingungen für Freies Wissen stärken
 					</div>
@@ -82,10 +97,10 @@ $this->seo->set('description', $text);
 		</div>
 		<div class="sc--white">
 			<div class="fields__blurb-wrapper limit--16 center-column cp--b1 cp--h1">
-				<div class="fields__blurb limit--8">
+				<div id="fields-blurb" class="fields__blurb limit--8" aria-live="polite">
 					<div class="fields__blurb-top"></div>
 					<div class="fields__blurb-lower cp--0-5 tm--beta">
-						<article id="support" class="fields__text">
+						<article id="fields-support" class="fields__text">
 							<p>
 								Die freie Enzyklopädie Wikipedia wird von ehrenamtlichen
 								Autorinnen und Autoren geschrieben. Da es keine hauptamtliche Redaktion gibt, lebt
@@ -108,7 +123,7 @@ $this->seo->set('description', $text);
 								Unterstützung.
 							</p>
 						</article>
-						<article id="dev" class="fields__text" hidden>
+						<article id="fields-dev" class="fields__text" hidden>
 							<p>
 								Wenn wir heute etwas wissen wollen, schauen wir einfach im Internet nach. Anders als bei
 								einem gedruckten Lexikon brauchen wir für das Internet Software, damit dieses Wissen
@@ -126,7 +141,7 @@ $this->seo->set('description', $text);
 								Interessierten auch außerhalb der Wikimedia-Welt Zugang zu unserer Datenbank bietet.
 							</p>
 						</article>
-						<article id="know" class="fields__text" hidden>
+						<article id="fields-know" class="fields__text" hidden>
 							<p>
 								Die Welt ist reich an Kulturgütern wie Büchern, Gemälden oder wissenschaftlichen
 								Arbeiten. Sie können von der Öffentlichkeit aber meist nur angeschaut und nicht genutzt

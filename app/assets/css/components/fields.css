@@ -53,8 +53,6 @@
   color: var(--color-green);
 }
 
-.fields__blurb-wrapper {
-}
 .fields__blurb {
   position: relative;
   transition: left .3s, transform .3s;

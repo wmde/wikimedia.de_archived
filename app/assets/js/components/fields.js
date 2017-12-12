@@ -32,36 +32,20 @@ define('components/fields', [], function() {
       let buttons = this.$el('.field-button');
 
       let updateCounter = (name) => {
-        let target = this.$el1('.field-counter__status');
-        if (name === 'support') {
-          target.innerHTML = 1;
-        }
-        if (name === 'dev') {
-          target.innerHTML = 2;
-        }
-        if (name === 'know') {
-          target.innerHTML = 3;
-        }
+        this.counterStatus.innerText = this.numberForName(name);
       };
 
       let handler = (ev) => {
         ev.preventDefault();
 
-        this.element.classList.remove(
-          'is-active-dev',
-          'is-active-support',
-          'is-active-know'
-        );
-        let name = ev.currentTarget.getAttribute('href').substring(1);
+        this.clearActiveClasses();
+
+        let name = this.idToName(ev.currentTarget.getAttribute('href').substring(1));
         this.element.classList.add('is-active-' + name);
 
         // Toggle visibility of texts inside blurb.
         for (let el of this.$el('.fields__text')) {
-          if (el.id === name) {
-            el.hidden = false;
-          } else {
-            el.hidden = true;
-          }
+          el.hidden = this.idToName(el.id) !== name;
         }
         updateCounter(name);
       };
@@ -72,15 +56,42 @@ define('components/fields', [], function() {
     }
 
     createCounter(targetEl) {
-      let html = `<div class="field-counter tm--gamma t--caps t--strong">
-          <span class="field-counter__status">1</span> / 3
-        </div>`;
-      targetEl.insertAdjacentHTML('afterbegin', html);
+      let counter = document.createElement('div');
+      let status = document.createElement('span');
+      let total = document.createElement('span');
+      let sep = document.createElement('span');
+
+      counter.classList.add(
+        'field-counter',
+        'tm--gamma',
+        't--caps',
+        't--strong'
+      );
+
+      status.classList.add('field-counter__status');
+      status.innerText = 1;
+
+      sep.innerText = ' / ';
+
+      total.innerText = 3;
+
+      counter.appendChild(status);
+      counter.appendChild(sep);
+      counter.appendChild(total);
+
+      targetEl.insertAdjacentElement('afterbegin', counter);
+
+      this.counterStatus = status;
     }
 
     createNextBtn(targetEl) {
-      let html = `<div class="fields__next"></div>`;
-      targetEl.insertAdjacentHTML('beforeend', html);
+      let button = document.createElement('div');
+
+      button.setAttribute('role', 'button');
+      button.setAttribute('aria-controls', 'fields-blurb');
+      button.classList.add('fields__next');
+
+      targetEl.insertAdjacentElement('beforeend', button);
     }
 
     bindNextBtnEvents() {
@@ -98,27 +109,17 @@ define('components/fields', [], function() {
       };
 
       let switchText = (classList, textEls) => {
-        let splitStr = classList.value.split('-');
-        let name = splitStr[splitStr.length - 1];
+        let name = this.classListToName(classList);
 
         for (let el of textEls) {
-          el.hidden = el.id !== name;
+          el.hidden = this.idToName(el.id) !== name;
         }
       };
 
       let updateCounter = () => {
-        let splitStr = this.element.classList.value.split('-');
-        let name = splitStr[splitStr.length - 1];
-        let target = this.$el1('.field-counter__status');
-        if (name === 'support') {
-          target.innerHTML = 1;
-        }
-        if (name === 'dev') {
-          target.innerHTML = 2;
-        }
-        if (name === 'know') {
-          target.innerHTML = 3;
-        }
+        this.counterStatus.innerText = this.numberForName(
+          this.classListToName(this.element.classList)
+        );
       };
 
       let btn = this.$el1('.fields__next');
@@ -128,6 +129,32 @@ define('components/fields', [], function() {
         switchText(this.element.classList, this.$el('.fields__text'));
         updateCounter();
       });
+    }
+
+    // Extracts the name portion out of an active class:
+    // i.e. foo bar is-active-dev -> dev
+    classListToName(classList) {
+      let splitStr = classList.value.split('-');
+      return splitStr[splitStr.length - 1];
+    }
+
+    // Extracts the name portio out of an anchor target.
+    // i.e. fields-dev -> dev
+    idToName(id) {
+      return id.substring('fields-'.length);
+    }
+
+    // Removes all possible active classes.
+    clearActiveClasses() {
+      this.element.classList.remove(
+        'is-active-dev',
+        'is-active-support',
+        'is-active-know'
+      );
+    }
+
+    numberForName(name) {
+      return ['support', 'dev', 'know'].indexOf(name) + 1;
     }
   };
 });
