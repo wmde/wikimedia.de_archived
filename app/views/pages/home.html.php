@@ -129,13 +129,13 @@ $this->seo->set('description', $text);
 							</p>
 							<p>
 								Wir setzen uns deshalb dafür ein, dass die Wikipedia auch in
-								Zukunft verlässlich, umfassend und aktuell ist. <strong>Wir machen Menschen darauf aufmerksam,
-								dass man sich an der Wikipedia beteiligen kann</strong> und bieten Interessierten Hilfe und
+								Zukunft verlässlich, umfassend und aktuell ist. Wir machen Menschen darauf aufmerksam,
+								dass man sich an der Wikipedia beteiligen kann und bieten Interessierten Hilfe und
 								Einstiegsmöglichkeiten.
 							</p>
 							<p>
-								<strong>Die bereits bestehenden Autorinnen und Autoren
-								bestärken wir in ihrem Engagement</strong> und stehen ihnen zur Seite, wenn es darum
+								Die bereits bestehenden Autorinnen und Autoren
+								bestärken wir in ihrem Engagement und stehen ihnen zur Seite, wenn es darum
 								geht, ihre Pläne in die Tat umzusetzen. Wir vergeben zum Beispiel Stipendien,
 								helfen bei der Durchführung von Workshops und Wettbewerben oder bieten technische
 								Unterstützung.
@@ -150,10 +150,10 @@ $this->seo->set('description', $text);
 							</p>
 							<p>
 								Damit die Wikipedia auch in Zukunft benutzerfreundlich und für alle digital zugänglich
-								bleibt, bauen wir <strong>MediaWiki</strong>, die Software hinter der Wikipedia, immer weiter aus.
+								bleibt, bauen wir MediaWiki, die Software hinter der Wikipedia, immer weiter aus.
 							</p>
 							<p>
-								Außerdem entwickeln wir unsere <strong>freie Datenbank Wikidata</strong>, die Menschen auf der ganzen
+								Außerdem entwickeln wir unsere freie Datenbank Wikidata, die Menschen auf der ganzen
 								Welt zum Beispiel an die fast 300 verschiedenen Sprachversionen von Wikipedia anbinden
 								können. Die Software hinter Wikidata ist so konzipiert, dass sie jederzeit und von allen
 								Interessierten auch außerhalb der Wikimedia-Welt Zugang zu unserer Datenbank bietet.
@@ -167,13 +167,13 @@ $this->seo->set('description', $text);
 								fotografieren und verwenden.
 							</p>
 							<p>
-								<strong>Öffentliche Güter gehören aus unserer Sicht in die Öffentlichkeit.</strong> Wir arbeiten daher mit
+								Öffentliche Güter gehören aus unserer Sicht in die Öffentlichkeit. Wir arbeiten daher mit
 								Bildungs-, Wissenschafts- und Kulturinstitutionen zusammen und befähigen sie, ihre Inhalte
 								unter eine freie Lizenz zu stellen. Damit alle diese Schätze frei weiterverwendet werden
 								können – etwa für Unterrichtsmaterialien oder einen Blog.
 							</p>
 							<p>
-								<strong>Dafür braucht es einen geeigneten rechtlichen Rahmen.</strong> Wir wollen erreichen, dass Menschen
+								Dafür braucht es einen geeigneten rechtlichen Rahmen. Wir wollen erreichen, dass Menschen
 								so leicht wie möglich ihr Wissen teilen können und es gemeinschaftlich genutzt werden
 								kann. Wir setzen uns aus diesem Grund für ein zeitgemäßes Urheberrecht ein, dass die
 								Möglichkeiten des Internets nutzt, um Wissen zu verbreiten und zu vermehren.
