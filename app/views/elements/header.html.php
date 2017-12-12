@@ -31,7 +31,12 @@ $site = Sites::current($this->_request);
 				von Wikimedia Deutschland
 			</div>
 		</div>
-		<a href="/#cta" class="mh__support cp--0-5 ">
+		<a
+			href="/#cta"
+			class="mh__support cp--0-5"
+			role="button"
+			aria-label="Springe zum Bereich 'Unterstütze Freies Wissen'"
+		>
 			<div class="wh__support-inner">
 				<div class="tm--gamma t--caps t--strong">Unterstütze</div>
 				<div class="tm--delta">Freies Wissen</div>
