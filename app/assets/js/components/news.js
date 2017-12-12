@@ -86,10 +86,31 @@ define('components/news', [], function() {
     }
 
     createCounter(targetEl) {
-      let html = `<div class="news__counter tm--gamma t--caps t--strong">
-          <span class="post__count">${this.state.current + 1}</span> / ${this.props.data.length}
-        </div>`;
-      targetEl.insertAdjacentHTML('afterbegin', html);
+      let counter = document.createElement('div');
+      let count = document.createElement('span');
+      let total = document.createElement('span');
+      let sep = document.createElement('span');
+
+      counter.classList.add(
+        'news__counter',
+        'tm--gamma',
+        't--caps',
+        't--strong'
+      );
+      counter.setAttribute('aria-live', 'status');
+
+      count.classList.add('post__count');
+      count.innerText = this.state.current + 1;
+
+      sep.innerText = ' / ';
+
+      total.innerText = this.props.data.length;
+
+      counter.appendChild(count);
+      counter.appendChild(sep);
+      counter.appendChild(total);
+
+      targetEl.insertAdjacentElement('afterbegin', counter);
     }
 
     createNextImg(targetEl, isAfterNext) {

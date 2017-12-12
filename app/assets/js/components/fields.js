@@ -67,6 +67,7 @@ define('components/fields', [], function() {
         't--caps',
         't--strong'
       );
+      counter.setAttribute('aria-live', 'status');
 
       status.classList.add('field-counter__status');
       status.innerText = 1;
