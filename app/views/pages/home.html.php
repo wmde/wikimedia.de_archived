@@ -50,6 +50,7 @@ $this->seo->set('description', $text);
 				und Bildung zu fördern.
 			</div>
 			<figure class="fig mission__image cm--l2 cm--t0-5">
+				<div>
 				<?= $this->assets->image('/app/img/testbild_mission.jpg', [
 					'class' => 'fig__media',
 					'alt' => 'Portrait von Abraham Taherivand'
@@ -58,6 +59,7 @@ $this->seo->set('description', $text);
 					'class' => 'fig__ref ts--beta',
 					'style' => 'short'
 				]) ?>
+				</div>
 				<figcaption class="fig__caption mission__caption cm--l0-5">
 					<span class="tm--gamma t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
 				<figcaption>

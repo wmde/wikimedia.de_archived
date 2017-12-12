@@ -20,20 +20,30 @@
   border: 2px solid;
 }
 
-.mission__image {
+.mission__image .fig__media {
   max-width: 360px;
-
-  display: flex;
-  align-items: flex-end;
 }
-.mission__image img {
-  width: 100%;
+.mission__image > * {
+  /* Align caption right to image and number. */
+  display: inline-block;
+}
+.mission__caption {
+  /* Place caption on the same visual baseline with the image. */
+  position: relative;
+  top: -19px;
 }
 
 @media (max-width: 1152px) {
   .mission__text {
     top: 72px;
     right: 108px;
+  }
+}
+@media (max-width: 864px) {
+  .mission__caption {
+    top: 0;
+    display: block;
+    margin-left: 0;
   }
 }
 @media (max-width: 648px) {
