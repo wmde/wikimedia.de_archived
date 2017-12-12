@@ -290,7 +290,7 @@ $this->seo->set('description', $text);
 
 					<?= $this->html->link($linkTitle($item), $item->source ?: '#', [
 						'hidden' => !$item->source && $isFirst,
-						'class' => 'news__link link--black ts--alpha t--strong',
+						'class' => 'news__link link--black ts--alpha',
 						'target' => 'new'
 					]) ?>
 				</div>
