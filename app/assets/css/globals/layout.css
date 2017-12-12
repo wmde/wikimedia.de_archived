@@ -143,10 +143,6 @@
   padding: 36px;
 }
 
-.cp--h2 {
-  padding-left: 144px;
-  padding-right: 144px;
-}
 .cp--h1 {
   padding-left: 72px;
   padding-right: 72px;
@@ -159,10 +155,6 @@
 .cp--v2 {
   padding-top: 144px;
   padding-bottom: 144px;
-}
-.cp--v1-5 {
-  padding-top: 108px;
-  padding-bottom: 108px;
 }
 .cp--v1 {
   padding-top: 72px;
@@ -193,18 +185,12 @@
   padding-top: 36px;
 }
 
-.cp--r1 {
-  padding-right: 72px;
-}
 .cp--r0-5 {
   padding-right: 36px;
 }
 
 .cp--b4 {
   padding-bottom: 288px;
-}
-.cp--b2-5 {
-  padding-bottom: 180px;
 }
 .cp--b2 {
   padding-bottom: 144px;
@@ -235,10 +221,6 @@
     padding: 18px;
   }
 
-  .cp--h2 {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
   .cp--h1 {
     padding-left: 36px;
     padding-right: 36px;
@@ -251,10 +233,6 @@
   .cp--v2 {
     padding-top: 72px;
     padding-bottom: 72px;
-  }
-  .cp--v1-5 {
-    padding-top: 54px;
-    padding-bottom: 54px;
   }
   .cp--v1-25 {
     padding-top: 45px;
@@ -285,18 +263,12 @@
     padding-top: 18px;
   }
 
-  .cp--r1 {
-    padding-right: 36px;
-  }
   .cp--r0-5 {
     padding-right: 18px;
   }
 
   .cp--b4 {
     padding-bottom: 144px;
-  }
-  .cp--b2-5 {
-    padding-bottom: 90px;
   }
   .cp--b2 {
     padding-bottom: 72px;
@@ -328,10 +300,6 @@
     padding: 9px;
   }
 
-  .cp--h2 {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
   .cp--h1 {
     padding-left: 18px;
     padding-right: 18px;
@@ -344,10 +312,6 @@
   .cp--v2 {
     padding-top: 36px;
     padding-bottom: 36px;
-  }
-  .cp--v1-5 {
-    padding-top: 27px;
-    padding-bottom: 27px;
   }
   .cp--v1 {
     padding-top: 18px;
@@ -378,18 +342,12 @@
     padding-top: 9px;
   }
 
-  .cp--r1 {
-    padding-right: 18px;
-  }
   .cp--r0-5 {
     padding-right: 9px;
   }
 
   .cp--b4 {
     padding-bottom: 72px;
-  }
-  .cp--b2-5 {
-    padding-bottom: 45px;
   }
   .cp--b2 {
     padding-bottom: 36px;
