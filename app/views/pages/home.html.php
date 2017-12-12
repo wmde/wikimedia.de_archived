@@ -339,19 +339,6 @@ $this->seo->set('description', $text);
 					<h2 class="member__role tm--alpha t--strong"><?= $item->position ?></h2>
 					<div class="member__text tm--beta" ><?php echo $item->vita ?></div>
 
-					<?php if ($item->source): ?>
-						<?= $this->html->link('Zu diesem Projekt', $item->source, [
-							'class' => 'news__link link--black ts--alpha t--strong',
-							'target' => 'new'
-						]) ?>
-					<?php elseif ($isFirst): ?>
-						<?= $this->html->link('Zu diesem Projekt', '#', [
-							'hidden' => true,
-							'class' => 'news__link link--black ts--alpha t--strong',
-							'target' => 'new'
-						]) ?>
-					<?php endif ?>
-
 					<?php if ($item->email): ?>
 					<a
 						class="member__mail ts--alpha"
