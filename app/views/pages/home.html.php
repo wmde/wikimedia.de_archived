@@ -42,12 +42,16 @@ $this->seo->set('description', $text);
 				Wir setzen uns für Freies Wissen ein, um die Chancen&shy;gleichheit beim Zu&shy;gang zu Wissen
 				und Bildung zu fördern.
 			</div>
-			<figure class="mission__image cm--l2 cm--t0-5">
+			<figure class="fig mission__image cm--l2 cm--t0-5">
 				<?= $this->assets->image('/app/img/testbild_mission.jpg', [
+					'class' => 'fig__media',
 					'alt' => 'Portrait von Abraham Taherivand'
 				]) ?>
-				<?= $this->references->cite($references['mission'], ['style' => 'short']) ?>
-				<figcaption class="mission__caption cm--l0-5">
+				<?= $this->references->cite($references['mission'], [
+					'class' => 'fig__ref',
+					'style' => 'short'
+				]) ?>
+				<figcaption class="fig__caption mission__caption cm--l0-5">
 					<span class="tm--gamma t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
 				<figcaption>
 			</figure>
@@ -211,12 +215,16 @@ $this->seo->set('description', $text);
 					</h1>
 					<div class="news__image<?php if ($isFirst): ?> news__image--active<?php endif ?>" >
 						<?php if ($cover = $item->cover()): ?>
-						<figure>
+						<figure class="fig">
 							<?= $this->media->image($cover->version('fix20'), [
+								'class' => 'fig__media',
 								'alt' => $cover->title
 							]) ?>
 							<?php if ($ref = $cover->reference()): ?>
-								<?= $this->references->cite($ref) ?>
+								<?= $this->references->cite($ref, [
+									'class' => 'fig__ref',
+									'style' => 'short'
+								]) ?>
 							<?php endif ?>
 						</figure>
 					<?php endif ?>
@@ -264,12 +272,16 @@ $this->seo->set('description', $text);
 				<h1 class="member__name hide"><?= $item->name ?> </h1>
 				<div class="member__image">
 					<?php if ($cover = $item->portrait()): ?>
-						<figure>
+						<figure class="fig">
 							<?= $this->media->image($cover->version('fix20'), [
+								'class' => 'fig__media',
 								'alt' => $cover->title
 							]) ?>
 							<?php if ($ref = $cover->reference()): ?>
-								<?= $this->references->cite($ref) ?>
+								<?= $this->references->cite($ref, [
+									'class' => 'fig__ref',
+									'style' => 'short'
+								]) ?>
 							<?php endif ?>
 						</figure>
 					<?php endif ?>

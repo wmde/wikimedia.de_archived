@@ -31,6 +31,7 @@
 @import "components/team.css";
 @import "components/ctaButton.css";
 @import "components/fields.css";
+@import "components/figure.css";
 
 /*
   All "views" CSS files, except those in "elements", are loaded
