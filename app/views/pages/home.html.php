@@ -32,11 +32,13 @@ $this->seo->set('description', $text);
 				kann.
 			</div>
 		</div>
-		<div class="limit--16 cp--h1 center-column">
-			<?= $this->references->cite($references['hero'], [
-				'style' => 'long',
-				'class' => 'illu-hero__ref'
-			]) ?>
+		<div class="illu-hero__lower sc--white">
+			<div class="limit--16 cp--h1 center-column">
+				<?= $this->references->cite($references['hero'], [
+					'style' => 'long',
+					'class' => 'illu-hero__ref'
+				]) ?>
+			</div>
 		</div>
 	</section>
 
