@@ -54,6 +54,7 @@
     top: 72px;
     right: 36px;
     width: calc(100% - 72px);
+    max-width: 360px;
   }
   .mission__image .fig__media {
     max-width: 180px;
