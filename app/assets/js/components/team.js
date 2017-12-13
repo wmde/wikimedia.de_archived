@@ -149,9 +149,10 @@ define('components/team', [], function() {
 
       select.addEventListener('change', (ev) => {
         let selected;
-        for (let i = 0; i < ev.srcElement.length; i++) {
-          if (ev.srcElement[i].selected) {
-            selected = ev.srcElement[i];
+        let target = ev.target || ev.srcElement;
+        for (let i = 0; i < target.length; i++) {
+          if (target[i].selected) {
+            selected = target[i];
             break;
           }
         }
