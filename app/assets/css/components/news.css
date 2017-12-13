@@ -242,6 +242,10 @@
   .news__image.active {
    right: -18px;
   }
+  .news__image .fig__media {
+    right: auto;
+    left: 0;
+  }
   .news__image.next {
     right: -110vw;
   }
