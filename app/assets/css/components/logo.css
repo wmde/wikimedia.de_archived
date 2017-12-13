@@ -39,3 +39,10 @@
     width: 200px;
   }
 }
+
+@media (max-width: 648px) {
+  .logo {
+    height: 35px;
+    width: 160px;
+  }
+}
