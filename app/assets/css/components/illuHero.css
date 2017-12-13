@@ -6,7 +6,7 @@
  */
 
 .illu-hero {
-  height: 756px;
+  height: 720px;
   position: relative;
 }
 .illu-hero__inner {
@@ -112,7 +112,7 @@
     max-width: 640px;
   }
   .illu-hero__text {
-    right: 36px;
+    right: 72px;
     bottom: 36px;
     width: 360px;
   }
@@ -125,6 +125,7 @@
   }
   .illu-hero__text {
     width: 297px;
+    right: 36px;
   }
 }
 
