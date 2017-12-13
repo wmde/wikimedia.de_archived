@@ -45,6 +45,9 @@
     display: block;
     margin-left: 0;
   }
+  .mission__text {
+    right: 36px;
+  }
 }
 @media (max-width: 648px) {
   .mission__text {
