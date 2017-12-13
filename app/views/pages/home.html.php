@@ -42,7 +42,7 @@ $this->seo->set('description', $text);
 			</div>
 		</div>
 		<div class="illu-hero__lower sc--white">
-			<div class="limit--20 cp--h1 center-column">
+			<div class="illu-hero__inner limit--20 cp--h1 center-column">
 				<?= $this->references->cite($references['hero'], [
 					'style' => 'long',
 					'class' => 'illu-hero__ref ts--beta'

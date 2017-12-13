@@ -87,6 +87,13 @@
   max-width: 504px;
 }
 
+.illu-hero__ref {
+  position: absolute;
+  right: 72px;
+  width: 34vw;
+  max-width: 504px;
+}
+
 @media (max-width: 1152px) {
   .illu-hero {
     height: 642px;
@@ -116,6 +123,10 @@
     bottom: 36px;
     width: 360px;
   }
+  .illu-hero__ref {
+    right: 72px;
+    width: 360px;
+  }
 }
 
 @media (max-width: 864px) {
@@ -124,8 +135,12 @@
     max-width: 720px;
   }
   .illu-hero__text {
-    width: 297px;
     right: 36px;
+    width: 297px;
+  }
+  .illu-hero__ref {
+    right: 36px;
+    width: 297px;
   }
 }
 
@@ -147,6 +162,11 @@
     width: 432px;
   }
   .illu-hero__text {
+    width: 252px;
+    max-width: calc(100vw - 36px);
+    right: 18px;
+  }
+  .illu-hero__ref {
     width: 252px;
     max-width: calc(100vw - 36px);
     right: 18px;
