@@ -203,6 +203,8 @@
     transform: none;
     top: 36px;
     right: 18px;
+    background-color: var(--color-green);
+    background-image: url(../../ico/arrow_r_white.svg);
   }
   .news__title {
     position: relative;

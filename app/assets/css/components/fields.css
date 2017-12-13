@@ -198,7 +198,7 @@
     right: 36px;
 
     background-color: var(--color-green);
-    background-image:  url(../../ico/arrow_r_white.svg);
+    background-image: url(../../ico/arrow_r_white.svg);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
