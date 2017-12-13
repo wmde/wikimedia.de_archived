@@ -70,7 +70,8 @@ $this->seo->set('description', $text);
 				]) ?>
 				</div>
 				<figcaption class="fig__caption mission__caption cm--l0-25">
-					<span class="tm--gamma t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
+					<div class="tm--gamma t--caps">Abraham&nbsp;Taherivand</div>
+					<div class="tm--gamma">Geschäftsführender&nbsp;Vorstand</div>
 				<figcaption>
 			</figure>
 		</div>

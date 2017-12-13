@@ -30,7 +30,7 @@
 .mission__caption {
   /* Place caption on the same visual baseline with the image. */
   position: relative;
-  top: -19px;
+  top: -21px;
 }
 
 @media (max-width: 1152px) {
