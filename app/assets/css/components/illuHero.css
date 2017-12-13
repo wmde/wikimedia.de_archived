@@ -151,3 +151,10 @@
     right: 18px;
   }
 }
+
+/* Prevent text crop for ultra-panorama desktops, e.g. 1280x800 */
+@media (min-width: 1152px) and (max-height: 720px) {
+  .illu-hero__text {
+    bottom: 144px;
+  }
+}
