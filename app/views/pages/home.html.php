@@ -69,7 +69,7 @@ $this->seo->set('description', $text);
 					'style' => 'short'
 				]) ?>
 				</div>
-				<figcaption class="fig__caption mission__caption cm--l0-5">
+				<figcaption class="fig__caption mission__caption cm--l0-25">
 					<span class="tm--gamma t--caps">Abraham&nbsp;Taherivand</span><br>Geschäftsführender&nbsp;Vorstand
 				<figcaption>
 			</figure>

@@ -60,6 +60,9 @@
   margin-right: 72px;
 }
 
+.cm--l0-25 {
+  margin-left: 18px;
+}
 .cm--l0-5 {
   margin-left: 36px;
 }
@@ -91,6 +94,9 @@
     margin-right: 36px;
   }
 
+  .cm--l0-25 {
+    margin-left: 9px;
+  }
   .cm--l0-5 {
     margin-left: 18px;
   }
@@ -123,6 +129,9 @@
     margin-right: 18px;
   }
 
+  .cm--l0-25 {
+    margin-left: 4px;
+  }
   .cm--l0-5 {
     margin-left: 9px;
   }
