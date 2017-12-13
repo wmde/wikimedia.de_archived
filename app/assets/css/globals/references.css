@@ -86,3 +86,9 @@ a.ref__license {
   float: right;
   background: url(../../ico/close.svg) no-repeat right top/contain;
 }
+
+@media (max-width: 648px) {
+  .home .ref {
+    display: none;
+  }
+}
