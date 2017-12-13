@@ -39,7 +39,7 @@
   margin-right: auto;
 }
 
-/* Content Margin
+/* Content Margin, half on each breakpoint, never go below 18px
 ---------------------------------------------------------------- */
 .cm--1 {
   margin: 72px;
@@ -95,7 +95,7 @@
   }
 
   .cm--l0-25 {
-    margin-left: 9px;
+    margin-left: 18px; /* 9px, clamped */
   }
   .cm--l0-5 {
     margin-left: 18px;
@@ -114,11 +114,11 @@
     margin: 18px;
   }
   .cm--0-5 {
-    margin: 9px;
+    margin: 18px; /* 9px, clamped */
   }
 
   .cm--t0-5 {
-    margin-top: 9px;
+    margin-top: 18px; /* 9px, clamped */
   }
 
   .cm--b1 {
@@ -130,10 +130,10 @@
   }
 
   .cm--l0-25 {
-    margin-left: 4px;
+    margin-left: 18px; /* 4,5px ;), clamped */
   }
   .cm--l0-5 {
-    margin-left: 9px;
+    margin-left: 18px; /* 9px, clamped */
   }
   .cm--l2 {
     margin-left: 36px;
@@ -143,7 +143,7 @@
   }
 }
 
-/* Content Padding
+/* Content Padding, half on each breakpoint, never go below 18px
 ---------------------------------------------------------------- */
 .cp--1 {
   padding: 72px;
@@ -306,7 +306,7 @@
     padding: 18px;
   }
   .cp--0-5 {
-    padding: 9px;
+    padding: 18px; /* 9px, clamped */
   }
 
   .cp--h1 {
@@ -314,8 +314,8 @@
     padding-right: 18px;
   }
   .cp--h0-5 {
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 18px; /* 9px, clamped */
+    padding-right: 18px; /* 9px, clamped */
   }
 
   .cp--v2 {
@@ -331,8 +331,8 @@
     padding-bottom: 22px;
   }
   .cp--v0-5 {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 18px; /* 9px, clamped */
+    padding-bottom: 18px; /* 9px, clamped */
   }
 
   .cp--t3-5 {
@@ -348,11 +348,11 @@
     padding-top: 18px;
   }
   .cp--t0-5 {
-    padding-top: 9px;
+    padding-top: 18px; /* 9px, clamped */
   }
 
   .cp--r0-5 {
-    padding-right: 9px;
+    padding-right: 18px; /* 9px, clamped */
   }
 
   .cp--b4 {
@@ -368,7 +368,7 @@
     padding-bottom: 18px;
   }
   .cp--b0-5 {
-    padding-bottom: 9px;
+    padding-bottom: 18px; /* 9px, clamped */
   }
 
   .cp--l2-5 {
