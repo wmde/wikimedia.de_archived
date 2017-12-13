@@ -446,12 +446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/base_reference.git",
-                "reference": "38c42a91c633dc9d111ca8a5c2fbb769a003c058"
+                "reference": "d8efcc76ccfcb24d3a9ea292d03b29eab45fa4df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/base_reference/zipball/38c42a91c633dc9d111ca8a5c2fbb769a003c058",
-                "reference": "38c42a91c633dc9d111ca8a5c2fbb769a003c058",
+                "url": "https://api.github.com/repos/bseries/base_reference/zipball/d8efcc76ccfcb24d3a9ea292d03b29eab45fa4df",
+                "reference": "d8efcc76ccfcb24d3a9ea292d03b29eab45fa4df",
                 "shasum": ""
             },
             "require": {
@@ -467,7 +467,7 @@
                 "BSD-3-Clause"
             ],
             "description": "References functionality for Bento.",
-            "time": "2017-12-12T14:33:05+00:00"
+            "time": "2017-12-13T10:20:30+00:00"
         },
         {
             "name": "bseries/base_tag",
