@@ -63,7 +63,8 @@
   border-color: var(--color-orange);
 }
 
-.news__box.tagged--project {
+.news__box.tagged--project,
+.news__box.tagged--event {
   border-color: white;
 }
 

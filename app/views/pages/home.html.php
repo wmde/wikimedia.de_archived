@@ -226,6 +226,9 @@ $this->seo->set('description', $text);
 				if ($item->hasTags(['project'])) {
 					return 'Zu diesem Projekt';
 				}
+				if ($item->hasTags(['event'])) {
+					return 'Zu diesem Event';
+				}
 				return 'Zur Webseite';
 			};
 		?>
@@ -264,6 +267,8 @@ $this->seo->set('description', $text);
 							echo 'Mitglieder';
 						} elseif ($item->hasTags(['project']))  {
 							echo 'Projekt';
+						} elseif ($item->hasTags(['event']))  {
+							echo 'Event';
 						} else {
 							echo $item->title;
 						}
