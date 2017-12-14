@@ -75,7 +75,7 @@ define('components/team', [], function() {
       wrapper.classList.add('team__select-wrapper');
 
       let select = document.createElement('select');
-      select.classList.add('team__select', 'ts--alpha', 't--strong', 't--caps');
+      select.classList.add('team__select', 'ts--alpha', 't--caps');
       select.setAttribute('aria-controls', 'member-stage');
 
       for (let i = 0; i < this.state.names.length; i++) {
