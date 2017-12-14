@@ -52,15 +52,15 @@ $this->seo->set('description', $text);
 	</section>
 
 	<section class="mission sc--white">
-		<div class="mission__inner limit--16 cp--h1 cp--v2 center-column">
+		<div class="mission__inner limit--16 cp--h1 cp--v2 center-column clearfix">
 			<h1 class="mission__headline tl--beta t--strong">Mission</h1>
 			<div class="mission__text tl--gamma cp--0-5">
 				Wir setzen uns für Freies Wissen ein, um die Chancen&shy;gleichheit beim Zu&shy;gang zu Wissen
 				und Bildung zu fördern.
 			</div>
-			<figure class="fig mission__image cm--l2 cm--t0-5">
+			<figure class="fig mission__image cm--l2 cm--t1">
 				<div>
-				<?= $this->assets->image('/app/img/testbild_mission.jpg', [
+				<?= $this->assets->image('/app/img/mission_abraham.jpg', [
 					'class' => 'fig__media',
 					'alt' => 'Portrait von Abraham Taherivand'
 				]) ?>
