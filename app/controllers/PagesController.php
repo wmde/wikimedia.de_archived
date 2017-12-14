@@ -51,10 +51,11 @@ class PagesController extends \lithium\action\Controller {
 			]),
 			'mission' => References::create([
 				'name' => 'mission',
-				'authors' => 'Foo bar',
-				'title' => 'Abraham',
-				'source' => 'https://commons.wikimedia.org/wiki/Main_Page#/media/File:Munich_Subway_Station_Gro%C3%9Fhadern_02.jpg',
-				'license' => 'CC-BY-SA-3.0'
+				'authors' => 'René Zieger',
+				'title' => 'Abraham Taherivand WMDE',
+				'source' => 'https://commons.wikimedia.org/wiki/File:Abraham_Taherivand_WMDE.jpg',
+				'license' => 'CC-BY-SA-4.0',
+				'changes' => 'Beschnitt von Atelier Disko'
 			])
 		];
 
