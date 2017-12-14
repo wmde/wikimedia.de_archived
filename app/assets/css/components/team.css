@@ -99,8 +99,8 @@
     width: 50px;
     height: 40px;
     pointer-events: none;
-    background-color: var(--color-darkgreen);
-    background-image: url(../../ico/arrow_select_l.svg);
+    background-color: var(--color-green);
+    background-image: url(../../ico/arrow_select_s.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -110,7 +110,7 @@
 
     width: 100%;
     color: white;
-    background-color: var(--color-green);
+    background-color: var(--color-lightishgreen);
     padding-left: 32px;
     border-radius: 0;
     border: 0;
@@ -172,9 +172,6 @@
   .team__select-wrapper {
     margin-right: 0;
     margin-bottom: 36px;
-  }
-  .team__select-wrapper::after {
-    background-image: url(../../ico/arrow_select_s.svg);
   }
   .member__image {
     float: right;
