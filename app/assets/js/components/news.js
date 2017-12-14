@@ -26,11 +26,11 @@ define('components/news', [], function() {
   // document semantics.
   return class News {
     constructor(props = {}) {
+      this.props = props;
       this.state = {
         current: 0,
         slides: []
       };
-      this.props = props;
     }
 
     mount(element) {
@@ -66,21 +66,20 @@ define('components/news', [], function() {
       this.props.data = [];
 
       postEls.forEach((el) => {
-        let dataUnit = {
+        let item = {
           img: el.querySelector('.news__image').innerHTML,
           title: el.querySelector('.news__title').innerHTML,
           teaser: el.querySelector('.news__teaser').innerHTML,
           text: el.querySelector('.news__text').innerHTML,
           // need copy, not pointer; hence using 'value' prop
-          classes: el.querySelector('.news__box').classList.value
+          classes: el.querySelector('.news__box').classList.value,
+          link: {
+            href: el.querySelector('.news__link').getAttribute('href'),
+            innerText: el.querySelector('.news__link').innerText
+          }
         };
 
-        // news link is optional
-        if (el.querySelector('.news__link')) {
-          dataUnit.link = el.querySelector('.news__link');
-        }
-
-        this.props.data.push(dataUnit);
+        this.props.data.push(item);
       });
     }
 
@@ -158,11 +157,9 @@ define('components/news', [], function() {
         this.box.classList = this.props.data[i].classes;
 
         let link = this.props.data[i].link;
-        if (link) {
-          this.link.href= link.href;
-          this.link.innerText = link.innerText;
-        }
-        this.link.hidden = !link || this.link.getAttribute('href') === '#';
+        this.link.href = link.href;
+        this.link.innerText = link.innerText;
+        this.link.hidden = link.href === '#';
       };
 
       let updateImg = () => {

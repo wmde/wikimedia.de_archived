@@ -289,11 +289,18 @@ $this->seo->set('description', $text);
 					<div class="news__teaser tm--alpha"><?php echo $item->teaser ?></div>
 					<div class="news__text tm--beta cm--b1"><?php echo $item->body ?></div>
 
-					<?= $this->html->link($linkTitle($item), $item->source ?: '#', [
-						'hidden' => !$item->source && $isFirst,
-						'class' => 'news__link link--black ts--alpha',
-						'target' => 'new'
-					]) ?>
+					<?php if ($item->source): ?>
+						<?= $this->html->link($linkTitle($item), $item->source, [
+							'class' => 'news__link link--black ts--alpha',
+							'target' => 'new'
+						]) ?>
+					<?php else: ?>
+						<?= $this->html->link($linkTitle($item), '#', [
+							'hidden' => '',
+							'class' => 'news__link link--black ts--alpha',
+							'target' => 'new'
+						]) ?>
+					<?php endif ?>
 				</div>
 			</article>
 			<?php endforeach ?>
