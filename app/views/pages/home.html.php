@@ -289,11 +289,18 @@ $this->seo->set('description', $text);
 					<div class="news__teaser tm--alpha"><?php echo $item->teaser ?></div>
 					<div class="news__text tm--beta cm--b1"><?php echo $item->body ?></div>
 
-					<?= $this->html->link($linkTitle($item), $item->source ?: '#', [
-						'hidden' => !$item->source && $isFirst,
-						'class' => 'news__link link--black ts--alpha',
-						'target' => 'new'
-					]) ?>
+					<?php if ($item->source): ?>
+						<?= $this->html->link($linkTitle($item), $item->source, [
+							'class' => 'news__link link--black ts--alpha',
+							'target' => 'new'
+						]) ?>
+					<?php else: ?>
+						<?= $this->html->link($linkTitle($item), '#', [
+							'hidden' => '',
+							'class' => 'news__link link--black ts--alpha',
+							'target' => 'new'
+						]) ?>
+					<?php endif ?>
 				</div>
 			</article>
 			<?php endforeach ?>
@@ -342,16 +349,16 @@ $this->seo->set('description', $text);
 
 					<?php if ($item->email): ?>
 					<a
-						class="member__mail ts--alpha"
+						class="member__link ts--alpha"
 						href="mailto:<?php echo $item->email ?>"
 					>
 						<span class="ts--beta">E-Mail:</span>
-						<span class="member__addr"><?= $item->email ?></span>
+						<span class="member__mail"><?= $item->email ?></span>
 					</a>
 					<?php elseif ($isFirst): ?>
-					<a class="member__mail ts--alpha" href="#" hidden>
+					<a class="member__link ts--alpha" href="#" hidden>
 						<span class="ts--beta">E-Mail:</span>
-						<span class="member__addr">#</span>
+						<span class="member__mail"></span>
 					</a>
 					<?php endif ?>
 				</div>

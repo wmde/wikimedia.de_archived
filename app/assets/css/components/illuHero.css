@@ -8,6 +8,8 @@
 .illu-hero {
   height: 720px;
   position: relative;
+  /* Allows pointer events on illu reference */
+  z-index: 1;
 }
 .illu-hero__inner {
   position: relative;
