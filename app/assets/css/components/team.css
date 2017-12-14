@@ -76,10 +76,10 @@
   border: 2px solid;
   padding: 36px;
 }
-.member__mail {
+.member__link {
   border-bottom: 1px solid;
 }
-.member__addr {
+.member__mail {
   white-space: nowrap;
 }
 

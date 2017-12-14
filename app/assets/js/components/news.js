@@ -8,23 +8,22 @@
 define('components/news', [], function() {
   'use strict';
 
-// A component that implements synchronized animation of several
-// elements seperately. The component's basic HTML exists outside.
-// It looks like this:
-//
-// <section class="news">
-//   <div class="news__inner">
-//     <article class="news__post">Foo</article>
-//     <article class="news__post">Bar</article>
-//     ...
-//     <article class="news__post">Baz</article>
-//   </div>
-// </section>
-//
-// The first article element serves as animation stage, all remaining
-// articles are hidden by style. They provide all data and preserve
-// document semantics.
-
+  // A component that implements synchronized animation of several
+  // elements seperately. The component's basic HTML exists outside.
+  // It looks like this:
+  //
+  // <section class="news">
+  //   <div class="news__inner">
+  //     <article class="news__post">Foo</article>
+  //     <article class="news__post">Bar</article>
+  //     ...
+  //     <article class="news__post">Baz</article>
+  //   </div>
+  // </section>
+  //
+  // The first article element serves as animation stage, all remaining
+  // articles are hidden by style. They provide all data and preserve
+  // document semantics.
   return class News {
     constructor(props = {}) {
       this.state = {
