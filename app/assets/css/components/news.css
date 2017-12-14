@@ -111,6 +111,13 @@
   height: 100%;
 }
 
+.news__image .ref {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
 .news__image .fig__media {
   position: absolute;
   right: 0;
