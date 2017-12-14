@@ -188,7 +188,7 @@ $this->seo->set('description', $text);
 	<section id="cta" class="cta-bar sc--lightorange">
 		<div class="limit--16 center-column cp--v1 cp--h0-5 cta-buttons">
 			<a
-				href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=mgl_wm.de&piwik_kwd=mgl_150113&type=true"
+				href="https://spenden.wikimedia.de/apply-for-membership"
 				class="cta-button cp--0-5 cm--0-5 corners corners--orange"
 			>
 				<div class="cta-button__inner">
