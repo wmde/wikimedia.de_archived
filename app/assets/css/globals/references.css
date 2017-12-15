@@ -54,10 +54,11 @@ a.ref__license {
 .refs-index {
   list-style: none;
   padding-left: 0;
+  margin: 18px 0;
 }
 .refs-index .ref {
   /* Leave space to the right for the close "column". */
-  max-width: calc(100% - 24px - 9px);
+  max-width: calc(100% - 24px - 18px);
 }
 .refs-index .ref__number {
   display: inline-block;
@@ -81,6 +82,7 @@ a.ref__license {
   display: block;
   width: 24px;
   height: 24px;
+  margin-top: 18px;
   overflow: hidden;
   color: transparent;
   float: right;
