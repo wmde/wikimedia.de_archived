@@ -13,8 +13,8 @@ define('components/fields', [], function() {
   // to the selectors.
   return class Fields {
     constructor(props = {}) {
-      this.state = {};
       this.props = props;
+      this.state = {};
     }
 
     mount(element) {
@@ -24,8 +24,8 @@ define('components/fields', [], function() {
 
       this.bindButtonEvents();
       this.createCounter(this.element);
-      this.createNextBtn(this.element);
-      this.bindNextBtnEvents();
+      this.createNextButton(this.element);
+      this.bindNextButtonEvents();
     }
 
     bindButtonEvents() {
@@ -85,7 +85,7 @@ define('components/fields', [], function() {
       this.counterStatus = status;
     }
 
-    createNextBtn(targetEl) {
+    createNextButton(targetEl) {
       let button = document.createElement('div');
 
       button.setAttribute('role', 'button');
@@ -95,7 +95,7 @@ define('components/fields', [], function() {
       targetEl.insertAdjacentElement('beforeend', button);
     }
 
-    bindNextBtnEvents() {
+    bindNextButtonEvents() {
       let switchClass = (classList) => {
         if (classList.contains('is-active-support')) {
           classList.remove('is-active-support');
@@ -123,9 +123,7 @@ define('components/fields', [], function() {
         );
       };
 
-      let btn = this.$el1('.fields__next');
-
-      btn.addEventListener('click', () => {
+      this.$el1('.fields__next').addEventListener('click', () => {
         switchClass(this.element.classList);
         switchText(this.element.classList, this.$el('.fields__text'));
         updateCounter();
