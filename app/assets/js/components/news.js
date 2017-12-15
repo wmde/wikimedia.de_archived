@@ -169,7 +169,7 @@ define('components/news', [], function() {
       };
 
       let removeOldImage = () => {
-        let limit = 3;
+        const limit = 3;
         if (this.$el('.news__image.old').length > limit) {
           this.$el1('.news__image.old').remove();
         }
