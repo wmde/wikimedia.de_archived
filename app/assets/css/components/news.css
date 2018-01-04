@@ -30,13 +30,13 @@
   transition: border .5s;
 }
 
-.news__box.tagged--wm {
+.news__box.tagged--wmde {
   border-color: var(--color-blue);
 }
-.news__box.tagged--wm .news__title {
+.news__box.tagged--wmde .news__title {
   color: var(--color-blue);
 }
-.news__box.tagged--wm .news__link {
+.news__box.tagged--wmde .news__link {
   color: var(--color-blue);
   border-color: var(--color-blue);
 }
