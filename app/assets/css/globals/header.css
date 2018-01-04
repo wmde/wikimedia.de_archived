@@ -49,6 +49,12 @@
   color: white;
 }
 
+@media (max-width: 1152px) {
+  .mh__support {
+    width: 243px;
+  }
+}
+
 @media (max-width: 864px) {
   .mh,
   .mh__inner {

@@ -24,7 +24,7 @@ $site = Sites::current($this->_request);
 		</h1>
 		<div class="mh__new-notice ts--beta">
 			<div class="wh__new-notic-inner">
-				<?= $this->html->link('Hier geht es zur alten Website', '/wiki', [
+				<?= $this->html->link('Hier geht es zur bisherigen Website', '/wiki', [
 					'class' => 'link link--green'
 				]) ?>
 				<br>
