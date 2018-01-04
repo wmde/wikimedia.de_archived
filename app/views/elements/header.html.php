@@ -22,15 +22,17 @@ $site = Sites::current($this->_request);
 				'class' => 'mh__logo logo logo--black'
 			]) ?>
 		</h1>
-		<div class="mh__new-notice ts--beta">
-			<div class="wh__new-notic-inner">
-				<?= $this->html->link('Hier geht es zur bisherigen Website', '/wiki', [
-					'class' => 'link link--green'
-				]) ?>
-				<br>
-				von Wikimedia Deutschland
+		<?php if ($this->_config['template'] === 'home'): ?>
+			<div class="mh__new-notice ts--beta">
+				<div class="wh__new-notic-inner">
+					<?= $this->html->link('Hier geht es zur bisherigen Website', '/wiki', [
+						'class' => 'link link--green'
+					]) ?>
+					<br>
+					von Wikimedia Deutschland
+				</div>
 			</div>
-		</div>
+		<?php endif ?>
 		<a
 			href="/#cta"
 			class="mh__support cp--0-5"
