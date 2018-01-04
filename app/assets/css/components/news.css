@@ -26,7 +26,7 @@
 
 .news__box {
   position: relative;
-  border: 2px solid;
+  border: 2px solid white;
   transition: border .5s;
 }
 
