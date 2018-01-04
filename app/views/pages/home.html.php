@@ -121,25 +121,22 @@ $this->seo->set('description', $text);
 					<div class="fields__blurb-lower cp--0-5 tm--beta">
 						<article id="fields-support" class="fields__text">
 							<p>
-								Die freie Enzyklopädie Wikipedia wird von ehrenamtlichen
-								Autorinnen und Autoren geschrieben. Da es keine hauptamtliche Redaktion gibt, lebt
-								die Wikipedia von der Mitarbeit möglichst vieler Menschen. Aber die Zahl der aktiven
-								Autorinnen und Autoren geht zurück. Wenn sich auch in Zukunft immer weniger Menschen
-								engagieren, könnten Artikel nicht mehr aktuell gehalten werden – oder keine neuen
-								entstehen.
+								Die freie Enzyklopädie Wikipedia wird von ehrenamtlichen Autorinnen und Autoren
+								geschrieben. Da es keine hauptamtliche Redaktion gibt, lebt die Wikipedia von der
+								Mitarbeit möglichst vieler Menschen. Aber die Zahl der aktiven Autorinnen und Autoren
+								geht zurück. Wenn sich auch in Zukunft immer weniger Menschen engagieren, könnten
+								Artikel nicht mehr aktuell gehalten werden – oder keine neuen entstehen.
 							</p>
 							<p>
-								Wir setzen uns deshalb dafür ein, dass die Wikipedia auch in
-								Zukunft verlässlich, umfassend und aktuell ist. Wir machen Menschen darauf aufmerksam,
-								dass man sich an der Wikipedia beteiligen kann und bieten Interessierten Hilfe und
-								Einstiegsmöglichkeiten.
+								Wir setzen uns deshalb dafür ein, dass die Wikipedia auch in Zukunft verlässlich,
+								umfassend und aktuell ist. Wir machen Menschen darauf aufmerksam, dass sie sich an der
+								Wikipedia beteiligen können und bieten Interessierten Hilfe und Einstiegsmöglichkeiten.
 							</p>
 							<p>
-								Die bereits bestehenden Autorinnen und Autoren
-								bestärken wir in ihrem Engagement und stehen ihnen zur Seite, wenn es darum
-								geht, ihre Pläne in die Tat umzusetzen. Wir vergeben zum Beispiel Stipendien,
-								helfen bei der Durchführung von Workshops und Wettbewerben oder bieten technische
-								Unterstützung.
+								Alle Autorinnen und Autoren – ob neu oder schon langjährig aktiv – bestärken wir in
+								ihrem Engagement und stehen ihnen zur Seite, wenn es darum geht, ihre Pläne in die
+								Tat umzusetzen. Wir vergeben zum Beispiel Stipendien, helfen bei der Durchführung
+								von Workshops und Wettbewerben oder bieten technische Unterstützung.
 							</p>
 						</article>
 						<article id="fields-dev" class="fields__text" hidden>
@@ -163,20 +160,20 @@ $this->seo->set('description', $text);
 						<article id="fields-know" class="fields__text" hidden>
 							<p>
 								Die Welt ist reich an Kulturgütern wie Büchern, Gemälden oder wissenschaftlichen
-								Arbeiten. Sie können von der Öffentlichkeit aber meist nur angeschaut und nicht genutzt
-								werden. Selbst wenn sie in z. B. einem Museum ausgestellt sind, darf man sie oft nicht
-								fotografieren und verwenden.
+								Arbeiten. Sie können von der Öffentlichkeit meist angesehen, aber nicht genutzt werden.
+								Selbst wenn sie beispielsweise in einem Museum ausgestellt sind, dürfen wir sie oft
+								nicht fotografieren und verwenden.
 							</p>
 							<p>
 								Öffentliche Güter gehören aus unserer Sicht in die Öffentlichkeit. Wir arbeiten daher mit
 								Bildungs-, Wissenschafts- und Kulturinstitutionen zusammen und befähigen sie, ihre Inhalte
-								unter eine freie Lizenz zu stellen. Damit alle diese Schätze frei weiterverwendet werden
+								unter eine freie Lizenz zu stellen, damit alle diese Schätze frei weiterverwendet werden
 								können – etwa für Unterrichtsmaterialien oder einen Blog.
 							</p>
 							<p>
 								Dafür braucht es einen geeigneten rechtlichen Rahmen. Wir wollen erreichen, dass Menschen
 								so leicht wie möglich ihr Wissen teilen können und es gemeinschaftlich genutzt werden
-								kann. Wir setzen uns aus diesem Grund für ein zeitgemäßes Urheberrecht ein, dass die
+								kann. Wir setzen uns aus diesem Grund für ein zeitgemäßes Urheberrecht ein, das die
 								Möglichkeiten des Internets nutzt, um Wissen zu verbreiten und zu vermehren.
 							</p>
 						</article>
