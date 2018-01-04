@@ -31,14 +31,14 @@
 }
 
 .news__box.tagged--wmde {
-  border-color: var(--color-blue);
+  border-color: var(--color-green);
 }
 .news__box.tagged--wmde .news__title {
-  color: var(--color-blue);
+  color: var(--color-green);
 }
 .news__box.tagged--wmde .news__link {
-  color: var(--color-blue);
-  border-color: var(--color-blue);
+  color: var(--color-green);
+  border-color: var(--color-green);
 }
 
 .news__box.tagged--member {
