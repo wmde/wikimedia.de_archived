@@ -147,7 +147,12 @@ define('components/team', [], function() {
       };
 
       let updateImage = (name) => {
-        this.image.innerHTML = this.state[name].image;
+        let oldFig = this.$el1('.member__fig');
+        this.image.insertAdjacentHTML('afterbegin', this.state[name].image);
+        oldFig.classList.add('fadeout');
+        window.setTimeout(() => {
+          oldFig.remove();
+        }, 300);
       };
 
       items.forEach((el) => {

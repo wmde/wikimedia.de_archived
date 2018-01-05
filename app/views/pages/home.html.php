@@ -331,7 +331,7 @@ $this->seo->set('description', $text);
 				<h1 class="member__name" hidden><?= $item->name ?> </h1>
 				<div class="member__image">
 					<?php if ($cover = $item->portrait()): ?>
-						<figure class="fig">
+						<figure class="fig member__fig">
 							<?= $this->media->image($cover->version('fix20'), [
 								'class' => 'fig__media',
 								'alt' => "Portrait von {$item->name}"
