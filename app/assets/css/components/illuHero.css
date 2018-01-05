@@ -31,7 +31,7 @@
 }
 
 .illu-hero__green {
-  background-image: url(../../img/hero_green.png);
+  background-image: url(../../img/element_left_big_2x.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -49,7 +49,7 @@
 }
 
 .illu-hero__cube {
-  background-image: url(../../img/hero_cube.png);
+  background-image: url(../../img/element_middle_big_2x.png);
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -64,7 +64,7 @@
 }
 
 .illu-hero__blue {
-  background-image: url(../../img/hero_blue.png);
+  background-image: url(../../img/element_right_big_2x.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 100% auto;
@@ -104,6 +104,7 @@
     display: none;
   }
   .illu-hero__cube {
+    background-image: url(../../img/element_middle_medium_2x.png);
     bottom: auto;
     top: 144px;
     left: 36px;
@@ -114,6 +115,7 @@
     max-height: 513px;
   }
   .illu-hero__blue {
+    background-image: url(../../img/element_right_medium_2x.png);
     right: 0px;
 
     width: 100%;
@@ -151,6 +153,7 @@
     height: 540px;
   }
   .illu-hero__cube {
+    background-image: url(../../img/element_middle_small_2x.png);
     top: 108px;
     left: 0;
     width: 100%;
@@ -159,6 +162,7 @@
     max-height: 360px;
   }
   .illu-hero__blue {
+    background-image: url(../../img/element_right_small_2x.png);
     left: calc(63vw - 192px);
     max-width: auto;
     width: 432px;

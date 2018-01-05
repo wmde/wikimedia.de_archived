@@ -60,7 +60,7 @@ $this->seo->set('description', $text);
 			</div>
 			<figure class="fig mission__image cm--l2 cm--t1">
 				<div>
-				<?= $this->assets->image('/app/img/mission_abraham.jpg', [
+				<?= $this->assets->image('/app/img/mission_abraham.png', [
 					'class' => 'fig__media',
 					'alt' => 'Portrait von Abraham Taherivand'
 				]) ?>
