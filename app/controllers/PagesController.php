@@ -36,7 +36,7 @@ class PagesController extends \lithium\action\Controller {
 				'is_published' => true
 			],
 			'order' => [
-				'order' => 'ASC'
+				'order' => 'DESC'
 			]
 		]);
 
