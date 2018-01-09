@@ -19,8 +19,7 @@ class PagesController extends \lithium\action\Controller {
 	public function home() {
 		$posts = Posts::find('all', [
 			'conditions' => [
-				'is_published' => true,
-				'is_promoted' => true
+				'is_published' => true
 			],
 			// Show newest first, fall back to sorting by created date, when
 			// published is not available (it will be - usually).
