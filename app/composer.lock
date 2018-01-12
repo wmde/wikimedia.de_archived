@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7fd734485a1e5c0c8e2bf6604fd8148",
+    "content-hash": "5357bd87cb370656fc1f98ba70a2ae00",
     "packages": [
         {
             "name": "atelierdisko/cute",
@@ -1730,6 +1730,7 @@
         "atelierdisko/li3_access": 20,
         "bseries/base_core": 20,
         "bseries/base_media": 20,
+        "bseries/base_tag": 20,
         "bseries/base_reference": 20,
         "bseries/cms_core": 20,
         "bseries/cms_post": 20,
