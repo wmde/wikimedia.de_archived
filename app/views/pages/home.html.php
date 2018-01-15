@@ -256,7 +256,7 @@ $this->seo->set('description', $text);
 				<div class="news__box <?php echo implode(' ', $classes) ?> limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
 					<h1 class="news__title tm--gamma t--caps">
 					<?php
-						if ($item->hasTags(['wm'])) {
+						if ($item->hasTags(['wmde'])) {
 							echo 'Wikimedia';
 						} elseif ($item->hasTags(['initiative']))  {
 							echo 'Initiative';
