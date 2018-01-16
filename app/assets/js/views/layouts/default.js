@@ -48,18 +48,22 @@ require(['domready!'], function() {
     });
 
     $1('.toggle-refs-foldout').addEventListener('click', function(ev) {
+      ev.preventDefault();
+
       if (foldout.classList.contains('revealed')) {
-        ev.preventDefault();
         foldout.classList.remove('revealed');
         return;
       }
       if (hasSmoothScroll) {
-        ev.preventDefault();
-
         foldout.addEventListener('transitionend', function() {
           foldout.scrollIntoView({behavior: 'smooth'});
         }, {once: true});
+      } else {
+        foldout.addEventListener('transitionend', function() {
+          foldout.scrollIntoView();
+        }, {once: true});
       }
+
       foldout.classList.add('revealed');
     });
 
