@@ -362,12 +362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/base_core.git",
-                "reference": "d9b1fcd750c2972dd0d56b7ac740a2500cd0953d"
+                "reference": "fbad8c6ab23c18ce6e7613c6be9f5e1a4c02e9fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/base_core/zipball/d9b1fcd750c2972dd0d56b7ac740a2500cd0953d",
-                "reference": "d9b1fcd750c2972dd0d56b7ac740a2500cd0953d",
+                "url": "https://api.github.com/repos/bseries/base_core/zipball/fbad8c6ab23c18ce6e7613c6be9f5e1a4c02e9fa",
+                "reference": "fbad8c6ab23c18ce6e7613c6be9f5e1a4c02e9fa",
                 "shasum": ""
             },
             "require": {
@@ -403,7 +403,7 @@
                 }
             ],
             "description": "Core functionality for Bento.",
-            "time": "2018-01-12T11:44:45+00:00"
+            "time": "2018-01-15T10:50:20+00:00"
         },
         {
             "name": "bseries/base_media",
@@ -475,12 +475,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/base_tag.git",
-                "reference": "fbc6c27f0446d496adb784fbf0710d092c604008"
+                "reference": "6b719d59603a4b16742d13ccf3098bd2090c7072"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/base_tag/zipball/fbc6c27f0446d496adb784fbf0710d092c604008",
-                "reference": "fbc6c27f0446d496adb784fbf0710d092c604008",
+                "url": "https://api.github.com/repos/bseries/base_tag/zipball/6b719d59603a4b16742d13ccf3098bd2090c7072",
+                "reference": "6b719d59603a4b16742d13ccf3098bd2090c7072",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +498,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Taxonomy functionality for Bento.",
-            "time": "2017-10-17T11:20:52+00:00"
+            "time": "2018-01-12T10:07:01+00:00"
         },
         {
             "name": "bseries/cms_core",
