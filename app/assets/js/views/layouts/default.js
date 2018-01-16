@@ -85,6 +85,15 @@ require(['domready!'], function() {
       if (hasSmoothScroll) {
         ev.preventDefault();
 
+        // In case foldout is revealed already, just scroll it
+        // into view directly and update highlighting.
+        if (foldout.classList.contains('revealed')) {
+          target.scrollIntoView({behavior: 'smooth'});
+          clearHighlighted();
+          target.classList.add('hi');
+          return;
+        }
+
         // We must wait until the foldout has been revealed until we can
         // scroll it into view.
         foldout.addEventListener('transitionend', function() {
