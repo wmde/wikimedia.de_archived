@@ -167,8 +167,8 @@ $this->seo->set('description', $text);
 							<p>
 								Öffentliche Güter gehören aus unserer Sicht in die Öffentlichkeit. Wir arbeiten daher mit
 								Bildungs-, Wissenschafts- und Kulturinstitutionen zusammen und befähigen sie, ihre Inhalte
-								unter eine freie Lizenz zu stellen, damit alle diese Schätze frei weiterverwendet werden
-								können – etwa für Unterrichtsmaterialien oder einen Blog.
+								unter eine freie Lizenz zu stellen. So können all diese Schätze frei weiterverwendet
+								werden – etwa für Unterrichtsmaterialien oder einen Blog.
 							</p>
 							<p>
 								Dafür braucht es einen geeigneten rechtlichen Rahmen. Wir wollen erreichen, dass Menschen
