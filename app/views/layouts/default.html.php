@@ -60,6 +60,10 @@ use lithium\util\Inflector;
 		<!-- Misc -->
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
+		<!-- Social -->
+		<meta property="og:url" content="https://www.wikimedia.de" />
+		<meta property="og:image" content="<?= $this->assets->url('/app/img/og_share_fb.png') ?>">
+
 		<!-- Dynamically added -->
 	</head>
 	<?php
