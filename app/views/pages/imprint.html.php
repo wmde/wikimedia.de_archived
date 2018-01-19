@@ -48,7 +48,7 @@ $contact = Settings::read('contact');
 					<li class="tm--beta">
 						Log-Files: Bei der Nutzung dieses Angebots werden die von Ihrem
 						Browser an den Server übermittelten Daten erfasst und gespeichert.
-						Dies umfasst üblichweise Informationen über den Typ und die
+						Dies umfasst üblicherweise Informationen über den Typ und die
 						Version des von Ihnen verwendeten Browsers, das verwendete
 						Betriebssystem, die Referrer URL (die Webseite, von der aus Sie zu
 						dieser Website gelangt sind), den Hostnamen des zugreifenden
