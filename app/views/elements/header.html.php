@@ -25,7 +25,7 @@ $site = Sites::current($this->_request);
 		<?php if ($this->_config['template'] === 'home'): ?>
 			<div class="mh__new-notice ts--beta">
 				<div class="wh__new-notic-inner">
-					<?= $this->html->link('Hier geht es zur bisherigen Website', '/wiki', [
+					<?= $this->html->link('Hier geht es zur bisherigen Website', '/wiki/Hauptseite', [
 						'class' => 'link link--green'
 					]) ?>
 					<br>
