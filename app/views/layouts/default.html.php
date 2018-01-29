@@ -20,6 +20,7 @@ use lithium\util\Inflector;
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 		<!-- Styles -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 		<?php
 			$styles = array_merge(
 				$this->assets->availableStyles('base'),
@@ -36,6 +37,7 @@ use lithium\util\Inflector;
 		</script>
 
 		<!-- Scripts -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 		<?php
 			$scripts = array_merge(
 				[
@@ -57,9 +59,6 @@ use lithium\util\Inflector;
 			<?php endif ?>
 		<?php endif ?>
 
-		<!-- Misc -->
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-
 		<!-- Social -->
 		<meta property="og:url" content="https://www.wikimedia.de" />
 		<meta property="og:image" content="<?= $this->assets->url('/app/img/og_share_fb.png') ?>">
@@ -72,15 +71,6 @@ use lithium\util\Inflector;
 		if ($authedUser) {
 			$classes[] = 'user-authed';
 
-		}
-		if (isset($device)) {
-			foreach ($device as $name => $flag) {
-				if (is_bool($flag) && $flag ) {
-					$classes[] = 'device-' . strtolower(Inflector::slug($name));
-				} elseif (is_string($flag)) {
-					$classes[] = 'device-' . strtolower(Inflector::slug($name)) . '-' . strtolower($flag);
-				}
-			}
 		}
 		if (isset($extraBodyClasses)) {
 			$classes = array_merge($classes, $extraBodyClasses);
