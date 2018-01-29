@@ -16,7 +16,8 @@
         "bseries/cms_team": "1.5.x-dev",
         "davidpersson/indexed": "1.*",
         "php": "^5.5 || ^7.0",
-        "unionofrad/lithium": "1.2.x-dev as 1.2.0"
+        "unionofrad/lithium": "1.2.x-dev as 1.2.0",
+        "davidpersson/textual": "^1.0"
     },
     "require-dev": {
         "digitalnature/php-ref": "1.2.*",

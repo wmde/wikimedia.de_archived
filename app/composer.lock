@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5357bd87cb370656fc1f98ba70a2ae00",
+    "content-hash": "ad07aeff00d4a42af6f1063ef3d8e110",
     "packages": [
         {
             "name": "atelierdisko/cute",
@@ -1038,6 +1038,39 @@
             ],
             "description": "Small PHP utility class to manage temporary files.",
             "time": "2016-09-26T09:20:21+00:00"
+        },
+        {
+            "name": "davidpersson/textual",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidpersson/textual.git",
+                "reference": "984ce97463b0d6d843beac302f94371a96a3edf2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidpersson/textual/zipball/984ce97463b0d6d843beac302f94371a96a3edf2",
+                "reference": "984ce97463b0d6d843beac302f94371a96a3edf2",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "textual\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Persson",
+                    "email": "davidpersson@gmx.de"
+                }
+            ],
+            "description": "PHP library with tools for modulating text.",
+            "time": "2014-04-02T17:09:47+00:00"
         },
         {
             "name": "monolog/monolog",

@@ -1,6 +1,7 @@
 <?php
 
 use base_core\base\Sites;
+use textual\Modulation as Textual;
 
 // The Sites class gives us access to Site objects, where each has a title and a FQDN.
 // Each app can host multiple Sites if needed.
@@ -288,8 +289,12 @@ $this->seo->set('description', $text);
 					<?php endif ?>
 					</div>
 
-					<div class="news__teaser tm--alpha"><?php echo $item->teaser ?></div>
-					<div class="news__text tm--beta cm--b1"><?php echo $item->body ?></div>
+					<div class="news__teaser tm--alpha">
+						<?php echo Textual::limit($item->teaser, 140, ['html' => true]) ?>
+					</div>
+					<div class="news__text tm--beta cm--b1">
+						<?php echo Textual::limit($item->body, 260, ['html' => true]) ?>
+					</div>
 
 					<?php if ($item->source): ?>
 						<?= $this->html->link($linkTitle($item), $item->source, [
