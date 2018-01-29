@@ -20,6 +20,7 @@ use lithium\util\Inflector;
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 		<!-- Styles -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 		<?php
 			$styles = array_merge(
 				$this->assets->availableStyles('base'),
@@ -56,9 +57,6 @@ use lithium\util\Inflector;
 				<?=$this->_render('element', 'ga') ?>
 			<?php endif ?>
 		<?php endif ?>
-
-		<!-- Misc -->
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- Dynamically added -->
 	</head>
