@@ -33,7 +33,7 @@
 		<?php
 			$scripts = array_merge(
 				[
-					'https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&rum=0',
+					'/app/js/compat/core',
 					'/app/js/require'
 				],
 				$this->assets->availableScripts('base'),
