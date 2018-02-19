@@ -74,10 +74,10 @@ TIMEZONE="Europe/Berlin"
 
 # Available locales, countries, currencies and timezones. 
 # Separate multiple entries by space. 
-LOCALES="de"
+LOCALES="de en"
 COUNTRIES="DE"
 CURRENCIES="EUR"
-TIMEZONES="Europe/Berlin UTC"
+TIMEZONES="Europe/Berlin"
 
 # -----------------------------------------------------------
 # Caching

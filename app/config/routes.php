@@ -25,6 +25,14 @@ Router::attach('app', [
 // Defines default routes in the app scope. Read more about how to define routes at
 // http://li3.me/docs/manual/controllers/routing.md
 Router::scope('app', function() {
+	Router::connect('/change-locale/{:locale}', 'Pages::change_locale');
+
+	Router::connect('/{:locale:(de|en)}/{:args}', [], [
+		'continue' => true,
+		'defaults' => ['locale' => PROJECT_LOCALE],
+		'persist' => ['controller', 'locale']
+	]);
+
 	Router::connect('/', 'Pages::home');
 
 	Router::connect('/imprint', 'Pages::imprint');

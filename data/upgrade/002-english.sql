@@ -1,0 +1,10 @@
+ALTER TABLE `posts` ADD `i18n_title_en` VARCHAR(250)  CHARACTER SET utf8  COLLATE utf8_general_ci  NULL  DEFAULT ''  AFTER `modified`;
+ALTER TABLE `posts` ADD `i18n_teaser_en` TEXT  CHARACTER SET utf8  COLLATE utf8_general_ci  NULL  AFTER `i18n_title_en`;
+ALTER TABLE `posts` ADD `i18n_body_en` TEXT  CHARACTER SET utf8  COLLATE utf8_general_ci  NULL  AFTER `i18n_teaser_en`;
+ALTER TABLE `tags` ADD `i18n_title_en` VARCHAR(250)  CHARACTER SET utf8  COLLATE utf8_general_ci  NULL  DEFAULT ''  AFTER `modified`;
+ALTER TABLE `tags` ADD `i18n_description_en` TEXT  CHARACTER SET utf8  COLLATE utf8_general_ci  NULL  AFTER `i18n_title_en`;
+ALTER TABLE `team_members` ADD `i18n_vita_en` TEXT  CHARACTER SET utf8mb4  COLLATE utf8mb4_general_ci  NULL  AFTER `modified`;
+ALTER TABLE `team_members` ADD `i18n_position_en` VARCHAR(200)  CHARACTER SET utf8mb4  COLLATE utf8mb4_general_ci  NULL  DEFAULT NULL  AFTER `i18n_vita_en`;
+ALTER TABLE `vacant_team_positions` ADD `i18n_title_en` VARCHAR(250)  CHARACTER SET utf8mb4  COLLATE utf8mb4_general_ci  NULL  DEFAULT NULL  AFTER `modified`;
+ALTER TABLE `vacant_team_positions` ADD `i18n_teaser_en` TEXT  CHARACTER SET utf8mb4  COLLATE utf8mb4_general_ci  NULL  AFTER `i18n_title_en`;
+ALTER TABLE `vacant_team_positions` ADD `i18n_body_en` TEXT  CHARACTER SET utf8mb4  COLLATE utf8mb4_general_ci  NULL  AFTER `i18n_teaser_en`;

@@ -13,6 +13,7 @@ use base_reference\models\References;
 use cms_post\models\Posts;
 use cms_team\models\TeamMembers;
 use indexed\Robots;
+use lithium\action\Request;
 
 class PagesController extends \lithium\action\Controller {
 
@@ -62,6 +63,19 @@ class PagesController extends \lithium\action\Controller {
 	}
 
 	public function imprint() {}
+
+	// Changes locale encoded in route to requested locale and redirects
+	// to the corresponding page.
+	public function change_locale() {
+		$r = new Request([
+			'url' => parse_url($this->request->referer(), PHP_URL_PATH)
+		]);
+		$r = Router::parse($r);
+
+		return $this->redirect([
+			'locale' => $this->request->locale
+		] + $r->params);
+	}
 
 	// Allows to advice crawler behavior. By default allows any crawler to crawl anything.
 	// Do not block access to media or assets as they are needed to render a preview of

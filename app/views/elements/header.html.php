@@ -14,6 +14,17 @@ $site = Sites::current($this->_request);
 // ...
 // echo $this->nav->generate('main')
 
+foreach (explode(' ', PROJECT_LOCALES) as $_locale) {
+	$this->nav->add('locale', $this->G11n->name($_locale), [
+		'controller' => 'Pages',
+		'action' => 'change_locale',
+		'locale' => $_locale
+	], [
+		// $locale is auto-injected into the layout as the effective locale.
+		'active' => $isActive = $_locale === $locale
+	]);
+}
+
 ?>
 <header class="mh">
 	<div class="mh__inner clearfix limit--20 cp--h1 center-column">
@@ -33,6 +44,7 @@ $site = Sites::current($this->_request);
 				</div>
 			</div>
 		<?php endif ?>
+		<?= $this->nav->generate('locale') ?>
 		<a
 			href="/#cta"
 			class="mh__support cp--0-5"
