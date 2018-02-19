@@ -17,6 +17,7 @@ use cms_post\models\Posts;
 use cms_team\models\TeamMembers;
 use indexed\Robots;
 use lithium\action\Request;
+use lithium\core\Environment;
 
 class PagesController extends \lithium\action\Controller {
 
@@ -71,10 +72,11 @@ class PagesController extends \lithium\action\Controller {
 		];
 		foreach ($blocks as $regionFragment => &$item) {
 			$item = Blocks::find('first', [
-				'conditions' =>  [
+				'conditions' => [
 					'is_published' => true,
-					'region' => "home.{$regionFragment}"
-				]
+					'region' => "home.{$regionFragment}",
+				],
+				'translate' => Environment::get('locale')
 			]);
 		}
 		return compact('posts', 'teamMembers', 'references', 'blocks');
@@ -85,7 +87,8 @@ class PagesController extends \lithium\action\Controller {
 			'conditions' => [
 				'is_published' => true,
 				'title' => $this->request->page
-			]
+			],
+			'translate' => Environment::get('locale')
 		]);
 		if (!$item) {
 			throw new NotFoundException();
