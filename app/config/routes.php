@@ -35,7 +35,9 @@ Router::scope('app', function() {
 
 	Router::connect('/', 'Pages::home');
 
+	Router::connect('/{:page:(transparenz|satzung)}', 'Pages::dynamic');
 	Router::connect('/imprint', 'Pages::imprint');
+
 	Router::connect('/404', 'Errors::generic');
 	Router::connect('/robots.txt', [
 		'controller' => 'Pages',

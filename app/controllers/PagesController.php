@@ -9,8 +9,10 @@
 
 namespace app\controllers;
 
+use base_core\extensions\net\http\NotFoundException;
 use base_reference\models\References;
 use cms_content\models\Blocks;
+use cms_content\models\Pages;
 use cms_post\models\Posts;
 use cms_team\models\TeamMembers;
 use indexed\Robots;
@@ -76,6 +78,19 @@ class PagesController extends \lithium\action\Controller {
 			]);
 		}
 		return compact('posts', 'teamMembers', 'references', 'blocks');
+	}
+
+	public function dynamic() {
+		$item = Pages::find('first', [
+			'conditions' => [
+				'is_published' => true,
+				'title' => $this->request->page
+			]
+		]);
+		if (!$item) {
+			throw new NotFoundException();
+		}
+		return compact('item');
 	}
 
 	public function imprint() {}
