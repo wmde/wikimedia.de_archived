@@ -335,7 +335,7 @@ $this->seo->set('description', $text);
 			>
 				<h1 class="member__name" hidden><?= $item->name ?> </h1>
 				<div class="member__image">
-					<?php if ($cover = $item->portrait()): ?>
+					<?php if ($cover = $item->cover()): ?>
 						<figure class="fig member__fig">
 							<?= $this->media->image($cover->version('fix20'), [
 								'class' => 'fig__media',
