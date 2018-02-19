@@ -89,6 +89,25 @@
   max-width: 504px;
 }
 
+/* Content is coming from database. */
+.illu-hero__text strong {
+  /* inherit tl--beta */
+  font-weight: bold;
+  /* inherit t--strong */
+  font: 600 34px/1.4 var(--font-family-sans);
+  letter-spacing: .01em;
+}
+@media (max-width: 1152px) {
+  .illu-hero__text strong {
+    font-size: 28px;
+  }
+}
+@media (max-width: 648px) {
+  .illu-hero__text strong {
+    font-size: 18px;
+  }
+}
+
 .illu-hero__ref {
   position: absolute;
   right: 72px;

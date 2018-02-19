@@ -10,6 +10,7 @@
 namespace app\controllers;
 
 use base_reference\models\References;
+use cms_content\models\Blocks;
 use cms_post\models\Posts;
 use cms_team\models\TeamMembers;
 use indexed\Robots;
@@ -59,7 +60,22 @@ class PagesController extends \lithium\action\Controller {
 			])
 		];
 
-		return compact('posts', 'teamMembers', 'references');
+		$blocks = [
+			'vision' => null,
+			'mission' => null,
+			'fields.support' => null,
+			'fields.dev' => null,
+			'fields.know' => null
+		];
+		foreach ($blocks as $regionFragment => &$item) {
+			$item = Blocks::find('first', [
+				'conditions' =>  [
+					'is_published' => true,
+					'region' => "home.{$regionFragment}"
+				]
+			]);
+		}
+		return compact('posts', 'teamMembers', 'references', 'blocks');
 	}
 
 	public function imprint() {}

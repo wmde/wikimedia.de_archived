@@ -9,7 +9,7 @@
 
 namespace app\config;
 
-// use cms_content\cms\content\Regions;
+use cms_content\cms\content\Regions;
 
 // Here content regions can be defined. Regions are "dynamic" areas
 // or partials inside the site. Each region needs a name,
@@ -17,9 +17,30 @@ namespace app\config;
 // module and can be currently one of: text, richtext, number,
 // money or media.
 
-// Regions::register('faq', [
-// 	'title' => 'FAQ',
-// 	'type' => 'richtext'
-// ]);
+Regions::register('home.vision', [
+	'title' => 'Home > Vision',
+	'type' => 'richtext',
+	'access' => PROJECT_DEBUG ? 'any' : 'nobody'
+]);
+Regions::register('home.mission', [
+	'title' => 'Home > Mission',
+	'type' => 'richtext',
+	'access' => PROJECT_DEBUG ? 'any' : 'nobody'
+]);
+Regions::register('home.fields.support', [
+	'title' => 'Home > Handlungsfelder > Unterstützen',
+	'type' => 'richtext',
+	'access' => PROJECT_DEBUG ? 'any' : 'nobody'
+]);
+Regions::register('home.fields.dev', [
+	'title' => 'Home > Handlungsfelder > Software Entwickeln',
+	'type' => 'richtext',
+	'access' => PROJECT_DEBUG ? 'any' : 'nobody'
+]);
+Regions::register('home.fields.know', [
+	'title' => 'Home > Handlungsfelder > Freies Wissen',
+	'type' => 'richtext',
+	'access' => PROJECT_DEBUG ? 'any' : 'nobody'
+]);
 
 ?>

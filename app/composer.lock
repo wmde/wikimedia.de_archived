@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad07aeff00d4a42af6f1063ef3d8e110",
+    "content-hash": "97d7231b3c00ec0e0a43c6364534dd2e",
     "packages": [
         {
             "name": "atelierdisko/cute",
@@ -499,6 +499,40 @@
             ],
             "description": "Taxonomy functionality for Bento.",
             "time": "2018-01-12T10:07:01+00:00"
+        },
+        {
+            "name": "bseries/cms_content",
+            "version": "1.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bseries/cms_content.git",
+                "reference": "78897bd8bd3092ff5054da64bde7dc45ceb42890"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bseries/cms_content/zipball/78897bd8bd3092ff5054da64bde7dc45ceb42890",
+                "reference": "78897bd8bd3092ff5054da64bde7dc45ceb42890",
+                "shasum": ""
+            },
+            "require": {
+                "atelierdisko/li3_access": "2.*@stable || 2.1.0@dev",
+                "atelierdisko/li3_flash_message": "1.*",
+                "bseries/base_core": "1.5.x-dev",
+                "bseries/base_media": "1.5.x-dev",
+                "bseries/cms_core": "1.5.x-dev",
+                "composer/installers": "1.*@stable",
+                "davidpersson/li3_translate": "^2.1@dev",
+                "davidpersson/textual": "1.0.*@stable",
+                "php": "^5.5 || ^7.0",
+                "unionofrad/lithium": "^1.1"
+            },
+            "type": "lithium-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Generic Content functionality for Bureau.",
+            "time": "2018-02-19T14:18:08+00:00"
         },
         {
             "name": "bseries/cms_core",
@@ -1766,8 +1800,9 @@
         "atelierdisko/li3_access": 20,
         "bseries/base_core": 20,
         "bseries/base_media": 20,
-        "bseries/base_tag": 20,
         "bseries/base_reference": 20,
+        "bseries/base_tag": 20,
+        "bseries/cms_content": 20,
         "bseries/cms_core": 20,
         "bseries/cms_post": 20,
         "bseries/cms_team": 20,

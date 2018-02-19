@@ -37,9 +37,7 @@ $this->seo->set('description', $text);
 		</div>
 		<div class="illu-hero__inner limit--20 cp--h1 center-column">
 			<div class="illu-hero__text tl--alpha">
-				Unsere <span class="tl--beta t--strong">Vision</span> ist eine Welt, in der
-				jeder Mensch am Wissen der Mensch&shy;heit teilhaben, es nutzen und mehren
-				kann.
+				<?php echo $blocks['vision']->value() ?>
 			</div>
 		</div>
 		<div class="illu-hero__lower sc--white">
@@ -56,8 +54,7 @@ $this->seo->set('description', $text);
 		<div class="mission__inner limit--16 cp--h1 cp--v2 center-column clearfix">
 			<h1 class="mission__headline tl--beta t--strong">Mission</h1>
 			<div class="mission__text tl--gamma cp--0-5">
-				Wir setzen uns für Freies Wissen ein, um die Chancen&shy;gleichheit beim Zu&shy;gang zu Wissen
-				und Bildung zu fördern.
+				<?php echo $blocks['mission']->value() ?>
 			</div>
 			<figure class="fig mission__image cm--l2 cm--t1">
 				<div>
@@ -121,62 +118,13 @@ $this->seo->set('description', $text);
 					<div class="fields__blurb-top"></div>
 					<div class="fields__blurb-lower cp--0-5 tm--beta">
 						<article id="fields-support" class="fields__text">
-							<p>
-								Die freie Enzyklopädie Wikipedia wird von ehrenamtlichen Autorinnen und Autoren
-								geschrieben. Da es keine hauptamtliche Redaktion gibt, lebt die Wikipedia von der
-								Mitarbeit möglichst vieler Menschen. Aber die Zahl der aktiven Autorinnen und Autoren
-								geht zurück. Wenn sich auch in Zukunft immer weniger Menschen engagieren, könnten
-								Artikel nicht mehr aktuell gehalten werden – oder keine neuen entstehen.
-							</p>
-							<p>
-								Wir setzen uns deshalb dafür ein, dass die Wikipedia auch in Zukunft verlässlich,
-								umfassend und aktuell ist. Wir machen Menschen darauf aufmerksam, dass sie sich an der
-								Wikipedia beteiligen können und bieten Interessierten Hilfe und Einstiegsmöglichkeiten.
-							</p>
-							<p>
-								Alle Autorinnen und Autoren – ob neu oder schon langjährig aktiv – bestärken wir in
-								ihrem Engagement und stehen ihnen zur Seite, wenn es darum geht, ihre Pläne in die
-								Tat umzusetzen. Wir vergeben zum Beispiel Stipendien, helfen bei der Durchführung
-								von Workshops und Wettbewerben oder bieten technische Unterstützung.
-							</p>
+							<?php echo $blocks['fields.support']->value() ?>
 						</article>
 						<article id="fields-dev" class="fields__text" hidden>
-							<p>
-								Wenn wir heute etwas wissen wollen, schauen wir einfach im Internet nach. Anders als bei
-								einem gedruckten Lexikon brauchen wir für das Internet Software, damit dieses Wissen
-								überhaupt vernünftig angezeigt werden kann. Aber die digitale Umgebung entwickelt sich
-								rasant weiter.
-							</p>
-							<p>
-								Damit die Wikipedia auch in Zukunft benutzerfreundlich und für alle digital zugänglich
-								bleibt, bauen wir MediaWiki, die Software hinter der Wikipedia, immer weiter aus.
-							</p>
-							<p>
-								Außerdem entwickeln wir unsere freie Datenbank Wikidata, die Menschen auf der ganzen
-								Welt zum Beispiel an die fast 300 verschiedenen Sprachversionen von Wikipedia anbinden
-								können. Die Software hinter Wikidata ist so konzipiert, dass sie jederzeit und von allen
-								Interessierten auch außerhalb der Wikimedia-Welt Zugang zu unserer Datenbank bietet.
-							</p>
+							<?php echo $blocks['fields.dev']->value() ?>
 						</article>
 						<article id="fields-know" class="fields__text" hidden>
-							<p>
-								Die Welt ist reich an Kulturgütern wie Büchern, Gemälden oder wissenschaftlichen
-								Arbeiten. Sie können von der Öffentlichkeit meist angesehen, aber nicht genutzt werden.
-								Selbst wenn sie beispielsweise in einem Museum ausgestellt sind, dürfen wir sie oft
-								nicht fotografieren und verwenden.
-							</p>
-							<p>
-								Öffentliche Güter gehören aus unserer Sicht in die Öffentlichkeit. Wir arbeiten daher mit
-								Bildungs-, Wissenschafts- und Kulturinstitutionen zusammen und befähigen sie, ihre Inhalte
-								unter eine freie Lizenz zu stellen. So können all diese Schätze frei weiterverwendet
-								werden – etwa für Unterrichtsmaterialien oder einen Blog.
-							</p>
-							<p>
-								Dafür braucht es einen geeigneten rechtlichen Rahmen. Wir wollen erreichen, dass Menschen
-								so leicht wie möglich ihr Wissen teilen können und es gemeinschaftlich genutzt werden
-								kann. Wir setzen uns aus diesem Grund für ein zeitgemäßes Urheberrecht ein, das die
-								Möglichkeiten des Internets nutzt, um Wissen zu verbreiten und zu vermehren.
-							</p>
+							<?php echo $blocks['fields.know']->value() ?>
 						</article>
 					</div>
 				</div>
