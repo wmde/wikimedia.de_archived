@@ -70,7 +70,7 @@ $this->seo->set('description', $text);
 				</div>
 				<figcaption class="fig__caption mission__caption cm--l0-25">
 					<div class="tm--gamma t--caps">Abraham&nbsp;Taherivand</div>
-					<div class="tm--gamma"><?= $t("Geschäftsführender&nbsp;Vorstand") ?></div>
+					<div class="tm--gamma"><?php echo $t("Geschäftsführender&nbsp;Vorstand"); // echo does not print &nbsp; ?></div>
 				<figcaption>
 			</figure>
 		</div>
@@ -88,7 +88,7 @@ $this->seo->set('description', $text);
 					role="button"
 				>
 					<div class="field-button__inner tl--gamma">
-						<?= $t("Freiwillige unterstützen, gewinnen und halte n") ?>
+						<?= $t("Freiwillige unterstützen, gewinnen und halten") ?>
 					</div>
 				</a>
 				<a
@@ -108,7 +108,7 @@ $this->seo->set('description', $text);
 					role="button"
 				>
 					<div class="field-button__inner tl--gamma">
-						<?= $t("Rahmen&shy;bedingungen für Freies Wissen stärken") ?>
+						<?php echo $t("Rahmen&shy;bedingungen für Freies Wissen stärken"); // echo does not print &shy; ?>
 					</div>
 				</a>
 			</div>
