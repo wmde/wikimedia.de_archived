@@ -132,7 +132,7 @@
 
 .news__image.old {
   right: calc(50vw + 50%);
-  transform: translateX(-216px); /* 3 cells */
+  transform: translateX(-234px); /* 3 cells */
 }
 .news__image.active {
   right: 432px; /* 6 cells */
