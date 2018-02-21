@@ -25,7 +25,7 @@ domain "__DOMAIN__" {
 }
 
 database "__NAME__" {
-	password = ""
+	password = "__DB_PASSWORD__"
 }
 
 volume "media" {}

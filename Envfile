@@ -59,7 +59,7 @@ SECRET_BASE="__SECRET_BASE__"
 DB_HOST="localhost"
 DB_DATABASE="__NAME__"
 DB_USER="__NAME__"
-DB_PASSWORD=""
+DB_PASSWORD="__DB_PASSWORD__"
 
 # -----------------------------------------------------------
 # Globalization
