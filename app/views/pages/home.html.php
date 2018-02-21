@@ -17,10 +17,11 @@ $site = Sites::current($this->_request);
 //
 $this->title($site->title());
 
-$text  = 'Wikipedia ist eine der zehn beliebtesten Websites der Welt. ';
-$text .= 'Ihre Inhalte und die aller anderen Wikimedia-Projekte werden von Freiwilligen ';
-$text .= 'erstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt ihre Arbeit ';
-$text .= 'vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den kleineren Projekten.';
+$text  = $t('Wikipedia ist eine der zehn beliebtesten Websites der Welt. Ihre
+	Inhalte und die aller anderen Wikimedia-Projekte werden von Freiwilligen
+	erstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt ihre
+	Arbeit vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den
+	kleineren Projekten.');
 $this->seo->set('description', $text);
 
 ?>
@@ -60,7 +61,7 @@ $this->seo->set('description', $text);
 				<div>
 				<?= $this->assets->image('/app/img/mission_abraham.png', [
 					'class' => 'fig__media',
-					'alt' => 'Portrait von Abraham Taherivand'
+					'alt' => $t('Portrait von Abraham Taherivand')
 				]) ?>
 				<?= $this->references->cite($references['mission'], [
 					'class' => 'fig__ref ts--beta',
@@ -69,7 +70,7 @@ $this->seo->set('description', $text);
 				</div>
 				<figcaption class="fig__caption mission__caption cm--l0-25">
 					<div class="tm--gamma t--caps">Abraham&nbsp;Taherivand</div>
-					<div class="tm--gamma">Geschäftsführender&nbsp;Vorstand</div>
+					<div class="tm--gamma"><?= $t("Geschäftsführender&nbsp;Vorstand") ?></div>
 				<figcaption>
 			</figure>
 		</div>
@@ -77,7 +78,7 @@ $this->seo->set('description', $text);
 	<section class="fields is-active-support">
 		<div class="sc--lightblue fields--grid">
 			<div class="limit--16 center-column cp--h1 cp--t1-25">
-				<h1 class="tl--beta t--strong"><?= $t('Handlungsfelder') ?></h1>
+				<h1 class="tl--beta t--strong"><?= $t("Handlungsfelder") ?></h1>
 			</div>
 			<div class="field-buttons limit--16 center-column cp--h0-5 cp--t0-5 cp--b1-75">
 				<a
@@ -87,7 +88,7 @@ $this->seo->set('description', $text);
 					role="button"
 				>
 					<div class="field-button__inner tl--gamma">
-						Freiwillige unterstützen, gewinnen und halten
+						<?= $t("Freiwillige unterstützen, gewinnen und halte n") ?>
 					</div>
 				</a>
 				<a
@@ -97,7 +98,7 @@ $this->seo->set('description', $text);
 					role="button"
 				>
 					<div class="field-button__inner tl--gamma">
-						Software entwickeln
+						<?= $t("Software entwickeln") ?>
 					</div>
 				</a>
 				<a
@@ -107,7 +108,7 @@ $this->seo->set('description', $text);
 					role="button"
 				>
 					<div class="field-button__inner tl--gamma">
-						Rahmen&shy;bedingungen für Freies Wissen stärken
+						<?= $t("Rahmen&shy;bedingungen für Freies Wissen stärken") ?>
 					</div>
 				</a>
 			</div>
@@ -138,8 +139,8 @@ $this->seo->set('description', $text);
 				class="cta-button cp--0-5 cm--0-5 corners corners--orange"
 			>
 				<div class="cta-button__inner">
-					<div class="tm--gamma t--caps t--strong">Werde Mitglied bei</div>
-					<div class="tm--delta">Wikimedia Deutschland</div>
+				<div class="tm--gamma t--caps t--strong"><?= $t("Werde Mitglied bei") ?></div>
+				<div class="tm--delta"><?= $t("Wikimedia Deutschland") ?></div>
 				</div>
 			</a>
 			<a
@@ -147,8 +148,8 @@ $this->seo->set('description', $text);
 				class="cta-button cp--0-5 cm--0-5 corners corners--orange"
 			>
 				<div class="cta-button__inner">
-					<div class="tm--gamma t--caps t--strong">Spende für</div>
-					<div class="tm--delta">Freies Wissen</div>
+					<div class="tm--gamma t--caps t--strong"><?= $t("Spende für") ?></div>
+					<div class="tm--delta"><?= $t("Freies Wissen") ?></div>
 				</div>
 			</a>
 		</div>
@@ -156,10 +157,10 @@ $this->seo->set('description', $text);
 
 	<section class="news sc--lightgray">
 		<?php
-			$linkTitle = function($item) {
+			$linkTitle = function($item) use ($t) {
 				$sourceMatch = [
-					'#(^job\.wikimedia|/wiki/job)#' => 'Zur Jobseite',
-					'#vimeo.com#' => 'Zum Vimeo Channel'
+					'#(^job\.wikimedia|/wiki/job)#' => $t('Zur Jobseite'),
+					'#vimeo.com#' => $t('Zum Vimeo Channel')
 				];
 				foreach ($sourceMatch as $regex => $title) {
 					if (preg_match($regex, $item->source)) {
@@ -167,19 +168,19 @@ $this->seo->set('description', $text);
 					}
 				}
 				if ($item->hasTag('initiative')) {
-					return 'Zu dieser Initiative';
+					return $t('Zu dieser Initiative');
 				}
 				if ($item->hasTag('project')) {
-					return 'Zu diesem Projekt';
+					return $t('Zu diesem Projekt');
 				}
 				if ($item->hasTag('event')) {
-					return 'Zu diesem Event';
+					return $t('Zu diesem Event');
 				}
-				return 'Zur Webseite';
+				return $t('Zur Webseite');
 			};
 		?>
 		<div class="news__inner limit--16 center-column cp--h1 cp--t2">
-			<h1 class="tl--beta t--strong">Aktuelles</h1>
+			<h1 class="tl--beta t--strong"><?= $t("Aktuelles") ?></h1>
 
 			<?php $i = 0; foreach ($posts as $item): ?>
 			<?php
@@ -208,13 +209,13 @@ $this->seo->set('description', $text);
 						if ($item->hasTag('wmde')) {
 							echo 'Wikimedia';
 						} elseif ($item->hasTag('initiative'))  {
-							echo 'Initiative';
+							echo $t('Initiative');
 						} elseif ($item->hasTag('member'))  {
-							echo 'Mitglieder';
+							echo $t('Mitglieder');
 						} elseif ($item->hasTag('project'))  {
-							echo 'Projekt';
+							echo $t('Projekt');
 						} elseif ($item->hasTag('event'))  {
-							echo 'Event';
+							echo $t('Event');
 						} else {
 							echo $item->title;
 						}
@@ -264,7 +265,7 @@ $this->seo->set('description', $text);
 
 	<section class="team sc--white">
 		<div class="team__inner limit--16 cp--h1 cp--t1-25 center-column">
-			<h1 class="tl--beta t--strong">Unser Präsidium</h1>
+			<h1 class="tl--beta t--strong"><?= $t("Unser Präsidium") ?></h1>
 
 			<?php $i = 0; foreach ($teamMembers as $item): ?>
 			<?php
@@ -287,7 +288,7 @@ $this->seo->set('description', $text);
 						<figure class="fig member__fig">
 							<?= $this->media->image($cover->version('fix20'), [
 								'class' => 'fig__media',
-								'alt' => "Portrait von {$item->name}"
+								'alt' => $t('Portrait von')." {$item->name}"
 							]) ?>
 							<?php if ($ref = $cover->reference()): ?>
 								<?= $this->references->cite($ref, [
