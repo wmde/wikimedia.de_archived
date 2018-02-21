@@ -48,6 +48,7 @@ define('components/news', [], function() {
       this.createCounter(this.counterHook);
       this.createNextImage(this.box, false);
       this.createNextImage(this.box, true);
+      this.createPreviousButton(this.element);
       this.createNextButton(this.element);
       this.attachEventHandlers();
     }
@@ -122,6 +123,17 @@ define('components/news', [], function() {
       targetEl.insertAdjacentElement('beforeend', image);
     }
 
+    createPreviousButton(targetEl) {
+      let button = document.createElement('div');
+
+      button.id = 'previousButton';
+      button.classList.add('news__previous');
+      button.setAttribute('aria-controls', 'news-stage');
+      button.setAttribute('role', 'button');
+
+      targetEl.insertAdjacentElement('beforeend', button);
+    }
+
     createNextButton(targetEl) {
       let button = document.createElement('div');
 
@@ -134,6 +146,7 @@ define('components/news', [], function() {
     }
 
     attachEventHandlers() {
+      let previousButton = this.$el1('#previousButton');
       let nextButton = this.$el1('#nextButton');
 
       let updateCounter = (target) => {
@@ -174,6 +187,18 @@ define('components/news', [], function() {
           this.$el1('.news__image.old').remove();
         }
       };
+
+      previousButton.addEventListener('click', (ev) => {
+        this.state.current--;
+        if (this.state.current === -1) {
+          this.state.current = this.state.data.length-1;
+        }
+
+        updateCounter(this.$el1('.post__count'));
+        updateText(this.state.current);
+        updateImage();
+        removeOldImage();
+      });
 
       nextButton.addEventListener('click', (ev) => {
         this.state.current++;

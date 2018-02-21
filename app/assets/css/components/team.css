@@ -20,6 +20,11 @@
 .team__select {
   display: none;
 }
+/* FF Fix remove select:focus outline */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #FFF;
+}
 .team__list {
   width: 360px;
   line-height: 27px;
@@ -111,9 +116,9 @@
     height: 40px;
     pointer-events: none;
     background-color: var(--color-green);
-    background-image: url(../../ico/arrow_select_s.svg);
+    background-image: url(../../ico/arrow_select_white.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 19px;
   }
   .team__select {
     display: block;
@@ -143,6 +148,9 @@
   .member__image {
     max-width: 324px;
     height: 360px;
+  }
+  .member__fig {
+    width: auto;
   }
   /* The image is now placed to the right of the info text
      and slightly underlaps it. */
