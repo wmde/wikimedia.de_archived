@@ -79,7 +79,8 @@ class PagesController extends \lithium\action\Controller {
 				'translate' => Environment::get('locale')
 			]);
 		}
-		return compact('posts', 'teamMembers', 'references', 'blocks');
+		$locale = Environment::get('locale');
+		return compact('posts', 'teamMembers', 'references', 'blocks', 'locale');
 	}
 
 	public function dynamic() {

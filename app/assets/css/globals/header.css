@@ -6,18 +6,17 @@
  */
 
 /* mh = main header */
-
 .mh {
   position: absolute;
   z-index: 10;
-  top: 8px;
+  top: 18px;
   left: 0;
   width: 100%;
-  height: 90px;
 }
 .mh__inner {
-  height: 90px;
+  position: relative;
   width: 100%;
+  height: 72px;
 }
 
 .mh__logo-wrap {
@@ -25,7 +24,7 @@
   /* The logo image can not be easily centered vertically, as other
      elements can. The measured center is not the visual center. */
   position: relative;
-  top: 10px;
+  top: 9px;
 }
 
 .mh__new-notice,
@@ -47,11 +46,70 @@
   text-align: center;
   background-color: var(--color-orange);
   color: white;
+  margin-right: 81px;
+}
+
+/* Language Switch */
+.nav-locale-toggle {
+  position: absolute;
+  right: 72px;
+  top: 0;
+  width: 72px;
+  height: 100%;
+  background: white url(../../ico/arrow_select.svg) no-repeat center 47px;
+  padding-top: 14px;
+  text-align:center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav-locale-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.nav-locale {
+  position: absolute;
+  background-color: white;
+  bottom: -9px;
+  right: 0;
+  transform: translateY(100%);
+  padding: 9px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.4s linear;
+}
+.nav-locale-toggle.revealed .nav-locale {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-locale a {
+  color: var(--color-darkgray);
+  display: block;
+  padding: 9px 45px 9px 9px;
+  background: url(../../ico/bullet.svg) no-repeat right center;
+}
+.nav-locale a:hover {
+  color: var(--color-black);
+}
+.nav-locale a:not(:last-child) {
+  border-bottom: 1px solid var(--color-lightgray);
+}
+.nav-locale a.active {
+  background: url(../../ico/bullet_active.svg) no-repeat right center;
+  color: var(--color-black);
 }
 
 @media (max-width: 1152px) {
   .mh__support {
     width: 243px;
+  }
+  .nav-locale-toggle {
+    right: 36px;
+  }
+  .nav-locale {
+    border-left: 1px solid var(--color-lightgray);
+    border-bottom: 1px solid var(--color-lightgray);
   }
 }
 
@@ -69,7 +127,48 @@
 }
 
 @media (max-width: 720px) {
+  main {
+    padding-top: 36px;
+  }
+  .mh {
+    top: 0;
+    height: 36px;
+  }
+  .mh__inner {
+    top: 36px;
+    padding-top: 0;
+    padding-top: 9px;
+    height: 36px;
+  }
   .mh__support {
     display: none;
+  }
+  .nav-locale-toggle {
+    height: 36px;
+    position: absolute;
+    top: -36px;
+    width: 100%;
+    right: 0;
+    text-align: right;
+    background-image: none;
+    padding: 0;
+  }
+  .nav-locale-toggle__locale {
+    position: absolute;
+    background: white url(../../ico/arrow_select.svg) no-repeat right center;
+    right: 25px;
+    bottom: 4px;
+    padding-bottom: 5px;
+    padding-right: 27px;
+  }
+  .nav-locale {
+    padding: 0 9px;
+    bottom: 0;
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid var(--color-lightgray);
+  }
+  .nav-locale a:first-child {
+    border-top: 1px solid var(--color-lightgray);
   }
 }

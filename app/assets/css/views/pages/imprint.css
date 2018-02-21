@@ -13,3 +13,8 @@
 .imprint ul {
   padding-left: 0;
 }
+@media (max-width: 648px) {
+  .imprint.cp--t3-5 {
+    padding-top: 126px;
+  }
+}

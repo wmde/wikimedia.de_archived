@@ -36,25 +36,30 @@ foreach (explode(' ', PROJECT_LOCALES) as $_locale) {
 		<?php if ($this->_config['template'] === 'home'): ?>
 			<div class="mh__new-notice ts--beta">
 				<div class="wh__new-notic-inner">
-					<?= $this->html->link('Hier geht es zur bisherigen Website', '/wiki/Hauptseite', [
+					<?= $this->html->link($t('Hier geht es zur bisherigen Website'), '/wiki/Hauptseite', [
 						'class' => 'link link--green'
 					]) ?>
 					<br>
-					von Wikimedia Deutschland
+					<?= $t("von Wikimedia Deutschland") ?>
 				</div>
 			</div>
 		<?php endif ?>
-		<?= $this->nav->generate('locale') ?>
 		<a
 			href="/#cta"
 			class="mh__support cp--0-5"
 			role="button"
-			aria-label="Springe zum Bereich 'Unterstütze Freies Wissen'"
+			aria-label="<?= $t("Springe zum Bereich 'Unterstütze Freies Wissen'") ?>"
 		>
 			<div class="wh__support-inner">
-				<div class="tm--gamma t--caps t--strong">Unterstütze</div>
-				<div class="tm--delta">Freies Wissen</div>
+			<div class="tm--gamma t--caps t--strong"><?= $t("Unterstütze") ?></div>
+				<div class="tm--delta"><?= $t("Freies Wissen") ?></div>
 			</div>
 		</a>
+		<div class="nav-locale-toggle ts--alpha">
+			<div class="nav-locale-wrapper">
+				<div class="nav-locale-toggle__locale"><?= $locale ?></div>
+				<?= $this->nav->generate('locale', ['class' => 'nav-locale']) ?>
+			</div>
+		</div>
 	</div>
 </header>

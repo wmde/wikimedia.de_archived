@@ -99,7 +99,7 @@
 
 /* no intermediate sizes for < 1152px */
 
-@media (max-width: 648px) {
+@media (max-width: 720px) {
   .ts--alpha {
     font-size: 12px;
   }

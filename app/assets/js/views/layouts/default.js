@@ -28,6 +28,18 @@ require(['domready!'], function() {
     });
   }
 
+  // Language Switch - .nav-locale-toggle
+  let navLocaleToggle = $1('.nav-locale-toggle');
+  navLocaleToggle.addEventListener('click', function(ev) {
+      ev.preventDefault();
+      if (navLocaleToggle.classList.contains('revealed')) {
+        navLocaleToggle.classList.remove('revealed');
+      } else {
+        navLocaleToggle.classList.add('revealed');
+      }
+  });
+
+
   // Pages that use reference, list them in a folded footer area (the references index).
   // When jumping from a citation occurance into the index we will hightlight the
   // corresponding reference. Smooth scrolling is used whenever possible, falling back to

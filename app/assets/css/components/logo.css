@@ -7,8 +7,8 @@
 
 .logo {
   display: block; /* may be applied to <a> */
-  height: 60px;
-  width: 260px;
+  height: 45px;
+  width: 198px;
   background: transparent no-repeat left center/contain;
 }
 .logo--white {
@@ -23,21 +23,14 @@
   display: block;
   margin-top: 0;
   margin-bottom: 0;
-  height: 60px;
-  width: 260px;
+  height: 45px;
+  width: 198px;
   line-height: 0;
   color: transparent;
   overflow: hidden;
 }
 .logo--ir a {
   color: transparent;
-}
-
-@media (max-width: 864px) {
-  .logo {
-    height: 50px;
-    width: 200px;
-  }
 }
 
 @media (max-width: 648px) {
