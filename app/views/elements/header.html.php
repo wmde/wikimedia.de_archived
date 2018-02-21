@@ -15,7 +15,8 @@ $site = Sites::current($this->_request);
 // echo $this->nav->generate('main')
 
 foreach (explode(' ', PROJECT_LOCALES) as $_locale) {
-	$this->nav->add('locale', $this->G11n->name($_locale), [
+	$linkName = $this->G11n->name($_locale).' ('.$_locale.')';
+	$this->nav->add('locale', $linkName, [
 		'controller' => 'Pages',
 		'action' => 'change_locale',
 		'locale' => $_locale

@@ -41,7 +41,7 @@
 }
 
 .mh__support {
-  width: 288px; /* = 4 cols */
+  width: 243px;
   float: right;
   text-align: center;
   background-color: var(--color-orange);
@@ -73,7 +73,7 @@
   bottom: -9px;
   right: 0;
   transform: translateY(100%);
-  padding: 9px;
+  padding: 9px 15px 9px 9px;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.4s linear;
@@ -88,6 +88,7 @@
   display: block;
   padding: 9px 45px 9px 9px;
   background: url(../../ico/bullet.svg) no-repeat right center;
+  white-space: nowrap;
 }
 .nav-locale a:hover {
   color: var(--color-black);
@@ -101,9 +102,6 @@
 }
 
 @media (max-width: 1152px) {
-  .mh__support {
-    width: 243px;
-  }
   .nav-locale-toggle {
     right: 36px;
   }
