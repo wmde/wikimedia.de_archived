@@ -94,7 +94,7 @@
   /* inherit tl--beta */
   font-weight: bold;
   /* inherit t--strong */
-  font: 600 34px/1.4 var(--font-family-sans);
+  font: 700 34px/1.4 var(--font-family-sans);
   letter-spacing: .01em;
 }
 @media (max-width: 1152px) {
