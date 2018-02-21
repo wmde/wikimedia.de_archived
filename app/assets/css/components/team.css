@@ -20,11 +20,6 @@
 .team__select {
   display: none;
 }
-/* FF Fix remove select:focus outline */
-select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #FFF;
-}
 .team__list {
   width: 360px;
   line-height: 27px;
