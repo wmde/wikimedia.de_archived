@@ -170,7 +170,7 @@ $this->seo->set('description', $text);
 				if ($item->hasTag('initiative')) {
 					return $t('Zu dieser Initiative');
 				}
-				if ($item->hasTag('project')) {
+				if ($item->hasTag('projekt')) {
 					return $t('Zu diesem Projekt');
 				}
 				if ($item->hasTag('event')) {
@@ -206,13 +206,13 @@ $this->seo->set('description', $text);
 				<div class="news__box <?php echo implode(' ', $classes) ?> limit--8 cm--l5 cp--v0-5 cp--r0-5 cp--l2-5 sc--white">
 					<h1 class="news__title tm--gamma t--caps">
 					<?php
-						if ($item->hasTag('wmde')) {
+						if ($item->hasTag('wikimedia')) {
 							echo 'Wikimedia';
 						} elseif ($item->hasTag('initiative'))  {
 							echo $t('Initiative');
-						} elseif ($item->hasTag('member'))  {
+						} elseif ($item->hasTag('mitglieder'))  {
 							echo $t('Mitglieder');
-						} elseif ($item->hasTag('project'))  {
+						} elseif ($item->hasTag('projekt'))  {
 							echo $t('Projekt');
 						} elseif ($item->hasTag('event'))  {
 							echo $t('Event');

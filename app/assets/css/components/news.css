@@ -30,24 +30,24 @@
   transition: border .5s;
 }
 
-.news__box.tagged--wmde {
+.news__box.tagged--wikimedia {
   border-color: var(--color-green);
 }
-.news__box.tagged--wmde .news__title {
+.news__box.tagged--wikimedia .news__title {
   color: var(--color-green);
 }
-.news__box.tagged--wmde .news__link {
+.news__box.tagged--wikimedia .news__link {
   color: var(--color-green);
   border-color: var(--color-green);
 }
 
-.news__box.tagged--member {
+.news__box.tagged--mitglieder {
   border-color: var(--color-violet);
 }
-.news__box.tagged--member .news__title {
+.news__box.tagged--mitglieder .news__title {
   color: var(--color-violet);
 }
-.news__box.tagged--member .news__link {
+.news__box.tagged--mitglieder .news__link {
   color: var(--color-violet);
   border-color: var(--color-violet);
 }
@@ -63,7 +63,7 @@
   border-color: var(--color-orange);
 }
 
-.news__box.tagged--project,
+.news__box.tagged--projekt,
 .news__box.tagged--event {
   border-color: white;
 }
