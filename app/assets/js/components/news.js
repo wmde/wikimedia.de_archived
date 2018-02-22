@@ -46,6 +46,7 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
 
       this.extractData(this.$el('.news__post'));
       this.createCounter(this.counterHook);
+      this.createPreviousImage(this.box);
       this.createNextImage(this.box, false);
       this.createNextImage(this.box, true);
       this.createPreviousButton(this.element);
@@ -101,6 +102,20 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
       targetEl.insertAdjacentElement('afterbegin', counter);
     }
 
+    createPreviousImage(targetEl) {
+      let index = this.state.current - 1;
+
+      let image = document.createElement('div');
+      image.classList.add('news__image');
+      image.setAttribute('aria-hidden', true);
+      image.classList.add('old');
+      if (index < 0) {
+        index = this.state.data.length -1;
+      }
+      image.innerHTML = this.state.data[index].image;
+
+      targetEl.insertAdjacentElement('beforeend', image);
+    }
     createNextImage(targetEl, isAfterNext) {
       let index = this.state.current + 1;
 
@@ -163,10 +178,12 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
         this.link.hidden = link.href === '#';
       };
 
-      let updateImage = () => {
+      let updateImageNext = () => {
         let active = this.$el1('.news__image.active');
         let next = this.$el1('.news__image.next');
         let afterNext = this.$el1('.news__image.after-next');
+
+        this.$el1('.news__image.old').remove();
 
         active.classList.replace('active', 'old');
         active.setAttribute('aria-hidden', true);
@@ -178,15 +195,25 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
 
         this.createNextImage(this.box, true);
       };
+      let updateImagePrevious = () => {
+        let old = this.$el1('.news__image.old');
+        let active = this.$el1('.news__image.active');
+        let next = this.$el1('.news__image.next');
 
-      let removeOldImage = () => {
-        const limit = 3;
-        if (this.$el('.news__image.old').length > limit) {
-          this.$el1('.news__image.old').remove();
-        }
+        old.classList.replace('old', 'active');
+        old.removeAttribute('aria-hidden');
+
+        active.classList.replace('active', 'next');
+        active.setAttribute('aria-hidden', true);
+
+        this.$el1('.news__image.after-next').remove();
+        next.classList.replace('next', 'after-next');
+
+
+        this.createPreviousImage(this.box);
       };
 
-      previousButton.addEventListener('click', (ev) => {
+      let previous = () => {
         this.state.current--;
         if (this.state.current === -1) {
           this.state.current = this.state.data.length-1;
@@ -194,11 +221,10 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
 
         updateCounter(this.$el1('.post__count'));
         updateText(this.state.current);
-        updateImage();
-        removeOldImage();
-      });
+        updateImagePrevious();
+      };
 
-      nextButton.addEventListener('click', (ev) => {
+      let next = () => {
         this.state.current++;
         if (this.state.current === this.state.data.length) {
           this.state.current = 0;
@@ -206,18 +232,17 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
 
         updateCounter(this.$el1('.post__count'));
         updateText(this.state.current);
-        updateImage();
-        removeOldImage();
-      });
+        updateImageNext();
+      };
+
+      previousButton.addEventListener('click', previous);
+      nextButton.addEventListener('click', next);
+
       // Add swipe control
       if (Modernizr.touchevents) {
         let swipeElement = new Hammer( this.element );
-        swipeElement.on( 'swipeleft', function() {
-          previousButton.click();
-        });
-        swipeElement.on( 'swiperight', function() {
-          nextButton.click();
-        });
+        swipeElement.on( 'swipeleft', next);
+        swipeElement.on( 'swiperight', previous);
       }
     }
   };
