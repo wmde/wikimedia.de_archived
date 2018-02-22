@@ -12,8 +12,8 @@ if ($hasReferences) {
 		'class' => 'toggle-refs-foldout'
 	]);
 }
-$this->nav->add('footer-association', $t('Transparenz'),  'https://www.wikimedia.de/wiki/Transparenz');
-$this->nav->add('footer-association', $t('Satzung, Ordnungen & Beschlüsse'),  'https://www.wikimedia.de/wiki/Satzung');
+$this->nav->add('footer-association', $t('Transparenz'),  ['controller' => 'Pages', 'action' => 'dynamic', 'page' => 'transparenz']);
+$this->nav->add('footer-association', $t('Satzung, Ordnungen & Beschlüsse'),  ['controller' => 'Pages', 'action' => 'dynamic', 'page' => 'satzung']);
 
 // Footer Nav - Channels
 $this->nav->add('footer-channels', $t('Unser Blog'), 'https://blog.wikimedia.de/');

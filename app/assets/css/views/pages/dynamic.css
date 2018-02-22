@@ -1,0 +1,20 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
+
+.dynamic-page p,
+.dynamic-page ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.dynamic-page ul {
+  padding-left: 0;
+}
+@media (max-width: 648px) {
+  .dynamic-page.cp--t3-5 {
+    padding-top: 126px;
+  }
+}
