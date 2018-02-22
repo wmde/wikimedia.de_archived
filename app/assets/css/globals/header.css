@@ -162,6 +162,8 @@
     bottom: 4px;
     padding-bottom: 5px;
     padding-right: 27px;
+    height: auto;
+    width: auto;
   }
   .nav-locale {
     padding: 0 9px;
