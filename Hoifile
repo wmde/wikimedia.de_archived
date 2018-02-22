@@ -20,7 +20,7 @@ domain "__DOMAIN__" {
 		certificateKey = "!self-signed"
 	}
 	# auth {
-	# 	password = "changeme!"
+	# 	password = "__DOMAIN_AUTH_PASSWORD__"
 	# }
 }
 
