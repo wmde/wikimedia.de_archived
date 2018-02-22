@@ -56,7 +56,7 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
     extractData(postEls) {
       this.state.data = [];
 
-      postEls.forEach((el) => {
+      for (let el of postEls) {
         let item = {
           image: el.querySelector('.news__image').innerHTML,
           title: el.querySelector('.news__title').innerHTML,
@@ -69,9 +69,8 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
             innerText: el.querySelector('.news__link').innerText
           }
         };
-
         this.state.data.push(item);
-      });
+      }
     }
 
     createCounter(targetEl) {

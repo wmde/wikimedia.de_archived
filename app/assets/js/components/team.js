@@ -52,7 +52,7 @@ define('components/team', [], function() {
     extractData(memberEls) {
       this.state.names = [];
 
-      memberEls.forEach((el) => {
+      for (let el of memberEls) {
         let name = el.querySelector('.member__name').innerHTML;
         this.state.names.push(name);
 
@@ -67,7 +67,7 @@ define('components/team', [], function() {
         if (el.querySelector('.member__mail')) {
           this.state[name].mail = el.querySelector('.member__mail').innerHTML;
         }
-      });
+      }
     }
 
     createSelect(stageEl) {
@@ -118,9 +118,9 @@ define('components/team', [], function() {
       let select = this.$el1('.team__select');
 
       let updateActive = (list, target) => {
-        list.forEach((el) => {
+        for (let el of list) {
           el.classList.remove('active');
-        });
+        }
         target.classList.add('active');
       };
 
@@ -155,16 +155,17 @@ define('components/team', [], function() {
         }, 300);
       };
 
-      items.forEach((el) => {
-        el.addEventListener('click', (ev) => {
-          ev.preventDefault();
+      let handler = (ev) => {
+        ev.preventDefault();
 
-          updateActive(items, ev.target);
-          updateText(ev.target.innerHTML);
-          updateImage(ev.target.innerHTML);
-          updateSelected(select, ev.target.innerHTML);
-        });
-      });
+        updateActive(items, ev.target);
+        updateText(ev.target.innerHTML);
+        updateImage(ev.target.innerHTML);
+        updateSelected(select, ev.target.innerHTML);
+      };
+      for (let el of items) {
+        el.addEventListener('click', handler);
+      }
 
       select.addEventListener('change', (ev) => {
         let selectedName;
@@ -179,11 +180,11 @@ define('components/team', [], function() {
         updateText(selectedName.innerHTML);
         updateImage(selectedName.innerHTML);
 
-        items.forEach((el) => {
+        for (let el of items) {
           if (el.innerHTML === selectedName.innerHTML) {
             updateActive(items, el);
           }
-        });
+        }
       });
     }
   };
