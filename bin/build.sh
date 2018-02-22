@@ -38,7 +38,8 @@ cat << EOF > .babelrc
 		["env", {"targets": {"browsers": [
 			"last 2 versions",
 			"> 5%",
-			"ie 11"
+			"ie 11",
+			"ff >= 48"
 		]}}]
 	],
 	"ignore": [
