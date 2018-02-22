@@ -100,6 +100,9 @@ FPC="n"
 # in production environments. We only want to track real visitors.
 GA="n"
 
+# Google Analytics account number, as retrieved from the GA web interface.
+GA_ACCOUNT="__GA_ACCOUNT__"
+
 # Whether to honor if visitor has DNT enabled. If "y" will not include i.e. GA
 # tracking code even if that is enabled. Defaults to "n" as DNT was introduced
 # later in time and we don't want existing projects to have their visitor

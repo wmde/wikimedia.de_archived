@@ -61,11 +61,13 @@ Settings::write('contactSupportUrl', 'https://atelierdisko.de/clients/tickets/ad
 //
 // Services
 //
-// Settings::write('service.googleAnalytics.default', [
-// 	'account' => 'UA-123456',
-// 	'domain' => 'example.com',
-// 	'useUniversalAnalytics' => true
-// ]);
+if (PROJECT_GA) {
+	Settings::write('service.googleAnalytics.default', [
+		'account' => PROJECT_GA_ACCOUNT,
+		'domain' =>  PROJECT_DOMAIN,
+		'useUniversalAnalytics' => true
+	]);
+}
 
 //
 // Media

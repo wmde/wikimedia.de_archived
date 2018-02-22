@@ -8,8 +8,8 @@
 body {
   font: 600 16px/1.35 var(--font-family-sans);
 
-  text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1, "liga" 1;
+  font-kerning: nornal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;

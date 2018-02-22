@@ -36,6 +36,7 @@ prefill:
 	sed -i -e "s|__NAME__|$(NAME)|g" Hoifile Envfile Deployfile
 	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Hoifile Envfile
 	sed -i -e "s|__SECRET_BASE__|$(SECRET_BASE)|g" Envfile
+	sed -i -e "s|__DB_PASSWORD__||g" Hoifile Envfile 
 	# Some sed leave stray files.
 	rm -f Hoifile-e Envfile-e Deployfile-e
 
@@ -88,26 +89,6 @@ app/resources/g11n/po/message.pot: $(EXTRACT_SOURCES)
 app/resources/g11n/po/%/LC_MESSAGES/default.po: app/resources/g11n/po/message.pot 
 	if [ ! -f $@ ]; then msginit -l $* -i $< -o $@ --no-translator; fi
 	msgmerge $@ $< -o $@ --verbose
-
-# -- SSL Certificate Management --
-# http://www.rackspace.com/knowledge_center/article/generate-a-csr-with-openssl
-
-# Creates SHA2 CSR for requesting SSL cert. Will reuse existing key if present, else
-# will generate a key. To generate a CSR for the FQDN example.com run:
-# $ make config/ssl/example.com.csr
-#
-# To verify the generated CSR please read: 
-# https://knowledge.verisign.de/support/ssl-certificates-support/index?vproductcat=V_C_S&page=content&actp=CROSSLINK&id=AR198
-config/ssl/%.csr: config/ssl/%.key
-	openssl req -new -sha256 -key $< -out $@
-
-# Creates 2048bit KEY for SSL signing. We use seperate keys for each FQDN,
-# this has better symmetry as it matches key<->csr. The FQDN is part of
-# the filename. So in order to generate a key for example.com run: 
-# $ make config/ssl/example.com.key
-.PRECIOUS: config/ssl/%.key
-config/ssl/%.key:
-	openssl genrsa -out $@ 2048
 
 # -- Dist --
 
