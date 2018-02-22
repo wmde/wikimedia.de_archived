@@ -24,6 +24,7 @@ requirejs.config({
     'components/news': 'app/js/components/news',
     'components/team': 'app/js/components/team',
     'components/fields': 'app/js/components/fields',
+    'hammer': 'app/js/hammer',
     // Add your app specific JavaScript paths here.
 
     // Compat
@@ -37,6 +38,10 @@ requirejs.config({
     'modernizr': {
       exports: 'Modernizr',
       deps: ['domready!']
+    },
+    'hammer': {
+      deps: ['jquery'],
+      exports: 'Hammer'
     }
   }
 });

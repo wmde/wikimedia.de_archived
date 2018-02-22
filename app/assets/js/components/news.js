@@ -108,7 +108,6 @@ define('components/news', [], function() {
       let image = document.createElement('div');
       image.classList.add('news__image');
       image.setAttribute('aria-hidden', true);
-
       if (isAfterNext) {
         index += 1;
         image.classList.add('after-next');
@@ -143,6 +142,13 @@ define('components/news', [], function() {
       button.setAttribute('role', 'button');
 
       targetEl.insertAdjacentElement('beforeend', button);
+    }
+
+    previous() {
+      previousButton.click();
+    }
+    next() {
+      nextButton.click();
     }
 
     attachEventHandlers() {
