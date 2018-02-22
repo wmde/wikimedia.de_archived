@@ -9,15 +9,11 @@ require([
   'components/news',
   'components/team',
   'components/fields',
-  'hammer',
-  'modernizr',
   'domready!'
 ], function(
   News,
   Team,
-  Fields,
-  Hammer,
-  Modernizr
+  Fields
 ) {
   'use strict';
 
@@ -31,11 +27,4 @@ require([
   news.mount($1('.news'));
   team.mount($1('.team'));
   fields.mount($1('.fields'));
-
-  // Add news slider swipe control
-  if (Modernizr.touchevents) {
-    let swipeElement = new Hammer( document.getElementById('news-stage') );
-    swipeElement.on( 'swipeleft', news.previous );
-    swipeElement.on( 'swiperight', news.next );
-  }
 });

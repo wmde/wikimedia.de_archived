@@ -5,7 +5,7 @@
  * license that can be found in the LICENSE file.
  */
 
-define('components/news', [], function() {
+define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
   'use strict';
 
   // A component that implements synchronized animation of several
@@ -144,13 +144,6 @@ define('components/news', [], function() {
       targetEl.insertAdjacentElement('beforeend', button);
     }
 
-    previous() {
-      previousButton.click();
-    }
-    next() {
-      nextButton.click();
-    }
-
     attachEventHandlers() {
       let previousButton = this.$el1('#previousButton');
       let nextButton = this.$el1('#nextButton');
@@ -217,6 +210,16 @@ define('components/news', [], function() {
         updateImage();
         removeOldImage();
       });
+      // Add swipe control
+      if (Modernizr.touchevents) {
+        let swipeElement = new Hammer( this.element );
+        swipeElement.on( 'swipeleft', function() {
+          previousButton.click();
+        });
+        swipeElement.on( 'swiperight', function() {
+          nextButton.click();
+        });
+      }
     }
   };
 });
