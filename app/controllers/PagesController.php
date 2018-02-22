@@ -18,6 +18,7 @@ use cms_team\models\TeamMembers;
 use indexed\Robots;
 use lithium\action\Request;
 use lithium\core\Environment;
+use lithium\net\http\Router;
 
 class PagesController extends \lithium\action\Controller {
 

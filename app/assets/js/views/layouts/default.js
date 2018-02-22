@@ -29,16 +29,16 @@ require(['domready!'], function() {
   }
 
   // Language Switch - .nav-locale-toggle
-  let navLocaleToggle = $1('.nav-locale-toggle');
+  let navLocaleToggle = $1('.nav-locale-toggle__locale');
   navLocaleToggle.addEventListener('click', function(ev) {
       ev.preventDefault();
-      if (navLocaleToggle.classList.contains('revealed')) {
-        navLocaleToggle.classList.remove('revealed');
+      let navLocale= $1('.nav-locale');
+      if (navLocale.classList.contains('revealed')) {
+        navLocale.classList.remove('revealed');
       } else {
-        navLocaleToggle.classList.add('revealed');
+        navLocale.classList.add('revealed');
       }
   });
-
 
   // Pages that use reference, list them in a folded footer area (the references index).
   // When jumping from a citation occurance into the index we will hightlight the
