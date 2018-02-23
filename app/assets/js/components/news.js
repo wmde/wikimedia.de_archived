@@ -240,9 +240,9 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
 
       // Add swipe control
       if (Modernizr.touchevents) {
-        let swipeElement = new Hammer( this.element );
-        swipeElement.on( 'swipeleft', next);
-        swipeElement.on( 'swiperight', previous);
+        let swipeElement = new Hammer(this.element);
+        swipeElement.on('swipeleft', next);
+        swipeElement.on('swiperight', previous);
       }
     }
   };
