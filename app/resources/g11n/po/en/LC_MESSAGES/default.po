@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wmde_site\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2018-02-21 18:32+0000\n"
+"POT-Creation-Date: 2018-02-23 09:58+0000\n"
 "PO-Revision-Date: 2018-02-21 17:31+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -70,14 +70,17 @@ msgstr ""
 msgid "Referenzliste schließen"
 msgstr ""
 
+#: app/views/pages/dynamic.html.php:8 app/views/pages/imprint.html.php:11
+msgid "Zur Startseite"
+msgstr ""
+
 #: app/views/pages/home.html.php:20
 msgid ""
 "Wikipedia ist eine der zehn beliebtesten Websites der Welt. Ihre\n"
-"\tInhalte und die aller anderen Wikimedia-Projekte werden von Freiwilligen\n"
-"\terstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt "
-"ihre\n"
-"\tArbeit vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den\n"
-"\tkleineren Projekten."
+"Inhalte und die aller anderen Wikimedia-Projekte werden von Freiwilligen\n"
+"erstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt ihre\n"
+"Arbeit vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den\n"
+"kleineren Projekten."
 msgstr ""
 
 #: app/views/pages/home.html.php:64
@@ -108,8 +111,8 @@ msgstr ""
 msgid "Werde Mitglied bei"
 msgstr ""
 
-#: app/views/pages/home.html.php:143 app/views/pages/imprint.html.php:28
-#: app/views/pages/imprint.html.php:156
+#: app/views/pages/home.html.php:143 app/views/pages/imprint.html.php:26
+#: app/views/pages/imprint.html.php:130
 msgid "Wikimedia Deutschland"
 msgstr ""
 
@@ -169,178 +172,180 @@ msgstr ""
 msgid "Portrait von {:name}"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:11
-msgid "Zur Startseite"
+#: app/views/pages/home.html.php:311 app/views/pages/home.html.php:316
+#: app/views/pages/imprint.html.php:29 app/views/pages/imprint.html.php:136
+msgid "E-Mail:"
 msgstr ""
 
 #: app/views/pages/imprint.html.php:18
 msgid ""
-"\n"
-"Dieses Impressum gilt für die Domains wikimedia.de und wikipedia.de.\n"
-"Bitte beachten Sie, dass Wikimedia Deutschland nicht der Diensteanbieter\n"
-"aller auf dieser Website genannten Wikimedia-Projekte ist.\n"
-"\t\t\t"
+"Dieses Impressum gilt für die Domains wikimedia.de und\n"
+"wikipedia.de.  Bitte beachten Sie, dass Wikimedia Deutschland nicht der\n"
+"Diensteanbieter aller auf dieser Website genannten Wikimedia-Projekte ist."
 msgstr ""
 
-#: app/views/pages/imprint.html.php:26
+#: app/views/pages/imprint.html.php:24
 msgid "Diensteanbieter"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:28 app/views/pages/imprint.html.php:157
+#: app/views/pages/imprint.html.php:26 app/views/pages/imprint.html.php:131
 msgid "Gesellschaft zur Förderung Freien Wissens e. V."
 msgstr ""
 
-#: app/views/pages/imprint.html.php:32 app/views/pages/imprint.html.php:160
+#: app/views/pages/imprint.html.php:30 app/views/pages/imprint.html.php:134
 msgid "Telefon"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:34
+#: app/views/pages/imprint.html.php:31 app/views/pages/imprint.html.php:135
+msgid "Fax"
+msgstr ""
+
+#: app/views/pages/imprint.html.php:32
 msgid "Geschäftsführender Vorstand"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:35
+#: app/views/pages/imprint.html.php:33
 msgid ""
-"\n"
-"Eingetragen im Vereinsregister des Amtsgerichts Charlottenburg, VR 23855.\n"
-"Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Abraham Taherivand\n"
-"(Anschrift wie oben).\n"
-"\t\t\t\t"
+"Eingetragen im Vereinsregister des Amtsgerichts\n"
+"Charlottenburg, VR 23855.  Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 "
+"RStV:\n"
+"{:name} (Anschrift wie oben)."
 msgstr ""
 
-#: app/views/pages/imprint.html.php:44
+#: app/views/pages/imprint.html.php:40
 msgid "Datenschutzerklärung"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:46
+#: app/views/pages/imprint.html.php:42
 msgid ""
-"\n"
-"Personenbezogene Daten werden auf dieser Webseite nur im technisch\n"
-"notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten\n"
-"verkauft oder aus anderen Gründen an Dritte weitergegeben. Im Folgenden\n"
+"Personenbezogene Daten werden auf dieser Webseite nur\n"
+"im technisch notwendigen Umfang erhoben. In keinem Fall werden die "
+"erhobenen\n"
+"Daten verkauft oder aus anderen Gründen an Dritte weitergegeben. Im "
+"Folgenden\n"
 "erhalten Sie einen Überblick über die von uns im Rahmen dieser Website\n"
-"erhobenen Daten.\n"
-"\t\t\t\t"
+"erhobenen Daten."
 msgstr ""
 
-#: app/views/pages/imprint.html.php:55
+#: app/views/pages/imprint.html.php:49
 msgid ""
-"\n"
-"Log-Files: Bei der Nutzung dieses Angebots werden die von Ihrem\n"
-"Browser an den Server übermittelten Daten erfasst und gespeichert.\n"
-"Dies umfasst üblicherweise Informationen über den Typ und die\n"
-"Version des von Ihnen verwendeten Browsers, das verwendete\n"
-"Betriebssystem, die Referrer URL (die Webseite, von der aus Sie zu\n"
-"dieser Website gelangt sind), den Hostnamen des zugreifenden\n"
-"Rechners (die IP Adresse) sowie die Uhrzeit der Serveranfrage. In\n"
-"der Regel lassen sich diese Daten nicht bestimmten Personen – und\n"
-"damit auch nicht Ihnen – zuordnen. Weder wird zu diesem Zweck ein\n"
-"Abgleich der Daten mit anderen Daten vorgenommen, noch werden sie\n"
-"hierfür mit anderen Daten zusammengeführt. Die Daten werden\n"
-"regelmäßig nach einer statistischen Auswertung gelöscht.\n"
-"\t\t\t\t\t\t"
+"Log-Files: Bei der Nutzung dieses Angebots\n"
+"werden die von Ihrem Browser an den Server übermittelten Daten erfasst und\n"
+"gespeichert.  Dies umfasst üblicherweise Informationen über den Typ und die\n"
+"Version des von Ihnen verwendeten Browsers, das verwendete Betriebssystem, "
+"die\n"
+"Referrer URL (die Webseite, von der aus Sie zu dieser Website gelangt "
+"sind),\n"
+"den Hostnamen des zugreifenden Rechners (die IP Adresse) sowie die Uhrzeit "
+"der\n"
+"Serveranfrage. In der Regel lassen sich diese Daten nicht bestimmten "
+"Personen –\n"
+"und damit auch nicht Ihnen – zuordnen. Weder wird zu diesem Zweck ein "
+"Abgleich\n"
+"der Daten mit anderen Daten vorgenommen, noch werden sie hierfür mit "
+"anderen\n"
+"Daten zusammengeführt. Die Daten werden regelmäßig nach einer statistischen\n"
+"Auswertung gelöscht."
 msgstr ""
 
-#: app/views/pages/imprint.html.php:71
+#: app/views/pages/imprint.html.php:62
 msgid ""
-"\n"
-"Cookies: Diese Website verwendet an mehreren Stellen Cookies.\n"
-"Cookies sind kleine Textdateien, die Ihr Browser speichert und die\n"
-"dazu dienen, die Benutzung einer Website einfacher, effektiver und\n"
-"sicherer zu machen. Cookies richten auf Ihrem Rechner keinen\n"
-"Schaden an, nehmen minimalen Speicherplatz in Anspruch und\n"
-"enthalten keine Viren.\n"
-"\t\t\t\t\t\t"
+"Cookies: Diese Website verwendet an mehreren\n"
+"Stellen Cookies.  Cookies sind kleine Textdateien, die Ihr Browser "
+"speichert\n"
+"und die dazu dienen, die Benutzung einer Website einfacher, effektiver und\n"
+"sicherer zu machen. Cookies richten auf Ihrem Rechner keinen Schaden an, "
+"nehmen\n"
+"minimalen Speicherplatz in Anspruch und enthalten keine Viren."
 msgstr ""
 
-#: app/views/pages/imprint.html.php:81
+#: app/views/pages/imprint.html.php:69
 msgid ""
-"\n"
-"Google Analytics: Diese Website benutzt Google Analytics, einen\n"
-"Webanalysedienst der Google Inc. („Google“). Google Analytics\n"
-"verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer\n"
-"gespeichert werden und die eine Analyse der Benutzung der Website\n"
-"durch Sie ermöglichen. Die durch das Cookie erzeugten\n"
-"Informationen über Ihre Benutzung dieser Website werden in der\n"
-"Regel an einen Server von Google in den USA übertragen und dort\n"
-"gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf\n"
-"dieser Website, wird Ihre IP-Adresse von Google jedoch innerhalb\n"
-"von Mitgliedstaaten der Europäischen Union oder in anderen\n"
-"Vertragsstaaten des Abkommens über den Europäischen\n"
-"Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die\n"
-"volle IP-Adresse an einen Server von Google in den USA\n"
-"übertragen und dort gekürzt. Im Auftrag des Betreibers dieser\n"
-"Website wird Google diese Informationen benutzen, um Ihre\n"
-"Nutzung der Website auszuwerten, um Reports über die\n"
-"Websiteaktivitäten zusammenzustellen und um weitere mit der\n"
-"Websitenutzung und der Internetnutzung verbundene\n"
-"Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die\n"
-"im Rahmen von Google Analytics von Ihrem Browser übermittelte\n"
-"IP-Adresse wird nicht mit anderen Daten von Google\n"
-"zusammengeführt. Sie können die Speicherung der Cookies durch\n"
-"eine entsprechende Einstellung Ihrer Browser-Software verhindern;\n"
-"wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall\n"
-"gegebenenfalls nicht sämtliche Funktionen dieser Website\n"
-"vollumfänglich werden nutzen können. Sie können darüber hinaus\n"
-"die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung\n"
-"der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google\n"
-"sowie die Verarbeitung dieser Daten durch Google verhindern,\n"
-"indem Sie das unter dem folgenden Link\n"
-"\t\t\t\t\t\t"
+"Google Analytics: Diese Website benutzt Google\n"
+"Analytics, einen Webanalysedienst der Google Inc. („Google“). Google "
+"Analytics\n"
+"verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert\n"
+"werden und die eine Analyse der Benutzung der Website durch Sie "
+"ermöglichen.\n"
+"Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser "
+"Website\n"
+"werden in der Regel an einen Server von Google in den USA übertragen und "
+"dort\n"
+"gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser "
+"Website,\n"
+"wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der\n"
+"Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den\n"
+"Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die\n"
+"volle IP-Adresse an einen Server von Google in den USA übertragen und dort\n"
+"gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese\n"
+"Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports\n"
+"über die Websiteaktivitäten zusammenzustellen und um weitere mit der\n"
+"Websitenutzung und der Internetnutzung verbundene Dienstleistungen "
+"gegenüber\n"
+"dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von "
+"Ihrem\n"
+"Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google\n"
+"zusammengeführt. Sie können die Speicherung der Cookies durch eine\n"
+"entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie\n"
+"jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche\n"
+"Funktionen dieser Website vollumfänglich werden nutzen können. Sie können\n"
+"darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre\n"
+"Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google "
+"sowie\n"
+"die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter "
+"dem\n"
+"folgenden Link"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:114 app/views/pages/imprint.html.php:117
+#: app/views/pages/imprint.html.php:95 app/views/pages/imprint.html.php:98
 msgid "http://tools.google.com/dlpage/gaoptout?hl=de"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:118
+#: app/views/pages/imprint.html.php:99
 msgid ""
-"\n"
-"Google Analytics: Diese Website benutzt Google Analytics, einen\n"
-"verfügbare\n"
-"Browser-Plugin herunterladen und installieren.\n"
-"Sie können die Erfassung durch Google Analytics verhindern, indem\n"
-"Sie auf folgenden Link klicken. Es wird ein Opt-Out-Cookie\n"
-"gesetzt, das die zukünftige Erfassung Ihrer Daten beim Besuch\n"
-"dieser Website verhindert:\n"
-"\t\t\t\t\t\t"
+"Google Analytics: Diese Website benutzt Google\n"
+"Analytics, einen verfügbare Browser-Plugin herunterladen und installieren.  "
+"Sie\n"
+"können die Erfassung durch Google Analytics verhindern, indem Sie auf "
+"folgenden\n"
+"Link klicken. Es wird ein Opt-Out-Cookie gesetzt, das die zukünftige "
+"Erfassung\n"
+"Ihrer Daten beim Besuch dieser Website verhindert:"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:130
+#: app/views/pages/imprint.html.php:107
 msgid "Google Analytics deaktivieren"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:131
+#: app/views/pages/imprint.html.php:108
 msgid ""
-"Nähere Informationen zu\n"
-"\t\t\t\t\t\t\tNutzungsbedingungen und Datenschutz finden Sie unter"
+"Nähere Informationen zu Nutzungsbedingungen und\n"
+"Datenschutz finden Sie unter"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:137
+#: app/views/pages/imprint.html.php:114
 msgid "bzw. unter"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:137
+#: app/views/pages/imprint.html.php:114
 msgid "http://www.google.com/analytics/terms/de.html"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:141
+#: app/views/pages/imprint.html.php:118
 msgid "https://www.google.de/intl/de/policies/"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:142
+#: app/views/pages/imprint.html.php:119
 msgid ""
-"\n"
-"Wir weisen Sie\n"
-"darauf hin, dass auf dieser Website Google Analytics um den Code\n"
-"„anonymizeIp“ erweitert wurde, um eine anonymisierte Erfassung\n"
-"von IP-Adressen (sog. IP-Masking) zu gewährleisten.\n"
-"\t\t\t\t\t\t"
+" Wir weisen Sie darauf hin, dass auf dieser\n"
+"Website Google Analytics um den Code „anonymizeIp“ erweitert wurde, um eine\n"
+"anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.  "
 msgstr ""
 
-#: app/views/pages/imprint.html.php:154
+#: app/views/pages/imprint.html.php:128
 msgid "Büro"
 msgstr ""
 
-#: app/views/pages/imprint.html.php:158
+#: app/views/pages/imprint.html.php:132
 msgid "Postfach"
 msgstr ""

@@ -18,10 +18,10 @@ $site = Sites::current($this->_request);
 $this->title($site->title());
 
 $text  = $t('Wikipedia ist eine der zehn beliebtesten Websites der Welt. Ihre
-	Inhalte und die aller anderen Wikimedia-Projekte werden von Freiwilligen
-	erstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt ihre
-	Arbeit vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den
-	kleineren Projekten.');
+Inhalte und die aller anderen Wikimedia-Projekte werden von Freiwilligen
+erstellt, verbessert und verbreitet. Wikimedia Deutschland unterstützt ihre
+Arbeit vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den
+kleineren Projekten.');
 $this->seo->set('description', $text);
 
 ?>
@@ -308,12 +308,12 @@ $this->seo->set('description', $text);
 						class="member__link ts--alpha"
 						href="mailto:<?php echo $item->email ?>"
 					>
-						<span class="ts--beta">E-Mail:</span>
+						<span class="ts--beta"><?= $t('E-Mail:') ?></span>
 						<span class="member__mail"><?= $item->email ?></span>
 					</a>
 					<?php elseif ($isFirst): ?>
 					<a class="member__link ts--alpha" href="#" hidden>
-						<span class="ts--beta">E-Mail:</span>
+						<span class="ts--beta"><?= $t('E-Mail:') ?></span>
 						<span class="member__mail"></span>
 					</a>
 					<?php endif ?>
