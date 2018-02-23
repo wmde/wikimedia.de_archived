@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wmde_site\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
 "POT-Creation-Date: 2018-02-23 09:58+0000\n"
-"PO-Revision-Date: 2018-02-21 17:31+0100\n"
+"PO-Revision-Date: 2018-02-23 11:40+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: app/views/elements/footer.html.php:9 app/views/pages/imprint.html.php:15
 msgid "Impressum und Kontakt"
@@ -24,55 +24,55 @@ msgstr "Imprint and contact"
 
 #: app/views/elements/footer.html.php:11
 msgid "Lizenzhinweise dieser Seite"
-msgstr ""
+msgstr "License notices of this page"
 
 #: app/views/elements/footer.html.php:15
 msgid "Transparenz"
-msgstr ""
+msgstr "Transparency"
 
 #: app/views/elements/footer.html.php:16
 msgid "Satzung, Ordnungen & Beschlüsse"
-msgstr ""
+msgstr "Charter, bylaws and resolutions"
 
 #: app/views/elements/footer.html.php:19
 msgid "Unser Blog"
-msgstr ""
+msgstr "Our blog"
 
 #: app/views/elements/footer.html.php:33
 msgid "Verein"
-msgstr ""
+msgstr "Association"
 
 #: app/views/elements/footer.html.php:39
 msgid "Kanäle"
-msgstr ""
+msgstr "Channels"
 
 #: app/views/elements/header.html.php:40
 msgid "Hier geht es zur bisherigen Website"
-msgstr ""
+msgstr "Click here for the previous website"
 
 #: app/views/elements/header.html.php:44
 msgid "von Wikimedia Deutschland"
-msgstr ""
+msgstr "of Wikimedia Deutschland"
 
 #: app/views/elements/header.html.php:52
 msgid "Springe zum Bereich 'Unterstütze Freies Wissen'"
-msgstr ""
+msgstr "Go to the section ‚Support Free Knowledge‘"
 
 #: app/views/elements/header.html.php:55
 msgid "Unterstütze"
-msgstr ""
+msgstr "Support"
 
 #: app/views/elements/header.html.php:56 app/views/pages/home.html.php:152
 msgid "Freies Wissen"
-msgstr ""
+msgstr "Free Knowledge"
 
 #: app/views/elements/references.html.php:11
 msgid "Referenzliste schließen"
-msgstr ""
+msgstr "Close reference list"
 
 #: app/views/pages/dynamic.html.php:8 app/views/pages/imprint.html.php:11
 msgid "Zur Startseite"
-msgstr ""
+msgstr "To home page"
 
 #: app/views/pages/home.html.php:20
 msgid ""
@@ -82,14 +82,18 @@ msgid ""
 "Arbeit vor allem an Wikipedia, Wikimedia Commons, Wikidata, aber auch den\n"
 "kleineren Projekten."
 msgstr ""
+"Wikipedia is one of the ten most popular websites in the world. Its content "
+"and that of all other Wikimedia projects is created, improved and "
+"distributed by volunteers. Wikimedia Deutschland supports their work mainly "
+"on Wikipedia, Wikimedia Commons, Wikidata, but also on the smaller projects."
 
 #: app/views/pages/home.html.php:64
 msgid "Portrait von Abraham Taherivand"
-msgstr ""
+msgstr "Portrait of Abraham Taherivand"
 
 #: app/views/pages/home.html.php:73
 msgid "Geschäftsführender&nbsp;Vorstand"
-msgstr ""
+msgstr "Executive Director"
 
 #: app/views/pages/home.html.php:81
 msgid "Handlungsfelder"
@@ -97,85 +101,85 @@ msgstr "Fields of Action"
 
 #: app/views/pages/home.html.php:91
 msgid "Freiwillige unterstützen, gewinnen und halten"
-msgstr ""
+msgstr "Attract, support and retain volunteers"
 
 #: app/views/pages/home.html.php:101
 msgid "Software entwickeln"
-msgstr ""
+msgstr "Developing software"
 
 #: app/views/pages/home.html.php:111
 msgid "Rahmen&shy;bedingungen für Freies Wissen stärken"
-msgstr ""
+msgstr "Strengthen conditions for Free Knowledge"
 
 #: app/views/pages/home.html.php:142
 msgid "Werde Mitglied bei"
-msgstr ""
+msgstr "Become a member of"
 
 #: app/views/pages/home.html.php:143 app/views/pages/imprint.html.php:26
 #: app/views/pages/imprint.html.php:130
 msgid "Wikimedia Deutschland"
-msgstr ""
+msgstr "Wikimedia Deutschland"
 
 #: app/views/pages/home.html.php:151
 msgid "Spende für"
-msgstr ""
+msgstr "Make a donation for"
 
 #: app/views/pages/home.html.php:162
 msgid "Zur Jobseite"
-msgstr ""
+msgstr "To the job page"
 
 #: app/views/pages/home.html.php:163
 msgid "Zum Vimeo Channel"
-msgstr ""
+msgstr "To the Vimeo Channel"
 
 #: app/views/pages/home.html.php:171
 msgid "Zu dieser Initiative"
-msgstr ""
+msgstr "To this initiative"
 
 #: app/views/pages/home.html.php:174
 msgid "Zu diesem Projekt"
-msgstr ""
+msgstr "To this project"
 
 #: app/views/pages/home.html.php:177
 msgid "Zu diesem Event"
-msgstr ""
+msgstr "To this event"
 
 #: app/views/pages/home.html.php:179
 msgid "Zur Webseite"
-msgstr ""
+msgstr "To the website"
 
 #: app/views/pages/home.html.php:183
 msgid "Aktuelles"
-msgstr ""
+msgstr "News"
 
 #: app/views/pages/home.html.php:212
 msgid "Initiative"
-msgstr ""
+msgstr "Initiative"
 
 #: app/views/pages/home.html.php:214
 msgid "Mitglieder"
-msgstr ""
+msgstr "Member"
 
 #: app/views/pages/home.html.php:216
 msgid "Projekt"
-msgstr ""
+msgstr "Project"
 
 #: app/views/pages/home.html.php:218
 msgid "Event"
-msgstr ""
+msgstr "Event"
 
 #: app/views/pages/home.html.php:268
 msgid "Unser Präsidium"
-msgstr ""
+msgstr "Our board"
 
 #: app/views/pages/home.html.php:291
 msgid "Portrait von {:name}"
-msgstr ""
+msgstr "Portrait of {: name}"
 
 #: app/views/pages/home.html.php:311 app/views/pages/home.html.php:316
 #: app/views/pages/imprint.html.php:29 app/views/pages/imprint.html.php:136
 msgid "E-Mail:"
-msgstr ""
+msgstr "E-mail:"
 
 #: app/views/pages/imprint.html.php:18
 msgid ""
@@ -183,26 +187,31 @@ msgid ""
 "wikipedia.de.  Bitte beachten Sie, dass Wikimedia Deutschland nicht der\n"
 "Diensteanbieter aller auf dieser Website genannten Wikimedia-Projekte ist."
 msgstr ""
+"This imprint applies to the domains wikimedia.de and wikipedia.de. Please "
+"note that Wikimedia Deutschland is not the service provider of all Wikimedia "
+"projects mentioned on this website."
 
 #: app/views/pages/imprint.html.php:24
 msgid "Diensteanbieter"
-msgstr ""
+msgstr "Service Provider"
 
 #: app/views/pages/imprint.html.php:26 app/views/pages/imprint.html.php:131
 msgid "Gesellschaft zur Förderung Freien Wissens e. V."
 msgstr ""
+"Wikimedia Deutschland -  Association for the promotion of Free Knowledge e. "
+"V."
 
 #: app/views/pages/imprint.html.php:30 app/views/pages/imprint.html.php:134
 msgid "Telefon"
-msgstr ""
+msgstr "Telephone"
 
 #: app/views/pages/imprint.html.php:31 app/views/pages/imprint.html.php:135
 msgid "Fax"
-msgstr ""
+msgstr "Fax"
 
 #: app/views/pages/imprint.html.php:32
 msgid "Geschäftsführender Vorstand"
-msgstr ""
+msgstr "Executive Board"
 
 #: app/views/pages/imprint.html.php:33
 msgid ""
@@ -211,10 +220,13 @@ msgid ""
 "RStV:\n"
 "{:name} (Anschrift wie oben)."
 msgstr ""
+"Registered in the register of associations of the district court "
+"Charlottenburg, VR 23855. Responsible for the content according to § 55 Abs. "
+"2 RStV: Abraham Taherivand (address as above)."
 
 #: app/views/pages/imprint.html.php:40
 msgid "Datenschutzerklärung"
-msgstr ""
+msgstr "Data protection"
 
 #: app/views/pages/imprint.html.php:42
 msgid ""
@@ -226,6 +238,10 @@ msgid ""
 "erhalten Sie einen Überblick über die von uns im Rahmen dieser Website\n"
 "erhobenen Daten."
 msgstr ""
+"Personal data is collected on this website only to the technically necessary "
+"extent. In no case will the data collected be sold or otherwise disclosed to "
+"third parties. Below you will find an overview of the data collected by us "
+"within the framework of this website."
 
 #: app/views/pages/imprint.html.php:49
 msgid ""
@@ -247,6 +263,15 @@ msgid ""
 "Daten zusammengeführt. Die Daten werden regelmäßig nach einer statistischen\n"
 "Auswertung gelöscht."
 msgstr ""
+"Log-Files: When using this offer, the data transmitted by your browser to "
+"the server will be recorded and saved. This usually includes information "
+"about the type and version of the browser you are using, the operating "
+"system you are using, the referrer URL (the web page from which you came to "
+"this web site), the host name of the accessing computer (the IP address), "
+"and the time of the server request. As a rule, these data can not be "
+"assigned to specific persons - and thus not to you. Neither does it "
+"reconcile data with other data for this purpose, nor does it merge it with "
+"other data. The data are regularly deleted after a statistical evaluation."
 
 #: app/views/pages/imprint.html.php:62
 msgid ""
@@ -258,6 +283,10 @@ msgid ""
 "nehmen\n"
 "minimalen Speicherplatz in Anspruch und enthalten keine Viren."
 msgstr ""
+"Cookies: This website uses cookies in several places. Cookies are small text "
+"files that your browser stores and which serve to make the use of a website "
+"easier, more effective and safer. Cookies do not harm your computer, take up "
+"minimal space and do not contain viruses."
 
 #: app/views/pages/imprint.html.php:69
 msgid ""
@@ -296,10 +325,32 @@ msgid ""
 "dem\n"
 "folgenden Link"
 msgstr ""
+"Google Analytics: This website uses Google Analytics, a web analytics "
+"service provided by Google Inc. („Google“). Google Analytics uses so-called "
+"„cookies“, text files that are stored on your computer and that allow an "
+"analysis of the use of the website by you. The information generated by the "
+"cookie about your use of this website is usually transmitted to a Google "
+"server in the USA and stored there. However, in the event of activation of "
+"IP anonymisation on this website, your IP address will be shortened "
+"beforehand by Google within member states of the European Union or in other "
+"contracting states of the Agreement on the European Economic Area. Only in "
+"exceptional cases will the full IP address be sent to a Google server in the "
+"US and shortened there. On behalf of the operator of this website, Google "
+"will use this information to evaluate your use of the website, to compile "
+"reports on website activity and to provide other services related to website "
+"activity and internet usage to the website operator. The IP address provided "
+"by Google Analytics as part of Google Analytics will not be merged with "
+"other Google data. You can prevent the storage of cookies by a corresponding "
+"setting of your browser software; however, please note that if you do this, "
+"you may not be able to use all the features of this website to the fullest "
+"extent possible. In addition, you may prevent the collection by Google of "
+"the data generated by the cookie and related to your use of the website "
+"(including your IP address) as well as the processing of this data by Google "
+"by using the link below"
 
 #: app/views/pages/imprint.html.php:95 app/views/pages/imprint.html.php:98
 msgid "http://tools.google.com/dlpage/gaoptout?hl=de"
-msgstr ""
+msgstr "http://tools.google.com/dlpage/gaoptout?hl=en"
 
 #: app/views/pages/imprint.html.php:99
 msgid ""
@@ -312,28 +363,32 @@ msgid ""
 "Erfassung\n"
 "Ihrer Daten beim Besuch dieser Website verhindert:"
 msgstr ""
+"to download and install the available browser plugin. You can prevent the "
+"collection by Google Analytics by clicking on the following link. An opt-out "
+"cookie will be set to prevent future collection of your information when you "
+"visit this site:"
 
 #: app/views/pages/imprint.html.php:107
 msgid "Google Analytics deaktivieren"
-msgstr ""
+msgstr "Disable Google Analytics"
 
 #: app/views/pages/imprint.html.php:108
 msgid ""
 "Nähere Informationen zu Nutzungsbedingungen und\n"
 "Datenschutz finden Sie unter"
-msgstr ""
+msgstr "For more information about Terms of Use and Privacy, please visit"
 
 #: app/views/pages/imprint.html.php:114
 msgid "bzw. unter"
-msgstr ""
+msgstr "or at"
 
 #: app/views/pages/imprint.html.php:114
 msgid "http://www.google.com/analytics/terms/de.html"
-msgstr ""
+msgstr "https://www.google.com/analytics/terms"
 
 #: app/views/pages/imprint.html.php:118
 msgid "https://www.google.de/intl/de/policies/"
-msgstr ""
+msgstr "https://www.google.de/intl/en/policies"
 
 #: app/views/pages/imprint.html.php:119
 msgid ""
@@ -341,11 +396,14 @@ msgid ""
 "Website Google Analytics um den Code „anonymizeIp“ erweitert wurde, um eine\n"
 "anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.  "
 msgstr ""
+"We point out that on this website Google Analytics has been extended by the "
+"code „anonymizeIp“ to ensure an anonymous collection of IP addresses (so-"
+"called IP-Masking)."
 
 #: app/views/pages/imprint.html.php:128
 msgid "Büro"
-msgstr ""
+msgstr "Office"
 
 #: app/views/pages/imprint.html.php:132
 msgid "Postfach"
-msgstr ""
+msgstr "PO Box"
