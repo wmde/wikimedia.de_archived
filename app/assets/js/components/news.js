@@ -116,6 +116,7 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
 
       targetEl.insertAdjacentElement('beforeend', image);
     }
+
     createNextImage(targetEl, isAfterNext) {
       let index = this.state.current + 1;
 
@@ -195,6 +196,7 @@ define('components/news', ['hammer', 'modernizr'], function(Hammer, Modernizr) {
 
         this.createNextImage(this.box, true);
       };
+
       let updateImagePrevious = () => {
         let old = this.$el1('.news__image.old');
         let active = this.$el1('.news__image.active');
