@@ -12,6 +12,8 @@
 }
 .dynamic-page ul {
   padding-left: 0;
+  position: relative;
+  left: 18px;
 }
 @media (max-width: 648px) {
   .dynamic-page.cp--t3-5 {

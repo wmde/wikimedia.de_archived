@@ -29,6 +29,7 @@
   position: absolute;
   bottom: 32px;
   left: 32px;
+  max-width: 230px;
 }
 .field-button--alpha {
   background-image: url(../../ico/hf_icon_1.svg);

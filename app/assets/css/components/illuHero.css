@@ -88,8 +88,12 @@
   width: 34vw;
   max-width: 504px;
 }
+.illu-hero__text p {
+  margin: 0;
+}
 
 /* Content is coming from database. */
+.illu-hero__text b,
 .illu-hero__text strong {
   /* inherit tl--beta */
   font-weight: bold;

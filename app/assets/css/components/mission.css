@@ -19,6 +19,9 @@
 
   border: 2px solid;
 }
+.mission__text p {
+  margin: 0;
+}
 
 .mission__image .fig__media {
   max-width: 504px;
