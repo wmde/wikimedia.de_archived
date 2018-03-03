@@ -27,6 +27,7 @@ class PagesController extends \lithium\action\Controller {
 			'conditions' => [
 				'is_published' => true
 			],
+			'translate' => Environment::get('locale'),
 			// Show newest first, fall back to sorting by created date, when
 			// published is not available (it will be - usually).
 			'order' => [
@@ -40,6 +41,7 @@ class PagesController extends \lithium\action\Controller {
 			'conditions' => [
 				'is_published' => true
 			],
+			'translate' => Environment::get('locale'),
 			'order' => [
 				'order' => 'DESC'
 			]
@@ -92,10 +94,11 @@ class PagesController extends \lithium\action\Controller {
 			],
 			'translate' => Environment::get('locale')
 		]);
+		$page = $this->request->page;
 		if (!$item) {
 			throw new NotFoundException();
 		}
-		return compact('item');
+		return compact('item','page');
 	}
 
 	public function imprint() {}
