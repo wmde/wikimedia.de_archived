@@ -10,12 +10,24 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+.dynamic-page h2,
+.dynamic-page h3 {
+  font-family: var(--font-family-sans);
+}
 .dynamic-page ul {
   padding-left: 0;
   position: relative;
   left: 18px;
 }
+.dynamic-page__image {
+  margin: 20px 0;
+}
+
 @media (max-width: 648px) {
+  .dynamic-page__image {
+    width: 100%;
+    max-width: 250px;
+  }
   .dynamic-page.cp--t3-5 {
     padding-top: 126px;
   }
