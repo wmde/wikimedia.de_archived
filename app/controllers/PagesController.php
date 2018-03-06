@@ -87,6 +87,8 @@ class PagesController extends \lithium\action\Controller {
 	}
 
 	public function dynamic() {
+		$page = $this->request->page;
+
 		$item = Pages::find('first', [
 			'conditions' => [
 				'is_published' => true,
@@ -94,14 +96,14 @@ class PagesController extends \lithium\action\Controller {
 				// lowercased word. For example a page titled "Imprint and Contact" can be
 				// retrieved via `/imprint` Please note that the DB we use is assumed to
 				// be case-insensitive.
-				'title' => ['LIKE' => "{$this->request->page}%"],
+				'title' => ['LIKE' => "{$page}%"],
 			],
 			'translate' => Environment::get('locale')
 		]);
 		if (!$item) {
 			throw new NotFoundException();
 		}
-		return compact('item');
+		return compact('item', 'page');
 	}
 
 	// Imprint is handled by dynamic()

@@ -4,7 +4,7 @@ $this->title($item->title);
 $this->editor->parse($item->body, ['mediaVersion' => 'fix20']);
 
 ?>
-<main class="dynamic-page limit--20 center-column cp--h1 cp--t3-5 cp--b2">
+<main class="dynamic-page dynamic-page--<?= $page ?> limit--20 center-column cp--h1 cp--t3-5 cp--b2">
 	<div class="limit--12 cp--h1 cp--t0-5 cp--b1 sc--white">
 		<?= $this->html->link($t('Zur Startseite'), '/', [
 			'class' => 'link--green ts--alpha t--strong'
