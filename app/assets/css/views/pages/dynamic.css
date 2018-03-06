@@ -10,9 +10,11 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+.dynamic-page h1,
 .dynamic-page h2,
 .dynamic-page h3 {
   font-family: var(--font-family-sans);
+  margin: 10px 0;
 }
 .dynamic-page ul {
   padding-left: 0;
