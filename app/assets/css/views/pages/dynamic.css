@@ -16,6 +16,10 @@
   font-family: var(--font-family-sans);
   margin: 10px 0;
 }
+.dynamic-page strong,
+.dynamic-page b {
+  font-family: var(--font-family-sans);
+}
 .dynamic-page ul {
   padding-left: 0;
   position: relative;
