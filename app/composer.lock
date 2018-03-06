@@ -506,12 +506,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/cms_content.git",
-                "reference": "6d386431f6af00bd3f7bdc2145853b86202e0b97"
+                "reference": "c07c0a9734e62ebbd3f3ab5cafd35bff2f25dbc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/cms_content/zipball/6d386431f6af00bd3f7bdc2145853b86202e0b97",
-                "reference": "6d386431f6af00bd3f7bdc2145853b86202e0b97",
+                "url": "https://api.github.com/repos/bseries/cms_content/zipball/c07c0a9734e62ebbd3f3ab5cafd35bff2f25dbc3",
+                "reference": "c07c0a9734e62ebbd3f3ab5cafd35bff2f25dbc3",
                 "shasum": ""
             },
             "require": {
@@ -532,7 +532,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Generic Content functionality for Bureau.",
-            "time": "2018-02-19T14:37:20+00:00"
+            "time": "2018-03-06T13:29:26+00:00"
         },
         {
             "name": "bseries/cms_core",
