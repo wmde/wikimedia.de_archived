@@ -104,7 +104,7 @@ class PagesController extends \lithium\action\Controller {
 		return compact('item');
 	}
 
-	public function imprint() {}
+	// Imprint is handled by dynamic()
 
 	// Changes locale encoded in route to requested locale and redirects
 	// to the corresponding page.

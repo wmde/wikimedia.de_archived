@@ -6,14 +6,20 @@ $site = Sites::current($this->_request);
 
 
 // Footer Nav - Association
-$this->nav->add('footer-association', $t('Impressum und Kontakt'), 'Pages::imprint');
+$this->nav->add('footer-association', $t('Impressum und Kontakt'), [
+	'controller' => 'Pages', 'action' => 'dynamic', 'page' => 'impressum'
+]);
 if ($hasReferences) {
 	$this->nav->add('footer-association', $t('Lizenzhinweise dieser Seite'),  '#refs-foldout', [
 		'class' => 'toggle-refs-foldout'
 	]);
 }
-$this->nav->add('footer-association', $t('Transparenz'),  ['controller' => 'Pages', 'action' => 'dynamic', 'page' => 'transparenz']);
-$this->nav->add('footer-association', $t('Satzung, Ordnungen & Beschlüsse'),  ['controller' => 'Pages', 'action' => 'dynamic', 'page' => 'satzung']);
+$this->nav->add('footer-association', $t('Transparenz'),  [
+	'controller' => 'Pages', 'action' => 'dynamic', 'page' => 'transparenz'
+]);
+$this->nav->add('footer-association', $t('Satzung, Ordnungen & Beschlüsse'),  [
+	'controller' => 'Pages', 'action' => 'dynamic', 'page' => 'satzung'
+]);
 
 // Footer Nav - Channels
 $this->nav->add('footer-channels', $t('Unser Blog'), 'https://blog.wikimedia.de/');

@@ -9,8 +9,9 @@
 
 namespace app\config;
 
-use lithium\net\http\Router;
 // use base_core\extensions\net\http\ClientRouter;
+use lithium\action\Response;
+use lithium\net\http\Router;
 
 // Defines default `'app'` route scope. Route scopes allow to host different applications
 // from within our app i.e. the original app as well as a blog on a different domain. When
@@ -35,8 +36,7 @@ Router::scope('app', function() {
 
 	Router::connect('/', 'Pages::home');
 
-	Router::connect('/{:page:(transparenz|satzung)}', 'Pages::dynamic');
-	Router::connect('/imprint', 'Pages::imprint');
+	Router::connect('/{:page:(transparenz|satzung|impressum)}', 'Pages::dynamic');
 
 	Router::connect('/404', 'Errors::generic');
 	Router::connect('/robots.txt', [
@@ -51,6 +51,16 @@ Router::scope('app', function() {
 	// with `api_`, as different logic is needed for rendering views and API responses.
 	// Router::connect('/api/cart', 'Carts::api_view', ['defaults' => ['type' => 'json']]);
 	// ClientRouter::provide('carts:view', 'Carts::api_view');
+	//
+
+	// Deprecated / BC
+
+	// The `/imprint` route has been defined for the launch of the MVP in January '18.
+	// After adding more sub pages it became clear, we'd like to use german named route
+	// segments. Remote this route once all outside links have been updated.
+	Router::connect('/imprint', [], function($request) {
+		return new Response(['status' => 302, 'location' => '/impressum']);
+	});
 });
 
 ?>
