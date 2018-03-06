@@ -9,6 +9,7 @@
 
 namespace app\config;
 
+use base_core\extensions\cms\Settings;
 use cms_content\cms\content\Regions;
 
 // Here content regions can be defined. Regions are "dynamic" areas
@@ -41,6 +42,20 @@ Regions::register('home.fields.know', [
 	'title' => 'Home > Handlungsfelder > Freies Wissen',
 	'type' => 'richtext',
 	'access' => PROJECT_DEBUG ? 'any' : 'nobody'
+]);
+
+Settings::register('editor.features', [
+	'full' => [
+		'basic',
+		'headline',
+		'link',
+		'list',
+		'media'
+	],
+	'minimal' => [
+		'basic',
+		'link'
+	]
 ]);
 
 ?>
