@@ -62,6 +62,10 @@ for f in $(ls app/assets/css/*.css); do
 	cssnextgen $f > $f.tmp && mv $f.tmp $f
 	sqwish $f -o $f.min && mv $f.min $f
 done
+for f in $(find app/assets/css/views -type f -name *.css); do
+    cssnextgen $f > $f.tmp && mv $f.tmp $f
+    sqwish $f -o $f.min && mv $f.min $f
+done
 
 # We can't restrict image search to ico and img directories as images may be
 # located in i.e. vid directories if they are posters.
