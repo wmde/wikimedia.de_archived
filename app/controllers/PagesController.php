@@ -90,7 +90,11 @@ class PagesController extends \lithium\action\Controller {
 		$item = Pages::find('first', [
 			'conditions' => [
 				'is_published' => true,
-				'title' => $this->request->page
+				// Allow pages with multiple word titles be retrieved by the first
+				// lowercased word. For example a page titled "Imprint and Contact" can be
+				// retrieved via `/imprint` Please note that the DB we use is assumed to
+				// be case-insensitive.
+				'title' => ['LIKE' => "{$this->request->page}%"],
 			],
 			'translate' => Environment::get('locale')
 		]);
