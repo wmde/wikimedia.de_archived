@@ -5,6 +5,8 @@
  * license that can be found in the LICENSE file.
  */
 
+@import "../../globals/variables.css";
+
 .dynamic-page__body h1,
 .dynamic-page__body h2,
 .dynamic-page__body h3 {
