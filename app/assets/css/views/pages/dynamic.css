@@ -5,39 +5,39 @@
  * license that can be found in the LICENSE file.
  */
 
-.dynamic-page h1,
-.dynamic-page h2,
-.dynamic-page h3 {
+.dynamic-page__body h1,
+.dynamic-page__body h2,
+.dynamic-page__body h3 {
   font-family: var(--font-family-sans);
   margin: 10px 0;
 }
-.dynamic-page strong,
-.dynamic-page b {
+.dynamic-page__body strong,
+.dynamic-page__body b {
   font-family: var(--font-family-sans);
 }
-.dynamic-page ul {
+.dynamic-page__body ul {
   padding-left: 0;
   position: relative;
   left: 18px;
 }
-.dynamic-page img {
+.dynamic-page__body img {
   margin: 10px 0;
 }
-.dynamic-page a {
+.dynamic-page__body a {
   /* inherit styles from link--black */
   color: var(--color-black);
   border-bottom: 1px solid var(--color-black);
 }
 
 /* Special case imprint, as it has very very long link titles. */
-.dynamic-page--impressum a {
+.dynamic-page--impressum .dynamic-page__body a {
   word-break: all;
   word-break: break-word; /* non-standard for webkit */
   hyphens: auto;
 }
 
 @media (max-width: 648px) {
-  .dynamic-page img {
+  .dynamic-page__body img {
     width: 100%;
     max-width: 250px;
   }
