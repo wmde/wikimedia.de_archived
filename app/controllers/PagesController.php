@@ -94,11 +94,10 @@ class PagesController extends \lithium\action\Controller {
 			],
 			'translate' => Environment::get('locale')
 		]);
-		$page = $this->request->page;
 		if (!$item) {
 			throw new NotFoundException();
 		}
-		return compact('item','page');
+		return compact('item');
 	}
 
 	public function imprint() {}

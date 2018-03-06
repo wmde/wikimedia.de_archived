@@ -21,12 +21,12 @@
   position: relative;
   left: 18px;
 }
-.dynamic-page__image {
-  margin: 20px 0;
+.dynamic-page img {
+  margin: 10px 0;
 }
 
 @media (max-width: 648px) {
-  .dynamic-page__image {
+  .dynamic-page img {
     width: 100%;
     max-width: 250px;
   }
