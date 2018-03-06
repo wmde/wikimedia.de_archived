@@ -362,12 +362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bseries/base_core.git",
-                "reference": "f502eb9873469d5b43b349b12e72bd5740eee130"
+                "reference": "7a502771979a94ff624895e44de2a384c269e7c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bseries/base_core/zipball/f502eb9873469d5b43b349b12e72bd5740eee130",
-                "reference": "f502eb9873469d5b43b349b12e72bd5740eee130",
+                "url": "https://api.github.com/repos/bseries/base_core/zipball/7a502771979a94ff624895e44de2a384c269e7c4",
+                "reference": "7a502771979a94ff624895e44de2a384c269e7c4",
                 "shasum": ""
             },
             "require": {
@@ -403,7 +403,7 @@
                 }
             ],
             "description": "Core functionality for Bento.",
-            "time": "2018-02-14T10:47:39+00:00"
+            "time": "2018-03-06T10:28:24+00:00"
         },
         {
             "name": "bseries/base_media",
