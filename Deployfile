@@ -26,7 +26,7 @@ TRANSFER_METHOD="ssh+rsync"
 # Possible used with rsync and lftp. fnmatch(5) patterns are allowed. To exclude
 # whole directory (not just its contents) DO append slash. Patterns prefixed
 # with a slash are anchored at the base path (when used with rsync).
-TRANSFER_IGNORE="/media/ /media_versions/ /log/ /files/"
+TRANSFER_IGNORE="/media/ /media_versions/ /log/ /files/ /app/assets/doc/"
 
 # Command/s to execute after transferring. Commands will be executed by
 # TARGET_USER on a target host using TARGET_PATH as the working directory.

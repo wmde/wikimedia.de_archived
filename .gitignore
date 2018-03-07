@@ -18,6 +18,7 @@
 /app/webroot/media
 /media
 !media/robots.txt
+/app/assets/doc
 
 # Temporary Files
 /tmp/*
