@@ -11,7 +11,12 @@
 .dynamic-page__body h2,
 .dynamic-page__body h3 {
   font-family: var(--font-family-sans);
-  margin: 10px 0;
+  margin-top: 10px;
+}
+.dynamic-page h1 + p,
+.dynamic-page h2 + p,
+.dynamic-page h3 + p {
+  margin-top: 0;
 }
 .dynamic-page__body strong,
 .dynamic-page__body b {
