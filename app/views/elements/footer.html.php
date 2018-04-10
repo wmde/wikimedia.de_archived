@@ -22,9 +22,15 @@ $this->nav->add('footer-association', $t('Satzung, Ordnungen & Beschlüsse'),  [
 ]);
 
 // Footer Nav - Channels
-$this->nav->add('footer-channels', $t('Unser Blog'), 'https://blog.wikimedia.de/');
-$this->nav->add('footer-channels', 'Facebook', 'https://www.facebook.com/WMDEeV');
-$this->nav->add('footer-channels', 'Twitter', 'https://twitter.com/wikimediade');
+$this->nav->add('footer-channels', $t('Unser Blog'), 'https://blog.wikimedia.de/', [
+	'target' => 'new'
+]);
+$this->nav->add('footer-channels', 'Facebook', 'https://www.facebook.com/WMDEeV', [
+	'target' => 'new'
+]);
+$this->nav->add('footer-channels', 'Twitter', 'https://twitter.com/wikimediade', [
+	'target' => 'new'
+]);
 
 ?>
 <footer class="mf">
