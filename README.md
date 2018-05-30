@@ -1,7 +1,6 @@
-# Website of Wikimedia Deutschland e.V.
+# Old version of the Wikimedia Deutschland e.V. website
 
-This repository holds the source code and build/deployment tools for the
-Wikimedia Deutschland e.V. website relaunch. 
+The new version can be found at https://github.com/wmde/wikimedia.de
 
 ## Development
 
